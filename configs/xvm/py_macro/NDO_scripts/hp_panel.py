@@ -33,7 +33,7 @@ def percent_hp(current_team):
       actual_arenaUniqueID = arenaUniqueID
       max_hp_team[0] = panel.teams_totalhp[0]
       max_hp_team[1] = panel.teams_totalhp[1]
-    return round((100. * current_hp(current_team)) / max_hp_team[current_team], 0)
+    return round((100. * current_hp(current_team)) / max_hp_team[current_team], 0) if max_hp_team[current_team] != 0 else 0
 
 #@xvm.export('percent_hp_section', deterministic=False)
 def percent_hp_section(current_team):

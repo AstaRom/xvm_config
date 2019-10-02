@@ -68,14 +68,16 @@
         "intermediate_ricochet": "{{l10n:intermediate_ricochet}}",
         "final_ricochet": "{{l10n:final_ricochet}}",
         "armor_not_pierced": "{{l10n:armor_not_pierced}}",
-        "armor_pierced_no_damage": "{{l10n:armor_pierced_no_damage}}"
+        "armor_pierced_no_damage": "{{l10n:armor_pierced_no_damage}}",
+        "unknown": "{{l10n:armor_pierced_no_damage}}"
       },
       "c:hit-effects": {
         "armor_pierced": "#FFAA55",
         "intermediate_ricochet": "#CCCCCC",
         "final_ricochet": "#CCCCCC",
         "armor_not_pierced": "#CCCCCC",
-        "armor_pierced_no_damage": "#CCCCCC"
+        "armor_pierced_no_damage": "#CCCCCC",
+        "unknown": "#CCCCCC"
       },
       "critical-hit":{
         "critical": "*",
@@ -86,34 +88,39 @@
         "hull": "{{l10n:hull}}",
         "chassis": "{{l10n:chassis}}",
         "gun": "{{l10n:gun}}",
-        "do_not_know": ""
+        "unknown": ""
       },
       "team-dmg":{
         "ally-dmg": "",
         "enemy-dmg": "",
         "player": "",
-        "do_not_know": ""
+        "unknown": ""
       },
       "c:team-dmg":{
         "ally-dmg": "#00EAFF",
         "enemy-dmg": "#E2E2E2",
         "player": "#B9FFA1",
-        "do_not_know": "#CCCCCC"
+        "unknown": "#CCCCCC"
       },
       "costShell":{
         "gold-shell": "",
         "silver-shell": "",
-        "do_not_know": ""
+        "unknown": ""
       },
       "c:costShell":{
         "gold-shell": "#FFCC66",
         "silver-shell": "#E2E2E2",
-        "do_not_know": ""
+        "unknown": ""
       },
       "showHitNoDamage": false,
       "groupDamagesFromFire": true,
-      "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='14'><font size='12'>{{number}}.</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{vtype}} {{vehicle}}</font></font></textformat>",
-      "formatHistoryAlt": "<textformat tabstops='[25,75,100]' leading='-5'><font size='14'><font size='12'>{{number}}.</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{name}}</font></font></textformat>"
+      "groupDamagesFromRamming_WorldCollision": true,
+      "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='14'><font size='12'>{{number}}.</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{vtype}} {{vehicle}}</font></font></textformat>"
+    },
+    "logAlt": {
+      "$ref": { "path":"damageLog.log" },
+      "showHitNoDamage": false,
+      "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='14'><font size='12'>{{number}}.</font><tab><font color='{{c:dmg-kind}}'>{{dmg-ratio}}%<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{name}}</font></font></textformat>"
     },
     "lastHit": {
       "$ref": { "path":"damageLog.log" },

@@ -23,7 +23,7 @@
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
       "layer": "top",
       "textFormat": { "font": "NDO", "size": 18, "align": "center", "valign": "center" },
-      "format": "<font color='{{selected?#FCFCFC|{{.minimap.labelsData.colors.spottedDot.{{sys-color-key}}}}}}'>{{.minimap.labelsData.vtype.{{vtype-key}}}}</font>"
+      "format": "<font color='{{.minimap.labelsData.colors.spottedDot.{{sys-color-key}}}}'>{{.minimap.labelsData.vtype.{{vtype-key}}}}</font>"
     },
     // Название техники, видимый
     "vehicleSpotted": {
@@ -85,7 +85,7 @@
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "dead" ],
       "layer": "substrate",
       "textFormat": { "font": "NDO", "size": 10 },
-      "format": "<font color='{{selected?#FCFCFC|{{.minimap.labelsData.colors.deadDot.{{sys-color-key}}}}}}'>&#x0047;</font>"
+      "format": "<font color='{{.minimap.labelsData.colors.deadDot.{{sys-color-key}}}}'>&#x0047;</font>"
     },
     // Ник игрока, мертвый
     "nickDead": {

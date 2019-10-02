@@ -1,7 +1,9 @@
 ﻿{
   "xmqp": {
     "spottedTime": 9,
-    "minimapClicksTime": 5,
-    "minimapClicksColor": "{{c:xr}}"
+    "minimapDrawTime": 5,
+    "minimapDrawLineThickness": 1,
+    "minimapDrawColor": "{{c:xr}}",
+    "minimapDrawAlpha": 80
   }
 }
