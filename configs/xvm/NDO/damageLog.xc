@@ -20,7 +20,7 @@
         "air_strike": "<font face='NDO'>&#x0058;</font>"
       },
       "c:dmg-kind": { 
-        "shot": "#FCFCFC",        
+        "shot": "#FCFCFC",
         "fire": "#FF6655",
         "ramming": "#998855",
         "world_collision": "#228855",
@@ -165,7 +165,6 @@
     },
     "logAlt": {
       "$ref": { "path":"damageLog.log" },
-      "showHitNoDamage": false,
       "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='14'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{dmg-ratio}}%<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{name}}</font></font></textformat>"
     },
     "logAltBackground": {

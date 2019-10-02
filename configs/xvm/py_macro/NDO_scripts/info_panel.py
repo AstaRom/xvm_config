@@ -8,19 +8,19 @@ from math import degrees
 #####################################################################
 # private
 
-def _typeDescriptor():
-    vehicle = _vehicle()
-    return None if not vehicle else vehicle.typeDescriptor
-
 def _vehicle():
     vehicle = target()
     if not vehicle:
         vehicle = player().getVehicleAttached()
     return vehicle
 
+def _typeDescriptor():
+    vehicle = _vehicle()
+    return None if not vehicle else vehicle.typeDescriptor
+
 def _gunShots():
-    typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else typeDescriptor.gun.shots
+    td = _typeDescriptor()
+    return None if not td else td.gun.shots
 
 #####################################################################
 # handlers

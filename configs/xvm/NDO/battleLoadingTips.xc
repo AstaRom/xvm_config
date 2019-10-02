@@ -21,8 +21,8 @@
     "vehicleIconOffsetXLeft": -3,
     "vehicleIconOffsetXRight": 0,
     "darkenNotReadyIcon": false,
-    "formatLeftNick": "<font size='14'>{{.custom_texts.name.{{name}}|{{name%.15s~..}}}} <font color='{{topclan=top?#ff5500|#ff9900}}'>{{clan}}</font></font>",
-    "formatRightNick": "<font size='14'><font color='{{topclan=top?#ff5500|#ff9900}}'>{{clan}}</font> {{.custom_texts.name.{{name}}|{{name%.15s~..}}}}</font>",
+    "formatLeftNick": "<font size='14'>{{.custom_texts.name.{{name}}|{{name%.15s~..}}}} <font color='{{topclan=top?#FF5500|#FF9900}}'>{{clan}}</font></font>",
+    "formatRightNick": "<font size='14'><font color='{{topclan=top?#FF5500|#FF9900}}'>{{clan}}</font> {{.custom_texts.name.{{name}}|{{name%.15s~..}}}}</font>",
     "formatLeftVehicle": "",
     "formatRightVehicle": "",
     "extraFieldsLeft": [

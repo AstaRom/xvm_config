@@ -1,8 +1,8 @@
 ﻿{
   "custom_texts": {
     "name": {
-      "night_dragon_on": "<font color='#96ff00'><b>«night_dragon_on»</b></font>",
-      "night_dragon_on_RU": "<font color='#96ff00'><b>«night_dragon_on»</b></font>"
+      "night_dragon_on": "<font color='#96FF00'><b>«night_dragon_on»</b></font>",
+      "night_dragon_on_RU": "<font color='#96FF00'><b>«night_dragon_on»</b></font>"
     },
     "carousel": {
       "nation": {

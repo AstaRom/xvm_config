@@ -22,7 +22,7 @@ def l10n(l10n):
 #####################################################################
 # handlers > dmg_count
 
-@xvm.export('high_сaliber', deterministic=False)
+@xvm.export('high_caliber', deterministic=False)
 def high_caliber(dmg_total):
     return dmg_count.high_caliber(dmg_total)
 

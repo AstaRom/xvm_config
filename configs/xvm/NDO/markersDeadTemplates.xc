@@ -71,8 +71,8 @@
       "x": 0,
       "y": -20,
       "alpha": 100,
-      "textFormat": { "font": "$FieldFont", "size": 14, "color": null, "align": "center", "bold": true, "italic": false },
       "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 1, "strength": 2 },
+      "textFormat": { "font": "$FieldFont", "size": 14, "color": null, "align": "center", "bold": true, "italic": false },
       "format": "{{vehicle}}"
     },
     "playerName": {
@@ -81,9 +81,9 @@
       "x": 0,
       "y": -35,
       "alpha": 100,
-      "textFormat": { "font": "$FieldFont", "size": 14, "color": null, "align": "center", "bold": true, "italic": false },
       "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 1, "strength": 2 },
-      "format": "{{name%.16s~..}} <font color='{{topclan=top?#ff5500|#ff9900}}'>{{clan}}</font>"
+      "textFormat": { "font": "$FieldFont", "size": 14, "color": null, "align": "center", "bold": true, "italic": false },
+      "format": "{{name%.16s~..}} <font color='{{topclan=top?#FF5500|#FF9900}}'>{{clan}}</font>"
     }
   }
 }

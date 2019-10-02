@@ -5,7 +5,7 @@
     "distanceOffset": -5,
     "hideProgressBar": false,
     "ally": {
-      "сolor": null,
+      "color": null,
       "title": {
         "x": 0,
         "y": 0,
@@ -36,7 +36,7 @@
       }
     },
     "enemy": {
-      "сolor": null,
+      "color": null,
       "title": {
         "x": 0,
         "y": 0,

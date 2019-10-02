@@ -85,8 +85,8 @@
       "x": 0,
       "y": -36,
       "alpha": 100,
-      "textFormat": { "font": "$FieldFont", "size": 13, "color": null, "align": "center", "bold": false, "italic": false },
       "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 6, "strength": 2 },
+      "textFormat": { "font": "$FieldFont", "size": 13, "color": null, "align": "center", "bold": false, "italic": false },
       "format": "{{vehicle}}{{turret}}"
     },
     "playerName": {
@@ -95,8 +95,8 @@
       "x": 0,
       "y": -36,
       "alpha": 100,
-      "textFormat": { "font": "$FieldFont", "size": 13, "color": null, "align": "center", "bold": false, "italic": false },
       "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 6, "strength": 2 },
+      "textFormat": { "font": "$FieldFont", "size": 13, "color": null, "align": "center", "bold": false, "italic": false },
       "format": "{{name%.16s~..}}{{clan}}"
     },
     "hp": {
@@ -105,8 +105,8 @@
       "x": 0,
       "y": -20,
       "alpha": 100,
-      "textFormat": { "font": "$FieldFont", "size": 11, "color": "0xFCFCFC", "align": "center", "bold": true, "italic": false },
       "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 4, "strength": 1 },
+      "textFormat": { "font": "$FieldFont", "size": 11, "color": "0xFCFCFC", "align": "center", "bold": true, "italic": false },
       "format": "{{hp}} / {{hp-max}}"
     },
     "hp_ratio": {
@@ -115,8 +115,8 @@
       "x": 0,
       "y": -20,
       "alpha": 100,
-      "textFormat": { "font": "$FieldFont", "size": 11, "color": "0xFCFCFC", "align": "center", "bold": true, "italic": false },
       "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 4, "strength": 1 },
+      "textFormat": { "font": "$FieldFont", "size": 11, "color": "0xFCFCFC", "align": "center", "bold": true, "italic": false },
       "format": "{{hp-ratio}}%"
     },
     "eff_marker": {

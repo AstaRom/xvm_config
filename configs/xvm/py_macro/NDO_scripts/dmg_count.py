@@ -21,7 +21,7 @@ max_hp_enemy = 0
 #####################################################################
 # handlers
 
-#@xvm.export('high_сaliber', deterministic=False)
+#@xvm.export('high_caliber', deterministic=False)
 def high_caliber(dmg_total):
     global actual_arenaUniqueID, max_hp_enemy
     arenaUniqueID = BigWorld.player().arenaUniqueID
