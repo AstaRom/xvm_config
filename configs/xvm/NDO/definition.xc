@@ -4,7 +4,7 @@
     "date": "Конфиг от 30.09.17",
     "description": "Config for XVM",
     "gameVersion": "0.9.20.0",
-    "modMinVersion": "7.0.1",
+    "modMinVersion": "7.0.2",
     "url": "https://bitbucket.org/night_dragon_on/ndo_config"
   }
 }
