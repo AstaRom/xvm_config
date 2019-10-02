@@ -50,7 +50,7 @@
       "bootcamp": "bootcamp",
       "epic_random": "epic_random",
       "epic_random_training": "epic_random_training",
-      "event_battles_2": "",
+      "event_battles_2": "event_battles_2",
       "epic_battle": "epic_battle"
     },
     "topclan": {

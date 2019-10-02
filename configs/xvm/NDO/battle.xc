@@ -10,7 +10,8 @@
     "battleHint": {
       "hideTrajectoryView": false,
       "hideSiegeIndicator": false,
-      "hideQuestProgress": false
+      "hideQuestProgress": false,
+      "hideHelpScreen": false
     },
     "elements": ${"elements.xc":"elements"},
     "camera": ${"camera.xc":"camera"},

@@ -17,8 +17,7 @@
         "poland": "poland_chekers",
         "sweden": "swedish_flag",
         "italy": "italian_flag"
-      },
-      "type": "{{v.type={{l10n:LT}}?lightTank}}{{v.type={{l10n:MT}}?mediumTank}}{{v.type={{l10n:HT}}?heavyTank}}{{v.type={{l10n:SPG}}?SPG}}{{v.type={{l10n:TD}}?AT-SPG}}"
+      }
     },
     "battleLabels": {
       "info_panel": "<textformat tabstops='[5,150,214]'><font size='0'>.</font><tab><font color='#FF9900'>{{py:vehicle_name}}</font><tab>{{py:l10n('reload')}}:<tab>{{py:gun_reload_equip(1, 1, 0, 0)}} {{py:l10n('sec')}}</textformat>
