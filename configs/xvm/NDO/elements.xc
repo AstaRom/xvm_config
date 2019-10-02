@@ -9,10 +9,12 @@
         "$delay": 1,
         "y": 10,
         "shadow": {
-          "visible": false
+          "visible": false,
+          "alpha": 0
         },
         "background": {
-          "visible": false
+          "visible": false,
+          "alpha": 0
         },
         "secondsTF": {
           "y": 2,
@@ -26,10 +28,8 @@
           "htmlText": "<TEXTFORMAT INDENT=\"0\" LEFTMARGIN=\"0\" RIGHTMARGIN=\"0\" LEADING=\"2\"><P ALIGN=\"RIGHT\"><FONT FACE=\"$TitleFont\" SIZE=\"20\" COLOR=\"#FCFCFC\" KERNING=\"0\">00</FONT></P></TEXTFORMAT>"
         },
         "otBackground": {
-          "visible": false
-        },
-        "overtimeIcon": {
-          "visible": false
+          "visible": false,
+          "alpha": 0
         }
       },
 
@@ -42,18 +42,7 @@
       // endWarningPanel
 
       "endWarningPanel": {
-        "y": 45,     
-        "timer": {
-          "timeText": {
-            "visible": true
-          },
-          "infoText": {
-            "visible": true
-          }
-        },
-        "background": {
-          "visible": true
-        }
+        "y": 45
       },
 
       // fragCorrelationBar
@@ -78,25 +67,28 @@
         "listLeft": {
           "inviteReceivedIndicator": {
             "inviteIcon": {
-              "visible": false
+              "visible": false,
+              "alpha": 0
             },
             "inviteTF": {
-              "visible": false
+              "visible": false,
+              "alpha": 0
             }
           }
         },
         "listRight": {
           "inviteReceivedIndicator": {
             "inviteIcon": {
-              "visible": false
+              "visible": false,
+              "alpha": 0
             },
             "inviteTF": {
-              "visible": false
+              "visible": false,
+              "alpha": 0
             }
           }
         },
         "panelSwitch": {
-          "visible": true,
           "y": 40
         }
       },
@@ -106,8 +98,9 @@
       "prebattleTimer": {
         "visible": false,
         "alpha": 0,
-        "qpInfoFlagContainer": {
-          "visible": false
+        "infoContainer": {
+          "visible": false,
+          "alpha": 0
         }
       },
 
@@ -115,13 +108,12 @@
 
       "questProgressTopView": {
         "$interval": 25000,
-        "visible": true,
         "y": "{{py:math_sub({{py:screen_height}}, 120)}}",
         "flag": {
-          "visible": false
+          "visible": false,
+          "alpha": 0
         },
         "shadow": {
-          "visible": true,
           "width": 1000,
           "height": 200
         }
@@ -137,13 +129,14 @@
       // superPlatoonPanel
 
       "superPlatoonPanel": {
-        "visible": true,
         "platoonMembersPanel": {
           "platoonTitleTF": {
-            "visible": false
+            "visible": false,
+            "alpha": 0
           },
           "background": {
-            "visible": false
+            "visible": false,
+            "alpha": 0
           },
           "squadIcon": {
             "visible": false,

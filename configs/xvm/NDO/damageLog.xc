@@ -7,6 +7,10 @@
       "moveInBattle": false,
       "x": 235,
       "y": -15,
+      "showHitNoDamage": false,
+      "groupDamagesFromFire": true,
+      "groupDamagesFromRamming_WorldCollision": true,
+      "groupDamageFromArtAndAirstrike": true,
       "dmg-kind": {
         "shot": "{{type-shell}}",
         "fire": "<font face='NDO'>&#x0057;</font>",
@@ -143,9 +147,6 @@
         "silver-shell": "#E2E2E2",
         "unknown": ""
       },
-      "showHitNoDamage": false,
-      "groupDamagesFromFire": true,
-      "groupDamagesFromRamming_WorldCollision": true,
       "shadow": {
         "distance": 1,
         "angle": 90,
@@ -169,7 +170,7 @@
       "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{dmg-ratio}}%<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{vtype}} {{name}}</font></textformat>"
     },
     "logAltBackground": {
-      "$ref": { "path": "damageLog.logAlt" },
+      "$ref": { "path": "damageLog.logBackground" },
       "formatHistory": ""
     },
     "lastHit": {
