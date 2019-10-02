@@ -1,7 +1,7 @@
 ﻿{
   "labels": {
     "formats": [
-      ${ "battleLabelsTemplates.xc":"def.totalHP" }
+      ${ "battleLabelsTemplates.xc":"def.hp_teams_sign" }
     ]
   }
 }

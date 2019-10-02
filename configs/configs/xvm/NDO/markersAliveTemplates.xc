@@ -159,8 +159,8 @@
       "color": null,
       "font": { "name": "NDO", "size": 38, "align": "center", "bold": false, "italic": false },
       "shadow": { "alpha": 90, "color": "0x000000", "angle": 45, "distance": 0, "size": 2, "strength": 200 },
-      "format": "{{x-spotted?&#x0051;|{{x-overturned?&#x0052;}}}}"
-      //"format": "{{x-spotted?&#x0051;|{{x-overturned?&#x0052;|{{x-fire?&#x0053;|{{x-drowning?&#x0054;}}}}}}}}"
+      "format": "{{x-spotted?&#x0053;|{{x-overturned?&#x0054;}}}}"
+      //"format": "{{x-spotted?&#x0053;|{{x-overturned?&#x0054;|{{x-fire?&#x0055;|{{x-drowning?&#x0056;}}}}}}}}"
     }
   }
 }

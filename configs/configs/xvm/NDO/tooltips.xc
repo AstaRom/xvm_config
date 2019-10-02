@@ -1,6 +1,7 @@
 {
   "tooltips": {
     "combineIcons": true,
+    "hideSimplifiedVehParams": true,
     "hideBottomText": true,
     "tooltipsDelay": 0.4,
     "fontSize": 12,
@@ -9,7 +10,8 @@
     "lightTank": [
       "maxHealth",
       "circularVisionRadius",
-      "camo_coeff",
+      "invisibilityStillFactor",
+      "invisibilityMovingFactor",
       "TEXT:<font color='#DACFAD'><b>{{l10n:armor}}</b></font>",
       "turretArmor",
       "hullArmor",
@@ -30,11 +32,12 @@
       "speedLimits",
       "terrainResistance",
       "crewRolesIcons"
-    ],
+      ],
     "mediumTank": [
       "maxHealth",
       "circularVisionRadius",
-      "camo_coeff",
+      "invisibilityStillFactor",
+      "invisibilityMovingFactor",
       "TEXT:<font color='#DACFAD'><b>{{l10n:armor}}</b></font>",
       "turretArmor",
       "hullArmor",
@@ -59,6 +62,8 @@
     "heavyTank": [
       "maxHealth",
       "circularVisionRadius",
+      "invisibilityStillFactor",
+      "invisibilityMovingFactor",
       "TEXT:<font color='#DACFAD'><b>{{l10n:armor}}</b></font>",
       "turretArmor",
       "hullArmor",
@@ -82,7 +87,8 @@
     "TD": [
       "maxHealth",
       "circularVisionRadius",
-      "camo_coeff",
+      "invisibilityStillFactor",
+      "invisibilityMovingFactor",
       "TEXT:<font color='#DACFAD'><b>{{l10n:armor}}</b></font>",
       "turretArmor",
       "hullArmor",
@@ -106,7 +112,8 @@
     "SPG": [
       "maxHealth",
       "circularVisionRadius",
-      "camo_coeff",
+      "invisibilityStillFactor",
+      "invisibilityMovingFactor",
       "TEXT:<font color='#DACFAD'><b>{{l10n:firepower}}</b></font>",
       "shootingRadius",
       "damageAvgSummary",

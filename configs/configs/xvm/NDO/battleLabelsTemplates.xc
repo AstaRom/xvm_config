@@ -1,6 +1,6 @@
 ﻿{
   "def": {
-    "totalHP": {
+    "hp_teams_sign": {
       "enabled": false,
       "updateEvent": "ON_PLAYERS_HP_CHANGED",
       "x": 0,
@@ -11,10 +11,10 @@
       "autoSize": "none",
       "align": "center", 
       "valign": "top",
-      "antiAliasType": "advanced",     
-      "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 1.5 }, 
+      "antiAliasType": "advanced",
+      "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 1.5 },
       "currentFieldDefaultStyle": { "color": "0xFCFCFC", "size": 16, "align": "center" },
-      "format": "<font color='#{{py:xvm.frag_correlation.color_hp()}}'><b>{{py:xvm.frag_correlation.ally()}} {{py:xvm.frag_correlation.sign()}} {{py:xvm.frag_correlation.enemy()}}</b></font>"
+      "format": "<font color='#{{py:xvm.hp_panel.color_sign_standart()}}'><b>{{py:xvm.hp_panel.current_hp(0)}} {{py:xvm.hp_panel.sign_hp()}} {{py:xvm.hp_panel.current_hp(1)}}</b></font>"
     }
   }
 }
