@@ -12,8 +12,7 @@
       "hideTrajectoryView": true,
       "hideSiegeIndicator": true,
       "hideQuestProgress": true,
-      "hideHelpScreen": true,
-      "hideRadarHint": true
+      "hideHelpScreen": true
     },
     "elements": ${ "elements.xc": "elements" },
     "camera": ${ "camera.xc": "camera" },
