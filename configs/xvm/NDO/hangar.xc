@@ -118,6 +118,27 @@
       "shiftX": 0,
       "shiftY": 0
     },
+    "commonQuests": {
+      "enabled": true,
+      "alpha": 100,
+      "rotation": 0,
+      "shiftX": 0,
+      "shiftY": 0
+    },
+    "personalQuests": {
+      "enabled": true,
+      "alpha": 100,
+      "rotation": 0,
+      "shiftX": 0,
+      "shiftY": 0
+    },
+    "vehicleName": {
+      "enabled": true,
+      "alpha": 100,
+      "rotation": 0,
+      "shiftX": 0,
+      "shiftY": 0
+    },
     "showBuyPremiumButton": true,
     "showPremiumShopButton": false,
     "notificationsButtonType": "blink",
