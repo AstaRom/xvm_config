@@ -7,7 +7,6 @@
     "allowHpInPanelsAndMinimap": false,
     "allowMarksOnGunInPanelsAndMinimap": false,
     "allowLabelsOnBattleInterface": false,
-    "allowXmqpMacrosInPanels": false,
     "clockFormat": "H:N",
     "clanIconsFolder": "clanicons/",
     "sixthSenseIcon": "xvm://res/SixthSense.png",

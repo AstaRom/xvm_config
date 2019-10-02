@@ -3,8 +3,6 @@
     "winChances": {
       "enabled": false,
       "updateEvent": "ON_VEHICLE_DESTROYED",
-      "hotKeyCode": null,
-      "onHold": true,
       "x": 0,
       "y": -85,
       "width": 100,
@@ -14,9 +12,9 @@
       "align": "center", 
       "valign": "bottom",
       "antiAliasType": "advanced", 
-      "shadow": { "distance": 1, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 25 }, 
-      "currentFieldDefaultStyle": { "color": "0xFCFCFC", "name": "$FieldFont", "size": 15, "align": "center", "bold": false, "italic": false },
-      "format": "<font color='{{c:winChance}}'>{{chancesStatic}}</font> / <font color='{{c:winChance}}'>{{chancesLive}}</font>"
+      "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 1.5 }, 
+      "currentFieldDefaultStyle": { "color": "0xFCFCFC", "size": 15 },
+      "format": "{{xvm-stat?{{chancesStatic}}{{chancesStatic?&nbsp;/&nbsp;|}}{{chancesLive}}}}"
     }
   }
 }

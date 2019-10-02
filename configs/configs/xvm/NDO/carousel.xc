@@ -38,7 +38,7 @@
       //{ "x": 0, "y": 0, "h": 100, "w": 160, "src": "cfg://NDO/img/carousel/bgFrame.png" },
       //{ "x": 0, "y": 0, "h": 32, "w": 160, "bgColor": "0x000000", "alpha": 35 },
       //{ "x": 0, "y": 68, "h": 32, "w": 160, "bgColor": "0x000000", "alpha": 35 },
-      //{ "x": 0, "y": 0, "h": 102, "w": 162, "src": "img://gui/maps/icons/vehicle/{{v.sysname}}.png" },
+      //{ "x": 0, "y": 0, "h": 100, "w": 159, "src": "img://gui/maps/icons/vehicle/{{v.sysname}}.png" },
       { "x": 3, "y": 3, "h": 26, "w": 26, "src": "img://gui/maps/vehicles/decals/{{.custom_texts.carousel.nation.{{v.nation}}}}.dds" },
       //{ "x": 1, "y": 4, "h": 24, "w": 30, "src": "cfg://NDO/img/carousel/vtype/{{.custom_texts.carousel.type}}{{v.elite?_elite}}.png" },
       { "x": 3, "y": 70, "h": 28, "w": 26, "src": "img://gui/maps/icons/achievement/markOfMastery{{v.mastery}}.png" },

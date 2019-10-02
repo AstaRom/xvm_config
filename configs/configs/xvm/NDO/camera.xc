@@ -1,7 +1,6 @@
 ﻿{
   "camera": {
     "enabled": true,
-    "noScroll": false,
     "arcade": {
       "distRange": [2, 100],
       "startDist": null,
@@ -19,7 +18,7 @@
       "dynamicCameraEnabled": true
     },
     "sniper": {
-      "zooms": [2, 4, 8],
+      "zooms": [2, 4, 8, 16, 25],
       "startZoom": null,
       "zoomIndicator": {
         "enabled": false,

@@ -1,6 +1,5 @@
 ﻿{
   "login": {
-    "skipIntro": true,
     "saveLastServer": true,
     "autologin": false,
     "confirmOldReplays": true,

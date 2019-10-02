@@ -1,32 +1,68 @@
 ﻿{
   "captureBar": {
     "enabled": true,
-    "allyColor": null,
-    "enemyColor": null,
-    "primaryTitleOffset": 4,
-    "appendPlus" : true,
-    "enemy": {
-      "primaryTitleFormat": "<font size='15' color='#FCFCFC'><font color='#FFCC66'><b>{{points}}%</b></font>{{extra}}</font>",
-      "secondaryTitleFormat": "",
-      "captureDoneFormat": "<font size='17' color='#FFCC66'>{{l10n:enemyBaseCaptured}}</font>",
-      "extra": " - {{l10n:Capturers}}: <font color='#FFCC66'><b>{{tanks}}</b></font> {{l10n:Timeleft}}: <font color='#FFCC66'><b>{{time}}</b></font>",
-      "shadow": {
-        "color": "0x000000",
-        "alpha": 50,
-        "blur": 6,
-        "strength": 3
+    "distanceOffset": -20,
+    "hideProgressBar": false,
+    "ally": {
+      "сolor": null,
+      "title": {
+        "x": 0,
+        "y": -3,
+        "format": null,
+        "done": "<font size='16' color='#FFCC66'><b>{{l10n:enemyBaseCaptured}}</b></font>",
+        "shadow": { "color": "0x000000", "alpha": 50, "blur": 6, "angle": 45, "strength": 2 }
+      },
+      "players": {
+        "x": 0,
+        "y": -4,
+        "format": "<font size='15' color='#FFCC66'><font face='NDO' size='20'>&#x004F;</font> <b>{{cap.tanks}}</b></font>",
+        "done": null,
+        "shadow": { "color": "0x000000", "alpha": 50, "blur": 6, "angle": 45, "strength": 2 }
+      },
+      "timer": {
+        "x": 0,
+        "y": -4,
+        "format": "<font size='15' color='#FFCC66'><font face='NDO' size='20'>&#x0050;</font> <b>{{cap.time}}</b></font>",
+        "done": null,
+        "shadow": { "color": "0x000000", "alpha": 50, "blur": 6, "angle": 45, "strength": 2 }
+      },
+      "points": {
+        "x": 0,
+        "y": -26,
+        "format": "<font size='15' color='#FFCC66'><b>{{cap.points}}%</b></font>",
+        "done": null,
+        "shadow": { "color": "0x000000", "alpha": 50, "blur": 6, "angle": 45, "strength": 2 }
       }
     },
-    "ally": {
-      "primaryTitleFormat": "<font size='15' color='#FCFCFC'><font color='#FFCC66'><b>{{points}}%</b></font>{{extra}}</font>",
-      "secondaryTitleFormat": "",
-      "captureDoneFormat": "<font size='17' color='#FFCC66'>{{l10n:enemyBaseCaptured}}</font>",
-      "extra": " - {{l10n:Capturers}}: <font color='#FFCC66'><b>{{tanks}}</b></font> {{l10n:Timeleft}}: <font color='#FFCC66'><b>{{time}}</b></font>",
-      "shadow": {
-        "color": "0x000000",
-        "alpha": 50,
-        "blur": 6,
-        "strength": 3
+    "enemy": {
+      "сolor": null,
+      "title": {
+        "x": 0,
+        "y": -3,
+        "format": null,
+        "done": "<font size='16' color='#FFCC66'><b>{{l10n:allyBaseCaptured}}</b></font>",
+        "shadow": { "color": "0x000000", "alpha": 50, "blur": 6, "angle": 45, "strength": 2 }
+      },
+      "players": {
+        "x": 0,
+        "y": -4,
+        "format": "<font size='15' color='#FFCC66'><font face='NDO' size='20'>&#x004F;</font> <b>{{cap.tanks}}</b></font>",
+        "done": null,
+        "shadow": { "color": "0x000000", "alpha": 50, "blur": 6, "angle": 45, "strength": 2 }
+      },
+      "timer": {
+        "x": 0,
+        "y": -4,
+        "format": "<font size='15' color='#FFCC66'><font face='NDO' size='20'>&#x0050;</font> <b>{{cap.time}}</b></font>",
+        "done": null,
+        "shadow": { "color": "0x000000", "alpha": 50, "blur": 6, "angle": 45, "strength": 2 }
+      },
+      "points": {
+        "x": 0,
+        "y": -26,
+        "format": "<font size='15' color='#FFCC66'><b>{{cap.points}}%</b></font>",
+        "done": null,
+        "shadow": { "color": "0x000000", "alpha": 50, "blur": 6, "angle": 45, "strength": 2 }
       }
     }
   }

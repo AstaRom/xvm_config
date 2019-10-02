@@ -2,20 +2,23 @@
   "sounds": {
     "enabled": true,
     "soundBanks": {
-      "hangar": "xvm.bnk;",
-      "battle": "xvm.bnk;"
+      "hangar": "xvm.bnk",
+      "battle": "xvm.bnk"
     },
     "logSoundEvents": false,
     "soundMapping": {
+      "lightbulb": "lightbulb",
       "xvm_sixthSense": "emptyEvent",
       "xvm_sixthSenseRudy": "emptyEvent",
       "xvm_fireAlert": "emptyEvent",
       "xvm_ammoBay": "emptyEvent",
       "xvm_enemySighted": "emptyEvent",
-      "lightbulb": "lightbulb",
-      "vo_fire_started": "vo_fire_started",
-      "vo_ammo_bay_damaged": "vo_ammo_bay_damaged",
-      "enemy_sighted_for_team": "enemy_sighted_for_team"
+      "xvm_battleEnd_5_min": "emptyEvent",
+      "xvm_battleEnd_3_min": "emptyEvent",
+      "xvm_battleEnd_2_min": "emptyEvent",
+      "xvm_battleEnd_1_min": "emptyEvent",
+      "xvm_battleEnd_30_sec": "emptyEvent",
+      "xvm_battleEnd_5_sec": "emptyEvent"
     }
   }
 }
