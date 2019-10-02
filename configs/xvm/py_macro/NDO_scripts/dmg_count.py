@@ -24,8 +24,8 @@ def high_caliber(dmg_total):
     global actual_arenaUniqueID, max_hp_enemy
     arenaUniqueID = BigWorld.player().arenaUniqueID
     if actual_arenaUniqueID != arenaUniqueID:
-      actual_arenaUniqueID = arenaUniqueID
-      max_hp_enemy = 0
+        actual_arenaUniqueID = arenaUniqueID
+        max_hp_enemy = 0
     if panel.teams_totalhp[1] > max_hp_enemy:
         max_hp_enemy = panel.teams_totalhp[1]
     battletype = BigWorld.player().arena.guiType

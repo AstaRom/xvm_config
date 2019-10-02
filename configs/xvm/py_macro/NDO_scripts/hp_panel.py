@@ -35,8 +35,8 @@ def percent_hp(current_team):
     global actual_arenaUniqueID, max_hp_team
     arenaUniqueID = BigWorld.player().arenaUniqueID
     if actual_arenaUniqueID != arenaUniqueID:
-      actual_arenaUniqueID = arenaUniqueID
-      max_hp_team[current_team] = 0
+        actual_arenaUniqueID = arenaUniqueID
+        max_hp_team = [0, 0]
     if panel.teams_totalhp[current_team] > max_hp_team[current_team]:
         max_hp_team[current_team] = panel.teams_totalhp[current_team]
     return round((100. * current_hp(current_team)) / max_hp_team[current_team], 0) if max_hp_team[current_team] != 0 else None

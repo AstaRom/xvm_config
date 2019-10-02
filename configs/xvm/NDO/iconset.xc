@@ -1,7 +1,7 @@
 ﻿{
   "iconset": {
-    "battleLoadingAlly": "../../../../configs/xvm/iconset/contour_ally",
-    "battleLoadingEnemy": "../../../../configs/xvm/iconset/contour_enemy",
+    "battleLoadingLeftAtlas": "../../../../configs/xvm/iconset/contour_ally",
+    "battleLoadingRightAtlas": "../../../../configs/xvm/iconset/contour_enemy",
     "playersPanelLeftAtlas": "../../../../configs/xvm/iconset/contour_ally",
     "playersPanelRightAtlas": "../../../../configs/xvm/iconset/contour_enemy",
     "fullStatsLeftAtlas": "../../../../configs/xvm/iconset/contour_ally",
