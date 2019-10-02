@@ -1,6 +1,6 @@
 ﻿{
   "def": {
-    // Иконка типа танка
+    // Иконка типа техники
     "vehicleIcon": {
       "enabled": true,
       "showSpeaker": false,
@@ -11,7 +11,7 @@
       "offsetX": 0,
       "offsetY": 0
     },
-    // Индикатор здоровья
+    // Индикатор запаса прочности
     "healthBar": {
       "enabled": true,
       "x": -36,
@@ -195,8 +195,8 @@
       "alpha": "{{hp-ratio<25?0|70}}",
       "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 90, "blur": 2, "strength": 2 },
       "textFormat": { "font": "NDO", "size": 38, "color": null, "align": "center", "bold": false, "italic": false },
-      "format": "{{x-spotted?&#x005D;|{{x-overturned?&#x005E;}}}}"
-      //"format": "{{x-spotted?&#x005D;|{{x-overturned?&#x005E;|{{x-fire?&#x005F;|{{x-drowning?&#x0060;}}}}}}}}"
+      "format": "{{x-spotted?&#x0061;|{{x-overturned?&#x0062;}}}}"
+      //"format": "{{x-spotted?&#x0061;|{{x-overturned?&#x0062;|{{x-fire?&#x0063;|{{x-drowning?&#x0064;}}}}}}}}"
     }
   }
 }

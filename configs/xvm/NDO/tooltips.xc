@@ -3,6 +3,7 @@
     "combineIcons": true,
     "hideSimplifiedVehParams": true,
     "hideBottomText": true,
+    "showXpToUnlockVeh": true,
     "tooltipsDelay": 0.4,
     "fontSize": 12,
     "fontName": "$TextFont",

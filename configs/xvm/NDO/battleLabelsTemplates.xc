@@ -8,7 +8,7 @@
       "width": 250,
       "height": 300,
       "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x000000", "alpha": 75, "blur": 2, "strength": 1 },
-      "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFCFCFC", "align": "left", "bold": true, "leading": 5 },
+      "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFCFCFC", "align": "left", "bold": true },
       "format": "{{py:xvm.hitLog.log}}"
     },
     "total_efficiency": {
@@ -19,8 +19,8 @@
       "width": 250,
       "height": 25,
       "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x000000", "alpha": 75, "blur": 2, "strength": 1 },
-      "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFCFCFC", "align": "left", "bold": true, "leading": -4 },
-      "format": "<textformat tabstops='[{{py:total_tabstops('52,107,157', '59,121,178')}}]'><font face='NDO' size='21'>&#x005A;</font> {{py:total_damage}}<tab><font face='NDO' size='21'>&#x005B;</font> {{py:total_assist}}<tab><font face='NDO' size='18'>&#x005C;</font> {{py:total_blocked}}{{my-vtype-key=SPG?<tab><font face='NDO' size='16'>&#x005D;</font> {{py:total_stun}}}}</textformat>"
+      "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFCFCFC", "align": "left", "bold": true },
+      "format": "{{py:total_threshold?<textformat tabstops='[59,121,178]'><font face='NDO' size='21'>&#x0053;</font> {{py:total_damage%5d}}<tab><font face='NDO' size='21'>&#x0054;</font> {{py:total_assist%5d}}<tab><font face='NDO' size='18'>&#x0055;</font> {{py:total_blocked%5d}}{{my-vtype-key=SPG?<tab><font face='NDO' size='16'>&#x0056;</font> {{py:total_stun%5d}}}}</textformat>|<textformat tabstops='[52,107,157]'><font face='NDO' size='21'>&#x0053;</font> {{py:total_damage%4d}}<tab><font face='NDO' size='21'>&#x0054;</font> {{py:total_assist%4d}}<tab><font face='NDO' size='18'>&#x0055;</font> {{py:total_blocked%4d}}{{my-vtype-key=SPG?<tab><font face='NDO' size='16'>&#x0056;</font> {{py:total_stun%4d}}}}</textformat>}}"
     },
     "damage_log": {
       "enabled": ${ "@settings.xc": "settings.battleLabels.damage_log" },
@@ -31,7 +31,7 @@
       "height": 220,
       "screenVAlign": "bottom",
       "shadow": { "enabled": true, "distance": 1, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 5, "strength": 3 },
-      "textFormat": { "font": "$UniversCondC", "size": 18, "color": "0xE2E2E2", "align": "left", "valign": "top" },
+      "textFormat": { "font": "$UniversCondC", "size": 14, "color": "0xE2E2E2", "align": "left", "valign": "top" },
       "format": "{{py:xvm.damageLog.log}}"
     },
     "rt_engine": {

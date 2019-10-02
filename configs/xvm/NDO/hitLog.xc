@@ -12,15 +12,15 @@
       "addToEnd": false,
       "dmg-kind": {
         "shot": "{{type-shell}}",
-        "fire": "<font face='NDO'>&#x0053;</font>",
-        "ramming": "<font face='NDO'>&#x0054;</font>",
-        "world_collision": "<font face='NDO'>&#x0055;</font>",
-        "drowning": "<font face='NDO'>&#x0047;</font>",
-        "overturn": "<font face='NDO'>&#x0056;</font>",
-        "death_zone": "DZ",
-        "gas_attack": "GA",
-        "art_attack": "<font face='NDO'>&#x0057;</font>",
-        "air_strike": "<font face='NDO'>&#x0058;</font>"
+        "fire": "<font face='NDO'>&#x0057;</font>",
+        "ramming": "<font face='NDO'>&#x0058;</font>",
+        "world_collision": "<font face='NDO'>&#x0059;</font>",
+        "drowning": "<font face='NDO'>&#x005A;</font>",
+        "overturn": "<font face='NDO'>&#x005B;</font>",
+        "death_zone": "<font face='NDO'>&#x005C;</font>",
+        "gas_attack": "<font face='NDO'>&#x005D;</font>",
+        "art_attack": "<font face='NDO'>&#x005E;</font>",
+        "air_strike": "<font face='NDO'>&#x005F;</font>"
       },
       "c:dmg-kind": {
         "shot": "#FFAA55",
@@ -32,20 +32,20 @@
         "death_zone": "#CCCCCC",
         "gas_attack": "#CCCCCC",
         "art_attack": "#CCCCCC",
-        "air_strike": "#CCCCCC"     
+        "air_strike": "#CCCCCC"
       },
       "dmg-kind-player": {
         "shot": "{{type-shell}}",
-        "fire": "<font face='NDO'>&#x0053;</font>",
-        "ramming": "<font face='NDO'>&#x0054;</font>",
-        "world_collision": "<font face='NDO'>&#x0055;</font>",
-        "drowning": "<font face='NDO'>&#x0047;</font>",
-        "overturn": "<font face='NDO'>&#x0056;</font>",
-        "death_zone": "DZ",
-        "gas_attack": "GA",
-        "art_attack": "<font face='NDO'>&#x0057;</font>",
-        "air_strike": "<font face='NDO'>&#x0058;</font>"
-      },      
+        "fire": "<font face='NDO'>&#x0057;</font>",
+        "ramming": "<font face='NDO'>&#x0058;</font>",
+        "world_collision": "<font face='NDO'>&#x0059;</font>",
+        "drowning": "<font face='NDO'>&#x005A;</font>",
+        "overturn": "<font face='NDO'>&#x005B;</font>",
+        "death_zone": "<font face='NDO'>&#x005C;</font>",
+        "gas_attack": "<font face='NDO'>&#x005D;</font>",
+        "art_attack": "<font face='NDO'>&#x005E;</font>",
+        "air_strike": "<font face='NDO'>&#x005F;</font>"
+      },
       "vtype": {
         "HT": "<font face='NDO' size='19'>&#x0043;</font>",
         "MT": "<font face='NDO' size='19'>&#x0042;</font>",
@@ -108,11 +108,11 @@
         "hollow_charge": "#CCCCCC",
         "not_shell": "#CCCCCC"
       },
-      "formatHistory": "<textformat leading='-5' tabstops='[30,39,69,78]'>{{dmg-player%4.4d}}<tab>|<tab><font color='{{c:dmg-kind}}'>{{dmg%4.4d}}</font><tab>|<tab>{{vtype}} {{vehicle}}{{alive? |{{blownup?<font face='NDO' size='16'> &#x0048;</font>|<font face='NDO' size='15'> &#x0047;</font>}}}}</textformat>"
+      "formatHistory": "<textformat tabstops='[30,39,69,78]' leading='-5'>{{dmg-player%4d}}<tab>|<tab><font color='{{c:dmg-kind}}'>{{dmg%4d}}</font><tab>|<tab>{{vtype}} {{vehicle}}{{alive? |{{blownup?<font face='NDO' size='16'> &#x0048;</font>|<font face='NDO' size='15'> &#x0047;</font>}}}}</textformat>"
     },
     "logAlt": {
       "$ref": { "path": "hitLog.log" },
-      "formatHistory": "<textformat leading='-5' tabstops='[30,39,69,78]'>{{dmg-player%4.4d}}<tab>|<tab><font color='{{c:dmg-kind}}'>{{dmg%4.4d}}</font><tab>|<tab>{{vtype}} {{name%.15s~..}}{{alive? |{{blownup?<font face='NDO' size='16'> &#x0048;</font>|<font face='NDO' size='15'> &#x0047;</font>}}}}</textformat>"
+      "formatHistory": "<textformat tabstops='[30,39,69,78]' leading='-5'>{{dmg-player%4d}}<tab>|<tab><font color='{{c:dmg-kind}}'>{{dmg%4d}}</font><tab>|<tab>{{vtype}} {{name%.15s~..}}{{alive? |{{blownup?<font face='NDO' size='16'> &#x0048;</font>|<font face='NDO' size='15'> &#x0047;</font>}}}}</textformat>"
     },
     "logBackground": {
       "$ref": { "path": "hitLog.log" },

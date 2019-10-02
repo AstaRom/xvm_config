@@ -1,6 +1,6 @@
 ﻿{
   "def": {
-    // Иконка типа танка
+    // Иконка типа техники
     "vehicleIcon": {
       "enabled": true,
       "showSpeaker": false,

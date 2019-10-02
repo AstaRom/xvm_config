@@ -9,15 +9,15 @@
       "y": -15,
       "dmg-kind": {
         "shot": "{{type-shell}}",
-        "fire": "<font face='NDO'>&#x0053;</font>",
-        "ramming": "<font face='NDO'>&#x0054;</font>",
-        "world_collision": "<font face='NDO'>&#x0055;</font>",
-        "drowning": "<font face='NDO'>&#x0047;</font>",
-        "overturn": "<font face='NDO'>&#x0056;</font>",
-        "death_zone": "DZ",
-        "gas_attack": "GA",
-        "art_attack": "<font face='NDO'>&#x0057;</font>",
-        "air_strike": "<font face='NDO'>&#x0058;</font>"
+        "fire": "<font face='NDO'>&#x0057;</font>",
+        "ramming": "<font face='NDO'>&#x0058;</font>",
+        "world_collision": "<font face='NDO'>&#x0059;</font>",
+        "drowning": "<font face='NDO'>&#x005A;</font>",
+        "overturn": "<font face='NDO'>&#x005B;</font>",
+        "death_zone": "<font face='NDO'>&#x005C;</font>",
+        "gas_attack": "<font face='NDO'>&#x005D;</font>",
+        "art_attack": "<font face='NDO'>&#x005E;</font>",
+        "air_strike": "<font face='NDO'>&#x005F;</font>"
       },
       "c:dmg-kind": { 
         "shot": "#FCFCFC",
@@ -32,7 +32,7 @@
         "air_strike": "#CCCCCC"
       },
       "splash-hit":{
-        "splash": "<font face='NDO'>&#x0059;</font>",
+        "splash": "<font face='NDO'>&#x0060;</font>",
         "no-splash": "<font color='{{c:costShell}}'>{{l10n:high_explosive}}</font>"
       },
       "type-shell": {
@@ -158,7 +158,7 @@
         "knockout": false,
         "quality": 1
       },
-      "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='14'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{vtype}} {{vehicle}}</font></font></textformat>"
+      "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{vtype}} {{vehicle}}</font></textformat>"
     },
     "logBackground": {
       "$ref": { "path": "damageLog.log" },
@@ -166,7 +166,7 @@
     },
     "logAlt": {
       "$ref": { "path": "damageLog.log" },
-      "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='14'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{dmg-ratio}}%<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{name}}</font></font></textformat>"
+      "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{dmg-ratio}}%<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{vtype}} {{name}}</font></textformat>"
     },
     "logAltBackground": {
       "$ref": { "path": "damageLog.logAlt" },

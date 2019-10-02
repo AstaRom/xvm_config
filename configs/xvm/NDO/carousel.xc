@@ -13,7 +13,7 @@
     "hideBuyTank": true,
     "hideBuySlot": false,
     "hideRestoreTank": true,
-    "showTotalSlots": false,    
+    "showTotalSlots": false,
     "showUsedSlots": true,
     "enableLockBackground": true,
     "filters": {

@@ -4,6 +4,7 @@
 from BigWorld import player, target
 from Avatar import PlayerAvatar
 from math import degrees
+from nations import NAMES
 
 from xfw import registerEvent
 from xfw_actionscript.python import as_event
@@ -86,7 +87,7 @@ def vehicle_type():
     elif td is not None and 'AT-SPG' in td.type.tags:
         vehType = 'TD'
     elif td is not None and 'SPG' in td.type.tags:
-        vehType = 'SPG'        
+        vehType = 'SPG'
     return vehType
 
 #@xvm.export('vehicle_name', deterministic=False)

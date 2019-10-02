@@ -7,6 +7,7 @@
     "showReferralButton": true,
     "showGeneralChatButton": false,
     "showPromoPremVehicle": false,
+    "showRewardWindow": true,
     "combatIntelligence": {
       "showPopUpMessages": false,
       "showUnreadCounter": false

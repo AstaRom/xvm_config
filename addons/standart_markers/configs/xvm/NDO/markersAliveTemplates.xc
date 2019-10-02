@@ -1,6 +1,6 @@
 ﻿{
   "def": {
-    // Иконка типа танка
+    // Иконка типа техники
     "vehicleIcon": {
       "enabled": true,
       "showSpeaker": false,
@@ -11,7 +11,7 @@
       "offsetX": 0,
       "offsetY": 0
     },
-    // Индикатор здоровья
+    // Индикатор запаса прочности
     "healthBar": {
       "enabled": true,
       "x": -41,

@@ -77,9 +77,9 @@ def destroyGUI(self):
     blocked = 0
     stun = 0
 
-#@xvm.export('total_tabstops', deterministic=False)
-def total_tabstops(a, b):
-    return b if damage > 9999 or assist > 9999 or blocked > 9999 or stun > 9999 else a
+#@xvm.export('total_threshold', deterministic=False)
+def total_threshold():
+    return 'threshold' if damage > 9999 or assist > 9999 or blocked > 9999 or stun > 9999 else None
 
 #@xvm.export('total_damage', deterministic=False)
 def total_damage():
