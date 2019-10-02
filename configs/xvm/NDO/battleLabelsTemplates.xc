@@ -159,14 +159,14 @@
       "updateEvent": "PY(ON_UPDATE_HP)",
       "x": 0,
       "y": 30,
-      "width": 150,
+      "width": 130,
       "height": 24,
       "alpha": 100,
       "align": "center",
       "screenHAlign": "center",
       "antiAliasType": "advanced",
       "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x000000", "alpha": 50, "blur": 4, "strength": 1.5 },
-      "textFormat": { "size": 16, "color": "0xFCFCFC", "align": "center" },
+      "textFormat": { "size": 19, "color": "0xFCFCFC", "align": "center" },
       "format": "<font color='#{{py:color_sign_hp}}'><b>{{py:current_hp(0)}} {{py:sign_hp}} {{py:current_hp(1)}}</b></font>"
     }
   }

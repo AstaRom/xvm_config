@@ -20,46 +20,46 @@
       { "value": 10, "alpha": 100 },
       { "value": 25, "alpha": 75 },
       { "value": 50, "alpha": 50 },
-      { "value": 101, "alpha": 0 }
+      { "value": 100, "alpha": 0 }
     ],
     "x": [
-      { "value": 16.5, "alpha": 100 },
-      { "value": 33.5, "alpha": 80 },
-      { "value": 52.5, "alpha": 60 },
-      { "value": 75.5, "alpha": 40 },
-      { "value": 92.5, "alpha": 20 },
+      { "value": 16, "alpha": 100 },
+      { "value": 33, "alpha": 80 },
+      { "value": 52, "alpha": 60 },
+      { "value": 75, "alpha": 40 },
+      { "value": 92, "alpha": 20 },
       { "value": 999, "alpha": 0 }
     ],
     "eff": [
-      { "value": 610, "alpha": 100 },
-      { "value": 875, "alpha": 80 },
-      { "value": 1175, "alpha": 60 },
+      { "value": 598, "alpha": 100 },
+      { "value": 874, "alpha": 80 },
+      { "value": 1079, "alpha": 60 },
       { "value": 1540, "alpha": 40 },
-      { "value": 1880, "alpha": 20 },
+      { "value": 1868, "alpha": 20 },
       { "value": 9999, "alpha": 0 }
     ],
-    "wn6": [
-      { "value": 470, "alpha": 100 },
-      { "value": 860, "alpha": 80 },
-      { "value": 1225, "alpha": 60 },
-      { "value": 1635, "alpha": 40 },
-      { "value": 1990, "alpha": 20 },
-      { "value": 9999, "alpha": 0 }
+    "wtr": [
+      { "value": 2631, "alpha": 100 },
+      { "value": 4464, "alpha": 80 },
+      { "value": 6249, "alpha": 60 },
+      { "value": 8141, "alpha": 40 },
+      { "value": 9460, "alpha": 20 },
+      { "value": 99999, "alpha": 0 }
     ],
     "wn8": [
-      { "value": 400, "alpha": 100 },
-      { "value": 900, "alpha": 80 },
-      { "value": 1470, "alpha": 60 },
-      { "value": 2180, "alpha": 40 },
-      { "value": 2880, "alpha": 20 },
+      { "value": 397, "alpha": 100 },
+      { "value": 914, "alpha": 80 },
+      { "value": 1489, "alpha": 60 },
+      { "value": 2231, "alpha": 40 },
+      { "value": 2949, "alpha": 20 },
       { "value": 9999, "alpha": 0 }
     ],
     "wgr": [
-      { "value": 2555, "alpha": 100 },
-      { "value": 4435, "alpha": 80 },
-      { "value": 6515, "alpha": 60 },
-      { "value": 8730, "alpha": 40 },
-      { "value": 10175, "alpha": 20 },
+      { "value": 2578, "alpha": 100 },
+      { "value": 4521, "alpha": 80 },
+      { "value": 6630, "alpha": 60 },
+      { "value": 8884, "alpha": 40 },
+      { "value": 10347, "alpha": 20 },
       { "value": 99999, "alpha": 0 }
     ],
     "winrate": [
@@ -68,7 +68,7 @@
       { "value": 52.5, "alpha": 60 },
       { "value": 57.5, "alpha": 40 },
       { "value": 64.5, "alpha": 20 },
-      { "value": 101, "alpha": 0 }
+      { "value": 100, "alpha": 0 }
     ],
     "kb": [
       { "value": 2, "alpha": 100 },
@@ -79,27 +79,27 @@
       { "value": 999, "alpha": 0 }
     ],
     "avglvl": [
-      { "value": 2, "alpha": 100 },
-      { "value": 3, "alpha": 80 },
-      { "value": 5, "alpha": 60 },
-      { "value": 7, "alpha": 40 },
-      { "value": 9, "alpha": 20 },
-      { "value": 11, "alpha": 0 }
+      { "value": 1, "alpha": 100 },
+      { "value": 2, "alpha": 80 },
+      { "value": 4, "alpha": 60 },
+      { "value": 6, "alpha": 40 },
+      { "value": 8, "alpha": 20 },
+      { "value": 10, "alpha": 0 }
     ],
     "t_battles": [
-      { "value": 100, "alpha": 100 },
-      { "value": 250, "alpha": 80 },
-      { "value": 500, "alpha": 60 },
-      { "value": 1000, "alpha": 40 },
-      { "value": 1800, "alpha": 20 },
+      { "value": 99, "alpha": 100 },
+      { "value": 249, "alpha": 80 },
+      { "value": 499, "alpha": 60 },
+      { "value": 999, "alpha": 40 },
+      { "value": 1799, "alpha": 20 },
       { "value": 99999, "alpha": 0 }
     ],
     "tdb": [
-      { "value": 500, "alpha": 100 },
-      { "value": 750, "alpha": 80 },
-      { "value": 1000, "alpha": 60 },
-      { "value": 1800, "alpha": 40 },
-      { "value": 2500, "alpha": 20 },
+      { "value": 499, "alpha": 100 },
+      { "value": 749, "alpha": 80 },
+      { "value": 999, "alpha": 60 },
+      { "value": 1799, "alpha": 40 },
+      { "value": 2499, "alpha": 20 },
       { "value": 9999, "alpha": 0 }
     ],
     "tdv": [

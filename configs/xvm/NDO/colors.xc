@@ -127,55 +127,55 @@
       "player_enemytk_blowup": "0xFFDD33"
     },
     "hp": [
-      { "value": 201, "color": "0xFF0000" },
-      { "value": 401, "color": "0xDD4444" },
-      { "value": 1001, "color": "0xFFCC22" },
+      { "value": 200, "color": "0xFF0000" },
+      { "value": 400, "color": "0xDD4444" },
+      { "value": 1000, "color": "0xFFCC22" },
       { "value": 9999, "color": "0xFCFCFC" }
     ],
     "hp_ratio": [
       { "value": 10, "color": "0xFF0000" },
       { "value": 25, "color": "0xDD4444" },
       { "value": 50, "color": "0xFFCC22" },
-      { "value": 101, "color": "0xFCFCFC" }
+      { "value": 100, "color": "0xFCFCFC" }
     ],
     "x": [
-      { "value": 16.5, "color": "0xFE0E00" },
-      { "value": 33.5, "color": "0xFE7903" },
-      { "value": 52.5, "color": "0xF8F400" },
-      { "value": 75.5, "color": "0x60FF00" },
-      { "value": 92.5, "color": "0x02C9B3" },
+      { "value": 16, "color": "0xFE0E00" },
+      { "value": 33, "color": "0xFE7903" },
+      { "value": 52, "color": "0xF8F400" },
+      { "value": 75, "color": "0x60FF00" },
+      { "value": 92, "color": "0x02C9B3" },
       { "value": 999, "color": "0xD042F3" }
     ],
     "eff": [
-      { "value": 610, "color": "0xFE0E00" },
-      { "value": 875, "color": "0xFE7903" },
-      { "value": 1175, "color": "0xF8F400" },
+      { "value": 598, "color": "0xFE0E00" },
+      { "value": 874, "color": "0xFE7903" },
+      { "value": 1079, "color": "0xF8F400" },
       { "value": 1540, "color": "0x60FF00" },
-      { "value": 1880, "color": "0x02C9B3" },
+      { "value": 1868, "color": "0x02C9B3" },
       { "value": 9999, "color": "0xD042F3" }
     ],
-    "wn6": [
-      { "value": 470, "color": "0xFE0E00" },
-      { "value": 860, "color": "0xFE7903" },
-      { "value": 1225, "color": "0xF8F400" },
-      { "value": 1635, "color": "0x60FF00" },
-      { "value": 1990, "color": "0x02C9B3" },
-      { "value": 9999, "color": "0xD042F3" }
+    "wtr": [
+      { "value": 2631, "color": "0xFE0E00" },
+      { "value": 4464, "color": "0xFE7903" },
+      { "value": 6249, "color": "0xF8F400" },
+      { "value": 8141, "color": "0x60FF00" },
+      { "value": 9460, "color": "0x02C9B3" },
+      { "value": 99999, "color": "0xD042F3" }
     ],
     "wn8": [
-      { "value": 400, "color": "0xFE0E00" },
-      { "value": 900, "color": "0xFE7903" },
-      { "value": 1470, "color": "0xF8F400" },
-      { "value": 2180, "color": "0x60FF00" },
-      { "value": 2880, "color": "0x02C9B3" },
+      { "value": 397, "color": "0xFE0E00" },
+      { "value": 914, "color": "0xFE7903" },
+      { "value": 1489, "color": "0xF8F400" },
+      { "value": 2231, "color": "0x60FF00" },
+      { "value": 2979, "color": "0x02C9B3" },
       { "value": 9999, "color": "0xD042F3" }
     ],
     "wgr": [
-      { "value": 2555, "color": "0xFE0E00" },
-      { "value": 4435, "color": "0xFE7903" },
-      { "value": 6515, "color": "0xF8F400" },
-      { "value": 8730, "color": "0x60FF00" },
-      { "value": 10175, "color": "0x02C9B3" },
+      { "value": 2578, "color": "0xFE0E00" },
+      { "value": 4521, "color": "0xFE7903" },
+      { "value": 6630, "color": "0xF8F400" },
+      { "value": 8884, "color": "0x60FF00" },
+      { "value": 10347, "color": "0x02C9B3" },
       { "value": 99999, "color": "0xD042F3" }
     ],
     "winrate": [
@@ -184,7 +184,7 @@
       { "value": 51.5, "color": "0xF8F400" },
       { "value": 56.5, "color": "0x60FF00" },
       { "value": 64.5, "color": "0x02C9B3" },
-      { "value": 101, "color": "0xD042F3" }
+      { "value": 100, "color": "0xD042F3" }
     ],
     "kb": [
       { "value": 2, "color": "0xFE0E00" },
@@ -195,27 +195,27 @@
       { "value": 999, "color": "0xD042F3" }
     ],
     "avglvl": [
-      { "value": 2, "color": "0xFE0E00" },
-      { "value": 3, "color": "0xFE7903" },
-      { "value": 5, "color": "0xF8F400" },
-      { "value": 7, "color": "0x60FF00" },
-      { "value": 9, "color": "0x02C9B3" },
-      { "value": 11, "color": "0xD042F3" }
+      { "value": 1, "color": "0xFE0E00" },
+      { "value": 2, "color": "0xFE7903" },
+      { "value": 4, "color": "0xF8F400" },
+      { "value": 6, "color": "0x60FF00" },
+      { "value": 8, "color": "0x02C9B3" },
+      { "value": 10, "color": "0xD042F3" }
     ],
     "t_battles": [
-      { "value": 100, "color": "0xFE0E00" },
-      { "value": 250, "color": "0xFE7903" },
-      { "value": 500, "color": "0xF8F400" },
-      { "value": 1000, "color": "0x60FF00" },
-      { "value": 1800, "color": "0x02C9B3" },
+      { "value": 99, "color": "0xFE0E00" },
+      { "value": 249, "color": "0xFE7903" },
+      { "value": 499, "color": "0xF8F400" },
+      { "value": 999, "color": "0x60FF00" },
+      { "value": 1799, "color": "0x02C9B3" },
       { "value": 99999, "color": "0xD042F3" }
     ],
     "tdb": [
-      { "value": 500, "color": "0xFE0E00" },
-      { "value": 750, "color": "0xFE7903" },
-      { "value": 1000, "color": "0xF8F400" },
-      { "value": 1800, "color": "0x60FF00" },
-      { "value": 2500, "color": "0x02C9B3" },
+      { "value": 499, "color": "0xFE0E00" },
+      { "value": 749, "color": "0xFE7903" },
+      { "value": 999, "color": "0xF8F400" },
+      { "value": 1799, "color": "0x60FF00" },
+      { "value": 2499, "color": "0x02C9B3" },
       { "value": 9999, "color": "0xD042F3" }
     ],
     "tdv": [
@@ -256,7 +256,7 @@
       { "value": 90, "color": "0xF8F400" },
       { "value": 99, "color": "0x60FF00" },
       { "value": 99.9, "color": "0x02C9B3" },
-      { "value": 101, "color": "0xD042F3" }
+      { "value": 100, "color": "0xD042F3" }
     ],
     "hitsRatio": [
       { "value": 47.5, "color": "0xFE0E00" },
@@ -264,7 +264,7 @@
       { "value": 68.5, "color": "0xF8F400" },
       { "value": 74.5, "color": "0x60FF00" },
       { "value": 78.5, "color": "0x02C9B3" },
-      { "value": 101, "color": "0xD042F3" }
+      { "value": 100, "color": "0xD042F3" }
     ]
   }
 }

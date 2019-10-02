@@ -84,9 +84,21 @@ def shell_power_3():
 #####################################################################
 # handlers > hp_panel
 
+@xvm.export('thp_show', deterministic=False)
+def thp_show(battletype):
+    return hp_panel.thp_show(battletype)
+
 @xvm.export('str_replace', deterministic=True)
 def str_replace(str, old, new, max=-1):
     return hp_panel.str_replace(str, old, new, max=-1)
+
+@xvm.export('score_team', deterministic=False)
+def score_team(current_team):
+    return hp_panel.score_team(current_team)
+
+@xvm.export('score_team_sign', deterministic=False)
+def score_team_sign():
+    return hp_panel.score_team_sign()
 
 @xvm.export('current_hp', deterministic=False)
 def current_hp(current_team):

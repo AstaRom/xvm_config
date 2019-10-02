@@ -37,9 +37,6 @@
       "tutorial": "tutorial",
       "cybersport": "cybersport",
       "event_battles": "event_battles",
-      "sortie": "sortie",
-      "fort_battle": "fort_battle",
-      "rated_cybersport": "rated_cybersport",
       "global_map": "global_map",
       "tournament_regular": "tournament_regular",
       "tournament_clan": "tournament_clan",
@@ -49,7 +46,10 @@
       "fallout_multiteam": "fallout_multiteam",
       "sortie_2": "sortie_2",
       "fort_battle_2": "fort_battle_2",
-      "ranked": "ranked"
+      "ranked": "ranked",
+      "bootcamp": "bootcamp",
+      "epic_random": "epic_random",
+      "epic_random_training": "epic_random_training"
     },
     "topclan": {
       "top": "top",

@@ -4,6 +4,7 @@
 from xfw import *
 import BigWorld
 import xvm_battle.python.fragCorrelationPanel as panel
+import xvm_main.python.config as config
 
 #####################################################################
 # constants
@@ -22,9 +23,35 @@ minRatio = 65
 def update_hp(vehicleID, hp):
     as_event('ON_UPDATE_HP')
 
+#@xvm.export('thp_show', deterministic=False)
+def thp_show(battletype):
+    type = str(battletype)
+    if type != 'tutorial' and type != 'event_battles' and type != 'bootcamp' and type != 'epic_random' and type != 'epic_random_training':
+        return 'on'
+    else:
+        return 'off'
+
 #@xvm.export('str_replace', deterministic=True)
 def str_replace(str, old, new, max=-1):
     return str.replace(old, new, max)
+
+#@xvm.export('score_team', deterministic=False)
+def score_team(current_team):
+    if not config.get('fragCorrelation/showAliveNotFrags'):
+        return panel.ally_frags if current_team == 0 else panel.enemy_frags
+    else:
+        a = panel.ally_vehicles - panel.enemy_frags
+        e = panel.enemy_vehicles - panel.ally_frags
+        return a if current_team == 0 else e
+
+#@xvm.export('score_team_sign', deterministic=False)
+def score_team_sign():
+    if score_team(0) > score_team(1):
+        return 'ally'
+    elif score_team(0) < score_team(1):
+        return 'enemy'
+    else:
+        return 'equal'
 
 #@xvm.export('current_hp', deterministic=False)
 def current_hp(current_team):
@@ -59,10 +86,8 @@ def sign_hp():
         return '&#x003E;'
     elif current_hp(0) < current_hp(1):
         return '&#x003C;'
-    elif current_hp(0) == current_hp(1):
-        return '&#x003D;'
     else:
-        return ''
+        return '&#x003D;'
 
 #@xvm.export('color_sign_hp', deterministic=False)
 def color_sign_hp():

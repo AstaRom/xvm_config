@@ -1,7 +1,7 @@
 ﻿{
   "captureBar": {
     "enabled": true,
-    "y": 65,
+    "y": 60,
     "distanceOffset": -25,
     "hideProgressBar": false,
     "ally": {
