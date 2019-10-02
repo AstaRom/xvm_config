@@ -6,6 +6,7 @@
     "showNetIncome": true,
     "showExtendedInfo": true,
     "showTotals": true,
+    "showStandardFrontLineInterface": false,
     "bonusState": {
       "enabled": true,
       "offsetX": 25,
