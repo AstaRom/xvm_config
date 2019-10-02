@@ -1,6 +1,6 @@
 ﻿{
   "sounds": {
-    "enabled": true,
+    "enabled": false,
     "soundBanks": {
       "hangar": "xvm.bnk",
       "battle": "xvm.bnk"

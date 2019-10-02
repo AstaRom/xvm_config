@@ -111,9 +111,10 @@
       }
     },
     "serverInfo": {
-      "enabled": true,
+      "enabled": false,
       "alpha": 100,
       "rotation": 0,
+      "shiftX": 0,
       "shiftY": 0
     },
     "carousel": ${"carousel.xc":"carousel"},

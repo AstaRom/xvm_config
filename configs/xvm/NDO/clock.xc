@@ -1,7 +1,7 @@
 ﻿{
   "clock": {
     "enabled": true,
-    "x": -320,
+    "x": -300,
     "y": 0,
     "width": 150,
     "height": 53,

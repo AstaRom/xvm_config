@@ -14,38 +14,20 @@
       "battleTimer": {
         "$delay": 1000,
         "y": 10,
+        "shadow": {
+          "visible": false
+        },
         "background": {
           "visible": false
         },
-        "displayCritical": {
-          //"dotsTF": {
-          //  "text": ":",
-          //  "$textFormat": { "size": 20, "font": "$TitleFont", "color": "0xFCFCFC", "align": "center" }
-          //},
-          "secondsTF": {
-            "y": 2,
-            "$textFormat": { "size": 20, "font": "$TitleFont", "color": "0xFCFCFC", "align": "left" }
-          },
-          "minutesTF": {
-            "x": -1,
-            "y": 2,
-            "$textFormat": { "size": 20, "font": "$TitleFont", "color": "0xFCFCFC", "align": "right" }
-          }
+        "secondsTF": {
+          "y": 2,
+          "$textFormat": { "font": "$TitleFont", "size": 20, "color": "0xFCFCFC", "align": "left" }
         },
-        "displayNormal": {
-          //"dotsTF": {
-          //  "text": ":",
-          //  "$textFormat": { "size": 20, "font": "$TitleFont", "color": "0xFCFCFC", "align": "center" }
-          //},
-          "secondsTF": {
-            "y": 2,
-            "$textFormat": { "size": 20, "font": "$TitleFont", "color": "0xFCFCFC", "align": "left" }
-          },
-          "minutesTF": {
-            "x": -1,
-            "y": 2,
-            "$textFormat": { "size": 20, "font": "$TitleFont", "color": "0xFCFCFC", "align": "right" }
-          }
+        "minutesTF": {
+          "x": 131,
+          "y": 2,
+          "$textFormat": { "font": "$TitleFont", "size": 20, "color": "0xFCFCFC", "align": "right" }
         }
       },
       
