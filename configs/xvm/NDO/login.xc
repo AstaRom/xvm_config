@@ -98,6 +98,6 @@
         "strength": 2
       }
     },
-    "widgets": ${"widgets.xc":"widgets.login"}
+    "widgets": ${ "widgets.xc": "widgets.login" }
   }
 }

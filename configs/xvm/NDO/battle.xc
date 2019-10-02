@@ -13,8 +13,8 @@
       "hideQuestProgress": false,
       "hideHelpScreen": false
     },
-    "elements": ${"elements.xc":"elements"},
-    "camera": ${"camera.xc":"camera"},
+    "elements": ${ "elements.xc": "elements" },
+    "camera": ${ "camera.xc": "camera" },
     "minimapDeadSwitch": true
   }
 }

@@ -1,6 +1,6 @@
 ﻿{
   "battleLoading": {
-    "clockFormat": ${"definition.xc":"definition.date"},
+    "clockFormat": ${ "definition.xc": "definition.date" },
     "removeSquadIcon": false,
     "removeRankBadgeIcon": true,
     "vehicleIconAlpha": 100,

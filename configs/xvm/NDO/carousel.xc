@@ -2,8 +2,8 @@
   "carousel": {
     "enabled": true,
     "cellType": "default",
-    "normal": ${"carouselTemplates.xc":"normal"},
-    "small": ${"carouselTemplates.xc":"small"},
+    "normal": ${ "carouselTemplates.xc": "normal" },
+    "small": ${ "carouselTemplates.xc": "small" },
     "rows": 0,
     "backgroundAlpha": 90,
     "slotBackgroundAlpha": 100,

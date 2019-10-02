@@ -15,7 +15,7 @@
       "inviteIndicatorAlpha": 100,
       "inviteIndicatorX": 0,
       "inviteIndicatorY": 0,
-      "extraFields": ${"playersPanelTemplates.xc":"none"}
+      "extraFields": ${ "playersPanelTemplates.xc": "none" }
     },
     "short": {
       "enabled": true,
@@ -55,8 +55,8 @@
       "vehicleShadowLeft": null,
       "vehicleShadowRight": null,
       "fixedPosition": false,
-      "extraFieldsLeft": ${"playersPanelTemplates.xc":"shortLeft"},
-      "extraFieldsRight": ${"playersPanelTemplates.xc":"shortRight"}
+      "extraFieldsLeft": ${ "playersPanelTemplates.xc": "shortLeft" },
+      "extraFieldsRight": ${ "playersPanelTemplates.xc": "shortRight" }
     },
     "medium": {
       "enabled": true,
@@ -96,8 +96,8 @@
       "vehicleShadowLeft": null,
       "vehicleShadowRight": null,
       "fixedPosition": false,
-      "extraFieldsLeft": ${"playersPanelTemplates.xc":"mediumLeft"},
-      "extraFieldsRight": ${"playersPanelTemplates.xc":"mediumRight"}
+      "extraFieldsLeft": ${ "playersPanelTemplates.xc": "mediumLeft" },
+      "extraFieldsRight": ${ "playersPanelTemplates.xc": "mediumRight" }
     },
     "medium2": {
       "enabled": true,
@@ -137,8 +137,8 @@
       "vehicleShadowLeft": null,
       "vehicleShadowRight": null,
       "fixedPosition": false,
-      "extraFieldsLeft": ${"playersPanelTemplates.xc":"medium2Left"},
-      "extraFieldsRight": ${"playersPanelTemplates.xc":"medium2Right"}
+      "extraFieldsLeft": ${ "playersPanelTemplates.xc": "medium2Left" },
+      "extraFieldsRight": ${ "playersPanelTemplates.xc": "medium2Right" }
     },
     "large": {
       "enabled": true,
@@ -177,8 +177,8 @@
       "vehicleShadowLeft": null,
       "vehicleShadowRight": null,
       "fixedPosition": false,
-      "extraFieldsLeft": ${"playersPanelTemplates.xc":"largeLeft"},
-      "extraFieldsRight": ${"playersPanelTemplates.xc":"largeRight"}
+      "extraFieldsLeft": ${ "playersPanelTemplates.xc": "largeLeft" },
+      "extraFieldsRight": ${ "playersPanelTemplates.xc": "largeRight" }
     }
   }
 }

@@ -17,7 +17,7 @@
     },
     // Тип техники, видимый
     "vtypeSpotted": {
-      "$ref": { "path":"def.defaultItem" },
+      "$ref": { "path": "def.defaultItem" },
       "align": "center",
       "valign": "center",
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
@@ -27,7 +27,7 @@
     },
     // Название техники, видимый
     "vehicleSpotted": {
-      "$ref": { "path":"def.defaultItem" },
+      "$ref": { "path": "def.defaultItem" },
       "x": 2,
       "y": 0,
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
@@ -36,7 +36,7 @@
     },
     // Ник игрока, видимый
     "nickSpotted": {
-      "$ref": { "path":"def.defaultItem" },
+      "$ref": { "path": "def.defaultItem" },
       "x": 2,
       "y": 0,
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
@@ -45,7 +45,7 @@
     },
     // Тип техники, пропавший
     "vtypeLost": {
-      "$ref": { "path":"def.defaultItem" },
+      "$ref": { "path": "def.defaultItem" },
       "alpha": 85,
       "align": "center",
       "valign": "center",
@@ -56,7 +56,7 @@
     },
     // Название техники, пропавший
     "vehicleLost": {
-      "$ref": { "path":"def.defaultItem" },
+      "$ref": { "path": "def.defaultItem" },
       "x": 2,
       "y": 0,
       "alpha": 85,
@@ -67,7 +67,7 @@
     },
     // Ник игрока, пропавший
     "nickLost": {
-      "$ref": { "path":"def.defaultItem" },
+      "$ref": { "path": "def.defaultItem" },
       "x": 2,
       "y": 0,
       "alpha": 85,
@@ -78,7 +78,7 @@
     },
     // Тип техники, мертвый
     "vtypeDead": {
-      "$ref": { "path":"def.defaultItem" },
+      "$ref": { "path": "def.defaultItem" },
       "alpha": 75,
       "align": "center",
       "valign": "center",
@@ -89,7 +89,7 @@
     },
     // Ник игрока, мертвый
     "nickDead": {
-      "$ref": { "path":"def.defaultItem" },
+      "$ref": { "path": "def.defaultItem" },
       "x": 2,
       "y": 0,
       "alpha": 75,

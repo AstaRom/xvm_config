@@ -157,7 +157,7 @@
       "profile": true,
       "PersonalMissionOperationsPage": true
     },
-    "carousel": ${"carousel.xc":"carousel"},
-    "widgets": ${"widgets.xc":"widgets.lobby"}
+    "carousel": ${ "carousel.xc": "carousel" },
+    "widgets": ${ "widgets.xc": "widgets.lobby" }
   }
 }

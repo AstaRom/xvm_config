@@ -17,13 +17,13 @@
       "index": 5,
       "centered": true
     },
-    "mapSize": ${"minimapMapSize.xc":"mapSize"},
+    "mapSize": ${ "minimapMapSize.xc": "mapSize" },
     "circlesEnabled": true,
     "labelsEnabled": true,
     "linesEnabled": true,
-    "labels": ${"minimapLabels.xc":"labelsAlt"},
-    "labelsData": ${"minimapLabelsData.xc":"labelsData"},
-    "circles": ${"minimapCircles.xc":"circles"},
-    "lines": ${"minimapLines.xc":"lines"}
+    "labels": ${ "minimapLabels.xc": "labelsAlt" },
+    "labelsData": ${ "minimapLabelsData.xc": "labelsData" },
+    "circles": ${ "minimapCircles.xc": "circles" },
+    "lines": ${ "minimapLines.xc": "lines" }
   }
 }

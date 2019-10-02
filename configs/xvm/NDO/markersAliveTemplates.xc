@@ -149,7 +149,7 @@
     },
     "squad_marker_fon": {
       "name": "Маркер взвода (фон)",
-      "enabled": ${"@settings.xc":"settings.markers.squad_number"},
+      "enabled": ${ "@settings.xc": "settings.markers.squad_number" },
       "x": 48,
       "y": -38,
       "alpha": "{{squad-num?100|0}}",
@@ -159,7 +159,7 @@
     },
     "squad_marker_frame": {
       "name": "Маркер взвода (рамка)",
-      "enabled": ${"@settings.xc":"settings.markers.squad_number"},
+      "enabled": ${ "@settings.xc": "settings.markers.squad_number" },
       "x": 48,
       "y": -38,
       "alpha": "{{squad-num?100|0}}",
@@ -169,7 +169,7 @@
     },
     "squad_marker_number": {
       "name": "Маркер взвода (номер)",
-      "enabled": ${"@settings.xc":"settings.markers.squad_number"},
+      "enabled": ${ "@settings.xc": "settings.markers.squad_number" },
       "x": 48,
       "y": -33,
       "alpha": "{{squad-num?100|0}}",
@@ -179,7 +179,7 @@
     },
     "lowHp_marker": {
       "name": "Маркер помощи / Маркер атаки",
-      "enabled": ${"@settings.xc":"settings.markers.lowHp_marker"},
+      "enabled": ${ "@settings.xc": "settings.markers.lowHp_marker" },
       "x": 0,
       "y": -80,
       "alpha": "{{hp-ratio<25?70|0}}",
@@ -189,7 +189,7 @@
     },
     "xmqp_marker": {
       "name": "Маркеры XMQP",
-      "enabled": ${"@settings.xc":"settings.markers.xmqp_marker"},
+      "enabled": ${ "@settings.xc": "settings.markers.xmqp_marker" },
       "x": 0,
       "y": -80,
       "alpha": "{{hp-ratio<25?0|70}}",
