@@ -185,7 +185,7 @@
     },    
     "xmqp_marker": {
       "name": "Маркеры XMQP",
-      "visible": true,
+      "visible": false,
       "x": 0,
       "y": -80,
       "alpha": "{{hp-ratio<25?0|70}}",

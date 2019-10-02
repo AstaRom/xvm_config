@@ -4,7 +4,7 @@
     "date": "07.05.16",
     "description": "Config for XVM",
     "gameVersion": "0.9.14.1",
-    "modMinVersion": "6.2.2",
+    "modMinVersion": "6.2.2.1",
     "url": "http://wot-game.wix.com/mods"
   }
 }
