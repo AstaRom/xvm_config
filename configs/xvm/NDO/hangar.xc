@@ -12,6 +12,10 @@
       "showPopUpMessages": false,
       "showUnreadCounter": false
     },
+    "sessionStatsButton": {
+      "showButton": true,
+      "showBattleCount": false
+    },
     "enableGoldLocker": true,
     "enableFreeXpLocker": true,
     "enableCrystalLocker": true,
