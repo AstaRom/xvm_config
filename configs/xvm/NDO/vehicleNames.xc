@@ -510,6 +510,7 @@
     "usa-A121_M26_Cologne":                  {"name": null, "short": null},
     "usa-A122_TS-5":                         {"name": null, "short": null},
     "usa-A123_T78":                          {"name": null, "short": null},
+    "usa-A126_PzVI_Tiger_II_capt":           {"name": null, "short": null},
     "usa-A12_T32":                           {"name": null, "short": null},
     "usa-A13_T34_hvy":                       {"name": null, "short": null},
     "usa-A13_T34_hvy_BF":                    {"name": null, "short": null},
@@ -749,13 +750,5 @@
     "ussr-R98_T44_85":                       {"name": null, "short": null},
     "ussr-R98_T44_85M":                      {"name": null, "short": null},
     "ussr-R99_T44_122":                      {"name": null, "short": null}
-    /** Unused
-    "china-Ch04_T34_1_training":             {"name": null, "short": null},
-    "germany-G03_PzV_Panther_training":      {"name": null, "short": null},
-    "germany-G10_PzIII_AusfJ_training":      {"name": null, "short": null},
-    "germany-G16_PzVIB_Tiger_II_training":   {"name": null, "short": null},
-    "usa-A06_M4A3E8_Sherman_training":       {"name": null, "short": null},
-    "ussr-R07_T-34-85_training":             {"name": null, "short": null},
-    */
   }
 }
