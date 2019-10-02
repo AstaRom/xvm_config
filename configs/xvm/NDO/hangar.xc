@@ -4,9 +4,13 @@
     "showPremiumShopButton": false,
     "showCreateSquadButtonText": true,
     "showBattleTypeSelectorText": true,
+    "showReferralButton": true,
     "showGeneralChatButton": false,
     "showPromoPremVehicle": false,
-    "showTeaserWidget": false,
+    "combatIntelligence": {
+      "showPopUpMessages": false,
+      "showUnreadCounter": false
+    },
     "enableGoldLocker": true,
     "enableFreeXpLocker": true,
     "serverInfo": {
