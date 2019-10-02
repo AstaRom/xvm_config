@@ -1,19 +1,9 @@
 ﻿#####################################################################
 # imports
 
-import BigWorld
+from BigWorld import player, target
+from xvm_main.python.xvm import l10n
 from math import degrees
-
-#####################################################################
-# constants
-
-shell_type = {
-    'ARMOR_PIERCING': 'ББ',
-    'HIGH_EXPLOSIVE': 'ОФ',
-    'ARMOR_PIERCING_CR': 'БП',
-    'ARMOR_PIERCING_HE': 'ХФ',
-    'HOLLOW_CHARGE': 'КС',
-}
 
 #####################################################################
 # private
@@ -23,14 +13,14 @@ def _typeDescriptor():
     return None if not vehicle else vehicle.typeDescriptor
 
 def _vehicle():
-    vehicle = BigWorld.target()
+    vehicle = target()
     if not vehicle:
-        vehicle = BigWorld.player().getVehicleAttached()
+        vehicle = player().getVehicleAttached()
     return vehicle
 
 def _gunShots():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else typeDescriptor.gun['shots']
+    return None if not typeDescriptor else typeDescriptor.gun.shots
 
 #####################################################################
 # handlers
@@ -38,12 +28,12 @@ def _gunShots():
 #@xvm.export('nick_name', deterministic=False)
 def nick_name():
     vehicle = _vehicle()
-    return None if not vehicle else "%s" % (vehicle.publicInfo['name'])
+    return None if not vehicle else "%s" % (vehicle.publicInfo.name)
 
 #@xvm.export('marks_on_gun', deterministic=False)
 def marks_on_gun():
     vehicle = _vehicle()
-    return None if not vehicle else "%s" % (vehicle.publicInfo['marksOnGun'])
+    return None if not vehicle else "%s" % (vehicle.publicInfo.marksOnGun)
 
 #@xvm.export('vehicle_name', deterministic=False)
 def vehicle_name():
@@ -63,22 +53,22 @@ def icon_system_name():
 #@xvm.export('gun_name', deterministic=False)
 def gun_name():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%s" % (typeDescriptor.gun['shortUserString'])
+    return None if not typeDescriptor else "%s" % (typeDescriptor.gun.shortUserString)
 
 #@xvm.export('gun_caliber', deterministic=False)
 def gun_caliber():
     gunShots = _gunShots()
-    return None if not gunShots else "%d" % (gunShots[0]['shell']['caliber'])
+    return None if not gunShots else "%d" % (gunShots[0].shell.caliber)
 
 #@xvm.export('max_ammo', deterministic=False)
 def max_ammo():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%d" % (typeDescriptor.gun['maxAmmo'])
+    return None if not typeDescriptor else "%d" % (typeDescriptor.gun.maxAmmo)
 
 #@xvm.export('gun_reload', deterministic=False)
 def gun_reload():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%.1f" % (typeDescriptor.gun['reloadTime'])
+    return None if not typeDescriptor else "%.1f" % (typeDescriptor.gun.reloadTime)
 
 #@xvm.export('gun_reload_equip', deterministic=False)
 def gun_reload_equip():
@@ -86,9 +76,9 @@ def gun_reload_equip():
     if not typeDescriptor: 
         return None
     else:
-        reload_orig = typeDescriptor.gun['reloadTime']
+        reload_orig = typeDescriptor.gun.reloadTime
         crew = 1.16 if typeDescriptor.miscAttrs['crewLevelIncrease'] != 0 else 1.10
-        if (typeDescriptor.gun['clip'][0] == 1) and (typeDescriptor.miscAttrs['gunReloadTimeFactor'] != 0):
+        if (typeDescriptor.gun.clip[0] == 1) and (typeDescriptor.miscAttrs['gunReloadTimeFactor'] != 0):
           rammer = typeDescriptor.miscAttrs['gunReloadTimeFactor']
         else:
           rammer = 1
@@ -100,8 +90,8 @@ def dmg_per_min():
     if not typeDescriptor: 
         return None
     else:
-        time = typeDescriptor.gun['reloadTime'] + typeDescriptor.gun['clip'][0] * typeDescriptor.gun['clip'][1]
-        return "%d" % (round(typeDescriptor.gun['clip'][0] / time * 60 * typeDescriptor.gun['shots'][0]['shell']['damage'][0], 0))
+        time = typeDescriptor.gun.reloadTime + typeDescriptor.gun.clip[0] * typeDescriptor.gun.clip[1]
+        return "%d" % (round(typeDescriptor.gun.clip[0] / time * 60 * typeDescriptor.gun.shots[0].shell.damage[0], 0))
 
 #@xvm.export('dmg_per_min_equip', deterministic=False)
 def dmg_per_min_equip():
@@ -109,45 +99,45 @@ def dmg_per_min_equip():
     if not typeDescriptor: 
         return None
     else:
-        reload_orig = typeDescriptor.gun['reloadTime']
+        reload_orig = typeDescriptor.gun.reloadTime
         crew = 1.16 if typeDescriptor.miscAttrs['crewLevelIncrease'] != 0 else 1.10
-        if (typeDescriptor.gun['clip'][0] == 1) and (typeDescriptor.miscAttrs['gunReloadTimeFactor'] != 0):
+        if (typeDescriptor.gun.clip[0] == 1) and (typeDescriptor.miscAttrs['gunReloadTimeFactor'] != 0):
           rammer = typeDescriptor.miscAttrs['gunReloadTimeFactor']
         else:
           rammer = 1
         reload_equip = (reload_orig / (0.57 + 0.43 * crew)) * rammer 
-        time = reload_equip + typeDescriptor.gun['clip'][0] * typeDescriptor.gun['clip'][1]
-        return "%d" % (round(typeDescriptor.gun['clip'][0] / time * 60 * typeDescriptor.gun['shots'][0]['shell']['damage'][0], 0))
+        time = reload_equip + typeDescriptor.gun.clip[0] * typeDescriptor.gun.clip[1]
+        return "%d" % (round(typeDescriptor.gun.clip[0] / time * 60 * typeDescriptor.gun.shots[0].shell.damage[0], 0))
 
 #@xvm.export('gun_clip', deterministic=False)
 def gun_clip():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%d" % (typeDescriptor.gun['clip'][0])
+    return None if not typeDescriptor else "%d" % (typeDescriptor.gun.clip[0])
 
 #@xvm.export('gun_clip_reload', deterministic=False)
 def gun_clip_reload():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%.1f" % (typeDescriptor.gun['clip'][1])
+    return None if not typeDescriptor else "%.1f" % (typeDescriptor.gun.clip[1])
 
 #@xvm.export('gun_burst', deterministic=False)
 def gun_burst():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%d" % (typeDescriptor.gun['burst'][0])
+    return None if not typeDescriptor else "%d" % (typeDescriptor.gun.burst[0])
 
 #@xvm.export('gun_burst_reload', deterministic=False)
 def gun_burst_reload():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%.1f" % (typeDescriptor.gun['burst'][1])    
+    return None if not typeDescriptor else "%.1f" % (typeDescriptor.gun.burst[1])    
 
 #@xvm.export('gun_aiming_time', deterministic=False)
 def gun_aiming_time():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%.1f" % (typeDescriptor.gun['aimingTime'])
+    return None if not typeDescriptor else "%.1f" % (typeDescriptor.gun.aimingTime)
 
 #@xvm.export('gun_accuracy', deterministic=False)
 def gun_accuracy():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%.2f" % (typeDescriptor.gun['shotDispersionAngle'])
+    return None if not typeDescriptor else "%.2f" % (typeDescriptor.gun.shotDispersionAngle)
 
 #@xvm.export('shell_name_1', deterministic=False)
 def shell_name_1():
@@ -155,7 +145,7 @@ def shell_name_1():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 1 else "%s" % (gunShots[0]['shell']['userString'])
+        return '' if len(gunShots) < 1 else "%s" % (gunShots[0].shell.userString)
 
 #@xvm.export('shell_name_2', deterministic=False)
 def shell_name_2():
@@ -163,7 +153,7 @@ def shell_name_2():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 2 else "%s" % (gunShots[1]['shell']['userString'])
+        return '' if len(gunShots) < 2 else "%s" % (gunShots[1].shell.userString)
 
 #@xvm.export('shell_name_3', deterministic=False)
 def shell_name_3():
@@ -171,7 +161,7 @@ def shell_name_3():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 3 else "%s" % (gunShots[2]['shell']['userString'])
+        return '' if len(gunShots) < 3 else "%s" % (gunShots[2].shell.userString)
 
 #@xvm.export('shell_damage_1', deterministic=False)
 def shell_damage_1():
@@ -179,7 +169,7 @@ def shell_damage_1():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 1 else "%d" % (gunShots[0]['shell']['damage'][0])
+        return '' if len(gunShots) < 1 else "%d" % (gunShots[0].shell.damage[0])
 
 #@xvm.export('shell_damage_2', deterministic=False)
 def shell_damage_2():
@@ -187,7 +177,7 @@ def shell_damage_2():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 2 else "%d" % (gunShots[1]['shell']['damage'][0])
+        return '' if len(gunShots) < 2 else "%d" % (gunShots[1].shell.damage[0])
 
 #@xvm.export('shell_damage_3', deterministic=False)
 def shell_damage_3():
@@ -195,7 +185,7 @@ def shell_damage_3():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 3 else "%d" % (gunShots[2]['shell']['damage'][0])
+        return '' if len(gunShots) < 3 else "%d" % (gunShots[2].shell.damage[0])
 
 #@xvm.export('shell_power_1', deterministic=False)
 def shell_power_1():
@@ -203,7 +193,7 @@ def shell_power_1():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 1 else "%d" % (gunShots[0]['piercingPower'][0])
+        return '' if len(gunShots) < 1 else "%d" % (gunShots[0].piercingPower[0])
 
 #@xvm.export('shell_power_2', deterministic=False)
 def shell_power_2():
@@ -211,7 +201,7 @@ def shell_power_2():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 2 else "%d" % (gunShots[1]['piercingPower'][0])
+        return '' if len(gunShots) < 2 else "%d" % (gunShots[1].piercingPower[0])
 
 #@xvm.export('shell_power_3', deterministic=False)
 def shell_power_3():
@@ -219,7 +209,7 @@ def shell_power_3():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 3 else "%d" % (gunShots[2]['piercingPower'][0])
+        return '' if len(gunShots) < 3 else "%d" % (gunShots[2].piercingPower[0])
 
 #@xvm.export('shell_type_1', deterministic=False)
 def shell_type_1():
@@ -227,7 +217,7 @@ def shell_type_1():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 1 else "%s" % (shell_type[gunShots[0]['shell']['kind']])
+        return '' if len(gunShots) < 1 else l10n(gunShots[0].shell.kind.lower())
 
 #@xvm.export('shell_type_2', deterministic=False)
 def shell_type_2():
@@ -235,7 +225,7 @@ def shell_type_2():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 2 else "%s" % (shell_type[gunShots[1]['shell']['kind']])
+        return '' if len(gunShots) < 2 else l10n(gunShots[1].shell.kind.lower())
 
 #@xvm.export('shell_type_3', deterministic=False)
 def shell_type_3():
@@ -243,7 +233,7 @@ def shell_type_3():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 3 else "%s" % (shell_type[gunShots[2]['shell']['kind']])
+        return '' if len(gunShots) < 3 else l10n(gunShots[2].shell.kind.lower())
 
 #@xvm.export('shell_speed_1', deterministic=False)
 def shell_speed_1():
@@ -251,7 +241,7 @@ def shell_speed_1():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 1 else "%d" % (gunShots[0]['speed'])
+        return '' if len(gunShots) < 1 else "%d" % (gunShots[0].speed)
 
 #@xvm.export('shell_speed_2', deterministic=False)
 def shell_speed_2():
@@ -259,7 +249,7 @@ def shell_speed_2():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 2 else "%d" % (gunShots[1]['speed'])
+        return '' if len(gunShots) < 2 else "%d" % (gunShots[1].speed)
 
 #@xvm.export('shell_speed_3', deterministic=False)
 def shell_speed_3():
@@ -267,7 +257,7 @@ def shell_speed_3():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 3 else "%d" % (gunShots[2]['speed'])
+        return '' if len(gunShots) < 3 else "%d" % (gunShots[2].speed)
 
 #@xvm.export('shell_distance_1', deterministic=False)
 def shell_distance_1():
@@ -275,7 +265,7 @@ def shell_distance_1():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 1 else "%d" % (gunShots[0]['maxDistance'])
+        return '' if len(gunShots) < 1 else "%d" % (gunShots[0].maxDistance)
 
 #@xvm.export('shell_distance_2', deterministic=False)
 def shell_distance_2():
@@ -283,7 +273,7 @@ def shell_distance_2():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 2 else "%d" % (gunShots[1]['maxDistance'])
+        return '' if len(gunShots) < 2 else "%d" % (gunShots[1].maxDistance)
 
 #@xvm.export('shell_distance_3', deterministic=False)
 def shell_distance_3():
@@ -291,7 +281,7 @@ def shell_distance_3():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 3 else "%d" % (gunShots[2]['maxDistance'])
+        return '' if len(gunShots) < 3 else "%d" % (gunShots[2].maxDistance)
 
 #@xvm.export('stun_radius', deterministic=False)
 def stun_radius():
@@ -299,8 +289,8 @@ def stun_radius():
     if not gunShots: 
         return None
     else:
-        if 'stunRadius' in gunShots[0]['shell']:
-            return "%d" % (gunShots[0]['shell']['stunRadius'])
+        if gunShots[0].shell.stun is not None:
+            return "%d" % (gunShots[0].shell.stun.stunRadius)
         else:
             return ''
 
@@ -310,8 +300,8 @@ def stun_duration_min():
     if not gunShots: 
         return None
     else:
-        if 'stunDuration' in gunShots[0]['shell']:
-            time = (round(gunShots[0]['shell']['stunDuration'] * gunShots[0]['shell']['guaranteedStunDuration'], 1))
+        if gunShots[0].shell.stun is not None:
+            time = (round(gunShots[0].shell.stun.stunRadius * gunShots[0].shell.stun.guaranteedStunDuration, 1))
             return "%.1f" % (time)
         else:
             return ''
@@ -322,8 +312,8 @@ def stun_duration_max():
     if not gunShots: 
         return None
     else:
-        if 'stunDuration' in gunShots[0]['shell']:
-            return "%d" % (gunShots[0]['shell']['stunDuration'])
+        if gunShots[0].shell.stun is not None:
+            return "%d" % (gunShots[0].shell.stun.stunDuration)
         else:
             return ''
 
@@ -333,7 +323,7 @@ def angle_pitch_up():
     if not typeDescriptor: 
         return None
     else:
-        return "%d" % (degrees(-typeDescriptor.gun['pitchLimits']['absolute'][0]))
+        return "%d" % (degrees(-typeDescriptor.gun.pitchLimits['absolute'][0]))
 
 #@xvm.export('angle_pitch_down', deterministic=False)
 def angle_pitch_down():
@@ -341,7 +331,7 @@ def angle_pitch_down():
     if not typeDescriptor: 
         return None
     else:
-        return "%d" % (degrees(-typeDescriptor.gun['pitchLimits']['absolute'][1])) 
+        return "%d" % (degrees(-typeDescriptor.gun.pitchLimits['absolute'][1]))
 
 #@xvm.export('angle_pitch_left', deterministic=False)
 def angle_pitch_left():
@@ -349,7 +339,7 @@ def angle_pitch_left():
     if not typeDescriptor: 
         return None
     else:
-        return "%d" % (degrees(-typeDescriptor.gun['turretYawLimits'][0])) if typeDescriptor.gun['turretYawLimits'] is not None else ''
+        return "%d" % (degrees(-typeDescriptor.gun.turretYawLimits[0])) if typeDescriptor.gun.turretYawLimits is not None else ''
 
 #@xvm.export('angle_pitch_right', deterministic=False)
 def angle_pitch_right():
@@ -357,7 +347,7 @@ def angle_pitch_right():
     if not typeDescriptor: 
         return None
     else:
-        return "%d" % (degrees(typeDescriptor.gun['turretYawLimits'][1])) if typeDescriptor.gun['turretYawLimits'] is not None else ''
+        return "%d" % (degrees(typeDescriptor.gun.turretYawLimits[1])) if typeDescriptor.gun.turretYawLimits is not None else ''
 
 #@xvm.export('vehicle_max_health', deterministic=False)
 def vehicle_max_health():
@@ -367,37 +357,37 @@ def vehicle_max_health():
 #@xvm.export('armor_hull_front', deterministic=False)
 def armor_hull_front():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%d" % (typeDescriptor.hull['primaryArmor'][0])
+    return None if not typeDescriptor else "%d" % (typeDescriptor.hull.primaryArmor[0])
 
 #@xvm.export('armor_hull_side', deterministic=False)
 def armor_hull_side():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%d" % (typeDescriptor.hull['primaryArmor'][1])
+    return None if not typeDescriptor else "%d" % (typeDescriptor.hull.primaryArmor[1])
 
 #@xvm.export('armor_hull_back', deterministic=False)
 def armor_hull_back():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%d" % (typeDescriptor.hull['primaryArmor'][2])
+    return None if not typeDescriptor else "%d" % (typeDescriptor.hull.primaryArmor[2])
 
 #@xvm.export('turret_name', deterministic=False)
 def turret_name():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%s" % (typeDescriptor.turret['shortUserString'])
+    return None if not typeDescriptor else "%s" % (typeDescriptor.turret.shortUserString)
 
 #@xvm.export('armor_turret_front', deterministic=False)
 def armor_turret_front():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%d" % (typeDescriptor.turret['primaryArmor'][0])
+    return None if not typeDescriptor else "%d" % (typeDescriptor.turret.primaryArmor[0])
 
 #@xvm.export('armor_turret_side', deterministic=False)
 def armor_turret_side():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%d" % (typeDescriptor.turret['primaryArmor'][1])
+    return None if not typeDescriptor else "%d" % (typeDescriptor.turret.primaryArmor[1])
 
 #@xvm.export('armor_turret_back', deterministic=False)
 def armor_turret_back():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%d" % (typeDescriptor.turret['primaryArmor'][2])
+    return None if not typeDescriptor else "%d" % (typeDescriptor.turret.primaryArmor[2])
 
 #@xvm.export('vehicle_weight', deterministic=False)
 def vehicle_weight():
@@ -407,17 +397,17 @@ def vehicle_weight():
 #@xvm.export('chassis_max_weight', deterministic=False)
 def chassis_max_weight():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%.1f" % (round(typeDescriptor.chassis['maxLoad'] / 1000, 1))
+    return None if not typeDescriptor else "%.1f" % (round(typeDescriptor.chassis.maxLoad / 1000, 1))
 
 #@xvm.export('engine_name', deterministic=False)
 def engine_name():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%s" % (typeDescriptor.engine['shortUserString'])
+    return None if not typeDescriptor else "%s" % (typeDescriptor.engine.shortUserString)
 
 #@xvm.export('engine_power', deterministic=False)
 def engine_power():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%d" % (round(typeDescriptor.engine['power'] / 735.49875, 0))
+    return None if not typeDescriptor else "%d" % (round(typeDescriptor.engine.power / 735.49875, 0))
 
 #@xvm.export('engine_power_density', deterministic=False)
 def engine_power_density():
@@ -425,7 +415,7 @@ def engine_power_density():
     if not typeDescriptor: 
         return None
     else:
-        power = typeDescriptor.engine['power'] / 735.49875
+        power = typeDescriptor.engine.power / 735.49875
         weight = typeDescriptor.physics['weight'] / 1000
         return "%.2f" % (round(power / weight, 2))
 
@@ -442,12 +432,12 @@ def speed_backward():
 #@xvm.export('hull_speed_turn', deterministic=False)
 def hull_speed_turn():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%.2f" % (degrees(typeDescriptor.chassis['rotationSpeed']))
+    return None if not typeDescriptor else "%.2f" % (degrees(typeDescriptor.chassis.rotationSpeed))
 
 #@xvm.export('turret_speed_turn', deterministic=False)
 def turret_speed_turn():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%.2f" % (degrees(typeDescriptor.turret['rotationSpeed']))
+    return None if not typeDescriptor else "%.2f" % (degrees(typeDescriptor.turret.rotationSpeed))
 
 #@xvm.export('invis_stand', deterministic=False)
 def invis_stand():
@@ -457,7 +447,7 @@ def invis_stand():
 #@xvm.export('invis_stand_shot', deterministic=False)
 def invis_stand_shot():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%.2f" % (typeDescriptor.type.invisibility[1] * typeDescriptor.gun['invisibilityFactorAtShot'] * 50)
+    return None if not typeDescriptor else "%.2f" % (typeDescriptor.type.invisibility[1] * typeDescriptor.gun.invisibilityFactorAtShot * 50)
 
 #@xvm.export('invis_move', deterministic=False)
 def invis_move():
@@ -467,22 +457,22 @@ def invis_move():
 #@xvm.export('invis_move_shot', deterministic=False)
 def invis_move_shot():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%.2f" % (typeDescriptor.type.invisibility[0] * typeDescriptor.gun['invisibilityFactorAtShot'] * 50)
+    return None if not typeDescriptor else "%.2f" % (typeDescriptor.type.invisibility[0] * typeDescriptor.gun.invisibilityFactorAtShot * 50)
 
 #@xvm.export('vision_radius', deterministic=False)
 def vision_radius():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%d" % (typeDescriptor.turret['circularVisionRadius'])
+    return None if not typeDescriptor else "%d" % (typeDescriptor.turret.circularVisionRadius)
 
 #@xvm.export('radio_name', deterministic=False)
 def radio_name():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%s" % (typeDescriptor.radio['shortUserString'])
+    return None if not typeDescriptor else "%s" % (typeDescriptor.radio.shortUserString)
 
 #@xvm.export('radio_radius', deterministic=False)
 def radio_radius():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%d" % (typeDescriptor.radio['distance'])
+    return None if not typeDescriptor else "%d" % (typeDescriptor.radio.distance)
 
 #####################################################################
 # Unused
