@@ -2,14 +2,14 @@
 # imports
 
 import BigWorld
-import xvm_battle.python.fragCorrelationPanel as panel
 from CurrentVehicle import g_currentVehicle
 from gui.Scaleform.daapi.view.lobby.hangar.Hangar import Hangar
 from helpers import dependency
 from skeletons.gui.game_control import IBootcampController
 from skeletons.gui.shared import IItemsCache
-from xfw import *
 import traceback
+from xfw import registerEvent
+import xvm_battle.python.fragCorrelationPanel as panel
 
 #####################################################################
 # constants

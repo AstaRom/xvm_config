@@ -1,10 +1,10 @@
 ﻿#####################################################################
 # imports
 
-from xfw import *
 import BigWorld
-import xvm_battle.python.fragCorrelationPanel as panel
+from xfw import registerEvent, as_event
 import xvm_main.python.config as config
+import xvm_battle.python.fragCorrelationPanel as panel
 
 #####################################################################
 # constants

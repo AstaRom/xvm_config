@@ -151,7 +151,7 @@
       { "value": 48.49, "color": "0xFE7903" },
       { "value": 51.49, "color": "0xF8F400" },
       { "value": 56.49, "color": "0x60FF00" },
-      { "value": 64.49, "color": "0x02C9B3" },
+      { "value": 63.49, "color": "0x02C9B3" },
       { "value": 100, "color": "0xD042F3" }
     ],
     "kb": [

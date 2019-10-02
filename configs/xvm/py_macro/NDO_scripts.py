@@ -17,7 +17,7 @@ def l10n(l10n):
     gameLng = getClientLanguage()
     mode = 'ru' if gameLng == 'ru' else 'en'
     ref = config.get('custom_texts/language/%s/%s' % (mode, l10n))
-    return '%s' % (ref)
+    return '%s' % ref
 
 #####################################################################
 # handlers > dmg_count
@@ -79,6 +79,10 @@ def color_sign_hp():
 
 #####################################################################
 # handlers > info_panel
+
+@xvm.export('ipHotKey', deterministic=False)
+def ipHotKey():
+    return info_panel.ipHotKey
 
 @xvm.export('vehicle_name', deterministic=False)
 def vehicle_name():

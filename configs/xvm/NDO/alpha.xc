@@ -35,7 +35,7 @@
       { "value": 48.49, "alpha": 80 },
       { "value": 52.49, "alpha": 60 },
       { "value": 57.49, "alpha": 40 },
-      { "value": 64.49, "alpha": 20 },
+      { "value": 63.49, "alpha": 20 },
       { "value": 100, "alpha": 0 }
     ],
     "kb": [
