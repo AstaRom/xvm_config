@@ -2,6 +2,7 @@
   "damageLog": {
     "disabledDetailStats": false,
     "disabledSummaryStats": false,
+    "saveLocationInBattle": false,
     "log": {
       "x": 235,
       "y": -15,

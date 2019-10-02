@@ -113,7 +113,7 @@
     },
     "total_hp_teams": {
       "enabled": ${"@settings.xc":"settings.battleLabels.total_hp_panel"},
-      "updateEvent": "ON_PLAYERS_HP_CHANGED",
+      "updateEvent": "PY(ON_UPDATE_HP)",
       "x": 0,
       "y": 30,
       "width": 150,

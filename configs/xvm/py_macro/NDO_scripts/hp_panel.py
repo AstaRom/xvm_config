@@ -1,6 +1,7 @@
 ﻿#####################################################################
 # imports
 
+from xfw import *
 import BigWorld
 import xvm_battle.python.fragCorrelationPanel as panel
 
@@ -17,6 +18,10 @@ minRatio = 65
 #####################################################################
 # handlers
 
+@registerEvent(panel, 'update_hp')
+def update_hp(vehicleID, hp):
+    as_event('ON_UPDATE_HP')
+
 #@xvm.export('str_replace', deterministic=True)
 def str_replace(str, old, new, max=-1):
     return str.replace(old, new, max)
@@ -31,35 +36,22 @@ def percent_hp(current_team):
     arenaUniqueID = BigWorld.player().arenaUniqueID
     if actual_arenaUniqueID != arenaUniqueID:
       actual_arenaUniqueID = arenaUniqueID
-      max_hp_team[0] = panel.teams_totalhp[0]
-      max_hp_team[1] = panel.teams_totalhp[1]
-    return round((100. * current_hp(current_team)) / max_hp_team[current_team], 0) if max_hp_team[current_team] != 0 else 0
+      max_hp_team[current_team] = 0
+    if panel.teams_totalhp[current_team] > max_hp_team[current_team]:
+        max_hp_team[current_team] = panel.teams_totalhp[current_team]
+    return round((100. * current_hp(current_team)) / max_hp_team[current_team], 0) if max_hp_team[current_team] != 0 else None
 
 #@xvm.export('percent_hp_section', deterministic=False)
 def percent_hp_section(current_team):
-    return int(round(percent_hp(current_team) / percent_filling, 0))
+    return int(round(percent_hp(current_team) / percent_filling, 0)) if percent_hp(current_team) is not None else None
 
 #@xvm.export('current_hp_symbols', deterministic=False)
 def current_hp_symbols(current_team, symbol):
-    return percent_hp_section(current_team) * str(symbol)
+    return percent_hp_section(current_team) * str(symbol) if percent_hp_section(current_team) is not None else section
 
 #@xvm.export('max_hp_symbols', deterministic=True)
 def max_hp_symbols(symbol):
     return str(symbol) * section
-
-#@xvm.export('high_сaliber', deterministic=True)
-def high_caliber(dmg_total):
-    battletype = BigWorld.player().arena.guiType
-    if battletype != 1:
-        return
-    else:
-        symbol = '<img src="img://gui/maps/icons/achievement/32x32/mainGun.png" width="32" height="32" align="middle" vspace="-10">'
-        done = '<img src="img://gui/maps/icons/library/done.png" width="25" height="25" align="middle" vspace="-10">'
-        threshold = max_hp_team[1] * 0.2 if max_hp_team[1] > 5000 else 1000
-        high_caliber = int(threshold - dmg_total)
-        if high_caliber <= 0:
-            high_caliber = done
-    return '%s%s' % (symbol, high_caliber) if max_hp_team[1] >= 1000 else ''
 
 #@xvm.export('sign_hp', deterministic=False)
 def sign_hp():

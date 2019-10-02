@@ -25,9 +25,11 @@ def high_caliber(dmg_total):
     arenaUniqueID = BigWorld.player().arenaUniqueID
     if actual_arenaUniqueID != arenaUniqueID:
       actual_arenaUniqueID = arenaUniqueID
-      max_hp_enemy = panel.teams_totalhp[1]
+      max_hp_enemy = 0
+    if panel.teams_totalhp[1] > max_hp_enemy:
+        max_hp_enemy = panel.teams_totalhp[1]
     battletype = BigWorld.player().arena.guiType
-    if battletype != 1:
+    if (battletype != 1) and (max_hp_enemy == 0):
         return
     else:
         symbol = '<img src="img://gui/maps/icons/achievement/32x32/mainGun.png" width="32" height="32" align="middle" vspace="-10">'
