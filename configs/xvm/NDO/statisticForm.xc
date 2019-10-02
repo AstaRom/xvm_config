@@ -1,6 +1,5 @@
 ﻿{
   "statisticForm": {
-    "showBattleTier": true,
     "removeSquadIcon": false,
     "removeRankBadgeIcon": true,
     "vehicleIconAlpha": 100,

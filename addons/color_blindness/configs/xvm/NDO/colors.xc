@@ -178,14 +178,6 @@
       { "value": 10175, "color": "0x02C9B3" },
       { "value": 99999, "color": "0xD042F3" }
     ],
-    "winChance": [
-      { "value": 46.5, "color": "0x9C3E00" },
-      { "value": 48.5, "color": "0xFE7903" },
-      { "value": 51.5, "color": "0xF8F400" },
-      { "value": 56.5, "color": "0x60FF00" },
-      { "value": 64.5, "color": "0x02C9B3" },
-      { "value": 101, "color": "0xD042F3" }
-    ],
     "winrate": [
       { "value": 46.5, "color": "0x9C3E00" },
       { "value": 48.5, "color": "0xFE7903" },

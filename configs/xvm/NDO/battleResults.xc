@@ -5,7 +5,6 @@
     "showCrewExperience": true,
     "showNetIncome": true,
     "showExtendedInfo": true,
-    "showTotals": true,
-    "showBattleTier": true
+    "showTotals": true
   }
 }
