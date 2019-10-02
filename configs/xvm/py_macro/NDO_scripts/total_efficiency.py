@@ -1,15 +1,18 @@
 ﻿#####################################################################
 # imports
 
-from Avatar import PlayerAvatar
 from gui.Scaleform.daapi.view.battle.shared.damage_log_panel import DamageLogPanel
 from gui.battle_control.battle_constants import PERSONAL_EFFICIENCY_TYPE as _ETYPE
+from Vehicle import Vehicle
+import BigWorld
+from Avatar import PlayerAvatar
 from xfw import registerEvent
 from xfw_actionscript.python import as_event
 
 #####################################################################
 # constants
 
+player = None
 damage = 0
 assist = 0
 blocked = 0
@@ -18,22 +21,47 @@ stun = 0
 #####################################################################
 # handlers
 
+def isPlayerVehicle():
+    if player is not None:
+        if hasattr(player.inputHandler.ctrl, 'curVehicleID'):
+            vId = player.inputHandler.ctrl.curVehicleID
+            v = vId.id if isinstance(vId, Vehicle) else vId
+            return player.playerVehicleID == v
+        else:
+            return True
+    else:
+        return False
+
 @registerEvent(DamageLogPanel, '_onTotalEfficiencyUpdated')
 def _onTotalEfficiencyUpdated(self, diff):
     global damage, assist, blocked, stun
-    if _ETYPE.DAMAGE in diff:
-        damage = diff[_ETYPE.DAMAGE]
-    if _ETYPE.ASSIST_DAMAGE in diff:
-        assist = diff[_ETYPE.ASSIST_DAMAGE]
-    if _ETYPE.BLOCKED_DAMAGE in diff:
-        blocked = diff[_ETYPE.BLOCKED_DAMAGE]
-    if _ETYPE.STUN in diff:
-        stun = diff[_ETYPE.STUN]
-    as_event('ON_TOTAL_EFFICIENCY')
+    if isPlayerVehicle():
+        isUpdate = False
+        if _ETYPE.DAMAGE in diff:
+            damage = diff[_ETYPE.DAMAGE]
+            isUpdate = True
+        if _ETYPE.ASSIST_DAMAGE in diff:
+            assist = diff[_ETYPE.ASSIST_DAMAGE]
+            isUpdate = True
+        if _ETYPE.BLOCKED_DAMAGE in diff:
+            blocked = diff[_ETYPE.BLOCKED_DAMAGE]
+            isUpdate = True
+        if _ETYPE.STUN in diff:
+            stun = diff[_ETYPE.STUN]
+            isUpdate = True
+        if isUpdate:
+            as_event('ON_TOTAL_EFFICIENCY')
+
+@registerEvent(Vehicle, 'onEnterWorld')
+def onEnterWorld(self, prereqs):
+    global player
+    if player is None:
+        player = BigWorld.player()
 
 @registerEvent(PlayerAvatar, '_PlayerAvatar__destroyGUI')
 def destroyGUI(self):
-    global damage, assist, blocked, stun
+    global player, damage, assist, blocked, stun
+    player = None
     damage = 0
     assist = 0
     blocked = 0

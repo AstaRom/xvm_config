@@ -24,7 +24,7 @@ minRatio = 65
 def update_hp(vehicleID, hp):
     as_event('ON_UPDATE_HP')
 
-#@xvm.export('thp_show', deterministic=False)
+#@xvm.export('thp_show', deterministic=True)
 def thp_show(battletype):
     type = str(battletype)
     if type != 'tutorial' and type != 'event_battles' and type != 'bootcamp' and type != 'epic_random' and type != 'epic_random_training':

@@ -10,11 +10,11 @@ from NDO_scripts import total_efficiency
 #####################################################################
 # handlers > basic_macros
 
-@xvm.export('l10n', deterministic=False)
+@xvm.export('l10n', deterministic=True)
 def l10n(l10n):
     return basic_macros.l10n(l10n)
 
-@xvm.export('math_sub', deterministic=False)
+@xvm.export('math_sub', deterministic=True)
 def math_sub(a, b):
     return basic_macros.math_sub(a, b)
 
@@ -22,7 +22,7 @@ def math_sub(a, b):
 def screen_height():
     return basic_macros.screen_height()
 
-@xvm.export('str_replace', deterministic=False)
+@xvm.export('str_replace', deterministic=True)
 def str_replace(str, old, new, max=-1):
     return basic_macros.str_replace(str, old, new, max=-1)
 
@@ -40,7 +40,7 @@ def avg_damage(dmg_total):
 #####################################################################
 # handlers > hp_panel
 
-@xvm.export('thp_show', deterministic=False)
+@xvm.export('thp_show', deterministic=True)
 def thp_show(battletype):
     return hp_panel.thp_show(battletype)
 
