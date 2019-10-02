@@ -6,7 +6,7 @@
     "allowSpottedStatus": true,
     "allowHpInPanelsAndMinimap": false,
     "allowMarksOnGunInPanelsAndMinimap": false,
-    "allowLabelsOnBattleInterface": false,
+    "allowLabelsOnBattleInterface": true,
     "clockFormat": "H:N",
     "clanIconsFolder": "clanicons/",
     "sixthSenseIcon": "xvm://res/SixthSense.png",
