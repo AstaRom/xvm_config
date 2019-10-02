@@ -55,11 +55,11 @@
       "info": { "enabled": false, "dx": 0, "dy": 0, "alpha": 100, "scale": 1, "textFormat": {}, "shadow": {} },
       "infoImg":  { "enabled": true, "dx": 63, "dy": 1, "alpha": 100, "scale": 1 },
       "infoBuy": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1, "textFormat": {}, "shadow": {} },
-      "clanLock": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100 },
-      "price": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100 },
-      "actionPrice": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100 },
-      "favorite": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100 },
-      "stats": { "enabled": false, "dx": 0, "dy": 0, "alpha": 100, "textFormat": {}, "shadow": {} }
+      "clanLock": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      "price": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      "actionPrice": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      "favorite": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      "stats": { "enabled": false, "dx": 0, "dy": 0, "alpha": 100, "scale": 1, "textFormat": {}, "shadow": {} }
     },
     "extraFields": [
       //{ "x": 0, "y": 0, "width": 162, "height": 37, "bgColor": "0x000000", "alpha": 50, "layer": "substrate" },
