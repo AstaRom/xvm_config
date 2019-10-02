@@ -1,0 +1,5 @@
+﻿{
+  "fragCorrelation": {
+    "showAliveNotFrags": false
+  }
+}
