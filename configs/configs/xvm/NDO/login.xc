@@ -18,7 +18,8 @@
       "leading": 0,
       "showTitle": false,
       "showServerName": true,
-      "minimalLength": 0,
+      "minimalNameLength": 4,
+      "minimalValueLength": 0,
       "errorString": "--",
       "fontStyle": {
         "name": "$FieldFont",
@@ -62,7 +63,8 @@
       "leading": 0,
       "showTitle": false,
       "showServerName": true,
-      "minimalLength": 0,
+      "minimalNameLength": 4,
+      "minimalValueLength": 0,
       "errorString": "--k",
       "fontStyle": {
         "name": "$FieldFont",

@@ -30,7 +30,8 @@
       "topmost": true,
       "showTitle": false,
       "showServerName": true,
-      "minimalLength": 0,
+      "minimalNameLength": 4,
+      "minimalValueLength": 0,
       "errorString": "--",
       "ignoredServers": [],
       "fontStyle": {
@@ -76,7 +77,8 @@
       "topmost": true,
       "showTitle": false,
       "showServerName": true,
-      "minimalLength": 0,
+      "minimalNameLength": 4,
+      "minimalValueLength": 0,
       "errorString": "--k",
       "ignoredServers": [],
       "fontStyle": {

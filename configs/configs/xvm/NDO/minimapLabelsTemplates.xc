@@ -1,6 +1,7 @@
 ﻿{
   "def": {
     "defaultItem": {
+      "enabled": true,
       "flags": [ "player", "ally", "squadman", "enemy", "teamKiller", "lost", "spotted", "alive", "dead" ],
       "shadow": { "distance": 0, "angle": 45, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 4 },
       "alpha": 100,
