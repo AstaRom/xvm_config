@@ -1,7 +1,11 @@
 ﻿{
   "totalHP": {
     "enabled": false,
-    "color": "FCFCFC",
+    "colors": {
+      "bad":  "F50800",
+      "neutral": "FCFCFC",
+      "good": "00FF00"
+    },
     "font": "default_small.font",
     "x": 0,
     "y": -65,

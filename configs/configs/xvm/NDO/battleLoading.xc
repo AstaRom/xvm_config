@@ -1,6 +1,6 @@
 ﻿{
   "battleLoading": {
-    "clockFormat": "Конфиг от 25.03.16",
+    "clockFormat": "Конфиг от 01.04.16",
     "showBattleTier": true,
     "removeSquadIcon": false,
     "removeVehicleLevel": true,
