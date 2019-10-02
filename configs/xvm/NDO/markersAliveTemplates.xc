@@ -130,7 +130,7 @@
       "alpha": "{{xvm-stat?100|0}}",
       "textFormat": { "font": "$FieldFont", "size": 13, "color": null, "align": "center", "bold": true, "italic": false },
       "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 1, "strength": 2 },
-      "format": "<font size='{{r?13|0}}'><font color='{{c:kb}}'>{{kb%3d~k|---k}}</font>   <font color='{{c:r}}'>{{r_size=2?{{r%s|--}}|{{r>=10000?XXXX|{{r%4d|----}}}}}}</font>   <font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font></font>"
+      "format": "<font size='{{r?13|0}}'><font color='{{c:kb}}'>{{kb%3d~k|---k}}</font>   <font color='{{c:r}}'>{{r_size=2?{{r%s|--}}|{{r>=10000?xxxx|{{r%4d|----}}}}}}</font>   <font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font></font>"
     },
     "squad_marker_fon": {
       "name": "Маркер взвода (фон)",
