@@ -3,12 +3,6 @@
     {
       "$delay": 100,
       
-      // debugPanel
-      
-      "debugPanel": {
-        "y": 0
-      },
-      
       // battleTimer
       
       "battleTimer": {
@@ -31,11 +25,43 @@
         }
       },
       
-      // prebattleTimer
+      // debugPanel
       
-      "prebattleTimer": {
-        "visible": false,
-        "alpha": 0
+      "debugPanel": {
+        "y": 0
+      },
+      
+      // endWarningPanel
+      
+      "endWarningPanel": {
+        "y": 45,     
+        "timer": {
+          "timeText": {
+            "visible": true
+          },
+          "infoText": {
+            "visible": true
+          }
+        },
+        "background": {
+          "visible": true
+        }
+      },
+      
+      // fragCorrelationBar
+      
+      "fragCorrelationBar": {
+        "teamFragsSeparatorField": {
+          "y": -2
+        }
+      },
+      
+      // fullStats
+      
+      "fullStats": {
+        "modalBgSpr": {
+          "visible": true
+        }
       },
       
       // playersPanel
@@ -67,29 +93,11 @@
         }
       },
       
-      // endWarningPanel
+      // prebattleTimer
       
-      "endWarningPanel": {
-        "y": 45,     
-        "timer": {
-          "timeText": {
-            "visible": true
-          },
-          "infoText": {
-            "visible": true
-          }
-        },
-        "background": {
-          "visible": true
-        }
-      },
-      
-      // fragCorrelationBar
-      
-      "fragCorrelationBar": {
-        "teamFragsSeparatorField": {
-          "y": -2
-        }
+      "prebattleTimer": {
+        "visible": false,
+        "alpha": 0
       }
     }
   ]

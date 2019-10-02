@@ -130,14 +130,14 @@ def avg_damage(dmg_total):
 #####################################################################
 # handlers > total_efficiency
 
-@xvm.export('total_damage', deterministic=False)
-def total_damage():
-    return total_efficiency.total_damage()
+@xvm.export('total_blocked', deterministic=False)
+def total_blocked():
+    return total_efficiency.total_blocked()
 
 @xvm.export('total_assist', deterministic=False)
 def total_assist():
     return total_efficiency.total_assist()
 
-@xvm.export('total_blocked', deterministic=False)
-def total_blocked():
-    return total_efficiency.total_blocked()
+@xvm.export('total_stun', deterministic=False)
+def total_stun():
+    return total_efficiency.total_stun()

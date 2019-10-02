@@ -187,8 +187,8 @@
       "alpha": "{{hp-ratio<25?0|70}}",
       "textFormat": { "font": "NDO", "size": 38, "color": null, "align": "center", "bold": false, "italic": false },
       "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 90, "blur": 2, "strength": 2 },
-      "format": "{{x-spotted?&#x005C;|{{x-overturned?&#x005D;}}}}"
-      //"format": "{{x-spotted?&#x005C;|{{x-overturned?&#x005D;|{{x-fire?&#x005E;|{{x-drowning?&#x005F;}}}}}}}}"
+      "format": "{{x-spotted?&#x005D;|{{x-overturned?&#x005E;}}}}"
+      //"format": "{{x-spotted?&#x005D;|{{x-overturned?&#x005E;|{{x-fire?&#x005F;|{{x-drowning?&#x0060;}}}}}}}}"
     }
   }
 }

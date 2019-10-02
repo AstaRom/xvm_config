@@ -1,5 +1,6 @@
 ﻿{
   "damageLog": {
+    "enabled": true,
     "disabledDetailStats": false,
     "disabledSummaryStats": false,
     "log": {
