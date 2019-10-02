@@ -32,7 +32,6 @@
       "unknown": "unknown",
       "regular": "regular",
       "training": "training",
-      "company": "company",
       "tournament": "tournament",
       "clan": "clan",
       "tutorial": "tutorial",

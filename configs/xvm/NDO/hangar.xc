@@ -1,6 +1,5 @@
 ﻿{
   "hangar": {
-    "xwnInCompany": false,
     "hangarType": "premium",
     "camera": {
       "minDistance": 5.5,

@@ -483,3 +483,14 @@ def radio_name():
 def radio_radius():
     typeDescriptor = _typeDescriptor()
     return None if not typeDescriptor else "%d" % (typeDescriptor.radio['distance'])
+
+#####################################################################
+# Unused
+
+# def tags():
+    # typeDescriptor = _typeDescriptor()
+    # return None if not typeDescriptor else "%s" % (typeDescriptor.type.tags)
+
+# def crewRoles():
+    # typeDescriptor = _typeDescriptor()
+    # return None if not typeDescriptor else "%s" % (typeDescriptor.type.crewRoles)

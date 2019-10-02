@@ -2,7 +2,8 @@
   "minimap": {
     "enabled": true,
     "mapBackgroundImageAlpha": 100,
-    "selfIconAlpha": 100,
+    "selfIconColor": "{{player?0xFCFCFC|{{c:system}}}}",
+    "selfIconAlpha": 85,
     "selfIconScale": 1,
     "iconAlpha": 0,
     "iconScale": 1,    
