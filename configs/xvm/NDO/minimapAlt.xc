@@ -1,5 +1,5 @@
 ﻿{
-  "minimapAlt": {
+  "minimap": {
     "mapBackgroundImageAlpha": 100,
     "selfIconAlpha": 100,
     "selfIconScale": 1,

@@ -4,6 +4,7 @@
 from NDO_scripts import info_panel
 from NDO_scripts import hp_panel
 from NDO_scripts import dmg_count
+from NDO_scripts import total_efficiency
 
 #####################################################################
 # handlers > info_panel
@@ -125,3 +126,18 @@ def high_caliber(dmg_total):
 @xvm.export('avg_damage', deterministic=False)
 def avg_damage(dmg_total):
     return dmg_count.avg_damage(dmg_total)
+
+#####################################################################
+# handlers > total_efficiency
+
+@xvm.export('total_damage', deterministic=False)
+def total_damage():
+    return total_efficiency.total_damage()
+
+@xvm.export('total_assist', deterministic=False)
+def total_assist():
+    return total_efficiency.total_assist()
+
+@xvm.export('total_blocked', deterministic=False)
+def total_blocked():
+    return total_efficiency.total_blocked()

@@ -4,6 +4,8 @@
     "height": 100,
     "gap": 5,
     "fields": {
+      "flag": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      "tankIcon": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "tankType": { "enabled": false, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "level": { "enabled": false, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "xp": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
@@ -16,11 +18,10 @@
       "actionPrice": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100 }
     },
     "extraFields": [
-      //{ "x": 0, "y": 0, "height": 100, "width": 160, "bgColor": "0x000000", "alpha": 100 },
-      //{ "x": 0, "y": 0, "height": 100, "width": 160, "src": "cfg://NDO/img/carousel/bgFrame.png" },
-      //{ "x": 0, "y": 0, "height": 32, "width": 160, "bgColor": "0x000000", "alpha": 35 },
-      //{ "x": 0, "y": 68, "height": 32, "width": 160, "bgColor": "0x000000", "alpha": 35 },
-      //{ "x": 0, "y": 0, "height": 100, "width": 159, "src": "img://gui/maps/icons/vehicle/{{v.sysname}}.png" },
+      //{ "x": 0, "y": 0, "height": 100, "width": 160, "bgColor": "0x000000", "alpha": 50, "layer": "substrate" },
+      //{ "x": 0, "y": 0, "height": 100, "width": 160, "src": "cfg://NDO/img/carousel/bgFrame.png", "layer": "substrate" },
+      //{ "x": 0, "y": 0, "height": 32, "width": 160, "bgColor": "0x000000", "alpha": 35, "layer": "substrate" },
+      //{ "x": 0, "y": 68, "height": 32, "width": 160, "bgColor": "0x000000", "alpha": 35, "layer": "substrate" },
       { "x": 3, "y": 3, "height": 26, "width": 26, "src": "img://gui/maps/vehicles/decals/{{.custom_texts.carousel.nation.{{v.nation}}}}.dds" },
       //{ "x": 1, "y": 4, "height": 24, "width": 30, "src": "cfg://NDO/img/carousel/vtype/{{.custom_texts.carousel.type}}{{v.elite?_elite}}.png" },
       { "x": 3, "y": 70, "height": 28, "width": 26, "src": "img://gui/maps/icons/achievement/markOfMastery{{v.mastery}}.png" },
@@ -39,6 +40,8 @@
     "height": 35,
     "gap": 5,
     "fields": {
+      "flag": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      "tankIcon": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "tankType": { "enabled": false, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "level": { "enabled": false, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "xp": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },

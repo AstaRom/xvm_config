@@ -5,7 +5,7 @@
     "y": 0,
     "width": 150,
     "height": 53,
-    "topmost": true,
+    "layer": "top",
     "align": "center",
     "valign": "top",
     "textAlign": "center",

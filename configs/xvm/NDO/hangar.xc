@@ -9,6 +9,7 @@
     "allowExchangeXPInTechTree": false,
     "enableCrewAutoReturn": true,
     "crewReturnByDefault": true,
+    "crewMaxPerksCount": 8,
     "barracksShowFlags": true,
     "barracksShowSkills": true,
     "enableEquipAutoReturn": true,
@@ -27,7 +28,7 @@
       "maxRows": 2,
       "columnGap": 10,
       "leading": 0,
-      "topmost": true,
+      "layer": "normal",
       "showTitle": false,
       "showServerName": true,
       "minimalNameLength": 4,
@@ -56,7 +57,7 @@
       "shadow": {
         "enabled": true,
         "distance": 0,
-        "angle": 45,        
+        "angle": 45,
         "color": "0x000000",
         "alpha": 70,
         "blur": 4,
@@ -74,7 +75,7 @@
       "maxRows": 2,
       "columnGap": 10,
       "leading": 0,
-      "topmost": true,
+      "layer": "normal",
       "showTitle": false,
       "showServerName": true,
       "minimalNameLength": 4,
@@ -103,7 +104,7 @@
       "shadow": {
         "enabled": true,
         "distance": 0,
-        "angle": 45,        
+        "angle": 45,
         "color": "0x000000",
         "alpha": 70,
         "blur": 4,
@@ -117,6 +118,8 @@
       "shiftX": 0,
       "shiftY": 0
     },
+    "showBuyPremiumButton": true,
+    "showPremiumShopButton": false,
     "carousel": ${"carousel.xc":"carousel"},
     "clock": ${"clock.xc":"clock"}
   }

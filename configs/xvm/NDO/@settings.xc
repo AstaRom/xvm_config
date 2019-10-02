@@ -1,6 +1,12 @@
 ﻿{
   "settings": {
     "battleLabels": {
+      "damageLog": {
+        "damage_log": false,
+        "timer_reload": false,
+        "last_hit": false,
+        "total_efficiency": false
+      },
       "info_panel": false,
       "total_hp_panel": false
     },
