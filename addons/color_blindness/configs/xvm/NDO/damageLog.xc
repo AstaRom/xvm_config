@@ -20,7 +20,7 @@
       },
       "c:dmg-kind": { 
         "shot": "#FCFCFC",        
-        "fire": "#FF6655",
+        "fire": "#3399CC",
         "ramming": "#998855",
         "world_collision": "#228855",
         "drowning": "#CCCCCC",
@@ -166,7 +166,7 @@
       "shadow": {
         "distance": 0,
         "angle": 0,
-        "color": "{{dmg=0?#000000|#770000}}",
+        "color": "{{dmg=0?#000000|#003366}}",
         "alpha": 75,
         "blur": 10,
         "strength": 4,

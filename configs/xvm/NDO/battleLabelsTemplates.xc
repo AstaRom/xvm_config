@@ -62,13 +62,13 @@
       "enabled": ${"@settings.xc":"settings.battleLabels.damageLog.total_efficiency"},
       "updateEvent": "PY(ON_TOTAL_EFFICIENCY)",
       "x": 235,
-      "y": -232,
+      "y": -230,
       "width": 80,
-      "height": 40,
+      "height": 42,
       "screenVAlign": "bottom",
       "shadow": { "enabled": true, "distance": 1, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 5, "strength": 3 },
-      "textFormat": { "font": "$UniversCondC", "size": 14, "color": "0xE2E2E2" },
-      "format": "<img src='img://gui/maps/icons/library/ClanBattleResultIcon-1.png' vspace='-3'>{{py:total_blocked}}<br/><img src='img://gui/maps/icons/library/BattleResultIcon-1.png' vspace='-3'>{{py:total_assist}}"
+      "textFormat": { "font": "$UniversCondC", "size": 14, "color": "0xE2E2E2", "leading": -4 },
+      "format": "<font face='NDO' size='20'>&#x005A;</font> {{py:total_blocked}}<br/><font face='NDO' size='20'>&#x005B;</font> {{py:total_assist}}"
     },
     "info_panel_bg": {
       "enabled": ${"@settings.xc":"settings.battleLabels.info_panel"},
