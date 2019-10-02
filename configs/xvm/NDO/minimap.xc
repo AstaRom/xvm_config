@@ -10,6 +10,7 @@
     "directionTriangleAlpha": 100,
     "directionLineAlpha": 100,
     "showDirectionLineAfterDeath": false,
+    "showCellClickAnimation": true,
     "minimapAimIcon": "xvm://res/MinimapAim.png",
     "minimapAimIconScale": 50,
     "zoom": {
