@@ -44,6 +44,11 @@
       "spotted_arty": "0xFF8800",
       "dead_arty": "0xCCCCCC"
     },
+    "totalHP": {
+      "bad": "0xF50800",
+      "neutral": "0xFCFCFC",
+      "good": "0x96FF00"
+    },
     "damage": {
       "ally_ally_hit": "0x00EAFF",
       "ally_ally_kill": "0x00EAFF",

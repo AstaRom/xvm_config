@@ -1,7 +1,7 @@
 ﻿{
   "labels": {
     "formats": [
-      ${ "battleLabelsTemplates.xc":"def.winChances" }
+      ${ "battleLabelsTemplates.xc":"def.totalHP" }
     ]
   }
 }

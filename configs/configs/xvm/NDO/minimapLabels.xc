@@ -1,6 +1,5 @@
 ﻿{
   "labels": {
-    "enabled": true,
     "formats": [
       ${ "minimapLabelsTemplates.xc":"def.vtypeSpotted" },
       ${ "minimapLabelsTemplates.xc":"def.vehicleSpotted" },    
@@ -9,7 +8,6 @@
     ]
   },
   "labelsAlt": {
-    "enabled": true,
     "formats": [
       ${ "minimapLabelsTemplates.xc":"def.vtypeSpotted" },
       ${ "minimapLabelsTemplates.xc":"def.nickSpotted" },

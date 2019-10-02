@@ -14,9 +14,7 @@
     "filters": {
       "params": { "enabled": true },
       "bonus": { "enabled": true },
-      "favorite": { "enabled": true },
-      "gameMode": { "enabled": true },
-      "prefs": { "enabled": true }
+      "favorite": { "enabled": true }
     },
     "filtersPadding": {
       "horizontal": 11,

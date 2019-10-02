@@ -1,6 +1,5 @@
 ﻿{ 
   "circles": {
-    "enabled": true,
     "view": [
       { "enabled": true, "distance": 50, "scale": 1, "thickness": 0.75, "alpha": 50, "color": "0xFFFFFF" },
       { "enabled": true, "distance": 445, "scale": 1, "thickness": 0.75, "alpha": 50, "color": "0xFFFFFF" },

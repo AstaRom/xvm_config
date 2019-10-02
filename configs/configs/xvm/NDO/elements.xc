@@ -39,7 +39,7 @@
       // teamBasesPanel
 
       "teamBasesPanel": {
-        "_x": "teamBasesPanel._x + 0",
+        "_x": "teamBasesPanel._x",
         "_y": "teamBasesPanel._y + 20"
       },
 
@@ -105,8 +105,85 @@
       // battleTimer
 
       "battleTimer": {
-        "_x": "battleTimer._x",
-        "_y": "battleTimer._y + 10"
+        "main": {
+          "_x": "battleTimer.main._x",
+          "_y": "battleTimer.main._y + 10",
+          "highlightedDots": {
+            "_x": "battleTimer.main.highlightedDots._x",
+            "_y": "battleTimer.main.highlightedDots._y - 1",
+            "_height": 50,
+            "_width": 25,
+            "text": ":",
+            "$textFormat": { "size": 20, "font": "$TitleFont", "color": "0xFCFCFC", "align": "center" }
+          },
+          "highlightedSeconds": {
+            "_x": "battleTimer.main.highlightedSeconds._x",
+            "_y": "battleTimer.main.highlightedSeconds._y",
+            "_height": 50,
+            "_width": 25,
+            "$textFormat": { "size": 20, "font": "$TitleFont", "color": "0xFCFCFC", "align": "left" }
+          },
+          "highlightedMinutes": {
+            "_x": "battleTimer.main.highlightedMinutes._x",
+            "_y": "battleTimer.main.highlightedMinutes._y",
+            "_height": 50,
+            "_width": 25,
+            "$textFormat": { "size": 20, "font": "$TitleFont", "color": "0xFCFCFC", "align": "right" }
+          },
+          "mcBg": {
+            "_x": "battleTimer.main.mcBg._x",
+            "_y": "battleTimer.main.mcBg._y",
+            "_alpha": 75
+          },
+          "dots": {
+            "_x": "battleTimer.main.dots._x",
+            "_y": "battleTimer.main.dots._y - 1",
+            "_height": 50,
+            "_width": 25,
+            "text": ":",
+            "$textFormat": { "size": 20, "font": "$TitleFont", "color": "0xFCFCFC", "align": "center" }
+          },
+          "seconds": {
+            "_x": "battleTimer.main.seconds._x",
+            "_y": "battleTimer.main.seconds._y",
+            "_height": 50,
+            "_width": 25,
+            "$textFormat": { "size": 20, "font": "$TitleFont", "color": "0xFCFCFC", "align": "left" }
+          },
+          "minutes": {
+            "_x": "battleTimer.main.minutes._x",
+            "_y": "battleTimer.main.minutes._y",
+            "_height": 50,
+            "_width": 25,
+            "$textFormat": { "size": 20, "font": "$TitleFont", "color": "0xFCFCFC", "align": "right" }
+          }
+        }
+      },
+      
+      // endWarningPanel
+      
+      "endWarningPanel": {
+        "_x": "endWarningPanel._x",
+        "_y": "endWarningPanel._y + 15",
+        "instance": {
+          "_x": "endWarningPanel.instance._x",
+          "_y": "endWarningPanel.instance._y",
+          "timer": {
+            "_alpha": 100,
+            "_x": "endWarningPanel.instance.timer._x",
+            "_y": "endWarningPanel.instance.timer._y",
+            "infoText": {
+              "_alpha": 0
+            },
+            "timeText": {
+              "_x": "endWarningPanel.instance.timer.timeText._x + 35",
+              "_y": "endWarningPanel.instance.timer.timeText._y - 8"
+            }
+          },
+          "bg": {
+            "_alpha": 100
+          }
+        }
       }
     }
   ]
