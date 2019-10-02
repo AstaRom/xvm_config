@@ -3,7 +3,6 @@
     "clockFormat": ${"definition.xc":"definition.date"},
     "showBattleTier": true,
     "removeSquadIcon": false,
-    "removeRankIcon": true,
     "vehicleIconAlpha": 100,
     "removeVehicleLevel": true,
     "removeVehicleTypeIcon": true,

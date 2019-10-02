@@ -34,7 +34,6 @@
   "statisticForm":     ${"statisticForm.xc":"statisticForm"},
   "texts":             ${"texts.xc":"texts"},
   "tooltips":          ${"tooltips.xc":"tooltips"},
-  "tweaks":            ${"tweaks.xc":"tweaks"},
   "userInfo":          ${"userInfo.xc":"userInfo"},
   "vehicleNames":      ${"vehicleNames.xc":"vehicleNames"},
   "xmqp":              ${"xmqp.xc":"xmqp"}

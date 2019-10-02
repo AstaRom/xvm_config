@@ -53,7 +53,7 @@
       "enabled": false,
       "updateInterval": 5000,
       "x": 15,
-      "y": 75,
+      "y": 35,
       "hAlign": "left",
       "vAlign": "top",
       "alpha": 100,

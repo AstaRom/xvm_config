@@ -27,13 +27,13 @@
       "enabled": ${"@settings.xc":"settings.battleLabels.damage_panel.total_efficiency"},
       "updateEvent": "PY(ON_TOTAL_EFFICIENCY)",
       "x": 235,
-      "y": "{{my-vtype-key!=SPG?-232|-223}}",
+      "y": -230,
       "width": 80,
-      "height": "{{my-vtype-key!=SPG?42|60}}",
+      "height": 42,
       "screenVAlign": "bottom",
       "shadow": { "enabled": true, "distance": 1, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 5, "strength": 3 },
       "textFormat": { "font": "$UniversCondC", "size": 14, "color": "0xE2E2E2", "leading": -4 },
-      "format": "<font face='NDO' size='20'>&#x005A;</font> {{py:total_blocked}}<br/><font face='NDO' size='20'>&#x005B;</font> {{py:total_assist}}{{my-vtype-key=SPG?<br/><font face='NDO' size='20'>&#x005C;</font> {{py:total_stun}}}}"
+      "format": "<font face='NDO' size='20'>&#x005A;</font> {{py:total_blocked}}<br/><font face='NDO' size='20'>&#x005B;</font> {{py:total_assist}}"
     },
     "rt_engine": {
       "enabled": ${"@settings.xc":"settings.battleLabels.damage_panel.repair_timer"},

@@ -1,5 +1,0 @@
-﻿{
-  "tweaks": {
-    "allowMultipleWotInstances": false
-  }
-}

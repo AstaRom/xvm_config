@@ -1,58 +1,21 @@
 ﻿{
   "hangar": {
     "xwnInCompany": false,
-    "hangarType": "premium",
-    "camera": {
-      "minDistance": 5.5,
-      "maxDistance": 14,
-      "startDistance": 10,
-      "zoomSensitivity": 0.8
-    },
-    "showBuyPremiumButton": true,
-    "showPremiumShopButton": false,
     "enableGoldLocker": true,
     "enableFreeXpLocker": true,
-    "serverInfo": {
-      "enabled": false,
-      "alpha": 100,
-      "rotation": 0,
-      "shiftX": 0,
-      "shiftY": 0
-    },
-    "enableCrewAutoReturn": true,
-    "crewReturnByDefault": true,
-    "crewMaxPerksCount": 8,
-    "commonQuests": {
-      "enabled": true,
-      "alpha": 100,
-      "rotation": 0,
-      "shiftX": 0,
-      "shiftY": 0
-    },
-    "personalQuests": {
-      "enabled": true,
-      "alpha": 100,
-      "rotation": 0,
-      "shiftX": 0,
-      "shiftY": 0
-    },
-    "vehicleName": {
-      "enabled": true,
-      "alpha": 100,
-      "rotation": 0,
-      "shiftX": 0,
-      "shiftY": 0
-    },
     "defaultBoughtForCredits": true,
-    "enableEquipAutoReturn": true,
-    "blockVehicleIfLowAmmo": true,
-    "lowAmmoPercentage": 20,
-    "notificationsButtonType": "blink",
     "hidePricesInTechTree": true,
     "masteryMarkInTechTree": true,
     "allowExchangeXPInTechTree": false,
+    "enableCrewAutoReturn": true,
+    "crewReturnByDefault": true,
+    "crewMaxPerksCount": 8,
     "barracksShowFlags": true,
     "barracksShowSkills": true,
+    "enableEquipAutoReturn": true,
+    "blockVehicleIfLowAmmo": true,
+    "lowAmmoPercentage": 20,
+    "widgetsEnabled": false,
     "pingServers": {
       "enabled": true,
       "updateInterval": 5000,
@@ -150,6 +113,37 @@
         "strength": 2
       }
     },
+    "serverInfo": {
+      "enabled": false,
+      "alpha": 100,
+      "rotation": 0,
+      "shiftX": 0,
+      "shiftY": 0
+    },
+    "commonQuests": {
+      "enabled": true,
+      "alpha": 100,
+      "rotation": 0,
+      "shiftX": 0,
+      "shiftY": 0
+    },
+    "personalQuests": {
+      "enabled": true,
+      "alpha": 100,
+      "rotation": 0,
+      "shiftX": 0,
+      "shiftY": 0
+    },
+    "vehicleName": {
+      "enabled": true,
+      "alpha": 100,
+      "rotation": 0,
+      "shiftX": 0,
+      "shiftY": 0
+    },
+    "showBuyPremiumButton": true,
+    "showPremiumShopButton": false,
+    "notificationsButtonType": "blink",
     "carousel": ${"carousel.xc":"carousel"},
     "widgets": ${"widgets.xc":"widgets.lobby"}
   }

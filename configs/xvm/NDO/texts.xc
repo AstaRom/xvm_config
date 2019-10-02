@@ -49,8 +49,7 @@
       "fallout_classic": "fallout_classic",
       "fallout_multiteam": "fallout_multiteam",
       "sortie_2": "sortie_2",
-      "fort_battle_2": "fort_battle_2",
-      "ranked": "ranked"
+      "fort_battle_2": "fort_battle_2"
     },
     "topclan": {
       "top": "top",
