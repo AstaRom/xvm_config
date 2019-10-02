@@ -4,7 +4,8 @@
 from Avatar import PlayerAvatar
 from gui.Scaleform.daapi.view.battle.shared.damage_log_panel import DamageLogPanel
 from gui.battle_control.battle_constants import PERSONAL_EFFICIENCY_TYPE as _ETYPE
-from xfw import registerEvent, as_event
+from xfw import registerEvent
+from xfw_actionscript.python import as_event
 
 #####################################################################
 # constants

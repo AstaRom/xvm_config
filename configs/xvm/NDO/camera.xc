@@ -2,7 +2,6 @@
   "camera": {
     "enabled": true,
     "noFlashBang": false,
-    "hideHint": false,
     "arcade": {
       "distRange": [2, 100],
       "startDist": null,

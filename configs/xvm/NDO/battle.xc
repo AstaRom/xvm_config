@@ -7,6 +7,11 @@
     "clanIconsFolder": "clanicons/",
     "sixthSenseIcon": "cfg://NDO/img/SixthSense.png",
     "sixthSenseDuration": 2000,
+    "battleHint": {
+      "hideTrajectoryView": false,
+      "hideSiegeIndicator": false,
+      "hideQuestProgress": false
+    },
     "elements": ${"elements.xc":"elements"},
     "camera": ${"camera.xc":"camera"},
     "minimapDeadSwitch": true

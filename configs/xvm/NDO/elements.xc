@@ -2,9 +2,9 @@
   "elements": [
     {
       "$delay": 100,
-      
+
       // battleTimer
-      
+
       "battleTimer": {
         "$delay": 1,
         "y": 10,
@@ -26,15 +26,15 @@
           "htmlText": "<TEXTFORMAT INDENT=\"0\" LEFTMARGIN=\"0\" RIGHTMARGIN=\"0\" LEADING=\"2\"><P ALIGN=\"RIGHT\"><FONT FACE=\"$TitleFont\" SIZE=\"20\" COLOR=\"#FCFCFC\" KERNING=\"0\">00</FONT></P></TEXTFORMAT>"
         }
       },
-      
+
       // debugPanel
-      
+
       "debugPanel": {
         "y": 0
       },
-      
+
       // endWarningPanel
-      
+
       "endWarningPanel": {
         "y": 45,     
         "timer": {
@@ -49,25 +49,24 @@
           "visible": true
         }
       },
-      
+
       // fragCorrelationBar
-      
+
       "fragCorrelationBar": {
         "teamFragsSeparatorField": {
           "y": -2
         }
       },
-      
-      // fullStats
-      
-      "fullStats": {
-        "modalBgSpr": {
-          "visible": true
-        }
+
+      // hintPanel
+
+      "hintPanel": {
+        "visible": false,
+        "alpha": 0
       },
-      
+
       // playersPanel
-      
+
       "playersPanel": {
         "y": -15,
         "listLeft": {
@@ -95,10 +94,36 @@
           "y": 40
         }
       },
-      
+
       // prebattleTimer
-      
+
       "prebattleTimer": {
+        "visible": false,
+        "alpha": 0,
+        "qpInfoFlagContainer": {
+          "visible": false
+        }
+      },
+
+      // questProgressTopView
+
+      "questProgressTopView": {
+        "$interval": 25000,
+        "visible": true,
+        "y": "{{py:math_sub({{py:screen_height}}, 120)}}",
+        "flag": {
+          "visible": false
+        },
+        "shadow": {
+          "visible": true,
+          "width": 1000,
+          "height": 200
+        }
+      },
+
+      // questProgressTopAnimContainer
+
+      "questProgressTopAnimContainer": {
         "visible": false,
         "alpha": 0
       }

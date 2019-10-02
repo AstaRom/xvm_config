@@ -2,7 +2,8 @@
 # imports
 
 import BigWorld
-from xfw import registerEvent, as_event
+from xfw import registerEvent
+from xfw_actionscript.python import as_event
 import xvm_main.python.config as config
 import xvm_battle.python.fragCorrelationPanel as panel
 
@@ -30,10 +31,6 @@ def thp_show(battletype):
         return 'on'
     else:
         return 'off'
-
-#@xvm.export('str_replace', deterministic=True)
-def str_replace(str, old, new, max=-1):
-    return str.replace(old, new, max)
 
 #@xvm.export('score_team', deterministic=False)
 def score_team(current_team):

@@ -1,23 +1,30 @@
 ﻿#####################################################################
 # imports
 
-from helpers import getClientLanguage
-import xvm_main.python.config as config
-
+from NDO_scripts import basic_macros
 from NDO_scripts import dmg_count
 from NDO_scripts import hp_panel
 from NDO_scripts import info_panel
 from NDO_scripts import total_efficiency
 
 #####################################################################
-# handlers
+# handlers > basic_macros
 
 @xvm.export('l10n', deterministic=False)
 def l10n(l10n):
-    gameLng = getClientLanguage()
-    mode = 'ru' if gameLng == 'ru' else 'en'
-    ref = config.get('custom_texts/language/%s/%s' % (mode, l10n))
-    return '%s' % ref
+    return basic_macros.l10n(l10n)
+
+@xvm.export('math_sub', deterministic=False)
+def math_sub(a, b):
+    return basic_macros.math_sub(a, b)
+
+@xvm.export('screen_height', deterministic=False)
+def screen_height():
+    return basic_macros.screen_height()
+
+@xvm.export('str_replace', deterministic=False)
+def str_replace(str, old, new, max=-1):
+    return basic_macros.str_replace(str, old, new, max=-1)
 
 #####################################################################
 # handlers > dmg_count
@@ -36,10 +43,6 @@ def avg_damage(dmg_total):
 @xvm.export('thp_show', deterministic=False)
 def thp_show(battletype):
     return hp_panel.thp_show(battletype)
-
-@xvm.export('str_replace', deterministic=True)
-def str_replace(str, old, new, max=-1):
-    return hp_panel.str_replace(str, old, new, max=-1)
 
 @xvm.export('score_team', deterministic=False)
 def score_team(current_team):
