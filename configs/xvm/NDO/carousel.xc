@@ -9,6 +9,7 @@
     "scrollingSpeed": 1,
     "hideBuyTank": true,
     "hideBuySlot": false,
+    "hideRestoreTank": true,
     "showTotalSlots": false,    
     "showUsedSlots": true,
     "enableLockBackground": true,
