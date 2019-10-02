@@ -68,45 +68,51 @@ def max_ammo():
 #@xvm.export('gun_reload', deterministic=False)
 def gun_reload():
     typeDescriptor = _typeDescriptor()
-    return None if not typeDescriptor else "%.1f" % (typeDescriptor.gun.reloadTime)
+    return None if not typeDescriptor else "%.2f" % (typeDescriptor.gun.reloadTime)
 
-#@xvm.export('gun_reload_equip', deterministic=False)
-def gun_reload_equip():
+#@xvm.export('gun_dpm', deterministic=False)
+def gun_dpm():
     typeDescriptor = _typeDescriptor()
     if not typeDescriptor: 
         return None
     else:
-        reload_orig = typeDescriptor.gun.reloadTime
-        crew = 1.16 if typeDescriptor.miscAttrs['crewLevelIncrease'] != 0 else 1.10
-        if (typeDescriptor.gun.clip[0] == 1) and (typeDescriptor.miscAttrs['gunReloadTimeFactor'] != 0):
-          rammer = typeDescriptor.miscAttrs['gunReloadTimeFactor']
-        else:
-          rammer = 1
-        return "%.1f" % (round((reload_orig / (0.57 + 0.43 * crew)) * rammer, 1))
-
-#@xvm.export('dmg_per_min', deterministic=False)
-def dmg_per_min():
-    typeDescriptor = _typeDescriptor()
-    if not typeDescriptor: 
-        return None
-    else:
-        time = typeDescriptor.gun.reloadTime + typeDescriptor.gun.clip[0] * typeDescriptor.gun.clip[1]
+        time = typeDescriptor.gun.reloadTime + (typeDescriptor.gun.clip[0] - 1) * typeDescriptor.gun.clip[1]
         return "%d" % (round(typeDescriptor.gun.clip[0] / time * 60 * typeDescriptor.gun.shots[0].shell.damage[0], 0))
 
-#@xvm.export('dmg_per_min_equip', deterministic=False)
-def dmg_per_min_equip():
+#@xvm.export('gun_reload_equip', deterministic=False)
+def gun_reload_equip(eq1, eq2, eq3, eq4):
     typeDescriptor = _typeDescriptor()
     if not typeDescriptor: 
         return None
     else:
         reload_orig = typeDescriptor.gun.reloadTime
-        crew = 1.16 if typeDescriptor.miscAttrs['crewLevelIncrease'] != 0 else 1.10
-        if (typeDescriptor.gun.clip[0] == 1) and (typeDescriptor.miscAttrs['gunReloadTimeFactor'] != 0):
-          rammer = typeDescriptor.miscAttrs['gunReloadTimeFactor']
+        rammer = 0.9 if (typeDescriptor.gun.clip[0] == 1) and (eq1 == 1) else 1
+        if (eq2 == 1) and (eq3 == 1) and (eq4 == 1):
+            crew = 1.32
+        elif (eq2 == 1) and (eq3 == 1) and (eq4 == 0):
+            crew = 1.27
+        elif (eq2 == 1) and (eq3 == 0) and (eq4 == 1):
+            crew = 1.21
+        elif (eq2 == 1) and (eq3 == 0) and (eq4 == 0):
+            crew = 1.16
+        elif (eq2 == 0) and (eq3 == 1) and (eq4 == 1):
+            crew = 1.27
+        elif (eq2 == 0) and (eq3 == 1) and (eq4 == 0):
+            crew = 1.21
+        elif (eq2 == 0) and (eq3 == 0) and (eq4 == 1):
+            crew = 1.16
         else:
-          rammer = 1
-        reload_equip = (reload_orig / (0.57 + 0.43 * crew)) * rammer 
-        time = reload_equip + typeDescriptor.gun.clip[0] * typeDescriptor.gun.clip[1]
+            crew = 1.10
+        return "%.2f" % (round((reload_orig / (0.57 + 0.43 * crew)) * rammer, 2))
+
+#@xvm.export('gun_dpm_equip', deterministic=False)
+def gun_dpm_equip(eq1, eq2, eq3, eq4):
+    typeDescriptor = _typeDescriptor()
+    if not typeDescriptor: 
+        return None
+    else:
+        reload_equip = float(gun_reload_equip(eq1, eq2, eq3, eq4))
+        time = reload_equip + (typeDescriptor.gun.clip[0] - 1) * typeDescriptor.gun.clip[1]
         return "%d" % (round(typeDescriptor.gun.clip[0] / time * 60 * typeDescriptor.gun.shots[0].shell.damage[0], 0))
 
 #@xvm.export('gun_clip', deterministic=False)

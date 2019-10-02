@@ -14,8 +14,8 @@ def vehicle_name():
     return info_panel.vehicle_name()
 
 @xvm.export('gun_reload_equip', deterministic=False)
-def gun_reload_equip():
-    return info_panel.gun_reload_equip()
+def gun_reload_equip(eq1, eq2, eq3, eq4):
+    return info_panel.gun_reload_equip(eq1, eq2, eq3, eq4)
 
 @xvm.export('vision_radius', deterministic=False)
 def vision_radius():
