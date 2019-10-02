@@ -5,6 +5,12 @@
     "showCrewExperience": true,
     "showNetIncome": true,
     "showExtendedInfo": true,
-    "showTotals": true
+    "showTotals": true,
+    "bonusState": {
+      "enabled": true,
+      "offsetX": 25,
+      "offsetY": 60,
+      "backgroundAlpha": 65
+    }
   }
 }

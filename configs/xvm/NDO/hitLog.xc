@@ -6,7 +6,7 @@
     "log": {
       "moveInBattle": false,
       "x": 5,
-      "y": 450,
+      "y": "{{battletype-key=epic_battle?{{squad?210|135}}|450}}",
       "groupHitsByPlayer": true,
       "lines": 15,
       "addToEnd": false,
