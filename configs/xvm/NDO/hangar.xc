@@ -6,6 +6,7 @@
     "showBattleTypeSelectorText": true,
     "showGeneralChatButton": false,
     "showPromoPremVehicle": false,
+    "showTeaserWidget": false,
     "enableGoldLocker": true,
     "enableFreeXpLocker": true,
     "serverInfo": {
