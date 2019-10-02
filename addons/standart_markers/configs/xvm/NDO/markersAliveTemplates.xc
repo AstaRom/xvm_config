@@ -79,7 +79,7 @@
       "alpha": 100
     },
     // Блок текстовых полей / textFields
-    "tankName": {
+    "vehicleName": {
       "name": "Название техники",
       "enabled": true,
       "x": 0,
@@ -100,7 +100,7 @@
       "format": "{{name%.16s~..}}{{clan}}"
     },
     "hp": {
-      "name": "Здоровье",
+      "name": "Запас прочности",
       "enabled": true,
       "x": 0,
       "y": -20,
@@ -110,7 +110,7 @@
       "format": "{{hp}} / {{hp-max}}"
     },
     "hp_ratio": {
-      "name": "Здоровье (Процент)",
+      "name": "Запас прочности (в процентах)",
       "enabled": true,
       "x": 0,
       "y": -20,

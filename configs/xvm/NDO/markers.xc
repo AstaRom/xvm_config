@@ -18,7 +18,7 @@
           "actionMarker": ${ "markersAliveTemplates.xc": "def.actionMarker" },
           "stunMarker": ${ "markersAliveTemplates.xc": "def.stunMarker" },
           "textFields": [
-            ${ "markersAliveTemplates.xc": "def.tankName" },
+            ${ "markersAliveTemplates.xc": "def.vehicleName" },
             ${ "markersAliveTemplates.xc": "def.hp" },
             ${ "markersAliveTemplates.xc": "def.eff_marker" },
             ${ "markersAliveTemplates.xc": "def.squad_marker_fon" },
@@ -69,7 +69,7 @@
           "actionMarker": { "enabled": false },
           "stunMarker": { "enabled": false },
           "textFields": [
-            ${ "markersDeadTemplates.xc": "def.tankName" },
+            ${ "markersDeadTemplates.xc": "def.vehicleName" },
             ${ "markersDeadTemplates.xc": "def.playerName" }
           ]
         }
@@ -88,7 +88,7 @@
           "actionMarker": ${ "markersAliveTemplates.xc": "def.actionMarker" },
           "stunMarker": ${ "markersAliveTemplates.xc": "def.stunMarker" },
           "textFields": [
-            ${ "markersAliveTemplates.xc": "def.tankName" },
+            ${ "markersAliveTemplates.xc": "def.vehicleName" },
             ${ "markersAliveTemplates.xc": "def.hp" },
             ${ "markersAliveTemplates.xc": "def.eff_marker" },
             ${ "markersAliveTemplates.xc": "def.squad_marker_fon" },
@@ -138,7 +138,7 @@
           "actionMarker": { "enabled": false },
           "stunMarker": { "enabled": false },
           "textFields": [
-            ${ "markersDeadTemplates.xc": "def.tankName" },
+            ${ "markersDeadTemplates.xc": "def.vehicleName" },
             ${ "markersDeadTemplates.xc": "def.playerName" }
           ]
         }

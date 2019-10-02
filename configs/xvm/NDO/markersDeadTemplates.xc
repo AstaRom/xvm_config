@@ -65,7 +65,7 @@
       "alpha": 100
     },
     // Блок текстовых полей / textFields
-    "tankName": {
+    "vehicleName": {
       "name": "Название техники",
       "enabled": true,
       "x": 0,

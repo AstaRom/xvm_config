@@ -7,9 +7,6 @@
     },
     "logSoundEvents": false,
     "soundMapping": {
-      "lightbulb": "lightbulb",
-      "lightbulb_02": "lightbulb_02",
-      "sixthSense": "sixthSense",
       "xvm_sixthSense": "emptyEvent",
       "xvm_sixthSenseRudy": "emptyEvent",
       "xvm_fireAlert": "emptyEvent",
