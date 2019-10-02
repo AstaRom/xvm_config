@@ -13,6 +13,7 @@
     },
     "enableGoldLocker": true,
     "enableFreeXpLocker": true,
+    "enableCrystalLocker": true,
     "serverInfo": {
       "enabled": false,
       "alpha": 100,

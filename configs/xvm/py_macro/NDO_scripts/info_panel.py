@@ -9,7 +9,7 @@ from xfw import registerEvent
 from xfw_actionscript.python import as_event
 import xvm_main.python.config as config
 from xvm_main.python.xvm import l10n
-from xvm_battle.python.battle import isBattleTypeSupported as isBattle
+import xvm_battle.python.battle as battle
 
 #####################################################################
 # constants
@@ -18,6 +18,9 @@ ipHotKey = None
 
 #####################################################################
 # private
+
+def isBattle():
+    return battle.isBattleTypeSupported
 
 def _vehicle():
     vehicle = target()
@@ -44,7 +47,7 @@ def handleKey(self, isDown, key, mods):
     global ipHotKey
     if key != 56:
         return
-    if isDown and isBattle:
+    if isDown and isBattle():
         ipHotKey = config.get('custom_texts/battleLabels/info_panel')
     elif not isDown:
         ipHotKey = None

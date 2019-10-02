@@ -1,42 +1,41 @@
 ﻿{
   "def": {
-    "hitlog": {
-      "enabled": true,
-      "updateEvent": "ON_DAMAGE_CAUSED",
-      "x": 5,
-      "y": 425,
-      "width": 500,
-      "height": 1000,
+    "hit_log": {
+      "enabled": ${ "@settings.xc": "settings.battleLabels.hit_log" },
+      "updateEvent": "PY(ON_HIT_LOG)",
+      "x": "{{py:xvm.hitLog.log.x}}",
+      "y": "{{py:xvm.hitLog.log.y}}",
+      "width": 250,
+      "height": 300,
       "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x000000", "alpha": 75, "blur": 2, "strength": 1 },
-      "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFCFCFC", "align": "left", "leading": 5 },
-      "format": "{{hitlog-header}}\n{{hitlog-body}}"
+      "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFCFCFC", "align": "left", "bold": true, "leading": 5 },
+      "format": "{{py:xvm.hitLog.log}}"
+    },
+    "total_efficiency": {
+      "enabled": ${ "@settings.xc": "settings.battleLabels.total_efficiency" },
+      "updateEvent": "PY(ON_TOTAL_EFFICIENCY)",
+      "x": "{{py:xvm.hitLog.log.x}}",
+      "y": "{{py:math_sub({{py:xvm.hitLog.log.y}}, 20)}}",
+      "width": 250,
+      "height": 25,
+      "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x000000", "alpha": 75, "blur": 2, "strength": 1 },
+      "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFCFCFC", "align": "left", "bold": true, "leading": -4 },
+      "format": "<textformat tabstops='[{{py:total_tabstops('52,107,157', '59,121,178')}}]'><font face='NDO' size='21'>&#x005A;</font> {{py:total_damage}}<tab><font face='NDO' size='21'>&#x005B;</font> {{py:total_assist}}<tab><font face='NDO' size='18'>&#x005C;</font> {{py:total_blocked}}{{my-vtype-key=SPG?<tab><font face='NDO' size='16'>&#x005D;</font> {{py:total_stun}}}}</textformat>"
     },
     "damage_log": {
-      "enabled": ${ "@settings.xc": "settings.battleLabels.damage_panel.damage_log" },
+      "enabled": ${ "@settings.xc": "settings.battleLabels.damage_log" },
       "updateEvent": "PY(ON_HIT)",
-      "x": 235,
-      "y": -15,
+      "x": "{{py:xvm.damageLog.log.x}}",
+      "y": "{{py:xvm.damageLog.log.y}}",
       "width": 220,
       "height": 220,
       "screenVAlign": "bottom",
       "shadow": { "enabled": true, "distance": 1, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 5, "strength": 3 },
       "textFormat": { "font": "$UniversCondC", "size": 18, "color": "0xE2E2E2", "align": "left", "valign": "top" },
-      "format": "{{py:xvm.damageLog.dLog}}"
-    },
-    "total_efficiency": {
-      "enabled": ${ "@settings.xc": "settings.battleLabels.damage_panel.total_efficiency" },
-      "updateEvent": "PY(ON_TOTAL_EFFICIENCY)",
-      "x": 235,
-      "y": "{{my-vtype-key!=SPG?-232|-230}}",
-      "width": 80,
-      "height": "{{my-vtype-key!=SPG?42|60}}",
-      "screenVAlign": "bottom",
-      "shadow": { "enabled": true, "distance": 1, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 5, "strength": 3 },
-      "textFormat": { "font": "$UniversCondC", "size": 14, "color": "0xE2E2E2", "leading": -4 },
-      "format": "<font face='NDO' size='20'>&#x005A;</font> {{py:total_blocked}}<br/><font face='NDO' size='20'>&#x005B;</font> {{py:total_assist}}{{my-vtype-key=SPG?<br/><font face='NDO' size='20'>&#x005C;</font> {{py:total_stun}}}}"
+      "format": "{{py:xvm.damageLog.log}}"
     },
     "rt_engine": {
-      "enabled": ${ "@settings.xc": "settings.battleLabels.damage_panel.repair_timer" },
+      "enabled": ${ "@settings.xc": "settings.battleLabels.repair_timer" },
       "updateEvent": "PY(ON_ENGINE_UPDATE)",
       "x": 5,
       "y": -147,
@@ -49,7 +48,7 @@
       "format": "{{py:repairTimeEngine}}"
     },
     "rt_gun": {
-      "enabled": ${ "@settings.xc": "settings.battleLabels.damage_panel.repair_timer" },
+      "enabled": ${ "@settings.xc": "settings.battleLabels.repair_timer" },
       "updateEvent": "PY(ON_GUN_UPDATE)",
       "x": 5,
       "y": -71,
@@ -62,7 +61,7 @@
       "format": "{{py:repairTimeGun}}"
     },
     "rt_turret": {
-      "enabled": ${ "@settings.xc": "settings.battleLabels.damage_panel.repair_timer" },
+      "enabled": ${ "@settings.xc": "settings.battleLabels.repair_timer" },
       "updateEvent": "PY(ON_TURRETROTATOR_UPDATE)",
       "x": 5,
       "y": -33,
@@ -75,7 +74,7 @@
       "format": "{{py:repairTimeTurret}}"
     },
     "rt_complex": {
-      "enabled": ${ "@settings.xc": "settings.battleLabels.damage_panel.repair_timer" },
+      "enabled": ${ "@settings.xc": "settings.battleLabels.repair_timer" },
       "updateEvent": "PY(ON_COMPLEX_UPDATE)",
       "x": 178,
       "y": -147,
@@ -88,7 +87,7 @@
       "format": "{{py:repairTimeComplex}}"
     },
     "rt_surveying": {
-      "enabled": ${ "@settings.xc": "settings.battleLabels.damage_panel.repair_timer" },
+      "enabled": ${ "@settings.xc": "settings.battleLabels.repair_timer" },
       "updateEvent": "PY(ON_SURVEYINGDEVICE_UPDATE)",
       "x": 178,
       "y": -109,
@@ -101,7 +100,7 @@
       "format": "{{py:repairTimeSurveying}}"
     },
     "rt_radio": {
-      "enabled": ${ "@settings.xc": "settings.battleLabels.damage_panel.repair_timer" },
+      "enabled": ${ "@settings.xc": "settings.battleLabels.repair_timer" },
       "updateEvent": "PY(ON_SURVEYING_UPDATE)",
       "x": 178,
       "y": -71,

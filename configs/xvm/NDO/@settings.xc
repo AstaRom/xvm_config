@@ -1,11 +1,10 @@
 ﻿{
   "settings": {
     "battleLabels": {
-      "damage_panel": {
-        "damage_log": false,
-        "total_efficiency": false,
-        "repair_timer": false
-      },
+      "hit_log": true,
+      "total_efficiency": true,
+      "damage_log": false,
+      "repair_timer": false,
       "info_panel": false,
       "total_hp_panel": false
     },

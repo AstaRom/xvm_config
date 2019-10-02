@@ -1,9 +1,9 @@
 ﻿{
   "labels": {
     "formats": [
-      ${ "battleLabelsTemplates.xc":"def.hitlog" },
-      ${ "battleLabelsTemplates.xc":"def.damage_log" },
+      ${ "battleLabelsTemplates.xc":"def.hit_log" },
       ${ "battleLabelsTemplates.xc":"def.total_efficiency" },
+      ${ "battleLabelsTemplates.xc":"def.damage_log" },
       ${ "battleLabelsTemplates.xc":"def.rt_engine" },
       ${ "battleLabelsTemplates.xc":"def.rt_gun" },
       ${ "battleLabelsTemplates.xc":"def.rt_turret" },

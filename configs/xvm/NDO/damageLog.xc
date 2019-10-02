@@ -117,6 +117,7 @@
         "turret": "{{l10n:turret}}",
         "hull": "{{l10n:hull}}",
         "chassis": "{{l10n:chassis}}",
+        "wheel": "{{l10n:wheel}}",
         "gun": "{{l10n:gun}}",
         "unknown": ""
       },

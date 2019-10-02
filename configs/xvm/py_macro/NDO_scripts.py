@@ -138,6 +138,14 @@ def shell_power(num):
 #####################################################################
 # handlers > total_efficiency
 
+@xvm.export('total_tabstops', deterministic=False)
+def total_tabstops(a, b):
+    return total_efficiency.total_tabstops(a, b)
+
+@xvm.export('total_damage', deterministic=False)
+def total_damage():
+    return total_efficiency.total_damage()
+
 @xvm.export('total_blocked', deterministic=False)
 def total_blocked():
     return total_efficiency.total_blocked()

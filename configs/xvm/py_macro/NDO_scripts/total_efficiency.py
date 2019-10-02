@@ -9,7 +9,7 @@ from Avatar import PlayerAvatar
 
 from xfw import registerEvent
 from xfw_actionscript.python import as_event
-from xvm_battle.python.battle import isBattleTypeSupported as isBattle
+import xvm_battle.python.battle as battle
 
 #####################################################################
 # constants
@@ -21,7 +21,10 @@ blocked = 0
 stun = 0
 
 #####################################################################
-# handlers
+# private
+
+def isBattle():
+    return battle.isBattleTypeSupported
 
 def isPlayerVehicle():
     if player is not None:
@@ -34,10 +37,13 @@ def isPlayerVehicle():
     else:
         return False
 
+#####################################################################
+# handlers
+
 @registerEvent(DamageLogPanel, '_onTotalEfficiencyUpdated')
 def _onTotalEfficiencyUpdated(self, diff):
     global damage, assist, blocked, stun
-    if isBattle and isPlayerVehicle():
+    if isBattle() and isPlayerVehicle():
         isUpdate = False
         if _ETYPE.DAMAGE in diff:
             damage = diff[_ETYPE.DAMAGE]
@@ -57,6 +63,8 @@ def _onTotalEfficiencyUpdated(self, diff):
 @registerEvent(Vehicle, 'onEnterWorld')
 def onEnterWorld(self, prereqs):
     global player
+    if not isBattle():
+        return
     if player is None:
         player = BigWorld.player()
 
@@ -68,6 +76,10 @@ def destroyGUI(self):
     assist = 0
     blocked = 0
     stun = 0
+
+#@xvm.export('total_tabstops', deterministic=False)
+def total_tabstops(a, b):
+    return b if damage > 9999 or assist > 9999 or blocked > 9999 or stun > 9999 else a
 
 #@xvm.export('total_damage', deterministic=False)
 def total_damage():
