@@ -22,18 +22,6 @@
       "shadow": { "enabled": true, "distance": 1, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 5, "strength": 3 },
       "textFormat": { "font": "$UniversCondC", "size": 18, "color": "0xE2E2E2", "align": "left", "valign": "top" },
       "format": "{{py:xvm.damageLog.dLog}}"
-    },  
-    "timer_reload": {
-      "enabled": ${"@settings.xc":"settings.battleLabels.damageLog.timer_reload"},
-      "updateEvent": "PY(ON_TIMER_RELOAD)",
-      "x": 235,
-      "y": -250,
-      "width": 220,
-      "height": 25,
-      "screenVAlign": "bottom",
-      "shadow": { "enabled": true, "distance": 1, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 5, "strength": 3 },
-      "textFormat": { "font": "$UniversCondC", "size": 15, "color": "0xE2E2E2", "align": "left", "valign": "top" },
-      "format": "{{py:xvm.damageLog.timerReload}}"
     },
     "last_hit": {
       "enabled": ${"@settings.xc":"settings.battleLabels.damageLog.last_hit"},

@@ -11,6 +11,7 @@
     "hideBuySlot": false,
     "showTotalSlots": false,    
     "showUsedSlots": true,
+    "enableLockBackground": true,
     "filters": {
       "params": { "enabled": true },
       "bonus": { "enabled": true },

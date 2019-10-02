@@ -2,8 +2,8 @@
   "sounds": {
     "enabled": false,
     "soundBanks": {
-      "hangar": "xvm.bnk",
-      "battle": "xvm.bnk"
+      "battle": ["xvm://audioww/xvm.bnk"],
+      "hangar": ["xvm://audioww/xvm.bnk"]
     },
     "logSoundEvents": false,
     "soundMapping": {

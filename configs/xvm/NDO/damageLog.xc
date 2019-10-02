@@ -115,12 +115,12 @@
       "showHitNoDamage": false,
       "groupDamagesFromFire": true,
       "groupDamagesFromRamming_WorldCollision": true,
-      "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='14'><font size='12'>{{number}}.</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{vtype}} {{vehicle}}</font></font></textformat>"
+      "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='14'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{vtype}} {{vehicle}}</font></font></textformat>"
     },
     "logAlt": {
       "$ref": { "path":"damageLog.log" },
       "showHitNoDamage": false,
-      "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='14'><font size='12'>{{number}}.</font><tab><font color='{{c:dmg-kind}}'>{{dmg-ratio}}%<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{name}}</font></font></textformat>"
+      "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='14'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{dmg-ratio}}%<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{name}}</font></font></textformat>"
     },
     "lastHit": {
       "$ref": { "path":"damageLog.log" },
