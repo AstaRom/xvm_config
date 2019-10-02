@@ -120,6 +120,7 @@
     },
     "showBuyPremiumButton": true,
     "showPremiumShopButton": false,
+    "notificationsButtonType": "blink",
     "carousel": ${"carousel.xc":"carousel"},
     "clock": ${"clock.xc":"clock"}
   }
