@@ -56,7 +56,7 @@
         "MT": "<font face='NDO' size='19'>&#x0042;</font>",
         "LT": "<font face='NDO' size='19'>&#x0041;</font>",
         "TD": "<font face='NDO' size='19'>&#x0044;</font>",
-        "SPG": "<font face='NDO' size='19'>&#x0045;</font>",
+        "SPG": "<font face='NDO' size='18'>&#x0045;</font>",
         "not_vehicle": ""
       },
       "c:vtype":{

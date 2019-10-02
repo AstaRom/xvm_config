@@ -51,10 +51,10 @@
         "MT": "<font face='NDO' size='19'>&#x0042;</font>",
         "LT": "<font face='NDO' size='19'>&#x0041;</font>",
         "TD": "<font face='NDO' size='19'>&#x0044;</font>",
-        "SPG": "<font face='NDO' size='19'>&#x0045;</font>",
+        "SPG": "<font face='NDO' size='18'>&#x0045;</font>",
         "not_vehicle": ""
       },
-      "c:vtype":{
+      "c:vtype": {
         "HT": "#FFACAC",
         "MT": "#FFF198",
         "LT": "#A2FF9A",
@@ -62,29 +62,29 @@
         "SPG": "#EFAEFF",
         "not_vehicle": "#CCCCCC"
       },
-      "costShell":{
+      "costShell": {
         "gold-shell": "",
         "silver-shell": "",
         "unknown": ""
       },
-      "c:costShell":{
+      "c:costShell": {
         "gold-shell": "#FFCC66",
         "silver-shell": "#E2E2E2",
         "unknown": ""
       },
-      "team-dmg":{
+      "team-dmg": {
         "ally-dmg": "",
         "enemy-dmg": "",
         "player": "",
         "unknown": ""
       },
-      "c:team-dmg":{
+      "c:team-dmg": {
         "ally-dmg": "#00EAFF",
         "enemy-dmg": "#E2E2E2",
         "player": "#B9FFA1",
         "unknown": "#CCCCCC"
       },
-      "comp-name":{
+      "comp-name": {
         "turret": "{{l10n:turret}}",
         "hull": "{{l10n:hull}}",
         "chassis": "{{l10n:chassis}}",
@@ -111,15 +111,15 @@
       "formatHistory": "<textformat leading='-5' tabstops='[30,39,69,78]'>{{dmg-player%4.4d}}<tab>|<tab><font color='{{c:dmg-kind}}'>{{dmg%4.4d}}</font><tab>|<tab>{{vtype}} {{vehicle}}{{alive? |{{blownup?<font face='NDO' size='16'> &#x0048;</font>|<font face='NDO' size='15'> &#x0047;</font>}}}}</textformat>"
     },
     "logAlt": {
-      "$ref": { "path":"hitLog.log" },
+      "$ref": { "path": "hitLog.log" },
       "formatHistory": "<textformat leading='-5' tabstops='[30,39,69,78]'>{{dmg-player%4.4d}}<tab>|<tab><font color='{{c:dmg-kind}}'>{{dmg%4.4d}}</font><tab>|<tab>{{vtype}} {{name%.15s~..}}{{alive? |{{blownup?<font face='NDO' size='16'> &#x0048;</font>|<font face='NDO' size='15'> &#x0047;</font>}}}}</textformat>"
     },
     "logBackground": {
-      "$ref": { "path":"hitLog.log" },
+      "$ref": { "path": "hitLog.log" },
       "formatHistory": ""
     },
     "logAltBackground": {
-      "$ref": { "path":"hitLog.log" },
+      "$ref": { "path": "hitLog.log" },
       "formatHistory": ""
     }
   }

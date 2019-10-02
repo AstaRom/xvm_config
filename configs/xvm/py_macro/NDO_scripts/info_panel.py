@@ -63,6 +63,16 @@ def marks_on_gun():
     veh = _vehicle()
     return None if not veh else "%d" % veh.publicInfo.marksOnGun
 
+#@xvm.export('vehicle_level', deterministic=False)
+def vehicle_level():
+    td = _typeDescriptor()
+    return None if not td else "%d" % td.type.level
+
+#@xvm.export('vehicle_nation', deterministic=False)
+def vehicle_nation():
+    td = _typeDescriptor()
+    return None if not td else l10n(NAMES[td.type.customizationNationID])
+
 #@xvm.export('vehicle_type', deterministic=False)
 def vehicle_type():
     td = _typeDescriptor()
@@ -93,6 +103,14 @@ def vehicle_system_name():
 def icon_system_name():
     td = _typeDescriptor()
     return None if not td else "%s" % td.name.replace(':', '-')
+
+#@xvm.export('isPremium', deterministic=False)
+def isPremium():
+    td = _typeDescriptor()
+    if not td: 
+        return None
+    else:
+        return 'premium' if 'premium' in td.type.tags else ''
 
 #@xvm.export('gun_name', deterministic=False)
 def gun_name():
@@ -217,7 +235,7 @@ def shell_type(num):
 def shell_speed(num):
     gs = _gunShots()
     ns = _numShell(num)
-    return None if (not gs) or (len(gs) < num) else "%d" % gs[ns].speed
+    return None if (not gs) or (len(gs) < num) else "%d" % round(gs[ns].speed * 1.25)
 
 #@xvm.export('shell_distance', deterministic=False)
 def shell_distance(num):
