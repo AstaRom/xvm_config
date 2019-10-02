@@ -54,8 +54,15 @@ def max_hp_symbols(symbol):
     return str(symbol) * section
 
 #@xvm.export('sign_hp', deterministic=False)
-def sign_hp():
-    return '&#x003E;' if current_hp(0) > current_hp(1) else '&#x003C;' if current_hp(0) < current_hp(1) else '&#x003D;'
+def sign_hp(): 
+    if current_hp(0) > current_hp(1):
+        return '&#x003E;'
+    elif current_hp(0) < current_hp(1):
+        return '&#x003C;'
+    elif current_hp(0) == current_hp(1):
+        return '&#x003D;'
+    else:
+        return ''
 
 #@xvm.export('color_sign_hp', deterministic=False)
 def color_sign_hp():

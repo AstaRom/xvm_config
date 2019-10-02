@@ -3,8 +3,8 @@
     "battleLabels": {
       "damage_panel": {
         "damage_log": false,
-        "last_hit": false,
-        "total_efficiency": false
+        "total_efficiency": false,
+        "repair_timer": false
       },
       "info_panel": false,
       "total_hp_panel": false

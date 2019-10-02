@@ -2,8 +2,8 @@
   "damageLog": {
     "disabledDetailStats": false,
     "disabledSummaryStats": false,
-    "saveLocationInBattle": false,
     "log": {
+      "moveInBattle": false,
       "x": 235,
       "y": -15,
       "dmg-kind": {
@@ -147,43 +147,7 @@
     },
     "lastHit": {
       "$ref": { "path":"damageLog.log" },
-      "x": 0,
-      "y": -120,
-      "vtype": {
-        "mediumTank": "<font face='NDO' size='30'>&#x0042;</font>",
-        "lightTank": "<font face='NDO' size='30'>&#x0041;</font>",
-        "heavyTank": "<font face='NDO' size='30'>&#x0043;</font>",
-        "AT-SPG": "<font face='NDO' size='30'>&#x0044;</font>",
-        "SPG": "<font face='NDO' size='30'>&#x0045;</font>",
-        "not_vehicle": ""
-      },
-      "hit-effects": {
-        "armor_pierced": "<font size='36' color='{{c:costShell}}'>{{dmg}}</font>",
-        "intermediate_ricochet": "<font size='36'> </font>{{l10n:intermediate_ricochet}}",
-        "final_ricochet": "<font size='36'> </font>{{l10n:final_ricochet}}",
-        "armor_not_pierced": "<font size='36'> </font>{{l10n:armor_not_pierced}}",
-        "armor_pierced_no_damage": "<font size='36'> </font>{{l10n:armor_pierced_no_damage}}"
-      },
-      "c:costShell":{
-        "gold-shell": "#FFCC66",
-        "silver-shell": "#FCFCFC",
-        "unknown": ""
-      },
-      "timeDisplayLastHit": 5,
-      "showHitNoDamage": false,
-      "shadow": {
-        "distance": 0,
-        "angle": 0,
-        "color": "{{dmg=0?#000000|#770000}}",
-        "alpha": 75,
-        "blur": 10,
-        "strength": 4,
-        "hideObject": false,
-        "inner": false,
-        "knockout": false,
-        "quality": 1
-      },
-      "formatLastHit": "<textformat leading='-8'>{{hit-effects}}<br><font color='{{c:team-dmg}}'>{{vtype}} {{vehicle}}</font></textformat>"
+      "formatHistory": ""
     }
   }
 }

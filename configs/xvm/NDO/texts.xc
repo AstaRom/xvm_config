@@ -9,9 +9,9 @@
     },
     "marksOnGun": {
       "_0": "",
-      "_1": "<font face='NDO' size='4'><font size='15'>&#x0049;</font></font>",
-      "_2": "<font face='NDO' size='4'><font size='15'>&#x0049;</font> <font size='15'>&#x0049;</font></font>",
-      "_3": "<font face='NDO' size='4'><font size='15'>&#x0049;</font> <font size='15'>&#x0049;</font> <font size='15'>&#x0049;</font></font>"
+      "_1": "<font face='NDO' size='4'><font size='17'>&#x0049;</font></font>",
+      "_2": "<font face='NDO' size='4'><font size='17'>&#x0049;</font> <font size='17'>&#x0049;</font></font>",
+      "_3": "<font face='NDO' size='4'><font size='17'>&#x0049;</font> <font size='17'>&#x0049;</font> <font size='17'>&#x0049;</font></font>"
     },
     "spotted": {
       "neverSeen": "",
