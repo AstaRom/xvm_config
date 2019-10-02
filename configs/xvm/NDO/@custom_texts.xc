@@ -27,6 +27,32 @@
         "SPG": "<font face='NDO'>&#x0045;</font>",
         "TD": "<font face='NDO'>&#x0044;</font>"
       }
-    }      
+    },
+    "language": {
+      "ru": {
+        "base": "База{0} - ",
+        "reload": "Перез.",
+        "sec": "сек",
+        "view": "Обзор",
+        "m": "м",
+        "type": "Тип",
+        "turret": "Башня",
+        "dmg": "Урон",
+        "hull": "Корпус",
+        "penetr": "Пробитие"
+      },
+      "en": {
+        "base": "Base{0} - ",
+        "reload": "Reload",
+        "sec": "sec",
+        "view": "View",
+        "m": "m",
+        "type": "Type",
+        "turret": "Turret",
+        "dmg": "Damage",
+        "hull": "Hull",
+        "penetr": "Penetr."
+      }
+    }
   }
 }

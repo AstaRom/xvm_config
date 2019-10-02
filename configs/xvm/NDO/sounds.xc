@@ -1,6 +1,7 @@
 ﻿{
   "sounds": {
     "enabled": false,
+    "remote_communication": false,
     "soundBanks": {
       "battle": ["xvm://audioww/xvm.bnk"],
       "hangar": ["xvm://audioww/xvm.bnk"]

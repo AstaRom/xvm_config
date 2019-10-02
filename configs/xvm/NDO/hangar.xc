@@ -9,6 +9,7 @@
     },
     "showBuyPremiumButton": true,
     "showPremiumShopButton": false,
+    "showSharedChatButton": false,
     "enableGoldLocker": true,
     "enableFreeXpLocker": true,
     "serverInfo": {

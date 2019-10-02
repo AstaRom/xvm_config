@@ -1,10 +1,81 @@
 ﻿#####################################################################
 # imports
 
-from NDO_scripts import info_panel
-from NDO_scripts import hp_panel
+from helpers import getClientLanguage
+import xvm_main.python.config as config
+
 from NDO_scripts import dmg_count
+from NDO_scripts import hp_panel
+from NDO_scripts import info_panel
 from NDO_scripts import total_efficiency
+
+#####################################################################
+# handlers
+
+@xvm.export('l10n', deterministic=False)
+def l10n(l10n):
+    gameLng = getClientLanguage()
+    mode = 'ru' if gameLng == 'ru' else 'en'
+    ref = config.get('custom_texts/language/%s/%s' % (mode, l10n))
+    return '%s' % (ref)
+
+#####################################################################
+# handlers > dmg_count
+
+@xvm.export('high_сaliber', deterministic=False)
+def high_caliber(dmg_total):
+    return dmg_count.high_caliber(dmg_total)
+
+@xvm.export('avg_damage', deterministic=False)
+def avg_damage(dmg_total):
+    return dmg_count.avg_damage(dmg_total)
+
+#####################################################################
+# handlers > hp_panel
+
+@xvm.export('thp_show', deterministic=False)
+def thp_show(battletype):
+    return hp_panel.thp_show(battletype)
+
+@xvm.export('str_replace', deterministic=True)
+def str_replace(str, old, new, max=-1):
+    return hp_panel.str_replace(str, old, new, max=-1)
+
+@xvm.export('score_team', deterministic=False)
+def score_team(current_team):
+    return hp_panel.score_team(current_team)
+
+@xvm.export('score_team_sign', deterministic=False)
+def score_team_sign():
+    return hp_panel.score_team_sign()
+
+@xvm.export('current_hp', deterministic=False)
+def current_hp(current_team):
+    return hp_panel.current_hp(current_team)
+
+@xvm.export('percent_hp', deterministic=False)
+def percent_hp(current_team):
+    return hp_panel.percent_hp(current_team)
+
+@xvm.export('percent_hp_section', deterministic=False)
+def percent_hp_section(current_team):
+    return hp_panel.percent_hp_section(current_team)
+
+@xvm.export('current_hp_symbols', deterministic=False)
+def current_hp_symbols(current_team, symbol):
+    return hp_panel.current_hp_symbols(current_team, symbol)
+
+@xvm.export('max_hp_symbols', deterministic=True)
+def max_hp_symbols(symbol):
+    return hp_panel.max_hp_symbols(symbol)
+
+@xvm.export('sign_hp', deterministic=False)
+def sign_hp():
+    return hp_panel.sign_hp()
+
+@xvm.export('color_sign_hp', deterministic=False)
+def color_sign_hp():
+    return hp_panel.color_sign_hp()
 
 #####################################################################
 # handlers > info_panel
@@ -80,64 +151,6 @@ def shell_power_2():
 @xvm.export('shell_power_3', deterministic=False)
 def shell_power_3():
     return info_panel.shell_power_3()
-
-#####################################################################
-# handlers > hp_panel
-
-@xvm.export('thp_show', deterministic=False)
-def thp_show(battletype):
-    return hp_panel.thp_show(battletype)
-
-@xvm.export('str_replace', deterministic=True)
-def str_replace(str, old, new, max=-1):
-    return hp_panel.str_replace(str, old, new, max=-1)
-
-@xvm.export('score_team', deterministic=False)
-def score_team(current_team):
-    return hp_panel.score_team(current_team)
-
-@xvm.export('score_team_sign', deterministic=False)
-def score_team_sign():
-    return hp_panel.score_team_sign()
-
-@xvm.export('current_hp', deterministic=False)
-def current_hp(current_team):
-    return hp_panel.current_hp(current_team)
-
-@xvm.export('percent_hp', deterministic=False)
-def percent_hp(current_team):
-    return hp_panel.percent_hp(current_team)
-
-@xvm.export('percent_hp_section', deterministic=False)
-def percent_hp_section(current_team):
-    return hp_panel.percent_hp_section(current_team)
-
-@xvm.export('current_hp_symbols', deterministic=False)
-def current_hp_symbols(current_team, symbol):
-    return hp_panel.current_hp_symbols(current_team, symbol)
-
-@xvm.export('max_hp_symbols', deterministic=True)
-def max_hp_symbols(symbol):
-    return hp_panel.max_hp_symbols(symbol)
-
-@xvm.export('sign_hp', deterministic=False)
-def sign_hp():
-    return hp_panel.sign_hp()
-
-@xvm.export('color_sign_hp', deterministic=False)
-def color_sign_hp():
-    return hp_panel.color_sign_hp()
-
-#####################################################################
-# handlers > dmg_count
-
-@xvm.export('high_сaliber', deterministic=False)
-def high_caliber(dmg_total):
-    return dmg_count.high_caliber(dmg_total)
-
-@xvm.export('avg_damage', deterministic=False)
-def avg_damage(dmg_total):
-    return dmg_count.avg_damage(dmg_total)
 
 #####################################################################
 # handlers > total_efficiency
