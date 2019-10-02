@@ -16,7 +16,7 @@
     }
   },
   "shortLeft": [
-    { "x": 0, "y": 0, "width": 50, "height": 24, "src": "cfg://NDO/img/playersPanel/{{player?player|{{ready?{{squad?squad|ready}}|a-noready}}}}.png", "alpha": "{{alive?35|0}}", "shadow": { "enabled": false } },
+    { "x": 0, "y": 0, "width": 50, "height": 24, "src": "cfg://NDO/img/playersPanel/{{selected?selected|{{ready?{{squad?squad|ready}}|a-noready}}}}.png", "alpha": "{{alive?35|0}}", "shadow": { "enabled": false } },
     { "x": 28, "y": 0, "width": 18, "height": 24, "textFormat": { "size": 14, "align": "center", "valign": "center", "bold": true }, "format": "<font color='{{player?#FFB964|{{squad?{{c:system}}|{{tk?{{c:system}}}}}}}}'>{{frags|0}}</font>", "alpha": "{{alive?100|50}}", "shadow": { "enabled": true, "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 2 } },
     { "enabled": ${"@settings.xc":"settings.playersPanel.xmqp_marker"}, "x": 82, "y": 0, "width": 16, "height": 24, "bindToIcon": true, "textFormat": { "font": "NDO", "size": 22, "align": "center", "bold": true }, "format": "<font color='{{x-spotted?#FF8800|#CCCCCC}}'>{{x-sense-on?&#x0046;}}</font>", "alpha": "{{alive?100|0}}", "shadow": { "enabled": true, "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 1 } },
     { "enabled": ${"@settings.xc":"settings.playersPanel.hp_panels.short"}, "x": 100, "y": 1, "bindToIcon": true, "width": 60, "height": 22, "bgColor": "0x000000", "alpha": "{{alive?50|0}}", "shadow": { "enabled": false } },
@@ -34,7 +34,7 @@
     {}
   ],
   "mediumLeft": [
-    { "x": 0, "y": 0, "width": 174, "height": 24, "src": "cfg://NDO/img/playersPanel/{{player?player|{{ready?{{squad?squad|ready}}|a-noready}}}}.png", "alpha": "{{alive?35|0}}", "shadow": { "enabled": false } },
+    { "x": 0, "y": 0, "width": 174, "height": 24, "src": "cfg://NDO/img/playersPanel/{{selected?selected|{{ready?{{squad?squad|ready}}|a-noready}}}}.png", "alpha": "{{alive?35|0}}", "shadow": { "enabled": false } },
     { "x": 28, "y": 0, "width": 18, "height": 24, "textFormat": { "size": 14, "align": "center", "valign": "center", "bold": true }, "format": "<font color='{{player?#FFB964|{{squad?{{c:system}}|{{tk?{{c:system}}}}}}}}'>{{frags|0}}</font>", "alpha": "{{alive?100|50}}", "shadow": { "enabled": true, "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 2 } },
     { "x": 50, "y": 0, "width": 120, "height": 24, "textFormat": { "size": 14, "align": "left", "valign": "center" }, "format": "<font color='{{xvm-stat?{{c:xr}}}}'>{{.custom_texts.name.{{name}}|{{name%.15s~..}}}}</font>", "alpha": "{{alive?100|50}}", "shadow": { "enabled": true, "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 1 } },
     { "enabled": ${"@settings.xc":"settings.playersPanel.xmqp_marker"}, "x": 82, "y": 0, "width": 16, "height": 24, "bindToIcon": true, "textFormat": { "font": "NDO", "size": 22, "align": "center", "bold": true }, "format": "<font color='{{x-spotted?#FF8800|#CCCCCC}}'>{{x-sense-on?&#x0046;}}</font>", "alpha": "{{alive?100|0}}", "shadow": { "enabled": true, "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 1 } },
@@ -54,7 +54,7 @@
     {}
   ],
   "medium2Left": [
-    { "x": 0, "y": 0, "width": "{{xvm-stat?134|128}}", "height": 24, "src": "cfg://NDO/img/playersPanel/{{player?player|{{ready?{{squad?squad|ready}}|a-noready}}}}.png", "alpha": "{{alive?35|0}}", "shadow": { "enabled": false } },
+    { "x": 0, "y": 0, "width": "{{xvm-stat?134|128}}", "height": 24, "src": "cfg://NDO/img/playersPanel/{{selected?selected|{{ready?{{squad?squad|ready}}|a-noready}}}}.png", "alpha": "{{alive?35|0}}", "shadow": { "enabled": false } },
     { "x": 28, "y": 0, "width": 18, "height": 24, "textFormat": { "size": 14, "align": "center", "valign": "center", "bold": true }, "format": "<font color='{{player?#FFB964|{{squad?{{c:system}}|{{tk?{{c:system}}}}}}}}'>{{frags|0}}</font>", "alpha": "{{alive?100|50}}", "shadow": { "enabled": true, "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 2 } },
     { "enabled": "{{xvm-stat?true|false}}", "x": 50, "y": 1, "width": 80, "height": 24, "textFormat": { "font": "NDO", "size": 14, "align": "right", "valign": "center", "bold": true }, "format": "<font color='{{c:t-battles}}'>{{t-battles%5d|-----}}</font> * <font color='{{c:t-winrate}}'>{{t-winrate%2d~%|--%}}</font>", "alpha": "{{alive?100|50}}", "shadow": { "enabled": true, "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 1 } },
     { "enabled": "{{xvm-stat?false|true}}", "x": 50, "y": 0, "width": 74, "height": 24, "textFormat": { "size": 14, "align": "center", "valign": "center" }, "format": "{{vehicle}}", "alpha": "{{alive?100|50}}", "shadow": { "enabled": true, "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 1 } },    
@@ -76,7 +76,7 @@
     {}
   ],
   "largeLeft": [
-    { "x": 0, "y": 0, "width": "{{xvm-stat?176|252}}", "height": 24, "src": "cfg://NDO/img/playersPanel/{{player?player|{{ready?{{squad?squad|ready}}|a-noready}}}}.png", "alpha": "{{alive?35|0}}", "shadow": { "enabled": false } },
+    { "x": 0, "y": 0, "width": "{{xvm-stat?176|252}}", "height": 24, "src": "cfg://NDO/img/playersPanel/{{selected?selected|{{ready?{{squad?squad|ready}}|a-noready}}}}.png", "alpha": "{{alive?35|0}}", "shadow": { "enabled": false } },
     { "x": 28, "y": 0, "width": 18, "height": 24, "textFormat": { "size": 14, "align": "center", "valign": "center", "bold": true }, "format": "<font color='{{player?#FFB964|{{squad?{{c:system}}|{{tk?{{c:system}}}}}}}}'>{{frags|0}}</font>", "alpha": "{{alive?100|50}}", "shadow": { "enabled": true, "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 2 } },
     { "enabled": "{{xvm-stat?true|false}}", "x": 50, "y": 1, "width": 122, "height": 24, "textFormat": { "font": "NDO", "size": 14, "align": "right", "valign": "center", "bold": true }, "format": "<font color='{{c:kb}}'>{{kb%3d~k|---k}}</font> * <font color='{{c:xr}}'>{{r_size=2?{{r%2d|--}}|{{r>=10000?xxxx|{{r%4d|----}}}}}}</font> * <font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font>", "alpha": "{{alive?100|50}}", "shadow": { "enabled": true, "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 1 } },
     { "enabled": "{{xvm-stat?false|true}}", "x": 50, "y": 0, "width": 120, "height": 24, "textFormat": { "size": 14, "align": "left", "valign": "center" }, "format": "{{.custom_texts.name.{{name}}|{{name%.15s~..}}}}", "alpha": "{{alive?100|50}}", "shadow": { "enabled": true, "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 1 } },

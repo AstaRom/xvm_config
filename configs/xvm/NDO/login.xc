@@ -3,6 +3,7 @@
     "saveLastServer": true,
     "autologin": false,
     "confirmOldReplays": true,
+    "disabledServers": [],
     "pingServers": {
       "enabled": true,
       "updateInterval": 5000,
@@ -21,6 +22,7 @@
       "minimalNameLength": 4,
       "minimalValueLength": 0,
       "errorString": "--",
+      "ignoredServers": [],
       "fontStyle": {
         "name": "$FieldFont",
         "size": 13,
@@ -67,6 +69,7 @@
       "minimalNameLength": 4,
       "minimalValueLength": 0,
       "errorString": "--k",
+      "ignoredServers": [],
       "fontStyle": {
         "name": "$FieldFont",
         "size": 13,

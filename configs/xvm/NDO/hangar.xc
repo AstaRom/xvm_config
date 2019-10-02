@@ -45,6 +45,7 @@
     "allowExchangeXPInTechTree": false,
     "barracksShowFlags": true,
     "barracksShowSkills": true,
+    "restoreBattleType": true,
     "pingServers": {
       "enabled": true,
       "updateInterval": 5000,
@@ -76,9 +77,9 @@
           "poor": "0xEE6600",
           "bad": "0xAAAAAA"
         },
-        "markCurrentServer": "underline",
         "serverColor": ""
       },
+      "currentServerFormat": "<u>{server}</u>",
       "threshold": {
         "great": 35,
         "good": 60,
@@ -124,9 +125,9 @@
           "poor": "0xEE6600",
           "bad": "0xAAAAAA"
         },
-        "markCurrentServer": "underline",
         "serverColor": ""
       },
+      "currentServerFormat": "<u>{server}</u>",
       "threshold": {
         "great": 30000,
         "good": 10000,
