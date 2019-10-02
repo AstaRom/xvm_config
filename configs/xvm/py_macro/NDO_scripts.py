@@ -96,17 +96,9 @@ def gun_reload_equip(eq1, eq2, eq3, eq4):
 def vision_radius():
     return info_panel.vision_radius()
 
-@xvm.export('shell_type_1', deterministic=False)
-def shell_type_1():
-    return info_panel.shell_type_1()
-
-@xvm.export('shell_type_2', deterministic=False)
-def shell_type_2():
-    return info_panel.shell_type_2()
-
-@xvm.export('shell_type_3', deterministic=False)
-def shell_type_3():
-    return info_panel.shell_type_3()
+@xvm.export('shell_type', deterministic=False)
+def shell_type(num):
+    return info_panel.shell_type(num)
 
 @xvm.export('armor_turret_front', deterministic=False)
 def armor_turret_front():
@@ -120,17 +112,9 @@ def armor_turret_side():
 def armor_turret_back():
     return info_panel.armor_turret_back()
 
-@xvm.export('shell_damage_1', deterministic=False)
-def shell_damage_1():
-    return info_panel.shell_damage_1()
-
-@xvm.export('shell_damage_2', deterministic=False)
-def shell_damage_2():
-    return info_panel.shell_damage_2()
-
-@xvm.export('shell_damage_3', deterministic=False)
-def shell_damage_3():
-    return info_panel.shell_damage_3()
+@xvm.export('shell_damage', deterministic=False)
+def shell_damage(num):
+    return info_panel.shell_damage(num)
 
 @xvm.export('armor_hull_front', deterministic=False)
 def armor_hull_front():
@@ -144,17 +128,9 @@ def armor_hull_side():
 def armor_hull_back():
     return info_panel.armor_hull_back()
 
-@xvm.export('shell_power_1', deterministic=False)
-def shell_power_1():
-    return info_panel.shell_power_1()
-
-@xvm.export('shell_power_2', deterministic=False)
-def shell_power_2():
-    return info_panel.shell_power_2()
-
-@xvm.export('shell_power_3', deterministic=False)
-def shell_power_3():
-    return info_panel.shell_power_3()
+@xvm.export('shell_power', deterministic=False)
+def shell_power(num):
+    return info_panel.shell_power(num)
 
 #####################################################################
 # handlers > total_efficiency

@@ -30,6 +30,9 @@ def _gunShots():
     td = _typeDescriptor()
     return None if not td else td.gun.shots
 
+def _numShell(num):
+    return None if (num < 1) and (num > 3) else num - 1
+
 #####################################################################
 # handlers
 
@@ -178,97 +181,43 @@ def gun_aiming_time():
 #@xvm.export('gun_accuracy', deterministic=False)
 def gun_accuracy():
     td = _typeDescriptor()
-    return None if not td else "%.2f" % td.gun.shotDispersionAngle
+    return None if not td else "%.2f" % round(td.gun.shotDispersionAngle * 100, 2)
 
-#@xvm.export('shell_name_1', deterministic=False)
-def shell_name_1():
+#@xvm.export('shell_name', deterministic=False)
+def shell_name(num):
     gs = _gunShots()
-    return None if (not gs) or (len(gs) < 1) else "%s" % gs[0].shell.userString
+    ns = _numShell(num)
+    return None if (not gs) or (len(gs) < num) else "%s" % gs[ns].shell.userString
 
-#@xvm.export('shell_name_2', deterministic=False)
-def shell_name_2():
+#@xvm.export('shell_damage', deterministic=False)
+def shell_damage(num):
     gs = _gunShots()
-    return None if (not gs) or (len(gs) < 2) else "%s" % gs[1].shell.userString
+    ns = _numShell(num)
+    return None if (not gs) or (len(gs) < num) else "%d" % gs[ns].shell.damage[0]
 
-#@xvm.export('shell_name_3', deterministic=False)
-def shell_name_3():
+#@xvm.export('shell_power', deterministic=False)
+def shell_power(num):
     gs = _gunShots()
-    return None if (not gs) or (len(gs) < 3) else "%s" % gs[2].shell.userString
+    ns = _numShell(num)
+    return None if (not gs) or (len(gs) < num) else "%d" % gs[ns].piercingPower[0]
 
-#@xvm.export('shell_damage_1', deterministic=False)
-def shell_damage_1():
+#@xvm.export('shell_type', deterministic=False)
+def shell_type(num):
     gs = _gunShots()
-    return None if (not gs) or (len(gs) < 1) else "%d" % gs[0].shell.damage[0]
+    ns = _numShell(num)
+    return None if (not gs) or (len(gs) < num) else l10n(gs[ns].shell.kind.lower())
 
-#@xvm.export('shell_damage_2', deterministic=False)
-def shell_damage_2():
+#@xvm.export('shell_speed', deterministic=False)
+def shell_speed(num):
     gs = _gunShots()
-    return None if (not gs) or (len(gs) < 2) else "%d" % gs[1].shell.damage[0]
+    ns = _numShell(num)
+    return None if (not gs) or (len(gs) < num) else "%d" % gs[ns].speed
 
-#@xvm.export('shell_damage_3', deterministic=False)
-def shell_damage_3():
+#@xvm.export('shell_distance', deterministic=False)
+def shell_distance(num):
     gs = _gunShots()
-    return None if (not gs) or (len(gs) < 3) else "%d" % gs[2].shell.damage[0]
-
-#@xvm.export('shell_power_1', deterministic=False)
-def shell_power_1():
-    gs = _gunShots()
-    return None if (not gs) or (len(gs) < 1) else "%d" % gs[0].piercingPower[0]
-
-#@xvm.export('shell_power_2', deterministic=False)
-def shell_power_2():
-    gs = _gunShots()
-    return None if (not gs) or (len(gs) < 2) else "%d" % gs[1].piercingPower[0]
-
-#@xvm.export('shell_power_3', deterministic=False)
-def shell_power_3():
-    gs = _gunShots()
-    return None if (not gs) or (len(gs) < 3) else "%d" % gs[2].piercingPower[0]
-
-#@xvm.export('shell_type_1', deterministic=False)
-def shell_type_1():
-    gs = _gunShots()
-    return None if (not gs) or (len(gs) < 1) else l10n(gs[0].shell.kind.lower())
-
-#@xvm.export('shell_type_2', deterministic=False)
-def shell_type_2():
-    gs = _gunShots()
-    return None if (not gs) or (len(gs) < 2) else l10n(gs[1].shell.kind.lower())
-
-#@xvm.export('shell_type_3', deterministic=False)
-def shell_type_3():
-    gs = _gunShots()
-    return None if (not gs) or (len(gs) < 3) else l10n(gs[2].shell.kind.lower())
-
-#@xvm.export('shell_speed_1', deterministic=False)
-def shell_speed_1():
-    gs = _gunShots()
-    return None if (not gs) or (len(gs) < 1) else "%d" % gs[0].speed
-
-#@xvm.export('shell_speed_2', deterministic=False)
-def shell_speed_2():
-    gs = _gunShots()
-    return None if (not gs) or (len(gs) < 2) else "%d" % gs[1].speed
-
-#@xvm.export('shell_speed_3', deterministic=False)
-def shell_speed_3():
-    gs = _gunShots()
-    return None if (not gs) or (len(gs) < 3) else "%d" % gs[2].speed
-
-#@xvm.export('shell_distance_1', deterministic=False)
-def shell_distance_1():
-    gs = _gunShots()
-    return None if (not gs) or (len(gs) < 1) else "%d" % gs[0].maxDistance
-
-#@xvm.export('shell_distance_2', deterministic=False)
-def shell_distance_2():
-    gs = _gunShots()
-    return None if (not gs) or (len(gs) < 2) else "%d" % gs[1].maxDistance
-
-#@xvm.export('shell_distance_3', deterministic=False)
-def shell_distance_3():
-    gs = _gunShots()
-    return None if (not gs) or (len(gs) < 3) else "%d" % gs[2].maxDistance
+    ns = _numShell(num)
+    return None if (not gs) or (len(gs) < num) else "%d" % gs[ns].maxDistance
 
 #@xvm.export('stun_radius', deterministic=False)
 def stun_radius():

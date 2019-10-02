@@ -2,7 +2,10 @@
   "hangar": {
     "showBuyPremiumButton": true,
     "showPremiumShopButton": false,
+    "showCreateSquadButtonText": true,
+    "showBattleTypeSelectorText": true,
     "showGeneralChatButton": false,
+    "showPromoPremVehicle": false,
     "enableGoldLocker": true,
     "enableFreeXpLocker": true,
     "serverInfo": {
@@ -49,8 +52,8 @@
     "pingServers": {
       "enabled": true,
       "updateInterval": 5000,
-      "x": 5,
-      "y": 50,
+      "x": 3,
+      "y": 53,
       "hAlign": "left",
       "vAlign": "top",
       "alpha": 100,
@@ -97,8 +100,8 @@
     },
     "onlineServers": {
       "enabled": false,
-      "x": 5,
-      "y": 50,
+      "x": 3,
+      "y": 53,
       "hAlign": "left",
       "vAlign": "top",
       "alpha": 100,
@@ -142,6 +145,12 @@
         "blur": 4,
         "strength": 2
       }
+    },
+    "notificationCounter": {
+      "store": true,
+      "missions": true,
+      "profile": true,
+      "PersonalMissionOperationsPage": true
     },
     "carousel": ${"carousel.xc":"carousel"},
     "widgets": ${"widgets.xc":"widgets.lobby"}
