@@ -1,7 +1,7 @@
 ﻿{
   "damageLog": {
-    "disabledDetailStats": true,
-    "disabledSummaryStats": true,
+    "disabledDetailStats": false,
+    "disabledSummaryStats": false,
     "log": {
       "dmg-kind": {
         "shot": "{{type-shell}}",
