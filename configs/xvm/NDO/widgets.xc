@@ -2,7 +2,7 @@
   "widgets": {
     "login": [],
     "lobby": [
-      ${ "widgetsTemplates.xc":"clock" }
+      ${ "widgetsTemplates.xc": "clock" }
     ]
   }
 }
