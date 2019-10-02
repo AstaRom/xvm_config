@@ -5,7 +5,8 @@ import BigWorld
 import xvm_battle.python.fragCorrelationPanel as panel
 from CurrentVehicle import g_currentVehicle
 from gui.Scaleform.daapi.view.lobby.hangar.Hangar import Hangar
-from gui.shared import g_itemsCache
+from helpers import dependency
+from skeletons.gui.shared import IItemsCache
 from xfw import *
 import traceback
 
@@ -44,7 +45,8 @@ def high_caliber(dmg_total):
 def Hangar__updateParams(self):
     try:
         global playerAvgDamage
-        playerAvgDamage = g_itemsCache.items.getVehicleDossier(g_currentVehicle.item.intCD).getRandomStats().getAvgDamage()
+        itemsCache = dependency.instance(IItemsCache)
+        playerAvgDamage = itemsCache.items.getVehicleDossier(g_currentVehicle.item.intCD).getRandomStats().getAvgDamage()
         return playerAvgDamage
     except:
         err(traceback.format_exc())

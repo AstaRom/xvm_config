@@ -155,7 +155,7 @@ def shell_name_1():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 1 else "%s" % (gunShots()[0]['shell']['userString'])
+        return '' if len(gunShots) < 1 else "%s" % (gunShots[0]['shell']['userString'])
 
 #@xvm.export('shell_name_2', deterministic=False)
 def shell_name_2():
@@ -163,7 +163,7 @@ def shell_name_2():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 2 else "%s" % (gunShots()[1]['shell']['userString'])
+        return '' if len(gunShots) < 2 else "%s" % (gunShots[1]['shell']['userString'])
 
 #@xvm.export('shell_name_3', deterministic=False)
 def shell_name_3():
@@ -171,7 +171,7 @@ def shell_name_3():
     if not gunShots: 
         return None
     else:
-        return '' if len(gunShots) < 3 else "%s" % (gunShots()[2]['shell']['userString'])
+        return '' if len(gunShots) < 3 else "%s" % (gunShots[2]['shell']['userString'])
 
 #@xvm.export('shell_damage_1', deterministic=False)
 def shell_damage_1():
@@ -329,16 +329,16 @@ def stun_duration_max():
 
 #@xvm.export('angle_pitch_up', deterministic=False)
 def angle_pitch_up():
-    gunShots = _gunShots()
-    if not gunShots: 
+    typeDescriptor = _typeDescriptor()
+    if not typeDescriptor: 
         return None
     else:
         return "%d" % (degrees(-typeDescriptor.gun['pitchLimits']['absolute'][0]))
 
 #@xvm.export('angle_pitch_down', deterministic=False)
 def angle_pitch_down():
-    gunShots = _gunShots()
-    if not gunShots: 
+    typeDescriptor = _typeDescriptor()
+    if not typeDescriptor: 
         return None
     else:
         return "%d" % (degrees(-typeDescriptor.gun['pitchLimits']['absolute'][1])) 

@@ -178,7 +178,7 @@
       "textFormat": { "font": "NDO", "size": 38, "color": null, "align": "center", "bold": false, "italic": false },
       "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 90, "blur": 2, "strength": 2 },
       "format": "{{ally?&#x004A;|&#x004B;}}"
-    },    
+    },
     "xmqp_marker": {
       "name": "Маркеры XMQP",
       "enabled": ${"@settings.xc":"settings.markers.xmqp_marker"},
