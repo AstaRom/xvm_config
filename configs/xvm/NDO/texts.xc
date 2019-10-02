@@ -49,7 +49,8 @@
       "ranked": "ranked",
       "bootcamp": "bootcamp",
       "epic_random": "epic_random",
-      "epic_random_training": "epic_random_training"
+      "epic_random_training": "epic_random_training",
+      "event_battles_2": ""
     },
     "topclan": {
       "top": "top",
