@@ -14,6 +14,10 @@ from NDO_scripts import total_efficiency
 def l10n(l10n):
     return basic_macros.l10n(l10n)
 
+@xvm.export('color_blind', deterministic=True)
+def color_blind():
+    return basic_macros.color_blind()
+
 @xvm.export('math_sub', deterministic=True)
 def math_sub(a, b):
     return basic_macros.math_sub(a, b)

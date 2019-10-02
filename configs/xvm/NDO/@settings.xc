@@ -22,6 +22,7 @@
         "medium2": false,
         "large": false
       }
-    }
+    },
+    "color_blind": false
   }
 }

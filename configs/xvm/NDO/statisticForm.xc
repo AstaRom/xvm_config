@@ -2,6 +2,7 @@
   "statisticForm": {
     "removeSquadIcon": false,
     "removeRankBadgeIcon": true,
+    "removeTesterIcon": false,
     "vehicleIconAlpha": 100,
     "removeVehicleLevel": true,
     "removeVehicleTypeIcon": true,

@@ -3,6 +3,7 @@
     "clockFormat": ${ "definition.xc": "definition.date" },
     "removeSquadIcon": false,
     "removeRankBadgeIcon": true,
+    "removeTesterIcon": false,
     "vehicleIconAlpha": 100,
     "removeVehicleLevel": true,
     "removeVehicleTypeIcon": true,

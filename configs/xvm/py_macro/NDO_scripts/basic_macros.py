@@ -16,6 +16,11 @@ def l10n(l10n):
     ref = config.get('custom_texts/language/%s/%s' % (mode, l10n))
     return '%s' % ref
 
+#@xvm.export('color_blind', deterministic=True)
+def color_blind():
+    color = config.get('settings/color_blind', False)
+    return True if color else None
+
 #@xvm.export('math_sub', deterministic=True)
 def math_sub(a, b):
     return None if a is None or b is None else a - b

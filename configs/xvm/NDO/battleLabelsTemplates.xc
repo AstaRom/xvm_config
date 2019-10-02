@@ -117,6 +117,12 @@
       "hotKeyCode": 56,
       "onHold": true,
       "visibleOnHotKey": true,
+      "tweensIn": [
+        [ "fromTo", 0.75, { "alpha": 0 }, { "alpha": 1 } ]
+      ],
+      "tweensOut": [
+        [ "fromTo", 0.35, { "alpha": 1 }, { "alpha": 0 } ]
+      ],
       "x": 0,
       "y": -75,
       "width": 320,
@@ -136,6 +142,12 @@
       "hotKeyCode": 56,
       "onHold": true,
       "visibleOnHotKey": true,
+      "tweensIn": [
+        [ "fromTo", 0.75, { "alpha": 0 }, { "alpha": 1 } ]
+      ],
+      "tweensOut": [
+        [ "fromTo", 0.35, { "alpha": 1 }, { "alpha": 0 } ]
+      ],
       "x": 0,
       "y": -75,
       "width": 320,

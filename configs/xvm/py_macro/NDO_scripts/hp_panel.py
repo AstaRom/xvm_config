@@ -27,10 +27,8 @@ def update_hp(vehicleID, hp):
 
 #@xvm.export('thp_show', deterministic=True)
 def thp_show(battletype):
-    if battletype in ['regular', 'training', 'sortie_2', 'fort_battle_2', 'ranked']:
-        return 'show'
-    else:
-        return None
+    support_type = ['regular', 'training', 'sortie_2', 'fort_battle_2', 'ranked']
+    return True if battletype in support_type else None
 
 #@xvm.export('score_team', deterministic=False)
 def score_team(current_team):
