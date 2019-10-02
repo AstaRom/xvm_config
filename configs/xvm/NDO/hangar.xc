@@ -2,7 +2,7 @@
   "hangar": {
     "showBuyPremiumButton": true,
     "showPremiumShopButton": false,
-    "showSharedChatButton": false,
+    "showGeneralChatButton": false,
     "enableGoldLocker": true,
     "enableFreeXpLocker": true,
     "serverInfo": {
