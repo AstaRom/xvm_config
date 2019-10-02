@@ -79,11 +79,11 @@
       "fragCorrelationBar": {
         "m_alliedTeamFragsTF": {
           "_x": "fragCorrelationBar.m_alliedTeamFragsTF._x",
-          "_y": "fragCorrelationBar.m_alliedTeamFragsTF._y + 1"
+          "_y": "fragCorrelationBar.m_alliedTeamFragsTF._y"
         },
         "m_enemyTeamFragsTF": {
           "_x": "fragCorrelationBar.m_enemyTeamFragsTF._x",
-          "_y": "fragCorrelationBar.m_enemyTeamFragsTF._y + 1"
+          "_y": "fragCorrelationBar.m_enemyTeamFragsTF._y"
         },
         "indicator": {
           "_x": "fragCorrelationBar.indicator._x",

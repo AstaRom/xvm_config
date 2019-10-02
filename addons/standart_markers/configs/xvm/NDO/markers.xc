@@ -8,62 +8,61 @@
     "ally": {
       "alive": {
         "normal": {
-          "vehicleIcon": ${ "markersAliveTemplates.xc": "vehicleIcon" },
-          "healthBar": ${ "markersAliveTemplates.xc": "healthBar" },
-          "damageText": ${ "markersAliveTemplates.xc": "damageText" },
-          "damageTextPlayer": ${ "markersAliveTemplates.xc": "damageTextPlayer" },
-          "damageTextSquadman": ${ "markersAliveTemplates.xc": "damageTextSquadman" },
+          "vehicleIcon": ${ "markersAliveTemplates.xc": "def.vehicleIcon" },
+          "healthBar": ${ "markersAliveTemplates.xc": "def.healthBar" },
+          "damageText": ${ "markersAliveTemplates.xc": "def.damageText" },
+          "damageTextPlayer": ${ "markersAliveTemplates.xc": "def.damageTextPlayer" },
+          "damageTextSquadman": ${ "markersAliveTemplates.xc": "def.damageTextSquadman" },
           "contourIcon": { "visible": false },
           "clanIcon": { "visible": false },
           "levelIcon": { "visible": false },
-          "actionMarker": ${ "markersAliveTemplates.xc": "actionMarker" },
+          "actionMarker": ${ "markersAliveTemplates.xc": "def.actionMarker" },
           "textFields": [
-            ${ "markersAliveTemplates.xc": "tankName" },
-            ${ "markersAliveTemplates.xc": "hp" },
-            ${ "markersAliveTemplates.xc": "eff_marker" }
+            ${ "markersAliveTemplates.xc": "def.tankName" },
+            ${ "markersAliveTemplates.xc": "def.hp" },
+            ${ "markersAliveTemplates.xc": "def.eff_marker" }
           ]
         },
         "extended": {
-          "vehicleIcon": ${ "markersAliveTemplates.xc": "vehicleIcon" },
-          "healthBar": ${ "markersAliveTemplates.xc": "healthBar" },
-          "damageText": ${ "markersAliveTemplates.xc": "damageText" },
-          "damageTextPlayer": ${ "markersAliveTemplates.xc": "damageTextPlayer" },
-          "damageTextSquadman": ${ "markersAliveTemplates.xc": "damageTextSquadman" },
+          "vehicleIcon": ${ "markersAliveTemplates.xc": "def.vehicleIcon" },
+          "healthBar": ${ "markersAliveTemplates.xc": "def.healthBar" },
+          "damageText": ${ "markersAliveTemplates.xc": "def.damageText" },
+          "damageTextPlayer": ${ "markersAliveTemplates.xc": "def.damageTextPlayer" },
+          "damageTextSquadman": ${ "markersAliveTemplates.xc": "def.damageTextSquadman" },
           "contourIcon": { "visible": false },
           "clanIcon": { "visible": false },
           "levelIcon": { "visible": false },
-          "actionMarker": ${ "markersAliveTemplates.xc": "actionMarker" },
+          "actionMarker": ${ "markersAliveTemplates.xc": "def.actionMarker" },
           "textFields": [
-            ${ "markersAliveTemplates.xc": "playerName" },
-            ${ "markersAliveTemplates.xc": "hp_ratio" },
-            ${ "markersAliveTemplates.xc": "eff_marker" }
+            ${ "markersAliveTemplates.xc": "def.playerName" },
+            ${ "markersAliveTemplates.xc": "def.hp_ratio" }
           ]
         }
       },
       "dead": {
         "normal": {
-          "vehicleIcon": ${ "markersDeadTemplates.xc": "vehicleIcon" },
-          "damageText": ${ "markersDeadTemplates.xc": "damageText" },
-          "damageTextPlayer": ${ "markersDeadTemplates.xc": "damageTextPlayer" },
-          "damageTextSquadman": ${ "markersDeadTemplates.xc": "damageTextSquadman" },
+          "vehicleIcon": ${ "markersDeadTemplates.xc": "def.vehicleIcon" },
+          "damageText": ${ "markersDeadTemplates.xc": "def.damageText" },
+          "damageTextPlayer": ${ "markersDeadTemplates.xc": "def.damageTextPlayer" },
+          "damageTextSquadman": ${ "markersDeadTemplates.xc": "def.damageTextSquadman" },
           "contourIcon": { "visible": false },
           "clanIcon": { "visible": false },
           "levelIcon": { "visible": false },
-          "actionMarker": ${ "markersDeadTemplates.xc": "actionMarker" },
+          "actionMarker": ${ "markersDeadTemplates.xc": "def.actionMarker" },
           "textFields": []
         },
         "extended": {
-          "vehicleIcon": ${ "markersDeadTemplates.xc": "vehicleIcon" },
-          "damageText": ${ "markersDeadTemplates.xc": "damageText" },
-          "damageTextPlayer": ${ "markersDeadTemplates.xc": "damageTextPlayer" },
-          "damageTextSquadman": ${ "markersDeadTemplates.xc": "damageTextSquadman" },
+          "vehicleIcon": ${ "markersDeadTemplates.xc": "def.vehicleIcon" },
+          "damageText": ${ "markersDeadTemplates.xc": "def.damageText" },
+          "damageTextPlayer": ${ "markersDeadTemplates.xc": "def.damageTextPlayer" },
+          "damageTextSquadman": ${ "markersDeadTemplates.xc": "def.damageTextSquadman" },
           "contourIcon": { "visible": false },
           "clanIcon": { "visible": false },
           "levelIcon": { "visible": false },
-          "actionMarker": ${ "markersDeadTemplates.xc": "actionMarker" },
+          "actionMarker": ${ "markersDeadTemplates.xc": "def.actionMarker" },
           "textFields": [
-            ${ "markersDeadTemplates.xc": "tankName" },
-            ${ "markersDeadTemplates.xc": "playerName" }
+            ${ "markersDeadTemplates.xc": "def.tankName" },
+            ${ "markersDeadTemplates.xc": "def.playerName" }
           ]
         }
       }
@@ -71,62 +70,61 @@
     "enemy": {
       "alive": {
         "normal": {
-          "vehicleIcon": ${ "markersAliveTemplates.xc": "vehicleIcon" },
-          "healthBar": ${ "markersAliveTemplates.xc": "healthBar" },
-          "damageText": ${ "markersAliveTemplates.xc": "damageText" },
-          "damageTextPlayer": ${ "markersAliveTemplates.xc": "damageTextPlayer" },
-          "damageTextSquadman": ${ "markersAliveTemplates.xc": "damageTextSquadman" },
+          "vehicleIcon": ${ "markersAliveTemplates.xc": "def.vehicleIcon" },
+          "healthBar": ${ "markersAliveTemplates.xc": "def.healthBar" },
+          "damageText": ${ "markersAliveTemplates.xc": "def.damageText" },
+          "damageTextPlayer": ${ "markersAliveTemplates.xc": "def.damageTextPlayer" },
+          "damageTextSquadman": ${ "markersAliveTemplates.xc": "def.damageTextSquadman" },
           "contourIcon": { "visible": false },
           "clanIcon": { "visible": false },
           "levelIcon": { "visible": false },
-          "actionMarker": ${ "markersAliveTemplates.xc": "actionMarker" },
+          "actionMarker": ${ "markersAliveTemplates.xc": "def.actionMarker" },
           "textFields": [
-            ${ "markersAliveTemplates.xc": "tankName" },
-            ${ "markersAliveTemplates.xc": "hp" },
-            ${ "markersAliveTemplates.xc": "eff_marker" }
+            ${ "markersAliveTemplates.xc": "def.tankName" },
+            ${ "markersAliveTemplates.xc": "def.hp" },
+            ${ "markersAliveTemplates.xc": "def.eff_marker" }
           ]
         },
         "extended": {
-          "vehicleIcon": ${ "markersAliveTemplates.xc": "vehicleIcon" },
-          "healthBar": ${ "markersAliveTemplates.xc": "healthBar" },
-          "damageText": ${ "markersAliveTemplates.xc": "damageText" },
-          "damageTextPlayer": ${ "markersAliveTemplates.xc": "damageTextPlayer" },
-          "damageTextSquadman": ${ "markersAliveTemplates.xc": "damageTextSquadman" },
+          "vehicleIcon": ${ "markersAliveTemplates.xc": "def.vehicleIcon" },
+          "healthBar": ${ "markersAliveTemplates.xc": "def.healthBar" },
+          "damageText": ${ "markersAliveTemplates.xc": "def.damageText" },
+          "damageTextPlayer": ${ "markersAliveTemplates.xc": "def.damageTextPlayer" },
+          "damageTextSquadman": ${ "markersAliveTemplates.xc": "def.damageTextSquadman" },
           "contourIcon": { "visible": false },
           "clanIcon": { "visible": false },
           "levelIcon": { "visible": false },
-          "actionMarker": ${ "markersAliveTemplates.xc": "actionMarker" },
+          "actionMarker": ${ "markersAliveTemplates.xc": "def.actionMarker" },
           "textFields": [
-            ${ "markersAliveTemplates.xc": "playerName" },
-            ${ "markersAliveTemplates.xc": "hp_ratio" },
-            ${ "markersAliveTemplates.xc": "eff_marker" }
+            ${ "markersAliveTemplates.xc": "def.playerName" },
+            ${ "markersAliveTemplates.xc": "def.hp_ratio" }
           ]
         }
       },
       "dead": {
         "normal": {
-          "vehicleIcon": ${ "markersDeadTemplates.xc": "vehicleIcon" },
-          "damageText": ${ "markersDeadTemplates.xc": "damageText" },
-          "damageTextPlayer": ${ "markersDeadTemplates.xc": "damageTextPlayer" },
-          "damageTextSquadman": ${ "markersDeadTemplates.xc": "damageTextSquadman" },
+          "vehicleIcon": ${ "markersDeadTemplates.xc": "def.vehicleIcon" },
+          "damageText": ${ "markersDeadTemplates.xc": "def.damageText" },
+          "damageTextPlayer": ${ "markersDeadTemplates.xc": "def.damageTextPlayer" },
+          "damageTextSquadman": ${ "markersDeadTemplates.xc": "def.damageTextSquadman" },
           "contourIcon": { "visible": false },
           "clanIcon": { "visible": false },
           "levelIcon": { "visible": false },
-          "actionMarker": ${ "markersDeadTemplates.xc": "actionMarker" },
+          "actionMarker": ${ "markersDeadTemplates.xc": "def.actionMarker" },
           "textFields": []
         },
         "extended": {
-          "vehicleIcon": ${ "markersDeadTemplates.xc": "vehicleIcon" },
-          "damageText": ${ "markersDeadTemplates.xc": "damageText" },
-          "damageTextPlayer": ${ "markersDeadTemplates.xc": "damageTextPlayer" },
-          "damageTextSquadman": ${ "markersDeadTemplates.xc": "damageTextSquadman" },
+          "vehicleIcon": ${ "markersDeadTemplates.xc": "def.vehicleIcon" },
+          "damageText": ${ "markersDeadTemplates.xc": "def.damageText" },
+          "damageTextPlayer": ${ "markersDeadTemplates.xc": "def.damageTextPlayer" },
+          "damageTextSquadman": ${ "markersDeadTemplates.xc": "def.damageTextSquadman" },
           "contourIcon": { "visible": false },
           "clanIcon": { "visible": false },
           "levelIcon": { "visible": false },
-          "actionMarker": ${ "markersDeadTemplates.xc": "actionMarker" },
+          "actionMarker": ${ "markersDeadTemplates.xc": "def.actionMarker" },
           "textFields": [
-            ${ "markersDeadTemplates.xc": "tankName" },
-            ${ "markersDeadTemplates.xc": "playerName" }
+            ${ "markersDeadTemplates.xc": "def.tankName" },
+            ${ "markersDeadTemplates.xc": "def.playerName" }
           ]
         }
       }

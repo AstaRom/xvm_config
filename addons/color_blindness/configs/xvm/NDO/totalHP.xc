@@ -2,7 +2,7 @@
   "totalHP": {
     "enabled": false,
     "colors": {
-      "bad":  "F50800",
+      "bad":  "7DBBFF",
       "neutral": "FCFCFC",
       "good": "96FF00"
     },

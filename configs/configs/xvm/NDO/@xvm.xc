@@ -3,9 +3,12 @@
   "autoReloadConfig": false,
   "language": "auto",
   "region": "auto",
-
+  
+  "custom_texts":      ${"@custom_texts.xc":"custom_texts"},
+  
   "alpha":             ${"alpha.xc":"alpha"},
   "battle":            ${"battle.xc":"battle"},
+  "battleLabels":      ${"battleLabels.xc":"labels"},
   "battleLoading":     ${"battleLoading.xc":"battleLoading"},
   "battleLoadingTips": ${"battleLoadingTips.xc":"battleLoadingTips"},
   "battleResults":     ${"battleResults.xc":"battleResults"},

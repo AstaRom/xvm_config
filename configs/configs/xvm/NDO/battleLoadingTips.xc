@@ -1,6 +1,6 @@
 ﻿{
   "battleLoadingTips": {
-    "clockFormat": "Конфиг от 01.04.16",
+    "clockFormat": "Конфиг от 07.05.16",
     "showBattleTier": true,
     "removeSquadIcon": false,
     "removeVehicleLevel": true,
@@ -30,8 +30,8 @@
       "alpha": 100
     },
     "darkenNotReadyIcon": false,
-    "formatLeftNick": "<font face='NDO' size='{{xvm-stat?16|0}}' color='{{xvm-user}}'>{{xvm-user?&#x004E;<font size='6'> </font>|<font size='14'>  </font>}}</font><font size='14'>{{name%.15s~..}} <font color='#ff9900'>{{clan}}</font></font>",
-    "formatRightNick": "<font size='14'><font color='#ff9900'>{{clan}}</font> {{name%.15s~..}}</font><font face='NDO' size='{{xvm-stat?16|0}}' color='{{xvm-user}}'>{{xvm-user?<font size='6'> </font>&#x004E;|<font size='14'>  </font><font size='0'>.</font>}}</font>",
+    "formatLeftNick": "{{.custom_texts.xvm-user.formatLeft}}<font size='14'>{{name%.15s~..}} <font color='#ff9900'>{{clan}}</font></font>",
+    "formatRightNick": "<font size='14'><font color='#ff9900'>{{clan}}</font> {{name%.15s~..}}</font>{{.custom_texts.xvm-user.formatRight}}",
     "formatLeftVehicle": "",
     "formatRightVehicle": ""
   }

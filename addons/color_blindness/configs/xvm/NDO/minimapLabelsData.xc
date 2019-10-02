@@ -20,10 +20,10 @@
         "enemy_alive": "#7DBBFF"
       },
       "deadDot": {
-        "ally_dead": "#B4E595",
-        "squadman_dead": "#E5BB8A",
-        "teamKiller_dead": "#00D2E5",
-        "enemy_dead": "#55AACC"
+        "ally_dead": "#C8FFA6",
+        "squadman_dead": "#FFD099",
+        "teamKiller_dead": "#A6F8FF",
+        "enemy_dead": "#7DBBFF"
       }
     },
     "vtype": {

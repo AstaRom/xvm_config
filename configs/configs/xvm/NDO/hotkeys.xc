@@ -2,7 +2,8 @@
   "hotkeys": {   
     "minimapZoom": { "enabled": true, "keyCode": 58, "onHold": true },
     "minimapAltMode": { "enabled": true, "keyCode": 56, "onHold": true },
-    "playersPanelAltMode": { "enabled": true, "keyCode": 56, "onHold": true }
+    "playersPanelAltMode": { "enabled": true, "keyCode": 56, "onHold": true },
+    "battleLabelsHotKeys": false
   }
 }
 

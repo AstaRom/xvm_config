@@ -12,10 +12,11 @@
     "showUsedSlots": true,
     "showTotalSlots": false,
     "filters": {
-      "params": { "enabled": true },
-      "bonus": { "enabled": true },
+      "nation": { "enabled": true },
+      "type": { "enabled": true },
       "favorite": { "enabled": true },
       "gameMode": { "enabled": true },
+      "level": { "enabled": true },
       "prefs": { "enabled": true }
     },
     "filtersPadding": {
@@ -46,7 +47,7 @@
       { "x": 30, "y": 14, "align": "left", "format": "<font face='$FieldFont' size='12' color='#808080'><b>{{v.tdb%-4d|}}</b></font>", "shadow": { "distance": 0, "angle": 0, "color": "0x000000", "alpha": 0.8, "blur": 4, "strength": 2 } },
       { "x": 158, "y": 66, "align": "right", "format": "<font face='$FieldFont' size='12' color='#808080'><b>({{v.battletiermin}}-{{v.battletiermax}})</b> </font><font face='$FieldFont' size='12' color='#DDDDDD'><b>{{v.rlevel}}</b></font>", "shadow": { "distance": 0, "angle": 0, "color": "0x000000", "alpha": 0.8, "blur": 4, "strength": 2 } },
       { "x": 158, "y": 80, "align": "right", "format": "<font face='$FieldFont' size='13' color='{{v.premium?#FFAA55|#DDDDDD}}'><b>{{v.name}}</b></font>", "shadow": { "distance": 0, "angle": 0, "color": "{{v.premium?0xFF4400|0x4C4C4C}}", "alpha": 0.8, "blur": 4, "strength": 2 } },
-      { "x": 160, "y": 52, "align": "right", "format": "<font face='$FieldFont' color='#BB0000'>{{v.marksOnGun}}</font>", "shadow": { "distance": 0, "angle": 0, "color": "0x000000", "alpha": 0.8, "blur": 3, "strength": 4 } },
+      { "x": 160, "y": 52, "align": "right", "format": "<font face='$FieldFont' color='#DDDDDD'>{{v.marksOnGun}}</font>", "shadow": { "distance": 0, "angle": 0, "color": "0x000000", "alpha": 0.8, "blur": 3, "strength": 4 } },
       {}
     ],
     "nations_order": [],
