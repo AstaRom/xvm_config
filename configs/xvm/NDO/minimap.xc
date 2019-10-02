@@ -16,9 +16,9 @@
       "centered": true
     },
     "mapSize": ${"minimapMapSize.xc":"mapSize"},
-    "useStandardCircles": false,
-    "useStandardLabels": false,
-    "useStandardLines": false,
+    "circlesEnabled": true,
+    "labelsEnabled": true,
+    "linesEnabled": true,
     "labels": ${"minimapLabels.xc":"labels"},
     "labelsData": ${"minimapLabelsData.xc":"labelsData"},
     "circles": ${"minimapCircles.xc":"circles"},

@@ -5,6 +5,7 @@
     "vehicleIconAlpha": 100,
     "removeVehicleLevel": true,
     "removeVehicleTypeIcon": true,
+    "removePlayerStatusIcon": false,
     "nameFieldShowBorder": false,
     "vehicleFieldShowBorder": false,
     "fragsFieldShowBorder": false,
