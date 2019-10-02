@@ -2,15 +2,15 @@
   "elements": [
     {
       "$delay": 100,
-
+      
       // debugPanel
-
+      
       "debugPanel": {
         "y": 0 
       },
-
+      
       // battleTimer
-
+      
       "battleTimer": {
         "$delay": 1000,
         "y": 10,
@@ -48,15 +48,15 @@
           }
         }
       },
-
+      
       // prebattleTimer
-
+      
       "prebattleTimer": {
         "visible": false
       },
       
       // playersPanel
-
+      
       "playersPanel": {
         "listLeft": {
           "y": 50
@@ -68,9 +68,9 @@
           "y": 24
         }
       },
-
+      
       // endWarningPanel
-
+      
       "endWarningPanel": {
         "y": 45,     
         "timer": {
@@ -85,9 +85,9 @@
           "visible": true
         }
       },
-
+      
       // fragCorrelationBar
-
+      
       "fragCorrelationBar": {
         "teamFragsSeparatorField": {
           "y": -2

@@ -73,7 +73,7 @@
     },
     // Блок текстовых полей / textFields
     "tankName": {
-      "font": "Название техники",
+      "name": "Название техники",
       "enabled": true,
       "x": 0,
       "y": -44,
@@ -83,7 +83,7 @@
       "format": "{{vehicle}}{{turret}}"
     },
     "playerName": {
-      "font": "Никнейм игрока",
+      "name": "Никнейм игрока",
       "enabled": true,
       "x": 0,
       "y": -44,
@@ -93,7 +93,7 @@
       "format": "{{name%.16s~..}} <font color='#ff9900'>{{clan}}</font>"
     },
     "hp": {
-      "font": "Здоровье",
+      "name": "Здоровье",
       "enabled": true,
       "x": 0,
       "y": -22,
@@ -103,7 +103,7 @@
       "format": "{{hp}} / {{hp-max}}"
     },
     "hp_ratio": {
-      "font": "Здоровье (Процент)",
+      "name": "Здоровье (Процент)",
       "enabled": true,
       "x": 0,
       "y": -22,
@@ -113,7 +113,7 @@
       "format": "{{hp-ratio}}%"
     },
     "eff_marker": {
-      "font": "Маркер эффективности",
+      "name": "Маркер эффективности",
       "enabled": true,
       "x": -45,
       "y": -33,
@@ -123,7 +123,7 @@
       "format": "<font color='{{c:r}}' size='{{r?15|0}}'>&#x0049;</font>"
     },
     "stat_marker": {
-      "font": "Панель эффективности",
+      "name": "Панель эффективности",
       "enabled": true,
       "x": 0,
       "y": -60,
@@ -133,7 +133,7 @@
       "format": "<font size='{{r?13|0}}'><font color='{{c:kb}}'>{{kb%3d~k|---k}}</font>   <font color='{{c:r}}'>{{r_size=2?{{r%s|--}}|{{r>=10000?XXXX|{{r%4d|----}}}}}}</font>   <font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font></font>"
     },
     "squad_marker_fon": {
-      "font": "Маркер взвода (фон)",
+      "name": "Маркер взвода (фон)",
       "enabled": ${"@settings.xc":"settings.markers.squad_number"},
       "x": 48,
       "y": -38,
@@ -143,7 +143,7 @@
       "format": "<font size='{{squad?0|28}}'>&#x004D;</font>"
     },
     "squad_marker_frame": {
-      "font": "Маркер взвода (рамка)",
+      "name": "Маркер взвода (рамка)",
       "enabled": ${"@settings.xc":"settings.markers.squad_number"},
       "x": 48,
       "y": -38,
@@ -153,7 +153,7 @@
       "format": "<font size='{{squad?0|28}}'>&#x004C;</font>"
     },
     "squad_marker_number": {
-      "font": "Маркер взвода (номер)",
+      "name": "Маркер взвода (номер)",
       "enabled": ${"@settings.xc":"settings.markers.squad_number"},
       "x": 48,
       "y": -33,
@@ -163,7 +163,7 @@
       "format": "<font size='{{squad?0|12}}'>{{squad-num}}</font>"
     },
     "lowHp_marker": {
-      "font": "Маркер помощи / Маркер атаки",
+      "name": "Маркер помощи / Маркер атаки",
       "enabled": ${"@settings.xc":"settings.markers.lowHp_marker"},
       "x": 0,
       "y": -80,
@@ -173,7 +173,7 @@
       "format": "{{ally?&#x004A;|&#x004B;}}"
     },    
     "xmqp_marker": {
-      "font": "Маркеры XMQP",
+      "name": "Маркеры XMQP",
       "enabled": ${"@settings.xc":"settings.markers.xmqp_marker"},
       "x": 0,
       "y": -80,

@@ -59,7 +59,7 @@
     },
     // Блок текстовых полей / textFields
     "tankName": {
-      "font": "Название техники",
+      "name": "Название техники",
       "enabled": true,
       "x": 0,
       "y": -20,
@@ -69,7 +69,7 @@
       "format": "{{vehicle}}"
     },
     "playerName": {
-      "font": "Никнейм игрока",
+      "name": "Никнейм игрока",
       "enabled": true,
       "x": 0,
       "y": -35,

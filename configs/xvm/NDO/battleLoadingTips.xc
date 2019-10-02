@@ -3,6 +3,7 @@
     "clockFormat": ${"definition.xc":"definition.date"},
     "showBattleTier": true,
     "removeSquadIcon": false,
+    "vehicleIconAlpha": 100,
     "removeVehicleLevel": true,
     "removeVehicleTypeIcon": true,
     "nameFieldShowBorder": false,
@@ -25,10 +26,10 @@
     "formatLeftVehicle": "",
     "formatRightVehicle": "",
     "extraFieldsLeft": [
-      { "x": 0, "y": 0, "align": "center", "valign": "center", "format": "<font face='NDO' size='{{xvm-stat?16|0}}' color='{{x-enabled?#96FF00|{{xvm-user=on?#FF8800}}{{xvm-user=off?#AAAAAA}}}}'>{{xvm-user=on?&#x004E;}}{{xvm-user=off?&#x004E;}}</font>", "alpha": "{{alive?100|50}}", "shadow": { "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 2 } }
+      { "enabled": "{{xvm-stat?true|false}}", "x": 0, "y": 0, "align": "center", "valign": "center", "format": "<font face='NDO' size='{{xvm-stat?16|0}}' color='{{x-enabled?#96FF00|{{xvm-user=on?#FF8800}}{{xvm-user=off?#AAAAAA}}}}'>{{xvm-user=on?&#x004E;}}{{xvm-user=off?&#x004E;}}</font>", "alpha": "{{alive?100|50}}", "shadow": { "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 2 } }
     ],
     "extraFieldsRight": [
-      { "x": 0, "y": 0, "align": "center", "valign": "center", "format": "<font face='NDO' size='{{xvm-stat?16|0}}' color='{{x-enabled?#96FF00|{{xvm-user=on?#FF8800}}{{xvm-user=off?#AAAAAA}}}}'>{{xvm-user=on?&#x004E;}}{{xvm-user=off?&#x004E;}}</font>", "alpha": "{{alive?100|50}}", "shadow": { "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 2 } }
+      { "enabled": "{{xvm-stat?true|false}}", "x": 0, "y": 0, "align": "center", "valign": "center", "format": "<font face='NDO' size='{{xvm-stat?16|0}}' color='{{x-enabled?#96FF00|{{xvm-user=on?#FF8800}}{{xvm-user=off?#AAAAAA}}}}'>{{xvm-user=on?&#x004E;}}{{xvm-user=off?&#x004E;}}</font>", "alpha": "{{alive?100|50}}", "shadow": { "distance": 0, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 2 } }
     ]
   }
 }

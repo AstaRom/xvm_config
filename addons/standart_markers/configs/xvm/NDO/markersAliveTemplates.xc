@@ -73,7 +73,7 @@
     },
     // Блок текстовых полей / textFields
     "tankName": {
-      "font": "Название техники",
+      "name": "Название техники",
       "enabled": true,
       "x": 0,
       "y": -36,
@@ -83,7 +83,7 @@
       "format": "{{vehicle}}{{turret}}"
     },
     "playerName": {
-      "font": "Никнейм игрока",
+      "name": "Никнейм игрока",
       "enabled": true,
       "x": 0,
       "y": -36,
@@ -93,7 +93,7 @@
       "format": "{{name%.16s~..}}{{clan}}"
     },
     "hp": {
-      "font": "Здоровье",
+      "name": "Здоровье",
       "enabled": true,
       "x": 0,
       "y": -20,
@@ -103,7 +103,7 @@
       "format": "{{hp}} / {{hp-max}}"
     },
     "hp_ratio": {
-      "font": "Здоровье (Процент)",
+      "name": "Здоровье (Процент)",
       "enabled": true,
       "x": 0,
       "y": -20,
@@ -113,7 +113,7 @@
       "format": "{{hp-ratio}}%"
     },
     "eff_marker": {
-      "font": "Маркер эффективности",
+      "name": "Маркер эффективности",
       "enabled": true,
       "x": -40,
       "y": -27,

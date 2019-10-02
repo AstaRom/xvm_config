@@ -11,6 +11,7 @@
       "enabled": true,
       "expandAreaWidth": 0,
       "layout": "vertical",
+      "fixedPosition": false,
       "extraFields": ${"playersPanelTemplates.xc":"none"}
     },
     "short": {
