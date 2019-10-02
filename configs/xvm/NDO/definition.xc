@@ -1,10 +1,10 @@
 ﻿{
   "definition": {
     "author": "night_dragon_on",
-    "date": "Конфиг от 14.02.18",
+    "date": "Конфиг от 23.03.18",
     "description": "Config for XVM",
-    "gameVersion": "0.9.22.0.1",
-    "modMinVersion": "7.4.1",
+    "gameVersion": "1.0.0",
+    "modMinVersion": "7.5.0",
     "url": "https://bitbucket.org/night_dragon_on/ndo_config"
   }
 }

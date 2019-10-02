@@ -12,6 +12,7 @@
       "xvm_sixthSenseRudy": "emptyEvent",
       "xvm_fireAlert": "emptyEvent",
       "xvm_ammoBay": "emptyEvent",
+      "xvm_gunReloaded": "emptyEvent",
       "xvm_enemySighted": "emptyEvent",
       "xvm_battleEnd_5_min": "emptyEvent",
       "xvm_battleEnd_3_min": "emptyEvent",

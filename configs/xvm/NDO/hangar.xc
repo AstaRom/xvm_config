@@ -1,12 +1,5 @@
 ﻿{
   "hangar": {
-    "hangarType": "premium",
-    "camera": {
-      "minDistance": 5.5,
-      "maxDistance": 14,
-      "startDistance": 10,
-      "zoomSensitivity": 0.8
-    },
     "showBuyPremiumButton": true,
     "showPremiumShopButton": false,
     "showSharedChatButton": false,

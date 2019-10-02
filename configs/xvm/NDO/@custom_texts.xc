@@ -14,8 +14,9 @@
         "china": "china_star",
         "japan": "japanese_sun",
         "czech": "czech_round",
+        "poland": "poland_chekers",
         "sweden": "swedish_flag",
-        "poland": "poland_chekers"
+        "italy": "italian_flag"
       },
       "type": "{{v.type={{l10n:LT}}?lightTank}}{{v.type={{l10n:MT}}?mediumTank}}{{v.type={{l10n:HT}}?heavyTank}}{{v.type={{l10n:SPG}}?SPG}}{{v.type={{l10n:TD}}?AT-SPG}}"
     },

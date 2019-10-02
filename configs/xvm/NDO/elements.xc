@@ -16,12 +16,14 @@
         },
         "secondsTF": {
           "y": 2,
-          "$textFormat": { "font": "$TitleFont", "size": 20, "color": "0xFCFCFC", "align": "left" }
+          "$textFormat": { "font": "$TitleFont", "size": 20, "color": "0xFCFCFC", "align": "left" },
+          "htmlText": "<TEXTFORMAT INDENT=\"0\" LEFTMARGIN=\"0\" RIGHTMARGIN=\"0\" LEADING=\"2\"><P ALIGN=\"LEFT\"><FONT FACE=\"$TitleFont\" SIZE=\"20\" COLOR=\"#FCFCFC\" KERNING=\"0\">00</FONT></P></TEXTFORMAT>"
         },
         "minutesTF": {
           "x": 131,
           "y": 2,
-          "$textFormat": { "font": "$TitleFont", "size": 20, "color": "0xFCFCFC", "align": "right" }
+          "$textFormat": { "font": "$TitleFont", "size": 20, "color": "0xFCFCFC", "align": "right" },
+          "htmlText": "<TEXTFORMAT INDENT=\"0\" LEFTMARGIN=\"0\" RIGHTMARGIN=\"0\" LEADING=\"2\"><P ALIGN=\"RIGHT\"><FONT FACE=\"$TitleFont\" SIZE=\"20\" COLOR=\"#FCFCFC\" KERNING=\"0\">00</FONT></P></TEXTFORMAT>"
         }
       },
       
