@@ -3,6 +3,9 @@
     "combineIcons": true,
     "hideBottomText": true,
     "tooltipsDelay": 0.4,
+    "fontSize": 12,
+    "fontName": "$TextFont",
+    "goldColor": "#FFC363",
     "lightTank": [
       "maxHealth",
       "circularVisionRadius",

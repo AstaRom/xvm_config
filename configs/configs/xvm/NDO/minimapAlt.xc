@@ -14,10 +14,13 @@
       "pixelsBack": 200,
       "centered": true
     },
-    "mapSize": ${"minimap/minimapMapSize.xc":"mapSize"},
-    "labels": ${"minimap/minimapLabels.xc":"labelsAlt"},
-    "labelsData": ${"minimap/minimapLabelsData.xc":"labelsData"},
-    "circles": ${"minimap/minimapCircles.xc":"circles"},
-    "lines": ${"minimap/minimapLines.xc":"lines"}
+    "mapSize": ${"minimapMapSize.xc":"mapSize"},
+    "useStandardCircles": false,
+    "useStandardLabels": false,
+    "useStandardLines": false,
+    "labels": ${"minimapLabels.xc":"labelsAlt"},
+    "labelsData": ${"minimapLabelsData.xc":"labelsData"},
+    "circles": ${"minimapCircles.xc":"circles"},
+    "lines": ${"minimapLines.xc":"lines"}
   }
 }

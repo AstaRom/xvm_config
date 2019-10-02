@@ -112,7 +112,7 @@
             "_x": -60,
             "_height": 100,
             "_width": 80,
-            "$textFormat": { "font": "$TitleFont","size": 20, "align": "right" }
+            "$textFormat": { "font": "$TitleFont", "size": 20, "align": "right" }
           },
           "dotsMC": {
             "_x": -17,
@@ -120,13 +120,13 @@
             "text": ":",
             "_height": 100,
             "_width": 80,
-            "$textFormat": { "font": "$TitleFont","size": 20, "align": "center" }
+            "$textFormat": { "font": "$TitleFont", "size": 20, "align": "center" }
           },
           "secondsMC": {
             "_x": 25,
             "_height": 100,
             "_width": 80,
-            "$textFormat": { "font": "$TitleFont","size": 20, "align": "left" }
+            "$textFormat": { "font": "$TitleFont", "size": 20, "align": "left" }
           }
         }
       }

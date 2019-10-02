@@ -6,12 +6,12 @@
     "defaultBoughtForCredits": true,
     "hidePricesInTechTree": true,
     "masteryMarkInTechTree": true,
-    "allowExchangeXPInTechTree": true,
+    "allowExchangeXPInTechTree": false,
     "enableCrewAutoReturn": true,
     "crewReturnByDefault": true,
     "barracksShowFlags": true,
     "barracksShowSkills": true,
-    "enableEquipAutoReturn": false,
+    "enableEquipAutoReturn": true,
     "blockVehicleIfLowAmmo": true,
     "lowAmmoPercentage": 20,
     "widgetsEnabled": false,
@@ -114,7 +114,7 @@
       "rotation": 0,
       "shiftY": 0
     },
-    "carousel": ${"hangar/carousel.xc":"carousel"},
-    "clock": ${"hangar/clock.xc":"clock"}
+    "carousel": ${"carousel.xc":"carousel"},
+    "clock": ${"clock.xc":"clock"}
   }
 }

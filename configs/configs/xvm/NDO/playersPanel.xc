@@ -19,7 +19,7 @@
     "none": {
       "enabled": true,
       "layout": "vertical",
-      "extraFields": ${"playersPanel/none.xc":"extraFields"}
+      "extraFields": ${"playersPanelTemplates.xc":"none"}
     },
     "short": {
       "enabled": true,
@@ -28,8 +28,8 @@
       "vehicleLevelAlpha": 100,
       "fragsFormatLeft": "",
       "fragsFormatRight": "",
-      "extraFieldsLeft": ${"playersPanel/short.xc":"extraFieldsLeft"},
-      "extraFieldsRight": ${"playersPanel/short.xc":"extraFieldsRight"}
+      "extraFieldsLeft": ${"playersPanelTemplates.xc":"shortLeft"},
+      "extraFieldsRight": ${"playersPanelTemplates.xc":"shortRight"}
     },
     "medium": {
       "enabled": true,
@@ -40,8 +40,8 @@
       "formatRight": "",
       "fragsFormatLeft": "",
       "fragsFormatRight": "",
-      "extraFieldsLeft": ${"playersPanel/medium.xc":"extraFieldsLeft"},
-      "extraFieldsRight": ${"playersPanel/medium.xc":"extraFieldsRight"}
+      "extraFieldsLeft": ${"playersPanelTemplates.xc":"mediumLeft"},
+      "extraFieldsRight": ${"playersPanelTemplates.xc":"mediumRight"}
     },
     "medium2": {
       "enabled": true,
@@ -52,12 +52,12 @@
       "formatRight": "",
       "fragsFormatLeft": "",
       "fragsFormatRight": "",
-      "extraFieldsLeft": ${"playersPanel/medium2.xc":"extraFieldsLeft"},
-      "extraFieldsRight": ${"playersPanel/medium2.xc":"extraFieldsRight"}
+      "extraFieldsLeft": ${"playersPanelTemplates.xc":"medium2Left"},
+      "extraFieldsRight": ${"playersPanelTemplates.xc":"medium2Right"}
     },
     "large": {
       "enabled": true,
-      "width": 115,
+      "width": "{{xvm-stat?115|205}}",
       "removeSquadIcon": false,
       "vehicleLevelAlpha": 100,
       "nickFormatLeft": "",
@@ -66,8 +66,8 @@
       "vehicleFormatRight": "",
       "fragsFormatLeft": "",
       "fragsFormatRight": "",
-      "extraFieldsLeft": ${"playersPanel/large.xc":"extraFieldsLeft"},
-      "extraFieldsRight": ${"playersPanel/large.xc":"extraFieldsRight"}
+      "extraFieldsLeft": ${"playersPanelTemplates.xc":"largeLeft"},
+      "extraFieldsRight": ${"playersPanelTemplates.xc":"largeRight"}
     }
   }
 }

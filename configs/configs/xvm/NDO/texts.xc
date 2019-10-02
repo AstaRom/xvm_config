@@ -29,29 +29,30 @@
       "none": ""
     },
     "battletype": {
-      "unknown": "",
-      "regular": "",
+      "unknown": "unknown",
+      "regular": "regular",
       "training": "training",
       "company": "company",
       "tournament": "tournament",
       "clan": "clan",
-      "tutorial": "",
+      "tutorial": "tutorial",
       "cybersport": "cybersport",
-      "event_battles": "",
+      "event_battles": "event_battles",
       "sortie": "sortie",
       "fort_battle": "fort_battle",
       "rated_cybersport": "rated_cybersport",
       "global_map": "global_map",
       "tournament_regular": "tournament_regular",
       "tournament_clan": "tournament_clan",
-      "rated_sandbox": "",
-      "sandbox": "",
-      "fallout": ""
+      "rated_sandbox": "rated_sandbox",
+      "sandbox": "sandbox",
+      "fallout_classic": "fallout_classic",
+      "fallout_multiteam": "fallout_multiteam"
     },
     "topclan": {
       "top": "top",
       "persist": "persist",
-      "regular": ""
+      "regular": "regular"
     }
   }
 }
