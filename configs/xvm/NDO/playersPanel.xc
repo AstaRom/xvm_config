@@ -140,7 +140,6 @@
     "large": {
       "enabled": true,
       "standardFields": [ "frags" ],
-      "expandAreaWidth": 25,
       "removeSquadIcon": false,
       "squadIconAlpha": 100,
       "vehicleIconXOffsetLeft": 0,
