@@ -35,6 +35,22 @@ def marks_on_gun():
     veh = _vehicle()
     return None if not veh else "%s" % (veh.publicInfo.marksOnGun)
 
+#@xvm.export('vehicle_type', deterministic=False)
+def vehicle_type():
+    td = _typeDescriptor()
+    vehType = None
+    if td is not None and 'lightTank' in td.type.tags: 
+        vehType = 'LT'
+    elif td is not None and 'mediumTank' in td.type.tags:
+        vehType = 'MT'
+    elif td is not None and 'heavyTank' in td.type.tags:
+        vehType = 'HT'
+    elif td is not None and 'AT-SPG' in td.type.tags:
+        vehType = 'TD'
+    elif td is not None and 'SPG' in td.type.tags:
+        vehType = 'SPG'        
+    return vehType
+
 #@xvm.export('vehicle_name', deterministic=False)
 def vehicle_name():
     td = _typeDescriptor()

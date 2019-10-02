@@ -17,57 +17,25 @@
       { "value": 9999, "alpha": 0 }
     ],
     "hp_ratio": [
-      { "value": 10, "alpha": 100 },
-      { "value": 25, "alpha": 75 },
-      { "value": 50, "alpha": 50 },
+      { "value": 9.4, "alpha": 100 },
+      { "value": 24.4, "alpha": 75 },
+      { "value": 49.4, "alpha": 50 },
       { "value": 100, "alpha": 0 }
     ],
     "x": [
-      { "value": 16, "alpha": 100 },
-      { "value": 33, "alpha": 80 },
-      { "value": 52, "alpha": 60 },
-      { "value": 75, "alpha": 40 },
-      { "value": 92, "alpha": 20 },
+      { "value": 16.4, "alpha": 100 },
+      { "value": 33.4, "alpha": 80 },
+      { "value": 52.4, "alpha": 60 },
+      { "value": 75.4, "alpha": 40 },
+      { "value": 92.4, "alpha": 20 },
       { "value": 999, "alpha": 0 }
     ],
-    "eff": [
-      { "value": 598, "alpha": 100 },
-      { "value": 874, "alpha": 80 },
-      { "value": 1079, "alpha": 60 },
-      { "value": 1540, "alpha": 40 },
-      { "value": 1868, "alpha": 20 },
-      { "value": 9999, "alpha": 0 }
-    ],
-    "wtr": [
-      { "value": 2631, "alpha": 100 },
-      { "value": 4464, "alpha": 80 },
-      { "value": 6249, "alpha": 60 },
-      { "value": 8141, "alpha": 40 },
-      { "value": 9460, "alpha": 20 },
-      { "value": 99999, "alpha": 0 }
-    ],
-    "wn8": [
-      { "value": 397, "alpha": 100 },
-      { "value": 914, "alpha": 80 },
-      { "value": 1489, "alpha": 60 },
-      { "value": 2231, "alpha": 40 },
-      { "value": 2949, "alpha": 20 },
-      { "value": 9999, "alpha": 0 }
-    ],
-    "wgr": [
-      { "value": 2578, "alpha": 100 },
-      { "value": 4521, "alpha": 80 },
-      { "value": 6630, "alpha": 60 },
-      { "value": 8884, "alpha": 40 },
-      { "value": 10347, "alpha": 20 },
-      { "value": 99999, "alpha": 0 }
-    ],
     "winrate": [
-      { "value": 46.5, "alpha": 100 },
-      { "value": 48.5, "alpha": 80 },
-      { "value": 52.5, "alpha": 60 },
-      { "value": 57.5, "alpha": 40 },
-      { "value": 64.5, "alpha": 20 },
+      { "value": 46.49, "alpha": 100 },
+      { "value": 48.49, "alpha": 80 },
+      { "value": 52.49, "alpha": 60 },
+      { "value": 57.49, "alpha": 40 },
+      { "value": 64.49, "alpha": 20 },
       { "value": 100, "alpha": 0 }
     ],
     "kb": [
@@ -103,27 +71,27 @@
       { "value": 9999, "alpha": 0 }
     ],
     "tdv": [
-      { "value": 0.6, "alpha": 100 },
-      { "value": 0.8, "alpha": 80 },
-      { "value": 1.0, "alpha": 60 },
-      { "value": 1.3, "alpha": 40 },
-      { "value": 2.0, "alpha": 20 },
+      { "value": 0.5, "alpha": 100 },
+      { "value": 0.7, "alpha": 80 },
+      { "value": 0.9, "alpha": 60 },
+      { "value": 1.2, "alpha": 40 },
+      { "value": 1.9, "alpha": 20 },
       { "value": 15, "alpha": 0 }
     ],
     "tfb": [
-      { "value": 0.6, "alpha": 100 },
-      { "value": 0.8, "alpha": 80 },
-      { "value": 1.0, "alpha": 60 },
-      { "value": 1.3, "alpha": 40 },
-      { "value": 2.0, "alpha": 20 },
+      { "value": 0.5, "alpha": 100 },
+      { "value": 0.7, "alpha": 80 },
+      { "value": 0.9, "alpha": 60 },
+      { "value": 1.2, "alpha": 40 },
+      { "value": 1.9, "alpha": 20 },
       { "value": 15, "alpha": 0 }
     ],
     "tsb": [
-      { "value": 0.6, "alpha": 100 },
-      { "value": 0.8, "alpha": 80 },
-      { "value": 1.0, "alpha": 60 },
-      { "value": 1.3, "alpha": 40 },
-      { "value": 2.0, "alpha": 20 },
+      { "value": 0.5, "alpha": 100 },
+      { "value": 0.7, "alpha": 80 },
+      { "value": 0.9, "alpha": 60 },
+      { "value": 1.2, "alpha": 40 },
+      { "value": 1.9, "alpha": 20 },
       { "value": 15, "alpha": 0 }
     ]
   }

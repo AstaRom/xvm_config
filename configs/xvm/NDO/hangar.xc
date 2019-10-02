@@ -15,8 +15,8 @@
       "enabled": false,
       "alpha": 100,
       "rotation": 0,
-      "shiftX": 0,
-      "shiftY": 0
+      "offsetX": 0,
+      "offsetY": 0
     },
     "enableCrewAutoReturn": true,
     "crewReturnByDefault": true,
@@ -25,22 +25,22 @@
       "enabled": true,
       "alpha": 100,
       "rotation": 0,
-      "shiftX": 0,
-      "shiftY": 0
+      "offsetX": 0,
+      "offsetY": 0
     },
     "personalQuests": {
       "enabled": true,
       "alpha": 100,
       "rotation": 0,
-      "shiftX": 0,
-      "shiftY": 0
+      "offsetX": 0,
+      "offsetY": 0
     },
     "vehicleName": {
       "enabled": true,
       "alpha": 100,
       "rotation": 0,
-      "shiftX": 0,
-      "shiftY": 0
+      "offsetX": 0,
+      "offsetY": 0
     },
     "defaultBoughtForCredits": true,
     "enableEquipAutoReturn": true,
