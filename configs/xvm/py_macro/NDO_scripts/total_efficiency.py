@@ -12,27 +12,31 @@ from gui.battle_control.battle_constants import PERSONAL_EFFICIENCY_TYPE as _ETY
 damage = 0
 assist = 0
 blocked = 0
+stun = 0
 
 #####################################################################
 # handlers
 
 @registerEvent(DamageLogPanel, '_onTotalEfficiencyUpdated')
 def _onTotalEfficiencyUpdated(self, diff):
-    global damage, assist, blocked
+    global damage, assist, blocked, stun
     if _ETYPE.DAMAGE in diff:
         damage = diff[_ETYPE.DAMAGE]
     if _ETYPE.ASSIST_DAMAGE in diff:
         assist = diff[_ETYPE.ASSIST_DAMAGE]
     if _ETYPE.BLOCKED_DAMAGE in diff:
         blocked = diff[_ETYPE.BLOCKED_DAMAGE]
+    if _ETYPE.STUN in diff:
+        stun = diff[_ETYPE.STUN]
     as_event('ON_TOTAL_EFFICIENCY')
 
 @registerEvent(PlayerAvatar, '_PlayerAvatar__destroyGUI')
 def destroyGUI(self):
-    global damage, assist, blocked
+    global damage, assist, blocked, stun
     damage = 0
     assist = 0
     blocked = 0
+    stun = 0
 
 #@xvm.export('total_damage', deterministic=False)
 def total_damage():
@@ -45,3 +49,7 @@ def total_assist():
 #@xvm.export('total_blocked', deterministic=False)
 def total_blocked():
     return blocked
+
+#@xvm.export('total_stun', deterministic=False)
+def total_stun():
+    return stun

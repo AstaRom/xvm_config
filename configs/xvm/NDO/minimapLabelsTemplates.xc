@@ -84,7 +84,7 @@
       "valign": "center",
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "dead" ],
       "layer": "substrate",
-      "textFormat": { "font": "NDO", "size": 10 },
+      "textFormat": { "font": "NDO", "size": 10, "align": "center", "valign": "center" },
       "format": "<font color='{{.minimap.labelsData.colors.deadDot.{{sys-color-key}}}}'>&#x0047;</font>"
     },
     // Ник игрока, мертвый

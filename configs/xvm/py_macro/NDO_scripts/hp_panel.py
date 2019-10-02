@@ -47,7 +47,7 @@ def percent_hp_section(current_team):
 
 #@xvm.export('current_hp_symbols', deterministic=False)
 def current_hp_symbols(current_team, symbol):
-    return percent_hp_section(current_team) * str(symbol) if percent_hp_section(current_team) is not None else section
+    return percent_hp_section(current_team) * str(symbol) if percent_hp_section(current_team) is not None else str(symbol) * section
 
 #@xvm.export('max_hp_symbols', deterministic=True)
 def max_hp_symbols(symbol):

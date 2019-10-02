@@ -1,6 +1,8 @@
 ﻿{
   "camera": {
     "enabled": true,
+    "noFlashBang": false,
+    "hideHint": false,
     "arcade": {
       "distRange": [2, 100],
       "startDist": null,
@@ -37,7 +39,12 @@
         "format": "x{{zoom}}",
         "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x192E0E", "alpha": 100, "blur": 3, "strength": 2 }
       },
-      "shotRecoilEffect": true
+      "shotRecoilEffect": true,
+      "noBinoculars": false,
+      "noCameraLimit": {
+        "enabled": false,
+        "mode": "hotkey"
+      }
     }
   }
 }

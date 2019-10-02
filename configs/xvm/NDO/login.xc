@@ -53,7 +53,7 @@
       "enabled": false,
       "updateInterval": 5000,
       "x": 15,
-      "y": 35,
+      "y": 75,
       "hAlign": "left",
       "vAlign": "top",
       "alpha": 100,
@@ -94,6 +94,7 @@
         "blur": 4,
         "strength": 2
       }
-    }
+    },
+    "widgets": ${"widgets.xc":"widgets.login"}
   }
 }

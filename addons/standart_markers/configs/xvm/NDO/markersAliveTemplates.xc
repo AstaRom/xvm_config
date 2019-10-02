@@ -71,6 +71,13 @@
       "y": -67,
       "alpha": 100
     },
+    // Маркер оглушения
+    "stunMarker": {
+      "enabled": true,
+      "x": 0,
+      "y": -67,
+      "alpha": 100
+    },
     // Блок текстовых полей / textFields
     "tankName": {
       "name": "Название техники",

@@ -1,5 +1,6 @@
 ﻿{
   "damageLog": {
+    "enabled": true,
     "disabledDetailStats": false,
     "disabledSummaryStats": false,
     "log": {
@@ -11,7 +12,7 @@
         "fire": "<font face='NDO'>&#x0053;</font>",
         "ramming": "<font face='NDO'>&#x0054;</font>",
         "world_collision": "<font face='NDO'>&#x0055;</font>",
-        "drowning": "Dr",
+        "drowning": "<font face='NDO'>&#x0047;</font>",
         "overturn": "<font face='NDO'>&#x0056;</font>",
         "death_zone": "DZ",
         "gas_attack": "GA",
@@ -84,6 +85,32 @@
       },
       "critical-hit":{
         "critical": "*",
+        "no-critical": ""
+      },
+      "crit-device": {
+        "engine_crit": "{{l10n:engine}}",
+        "ammo_bay_crit": "{{l10n:ammo_bay}}",
+        "fuel_tank_crit": "{{l10n:fuel_tank}}",
+        "radio_crit": "{{l10n:radio}}",
+        "left_track_crit": "{{l10n:left_track}}",
+        "right_track_crit": "{{l10n:right_track}}",
+        "gun_crit": "{{l10n:gun}}",
+        "turret_rotator_crit": "{{l10n:turret_rotator}}",
+        "surveying_device_crit": "{{l10n:surveying_device}}",
+        "engine_destr": "{{l10n:engine}}",
+        "ammo_bay_destr": "{{l10n:ammo_bay}}",
+        "fuel_tank_destr": "{{l10n:fuel_tank}}",
+        "radio_destr": "{{l10n:radio}}",
+        "left_track_destr": "{{l10n:left_track}}",
+        "right_track_destr": "{{l10n:right_track}}",
+        "gun_destr": "{{l10n:gun}}",
+        "turret_rotator_destr": "{{l10n:turret_rotator}}",
+        "surveying_device_destr": "{{l10n:surveying_device}}",
+        "commander": "{{l10n:commander}}",
+        "driver": "{{l10n:driver}}",
+        "radioman": "{{l10n:radioman}}",
+        "gunner": "{{l10n:gunner}}",
+        "loader": "{{l10n:loader}}",
         "no-critical": ""
       },
       "comp-name":{

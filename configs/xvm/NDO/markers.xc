@@ -16,6 +16,7 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": ${ "markersAliveTemplates.xc": "def.actionMarker" },
+          "stunMarker": ${ "markersAliveTemplates.xc": "def.stunMarker" },
           "textFields": [
             ${ "markersAliveTemplates.xc": "def.tankName" },
             ${ "markersAliveTemplates.xc": "def.hp" },
@@ -36,6 +37,7 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": { "enabled": false },
+          "stunMarker": { "enabled": false },
           "textFields": [
             ${ "markersAliveTemplates.xc": "def.playerName" },
             ${ "markersAliveTemplates.xc": "def.hp_ratio" },
@@ -53,6 +55,7 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": ${ "markersDeadTemplates.xc": "def.actionMarker" },
+          "stunMarker": ${ "markersDeadTemplates.xc": "def.stunMarker" },
           "textFields": []
         },
         "extended": {
@@ -64,6 +67,7 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": { "enabled": false },
+          "stunMarker": { "enabled": false },
           "textFields": [
             ${ "markersDeadTemplates.xc": "def.tankName" },
             ${ "markersDeadTemplates.xc": "def.playerName" }
@@ -82,6 +86,7 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": ${ "markersAliveTemplates.xc": "def.actionMarker" },
+          "stunMarker": ${ "markersAliveTemplates.xc": "def.stunMarker" },
           "textFields": [
             ${ "markersAliveTemplates.xc": "def.tankName" },
             ${ "markersAliveTemplates.xc": "def.hp" },
@@ -101,6 +106,7 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": { "enabled": false },
+          "stunMarker": { "enabled": false },
           "textFields": [
             ${ "markersAliveTemplates.xc": "def.playerName" },
             ${ "markersAliveTemplates.xc": "def.hp_ratio" },
@@ -118,6 +124,7 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": ${ "markersDeadTemplates.xc": "def.actionMarker" },
+          "stunMarker": ${ "markersDeadTemplates.xc": "def.stunMarker" },
           "textFields": []
         },
         "extended": {
@@ -129,6 +136,7 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": { "enabled": false },
+          "stunMarker": { "enabled": false },
           "textFields": [
             ${ "markersDeadTemplates.xc": "def.tankName" },
             ${ "markersDeadTemplates.xc": "def.playerName" }
