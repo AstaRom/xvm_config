@@ -14,19 +14,19 @@
     "filters": {
       "nation": { "enabled": true },
       "type": { "enabled": true },
-			"favorite": { "enabled": true },
-			"gameMode": { "enabled": true },
+      "favorite": { "enabled": true },
+      "gameMode": { "enabled": true },
       "level": { "enabled": true },
       "prefs": { "enabled": true }
     },
     "filtersPadding": {
-			"horizontal": 11,
-			"vertical": 13
+      "horizontal": 11,
+      "vertical": 13
     },
     "fields": {
       "tankType": { "visible": false, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "level": { "visible": false, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
-			"multiXp": { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      "multiXp": { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "xp": { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "tankName": { "visible": false, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "statusText": { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },

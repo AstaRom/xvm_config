@@ -1,19 +1,19 @@
 ﻿{
   "hangar": {
     "xwnInCompany": false,
-		"enableGoldLocker": true,
-		"enableFreeXpLocker": true,
-		"defaultBoughtForCredits": true,
-		"hidePricesInTechTree": true,
+    "enableGoldLocker": true,
+    "enableFreeXpLocker": true,
+    "defaultBoughtForCredits": true,
+    "hidePricesInTechTree": true,
     "masteryMarkInTechTree": true,
-		"allowExchangeXPInTechTree": true,
-		"enableCrewAutoReturn": true,
-		"crewReturnByDefault": false,
-		"barracksShowFlags": true,
+    "allowExchangeXPInTechTree": true,
+    "enableCrewAutoReturn": true,
+    "crewReturnByDefault": true,
+    "barracksShowFlags": true,
     "barracksShowSkills": true,
-		"enableEquipAutoReturn": false,
-		"blockVehicleIfLowAmmo": true,
-		"lowAmmoPercentage": 20,
+    "enableEquipAutoReturn": false,
+    "blockVehicleIfLowAmmo": true,
+    "lowAmmoPercentage": 20,
     "widgetsEnabled": false,
     "pingServers": {
       "enabled": true,
@@ -32,7 +32,7 @@
       "showServerName": true,
       "minimalLength": 0,
       "errorString": "--",
-			"ignoredServers": [],
+      "ignoredServers": [],
       "fontStyle": {
         "name": "$FieldFont",
         "size": 13,
@@ -44,7 +44,7 @@
           "poor": "0xEE6600",
           "bad": "0xAAAAAA"
         },
-				"markCurrentServer": "bold",
+        "markCurrentServer": "bold",
         "serverColor": ""
       },
       "threshold": {
@@ -78,7 +78,7 @@
       "showServerName": true,
       "minimalLength": 0,
       "errorString": "--k",
-			"ignoredServers": [],
+      "ignoredServers": [],
       "fontStyle": {
         "name": "$FieldFont",
         "size": 13,
@@ -90,7 +90,7 @@
           "poor": "0xEE6600",
           "bad": "0xAAAAAA"
         },
-				"markCurrentServer": "bold",
+        "markCurrentServer": "bold",
         "serverColor": ""
       },
       "threshold": {

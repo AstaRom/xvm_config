@@ -22,8 +22,8 @@
       "h": 16,
       "alpha": 100
     },
-    "formatLeftNick": "<font size='{{xvm-stat?0|14}}'>{{name%.24s~..}} <font color='#ff9900'>{{clan}}</font></font><font size='{{xvm-stat?14|0}}'><font face='NDO' size='16' color='{{xvm-user}}'>{{xvm-user?&#x004E;| }}</font> {{name%.16s~..}} <font color='#ff9900'>{{clan}}</font></font>",
-    "formatRightNick": "<font size='{{xvm-stat?0|14}}'><font color='#ff9900'>{{clan}}</font> {{name%.24s~..}}</font><font size='{{xvm-stat?14|0}}'><font color='#ff9900'>{{clan}}</font> {{name%.16s~..}} <font face='NDO' size='16' color='{{xvm-user}}'>{{xvm-user?&#x004E;| <font size='0'>.</font>}}</font></font>",
+    "formatLeftNick": "<font face='NDO' size='{{xvm-stat?16|0}}' color='{{xvm-user}}'>{{xvm-user?&#x004E;<font size='6'> </font>|<font size='14'>  </font>}}</font><font size='14'>{{name%.16s~..}} <font color='#ff9900'>{{clan}}</font></font>",
+    "formatRightNick": "<font size='14'><font color='#ff9900'>{{clan}}</font> {{name%.16s~..}}</font><font face='NDO' size='{{xvm-stat?16|0}}' color='{{xvm-user}}'>{{xvm-user?<font size='6'> </font>&#x004E;|<font size='14'>  </font><font size='0'>.</font>}}</font>",
     "formatLeftVehicle": "<font size='{{xvm-stat?0|14}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font><font face='NDO' size='{{xvm-stat?14|0}}' alpha='{{alive?#FF|#80}}'><font color='{{c:kb}}'>{{kb%2d~k|--k}}</font> * <font color='{{c:r}}'>{{r_size=2?{{r%s|--}}|{{r>=10000?XXXX|{{r%4d|----}}}}}}</font> * <font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font></font>",
     "formatRightVehicle": "<font size='{{xvm-stat?0|14}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font><font face='NDO' size='{{xvm-stat?14|0}}' alpha='{{alive?#FF|#80}}'><font color='{{c:kb}}'>{{kb%2d~k|--k}}</font> * <font color='{{c:r}}'>{{r_size=2?{{r%s|--}}|{{r>=10000?XXXX|{{r%4d|----}}}}}}</font> * <font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font></font>"
   }

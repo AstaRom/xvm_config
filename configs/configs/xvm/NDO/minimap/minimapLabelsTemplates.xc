@@ -80,7 +80,7 @@
       "flags": [ "squadman", "dead" ],
       "format": "<font size='8' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{name%.7s~..}}</i></font>",
       "alpha": 75,
-			"x": 2,
+      "x": 2,
       "y": 0
     }
   }

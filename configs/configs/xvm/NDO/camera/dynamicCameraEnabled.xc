@@ -1,3 +1,0 @@
-﻿{
-	"dynamicCameraEnabled": true
-}

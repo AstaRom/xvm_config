@@ -15,13 +15,13 @@
     },
     "spotted": {
       "neverSeen": "",
-      "lost": "<font face='NDO' size='24'><b>&#x0046;</b></font>",
-      "spotted": "<font face='NDO' size='24'><b>&#x0046;</b></font>",
-      "dead": "<font face='NDO' size='24'><b>&#x0047;</b></font>",
+      "lost": "<font face='NDO' size='22'><b>&#x0046;</b></font>",
+      "spotted": "<font face='NDO' size='22'><b>&#x0046;</b></font>",
+      "dead": "<font face='NDO' size='20'><b>&#x0047;</b></font>",
       "neverSeen_arty": "",
-      "lost_arty": "<font face='NDO' size='24'><b>&#x0046;</b></font>",
-      "spotted_arty": "<font face='NDO' size='24'><b>&#x0046;</b></font>",
-      "dead_arty": "<font face='NDO' size='24'><b>&#x0047;</b></font>"
+      "lost_arty": "<font face='NDO' size='22'><b>&#x0046;</b></font>",
+      "spotted_arty": "<font face='NDO' size='22'><b>&#x0046;</b></font>",
+      "dead_arty": "<font face='NDO' size='20'><b>&#x0047;</b></font>"
     },
     "xvmuser": {
       "on": "#FF8800",

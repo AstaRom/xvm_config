@@ -27,7 +27,7 @@
   "colors":           ${"colors.xc":"colors"},
   "alpha":            ${"alpha.xc":"alpha"},
   "vehicleNames":     ${"vehicleNames.xc":"vehicleNames"},
-	"export":						${"export.xc":"export"},
-	"tooltips":					${"tooltips.xc":"tooltips"},
-	"sounds":						${"sounds.xc":"sounds"}
+  "export":           ${"export.xc":"export"},
+  "tooltips":         ${"tooltips.xc":"tooltips"},
+  "sounds":           ${"sounds.xc":"sounds"}
 }

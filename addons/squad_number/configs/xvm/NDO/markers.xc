@@ -21,7 +21,10 @@
             ${ "markersAliveTemplates.xc": "tankName" },
             ${ "markersAliveTemplates.xc": "hp" },
             ${ "markersAliveTemplates.xc": "help_marker" },
-            ${ "markersAliveTemplates.xc": "eff_marker" }
+            ${ "markersAliveTemplates.xc": "eff_marker" },
+            ${ "markersAliveTemplates.xc": "squad_marker_fon" },
+            ${ "markersAliveTemplates.xc": "squad_marker_frame" },
+            ${ "markersAliveTemplates.xc": "squad_marker_number" }
           ]
         },
         "extended": {
@@ -86,7 +89,10 @@
             ${ "markersAliveTemplates.xc": "tankName" },
             ${ "markersAliveTemplates.xc": "hp" },
             ${ "markersAliveTemplates.xc": "kill_marker" },
-            ${ "markersAliveTemplates.xc": "eff_marker" }
+            ${ "markersAliveTemplates.xc": "eff_marker" },
+            ${ "markersAliveTemplates.xc": "squad_marker_fon" },
+            ${ "markersAliveTemplates.xc": "squad_marker_frame" },
+            ${ "markersAliveTemplates.xc": "squad_marker_number" }
           ]
         },
         "extended": {

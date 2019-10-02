@@ -20,7 +20,6 @@
           "textFields": [
             ${ "markersAliveTemplates.xc": "tankName" },
             ${ "markersAliveTemplates.xc": "hp" },
-            ${ "markersAliveTemplates.xc": "help_marker" },
             ${ "markersAliveTemplates.xc": "eff_marker" }
           ]
         },
@@ -37,14 +36,13 @@
           "textFields": [
             ${ "markersAliveTemplates.xc": "playerName" },
             ${ "markersAliveTemplates.xc": "hp_ratio" },
-            ${ "markersAliveTemplates.xc": "help_marker" },
-            ${ "markersAliveTemplates.xc": "stat_marker" }
+            ${ "markersAliveTemplates.xc": "eff_marker" }
           ]
         }
       },
       "dead": {
         "normal": {
-          "vehicleIcon": { "visible": false },
+          "vehicleIcon": ${ "markersDeadTemplates.xc": "vehicleIcon" },
           "damageText": ${ "markersDeadTemplates.xc": "damageText" },
           "damageTextPlayer": ${ "markersDeadTemplates.xc": "damageTextPlayer" },
           "damageTextSquadman": ${ "markersDeadTemplates.xc": "damageTextSquadman" },
@@ -85,7 +83,6 @@
           "textFields": [
             ${ "markersAliveTemplates.xc": "tankName" },
             ${ "markersAliveTemplates.xc": "hp" },
-            ${ "markersAliveTemplates.xc": "kill_marker" },
             ${ "markersAliveTemplates.xc": "eff_marker" }
           ]
         },
@@ -102,14 +99,13 @@
           "textFields": [
             ${ "markersAliveTemplates.xc": "playerName" },
             ${ "markersAliveTemplates.xc": "hp_ratio" },
-            ${ "markersAliveTemplates.xc": "kill_marker" },
-            ${ "markersAliveTemplates.xc": "stat_marker" }
+            ${ "markersAliveTemplates.xc": "eff_marker" }
           ]
         }
       },
       "dead": {
         "normal": {
-          "vehicleIcon": { "visible": false },
+          "vehicleIcon": ${ "markersDeadTemplates.xc": "vehicleIcon" },
           "damageText": ${ "markersDeadTemplates.xc": "damageText" },
           "damageTextPlayer": ${ "markersDeadTemplates.xc": "damageTextPlayer" },
           "damageTextSquadman": ${ "markersDeadTemplates.xc": "damageTextSquadman" },

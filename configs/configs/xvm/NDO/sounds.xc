@@ -1,9 +1,8 @@
 ﻿{
   "sounds": {
-    "sixthSense": "/sound_mod/NDO/sixthSense/standart",
-    //"sixthSense": "/sound_mod/NDO/sixthSense/timer",
+    "sixthSense": "/xvm/xvm/sixthsense",
     "sixthSenseRudy": "/rudy/dog/dog",
-    "fireAlert": "/sound_mod/NDO/damage_panel/fire_alert",
-    "ammoBay": "/sound_mod/NDO/damage_panel/critical_ammoBay"
+    "fireAlert": "/xvm/xvm/fireAlert",
+    "ammoBay": "/xvm/xvm/ammoBay"
   }
 }

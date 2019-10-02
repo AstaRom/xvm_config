@@ -2,7 +2,7 @@
   "userInfo": {
     "startPage": 4,
     "sortColumn": -3,
-		"showXTEColumn": true,
+    "showXTEColumn": true,
     "showExtraDataInProfile": false,
     "inHangarFilterEnabled": true,
     "showFilters": true,

@@ -75,7 +75,7 @@
           "poor": "0xEE6600",
           "bad": "0xAAAAAA"
         },
-				"serverColor": ""
+        "serverColor": ""
       },
       "threshold": {
         "great": 30000,

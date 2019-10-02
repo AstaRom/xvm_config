@@ -18,8 +18,8 @@
     ],
     "hp_ratio": [
       { "value": 25, "alpha": 100 },
-      { "value": 50, "alpha": 0 },
-      { "value": 70, "alpha": 0 },
+      { "value": 50, "alpha": 75 },
+      { "value": 70, "alpha": 50 },
       { "value": 101, "alpha": 0 }
     ],
     "x": [
