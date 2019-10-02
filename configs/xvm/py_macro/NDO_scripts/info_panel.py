@@ -55,7 +55,7 @@ def nick_name():
 #@xvm.export('marks_on_gun', deterministic=False)
 def marks_on_gun():
     veh = _vehicle()
-    return None if not veh else "%s" % veh.publicInfo.marksOnGun
+    return None if not veh else "%d" % veh.publicInfo.marksOnGun
 
 #@xvm.export('vehicle_type', deterministic=False)
 def vehicle_type():
@@ -231,8 +231,7 @@ def stun_radius():
 def stun_duration_min():
     gs = _gunShots()
     if (gs is not None) and (gs[0].shell.stun is not None):
-        time = round(gs[0].shell.stun.stunRadius * gs[0].shell.stun.guaranteedStunDuration, 1)
-        return "%.1f" % time
+        return "%.1f" % round(gs[0].shell.stun.stunRadius * gs[0].shell.stun.guaranteedStunDuration, 1)
     else:
         return None
 
@@ -337,12 +336,12 @@ def engine_power_density():
 #@xvm.export('speed_forward', deterministic=False)
 def speed_forward():
     td = _typeDescriptor()
-    return None if not td else "%d" % td.physics['speedLimits'][0] * 3.6
+    return None if not td else "%d" % (td.physics['speedLimits'][0] * 3.6)
 
 #@xvm.export('speed_backward', deterministic=False)
 def speed_backward():
     td = _typeDescriptor()
-    return None if not td else "%d" % td.physics['speedLimits'][1] * 3.6
+    return None if not td else "%d" % (td.physics['speedLimits'][1] * 3.6)
 
 #@xvm.export('hull_speed_turn', deterministic=False)
 def hull_speed_turn():
@@ -357,22 +356,22 @@ def turret_speed_turn():
 #@xvm.export('invis_stand', deterministic=False)
 def invis_stand():
     td = _typeDescriptor()
-    return None if not td else "%.1f" % td.type.invisibility[1] * 50
+    return None if not td else "%.1f" % (td.type.invisibility[1] * 50)
 
 #@xvm.export('invis_stand_shot', deterministic=False)
 def invis_stand_shot():
     td = _typeDescriptor()
-    return None if not td else "%.2f" % td.type.invisibility[1] * td.gun.invisibilityFactorAtShot * 50
+    return None if not td else "%.2f" % (td.type.invisibility[1] * td.gun.invisibilityFactorAtShot * 50)
 
 #@xvm.export('invis_move', deterministic=False)
 def invis_move():
     td = _typeDescriptor()
-    return None if not td else "%.1f" % td.type.invisibility[0] * 50
+    return None if not td else "%.1f" % (td.type.invisibility[0] * 50)
 
 #@xvm.export('invis_move_shot', deterministic=False)
 def invis_move_shot():
     td = _typeDescriptor()
-    return None if not td else "%.2f" % td.type.invisibility[0] * td.gun.invisibilityFactorAtShot * 50
+    return None if not td else "%.2f" % (td.type.invisibility[0] * td.gun.invisibilityFactorAtShot * 50)
 
 #@xvm.export('vision_radius', deterministic=False)
 def vision_radius():
