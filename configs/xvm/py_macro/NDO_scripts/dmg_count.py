@@ -8,6 +8,7 @@ from helpers import dependency
 from skeletons.gui.game_control import IBootcampController
 from skeletons.gui.shared import IItemsCache
 import traceback
+
 from xfw import registerEvent
 import xvm_battle.python.fragCorrelationPanel as panel
 

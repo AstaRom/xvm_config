@@ -6,8 +6,10 @@ from gui.battle_control.battle_constants import PERSONAL_EFFICIENCY_TYPE as _ETY
 from Vehicle import Vehicle
 import BigWorld
 from Avatar import PlayerAvatar
+
 from xfw import registerEvent
 from xfw_actionscript.python import as_event
+from xvm_battle.python.battle import isBattleTypeSupported as isBattle
 
 #####################################################################
 # constants
@@ -35,7 +37,7 @@ def isPlayerVehicle():
 @registerEvent(DamageLogPanel, '_onTotalEfficiencyUpdated')
 def _onTotalEfficiencyUpdated(self, diff):
     global damage, assist, blocked, stun
-    if isPlayerVehicle():
+    if isBattle and isPlayerVehicle():
         isUpdate = False
         if _ETYPE.DAMAGE in diff:
             damage = diff[_ETYPE.DAMAGE]

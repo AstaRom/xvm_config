@@ -4,10 +4,12 @@
 from BigWorld import player, target
 from Avatar import PlayerAvatar
 from math import degrees
+
 from xfw import registerEvent
 from xfw_actionscript.python import as_event
 import xvm_main.python.config as config
 from xvm_main.python.xvm import l10n
+from xvm_battle.python.battle import isBattleTypeSupported as isBattle
 
 #####################################################################
 # constants
@@ -42,7 +44,7 @@ def handleKey(self, isDown, key, mods):
     global ipHotKey
     if key != 56:
         return
-    if isDown:
+    if isDown and isBattle:
         ipHotKey = config.get('custom_texts/battleLabels/info_panel')
     elif not isDown:
         ipHotKey = None

@@ -3,6 +3,7 @@
 
 import BigWorld
 from helpers import getClientLanguage
+
 import xvm_main.python.config as config
 
 #####################################################################

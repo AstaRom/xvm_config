@@ -2,6 +2,7 @@
 # imports
 
 import BigWorld
+
 from xfw import registerEvent
 from xfw_actionscript.python import as_event
 import xvm_main.python.config as config
@@ -26,10 +27,10 @@ def update_hp(vehicleID, hp):
 
 #@xvm.export('thp_show', deterministic=True)
 def thp_show(battletype):
-    if battletype not in ['tutorial', 'event_battles', 'bootcamp', 'epic_random', 'epic_random_training']:
-        return 'on'
+    if battletype in ['regular', 'training', 'sortie_2', 'fort_battle_2', 'ranked']:
+        return 'show'
     else:
-        return 'off'
+        return None
 
 #@xvm.export('score_team', deterministic=False)
 def score_team(current_team):
