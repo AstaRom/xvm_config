@@ -36,7 +36,6 @@
       "offsetX": 0,
       "offsetY": 0
     },
-    "defaultBoughtForCredits": true,
     "enableEquipAutoReturn": true,
     "blockVehicleIfLowAmmo": true,
     "lowAmmoPercentage": 20,

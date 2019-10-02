@@ -16,7 +16,8 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": ${ "markersAliveTemplates.xc": "def.actionMarker" },
-          "stunMarker": ${ "markersAliveTemplates.xc": "def.stunMarker" },
+          "vehicleStatusMarker": ${ "markersAliveTemplates.xc": "def.vehicleStatusMarker" },
+          "damageIndicator": { "enabled": false },
           "textFields": [
             ${ "markersAliveTemplates.xc": "def.vehicleName" },
             ${ "markersAliveTemplates.xc": "def.hp" },
@@ -37,7 +38,8 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": { "enabled": false },
-          "stunMarker": { "enabled": false },
+          "vehicleStatusMarker": { "enabled": false },
+          "damageIndicator": { "enabled": false },
           "textFields": [
             ${ "markersAliveTemplates.xc": "def.playerName" },
             ${ "markersAliveTemplates.xc": "def.hp_ratio" },
@@ -55,7 +57,8 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": ${ "markersDeadTemplates.xc": "def.actionMarker" },
-          "stunMarker": ${ "markersDeadTemplates.xc": "def.stunMarker" },
+          "vehicleStatusMarker": ${ "markersDeadTemplates.xc": "def.vehicleStatusMarker" },
+          "damageIndicator": { "enabled": false },
           "textFields": []
         },
         "extended": {
@@ -67,7 +70,8 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": { "enabled": false },
-          "stunMarker": { "enabled": false },
+          "vehicleStatusMarker": { "enabled": false },
+          "damageIndicator": { "enabled": false },
           "textFields": [
             ${ "markersDeadTemplates.xc": "def.vehicleName" },
             ${ "markersDeadTemplates.xc": "def.playerName" }
@@ -86,7 +90,8 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": ${ "markersAliveTemplates.xc": "def.actionMarker" },
-          "stunMarker": ${ "markersAliveTemplates.xc": "def.stunMarker" },
+          "vehicleStatusMarker": ${ "markersAliveTemplates.xc": "def.vehicleStatusMarker" },
+          "damageIndicator": { "enabled": false },
           "textFields": [
             ${ "markersAliveTemplates.xc": "def.vehicleName" },
             ${ "markersAliveTemplates.xc": "def.hp" },
@@ -106,7 +111,8 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": { "enabled": false },
-          "stunMarker": { "enabled": false },
+          "vehicleStatusMarker": { "enabled": false },
+          "damageIndicator": { "enabled": false },
           "textFields": [
             ${ "markersAliveTemplates.xc": "def.playerName" },
             ${ "markersAliveTemplates.xc": "def.hp_ratio" },
@@ -124,7 +130,8 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": ${ "markersDeadTemplates.xc": "def.actionMarker" },
-          "stunMarker": ${ "markersDeadTemplates.xc": "def.stunMarker" },
+          "vehicleStatusMarker": ${ "markersDeadTemplates.xc": "def.vehicleStatusMarker" },
+          "damageIndicator": { "enabled": false },
           "textFields": []
         },
         "extended": {
@@ -136,7 +143,8 @@
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
           "actionMarker": { "enabled": false },
-          "stunMarker": { "enabled": false },
+          "vehicleStatusMarker": { "enabled": false },
+          "damageIndicator": { "enabled": false },
           "textFields": [
             ${ "markersDeadTemplates.xc": "def.vehicleName" },
             ${ "markersDeadTemplates.xc": "def.playerName" }

@@ -57,11 +57,19 @@
       "y": -73,
       "alpha": 100
     },
-    // Маркер оглушения
-    "stunMarker": {
+    // Маркер оглушения и маркер боевого снаряжения в режиме "Линия фронта"
+    "vehicleStatusMarker": {
       "enabled": true,
       "x": 0,
       "y": -73,
+      "alpha": 100
+    },
+    // Индикатор урона
+    "damageIndicator": {
+      "enabled": true,
+      "showText": true,
+      "x": 53,
+      "y": -27,
       "alpha": 100
     },
     // Блок текстовых полей / textFields
