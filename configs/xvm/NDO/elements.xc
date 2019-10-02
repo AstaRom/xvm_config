@@ -6,7 +6,7 @@
       // debugPanel
       
       "debugPanel": {
-        "y": 0 
+        "y": 0
       },
       
       // battleTimer

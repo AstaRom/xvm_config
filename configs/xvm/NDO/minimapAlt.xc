@@ -1,6 +1,6 @@
 ﻿{
   "minimapAlt": {
-    "enabled": true,
+    "enabled": false,
     "mapBackgroundImageAlpha": 100,
     "selfIconAlpha": 100,
     "iconAlpha": 0,

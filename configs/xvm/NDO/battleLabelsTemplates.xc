@@ -7,6 +7,7 @@
       "y": 425,
       "width": 500,
       "height": 1000,
+      "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x000000", "alpha": 75, "blur": 2, "strength": 1 },
       "textFormat": { "font": "$FieldFont", "color": "0xFCFCFC", "size": 15, "align": "left", "leading": 5 },
       "format": "{{hitlog-header}}\n{{hitlog-body}}"
     },
@@ -30,6 +31,7 @@
     },
     "info_panel": {
       "enabled": ${"@settings.xc":"settings.battleLabels.info_panel"},
+      "updateEvent": "ON_TARGET_IN",
       "hotKeyCode": 56,
       "onHold": true,
       "visibleOnHotKey": true,
