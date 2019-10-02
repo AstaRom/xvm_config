@@ -1,11 +1,11 @@
 ﻿{
   "iconset": {
-    "battleLoadingAlly": "../../../../configs/xvm/iconset/contour_ally/",
-    "battleLoadingEnemy": "../../../../configs/xvm/iconset/contour_enemy/",
-    "playersPanelLeftAtlas": "../../../../configs/xvm/iconset/atlases/contour_left",
-    "playersPanelRightAtlas": "../../../../configs/xvm/iconset/atlases/contour_right",
-    "fullStatsLeftAtlas": "../../../../configs/xvm/iconset/atlases/contour_left",
-    "fullStatsRightAtlas": "../../../../configs/xvm/iconset/atlases/contour_right",
+    "battleLoadingAlly": "../../../../configs/xvm/iconset/contour_ally",
+    "battleLoadingEnemy": "../../../../configs/xvm/iconset/contour_enemy",
+    "playersPanelLeftAtlas": "../../../../configs/xvm/iconset/contour_ally",
+    "playersPanelRightAtlas": "../../../../configs/xvm/iconset/contour_enemy",
+    "fullStatsLeftAtlas": "../../../../configs/xvm/iconset/contour_ally",
+    "fullStatsRightAtlas": "../../../../configs/xvm/iconset/contour_enemy",
     "vehicleMarkerAllyAtlas": "vehicleMarkerAtlas",
     "vehicleMarkerEnemyAtlas": "vehicleMarkerAtlas"
   }

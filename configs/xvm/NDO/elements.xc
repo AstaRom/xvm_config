@@ -34,7 +34,8 @@
       // prebattleTimer
       
       "prebattleTimer": {
-        "visible": false
+        "visible": false,
+        "alpha": 0
       },
       
       // playersPanel
