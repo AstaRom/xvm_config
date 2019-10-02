@@ -12,7 +12,7 @@
       "format": "{{hitlog-header}}\n{{hitlog-body}}"
     },
     "damage_log": {
-      "enabled": ${"@settings.xc":"settings.battleLabels.damageLog.damage_log"},
+      "enabled": ${"@settings.xc":"settings.battleLabels.damage_panel.damage_log"},
       "updateEvent": "PY(ON_HIT)",
       "x": 235,
       "y": -15,
@@ -35,7 +35,7 @@
       "format": "{{py:xvm.damageLog.dLog}}"
     },
     "last_hit": {
-      "enabled": ${"@settings.xc":"settings.battleLabels.damageLog.last_hit"},
+      "enabled": ${"@settings.xc":"settings.battleLabels.damage_panel.last_hit"},
       "updateEvent": "PY(ON_LAST_HIT)",
       "x": 0,
       "y": -120,
@@ -59,7 +59,7 @@
       "format": "{{py:xvm.damageLog.lastHit}}"
     },
     "total_efficiency": {
-      "enabled": ${"@settings.xc":"settings.battleLabels.damageLog.total_efficiency"},
+      "enabled": ${"@settings.xc":"settings.battleLabels.damage_panel.total_efficiency"},
       "updateEvent": "PY(ON_TOTAL_EFFICIENCY)",
       "x": 235,
       "y": -230,

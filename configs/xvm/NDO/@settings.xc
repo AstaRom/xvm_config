@@ -1,7 +1,7 @@
 ﻿{
   "settings": {
     "battleLabels": {
-      "damageLog": {
+      "damage_panel": {
         "damage_log": false,
         "last_hit": false,
         "total_efficiency": false

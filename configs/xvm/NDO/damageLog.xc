@@ -132,10 +132,18 @@
       },
       "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='14'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{vtype}} {{vehicle}}</font></font></textformat>"
     },
+    "logBackground": {
+      "$ref": { "path":"damageLog.log" },
+      "formatHistory": ""
+    },
     "logAlt": {
       "$ref": { "path":"damageLog.log" },
       "showHitNoDamage": false,
       "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='14'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{dmg-ratio}}%<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{name}}</font></font></textformat>"
+    },
+    "logAltBackground": {
+      "$ref": { "path":"damageLog.logAlt" },
+      "formatHistory": ""
     },
     "lastHit": {
       "$ref": { "path":"damageLog.log" },
