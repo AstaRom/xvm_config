@@ -21,8 +21,8 @@
       "stats": { "enabled": false, "dx": 0, "dy": 0, "alpha": 100, "textFormat": {}, "shadow": {} }
     },
     "extraFields": [
-      //{ "x": 0, "y": 0, "width": 160, "height": 100, "bgColor": "0x000000", "alpha": 50, "layer": "substrate" },
-      //{ "x": 0, "y": 0, "width": 160, "height": 100, "src": "cfg://NDO/img/carousel/bgFrame.png", "layer": "substrate" },
+      //{ "x": 0, "y": 0, "width": 162, "height": 102, "bgColor": "0x000000", "alpha": 50, "layer": "substrate" },
+      //{ "x": 0, "y": 0, "width": 162, "height": 102, "src": "cfg://NDO/img/carousel/bgFrameNormal.png", "layer": "substrate" },
       //{ "x": 0, "y": 0, "width": 160, "height": 32, "bgColor": "0x000000", "alpha": 35, "layer": "substrate" },
       //{ "x": 0, "y": 68, "width": 160, "height": 32, "bgColor": "0x000000", "alpha": 35, "layer": "substrate" },
       { "hotKeyCode": 56, "onHold": true, "visibleOnHotKey": false, "x": 3, "y": 3, "width": 26, "height": 26, "src": "img://gui/maps/vehicles/decals/{{.custom_texts.carousel.nation.{{v.nation}}}}.dds" },
@@ -35,15 +35,15 @@
       { "hotKeyCode": 56, "onHold": true, "visibleOnHotKey": true, "x": 158, "y": 52, "align": "right", "format": "<font face='$FieldFont' size='12' color='#808080'><b>{{v.damageRating%2.01f~%|}}</b></font>", "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x000000", "alpha": 80, "blur": 4, "strength": 2 } },
       { "x": 158, "y": 66, "align": "right", "format": "<font face='$FieldFont' size='12'><font color='#808080'><b>({{v.battletiermin}}-{{v.battletiermax}})</b></font> <font color='#DDDDDD'><b>{{v.rlevel}}</b></font></font>", "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x000000", "alpha": 80, "blur": 4, "strength": 2 } },
       { "x": 158, "y": 80, "align": "right", "format": "<font face='$FieldFont' size='13' color='{{v.premium?#FFAA55|#DDDDDD}}'><b>{{v.name}}</b></font>", "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "{{v.premium?0xFF4400|0x4C4C4C}}", "alpha": 80, "blur": 4, "strength": 2 } },
-      //{ "x": 1, "y": 1, "height": 100, "width": 160, "borderColor": "0xFFF0AA", "alpha": 100, "alpha": "{{v.selected?100|0}}", "layer": "top" },
-      //{ "x": 0, "y": 0, "height": 102, "width": 162, "borderColor": "0xFFF0AA", "alpha": 100, "alpha": "{{v.selected?85|0}}", "layer": "top" },
+      //{ "x": 1, "y": 1, "width": 160, "height": 100, "borderColor": "0xFFF0AA", "alpha": 100, "alpha": "{{v.selected?100|0}}", "layer": "top" },
+      //{ "x": 0, "y": 0, "width": 162, "height": 102, "borderColor": "0xFFF0AA", "alpha": 100, "alpha": "{{v.selected?85|0}}", "layer": "top" },
       {}
     ]
   },
   "small": {
     "width": 160,
     "height": 35,
-    "gap": 5,
+    "gap": 10,
     "fields": {
       "flag": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "tankIcon": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
@@ -61,12 +61,16 @@
       "stats": { "enabled": false, "dx": 0, "dy": 0, "alpha": 100, "textFormat": {}, "shadow": {} }
     },
     "extraFields": [
+      //{ "x": 0, "y": 0, "width": 162, "height": 37, "bgColor": "0x000000", "alpha": 50, "layer": "substrate" },
+      //{ "x": 0, "y": 0, "width": 162, "height": 37, "src": "cfg://NDO/img/carousel/bgFrameSmall.png", "layer": "substrate" },
       { "hotKeyCode": 56, "onHold": true, "visibleOnHotKey": false, "x": 3, "y": 5, "width": 26, "height": 26, "src": "img://gui/maps/vehicles/decals/{{.custom_texts.carousel.nation.{{v.nation}}}}.dds" },
       { "hotKeyCode": 56, "onHold": true, "visibleOnHotKey": true, "x": 1, "y": 6, "width": 30, "height": 24, "src": "cfg://NDO/img/carousel/vtype/{{.custom_texts.carousel.type}}{{v.elite?_elite}}.png" },      
       { "hotKeyCode": 56, "onHold": true, "visibleOnHotKey": false, "x": 30, "y": 2, "align": "left", "format": "<font face='$FieldFont' size='12' color='#DDDDDD'><b>{{v.winrate%2d~%|}}</b></font>", "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x000000", "alpha": 80, "blur": 4, "strength": 2 } },
       { "hotKeyCode": 56, "onHold": true, "visibleOnHotKey": true, "x": 30, "y": 2, "align": "left", "format": "<font face='$FieldFont' size='12' color='#DDDDDD'><b>{{v.battles%-5d|}}</b></font>", "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x000000", "alpha": 80, "blur": 4, "strength": 2 } },
       { "x": 30, "y": 16, "align": "left", "format": "<font face='$FieldFont' size='12' color='#808080'><b>{{v.tdb%-4d|}}</b></font>", "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x000000", "alpha": 80, "blur": 4, "strength": 2 } },
       { "x": 158, "y": 16, "align": "right", "format": "<font face='$FieldFont' size='13' color='{{v.premium?#FFAA55|#DDDDDD}}'><b>{{v.name}}</b></font>", "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "{{v.premium?0xFF4400|0x4C4C4C}}", "alpha": 80, "blur": 4, "strength": 2 } },
+      //{ "x": 1, "y": 1, "width": 160, "height": 35, "borderColor": "0xFFF0AA", "alpha": 100, "alpha": "{{v.selected?100|0}}", "layer": "top" },
+      //{ "x": 0, "y": 0, "width": 162, "height": 37, "borderColor": "0xFFF0AA", "alpha": 100, "alpha": "{{v.selected?85|0}}", "layer": "top" },
       {}
     ]
   }
