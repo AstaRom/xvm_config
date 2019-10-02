@@ -27,11 +27,11 @@
       }
     },
     "vtype": {
-      "LT": "<font face='NDO' size='18'>&#x0041;</font>",
-      "MT": "<font face='NDO' size='18'>&#x0042;</font>",
-      "HT": "<font face='NDO' size='18'>&#x0043;</font>",
-      "SPG": "<font face='NDO' size='15'>&#x0045;</font>",
-      "TD": "<font face='NDO' size='18'>&#x0044;</font>"
+      "LT": "&#x0041;",
+      "MT": "&#x0042;",
+      "HT": "&#x0043;",
+      "SPG": "<font size='16'>&#x0045;</font>",
+      "TD": "&#x0044;"
     }
   }
 }

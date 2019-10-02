@@ -1,7 +1,7 @@
 ﻿{
   "hitLog": {
     "groupHitsByPlayer": true,
-    "insertOrder": "end",
+    "insertOrder": "begin",
     "deadMarker": "<font face='NDO' size='15'> &#x0047;</font>",
     "blowupMarker": "<font face='NDO' size='16'> &#x0048;</font>",
     "defaultHeader": "",

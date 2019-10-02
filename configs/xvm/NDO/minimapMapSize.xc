@@ -1,10 +1,13 @@
 ﻿{
   "mapSize": {
     "enabled": true,
-    "format": "<font size='10' color='#FFCC66'> <b>{{cellsize}}0 м</b></font>",
-    "alpha": 80,
-    "offsetX": 0,
-    "offsetY": 0,
+    "alpha": 50,
+    "x": 0,
+    "y": 0,
+    "width": 100,
+    "height": 30,
+    "textFormat": { "size": 10, "color": "0xFFCC66", "bold": false, "italic": false },
+    "format": "{{cellsize}}0 {{l10n:m}}",
     "shadow": {
       "enabled": true,
       "distance": 0,
@@ -13,8 +16,6 @@
       "alpha": 80,
       "blur": 2,
       "strength": 3
-    },
-    "width": 100,
-    "height": 30
+    }
   }
 }

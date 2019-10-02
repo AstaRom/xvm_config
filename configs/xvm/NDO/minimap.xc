@@ -1,17 +1,18 @@
 ﻿{
   "minimap": {
-    "enabled": false,
+    "enabled": true,
     "mapBackgroundImageAlpha": 100,
     "selfIconAlpha": 100,
+    "selfIconScale": 1,
     "iconAlpha": 0,
-    "hideCameraTriangle": false,
-    "showCameraLineAfterDeath": false,
-    "cameraAlpha": 100,
-    "iconScale": 1,
+    "iconScale": 1,    
+    "directionTriangleAlpha": 100,
+    "directionLineAlpha": 100,
+    "showDirectionLineAfterDeath": false,
     "minimapAimIcon": "xvm://res/MinimapAim.png",
     "minimapAimIconScale": 50,
     "zoom": {
-      "pixelsBack": 200,
+      "index": 5,
       "centered": true
     },
     "mapSize": ${"minimapMapSize.xc":"mapSize"},

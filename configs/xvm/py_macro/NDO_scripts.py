@@ -3,6 +3,7 @@
 
 from NDO_scripts import info_panel
 from NDO_scripts import hp_panel
+from NDO_scripts import dmg_count
 
 #####################################################################
 # handlers > info_panel
@@ -106,10 +107,6 @@ def current_hp_symbols(current_team, symbol):
 def max_hp_symbols(symbol):
     return hp_panel.max_hp_symbols(symbol)
 
-@xvm.export('high_сaliber', deterministic=True)
-def high_caliber(dmg_total):
-    return hp_panel.high_caliber(dmg_total)
-
 @xvm.export('sign_hp', deterministic=False)
 def sign_hp():
     return hp_panel.sign_hp()
@@ -117,3 +114,14 @@ def sign_hp():
 @xvm.export('color_sign_hp', deterministic=False)
 def color_sign_hp():
     return hp_panel.color_sign_hp()
+
+#####################################################################
+# handlers > dmg_count
+
+@xvm.export('high_сaliber', deterministic=False)
+def high_caliber(dmg_total):
+    return dmg_count.high_caliber(dmg_total)
+
+@xvm.export('avg_damage', deterministic=False)
+def avg_damage(dmg_total):
+    return dmg_count.avg_damage(dmg_total)

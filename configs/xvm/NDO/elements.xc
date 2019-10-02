@@ -58,14 +58,29 @@
       // playersPanel
       
       "playersPanel": {
+        "y": -15,
         "listLeft": {
-          "y": 50
+          "inviteReceivedIndicator": {
+            "inviteIcon": {
+              "visible": false
+            },
+            "inviteTF": {
+              "visible": false
+            }
+          }
         },
         "listRight": {
-          "y": 50
+          "inviteReceivedIndicator": {
+            "inviteIcon": {
+              "visible": false
+            },
+            "inviteTF": {
+              "visible": false
+            }
+          }
         },
         "panelSwitch": {
-          "y": 24
+          "y": 40
         }
       },
       

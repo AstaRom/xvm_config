@@ -45,7 +45,7 @@
           "poor": "0xEE6600",
           "bad": "0xAAAAAA"
         },
-        "markCurrentServer": "bold",
+        "markCurrentServer": "underline",
         "serverColor": ""
       },
       "threshold": {
@@ -92,7 +92,7 @@
           "poor": "0xEE6600",
           "bad": "0xAAAAAA"
         },
-        "markCurrentServer": "bold",
+        "markCurrentServer": "underline",
         "serverColor": ""
       },
       "threshold": {

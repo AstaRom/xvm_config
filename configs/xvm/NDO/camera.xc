@@ -30,12 +30,11 @@
         "rotation": 0,
         "scaleX": 1,
         "scaleY": 1,
-        "align": "left",
-        "valign": "center",
         "bgColor": null,
         "borderColor": null,
         "antiAliasType": "advanced",
-        "format": "<font face='$TitleFont' color='#95CB29' size='16'>x{{zoom}}</font>",
+        "textFormat": { "font": "$TitleFont", "size": 15, "color": "0x95CB29", "align": "left", "valign": "center" },
+        "format": "x{{zoom}}",
         "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x192E0E", "alpha": 100, "blur": 3, "strength": 2 }
       },
       "shotRecoilEffect": true
