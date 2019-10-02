@@ -46,7 +46,7 @@
       "screenVAlign": "bottom",
       "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0xFF0000", "alpha": 80, "blur": 3, "strength": 1 },
       "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFFDD99" },
-      "format": "{{py:repairTimeEngine%0.1f}}"
+      "format": "{{py:repairTimeEngine}}"
     },
     "rt_gun": {
       "enabled": ${"@settings.xc":"settings.battleLabels.damage_panel.repair_timer"},
@@ -59,11 +59,11 @@
       "screenVAlign": "bottom",
       "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0xFF0000", "alpha": 80, "blur": 3, "strength": 1 },
       "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFFDD99" },
-      "format": "{{py:repairTimeGun%0.1f}}"
+      "format": "{{py:repairTimeGun}}"
     },
     "rt_turret": {
       "enabled": ${"@settings.xc":"settings.battleLabels.damage_panel.repair_timer"},
-      "updateEvent": "PY(ON_TURRET_UPDATE)",
+      "updateEvent": "PY(ON_TURRETROTATOR_UPDATE)",
       "x": 5,
       "y": -33,
       "width": 45,
@@ -72,11 +72,11 @@
       "screenVAlign": "bottom",
       "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0xFF0000", "alpha": 80, "blur": 3, "strength": 1 },
       "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFFDD99" },
-      "format": "{{py:repairTimeTurret%0.1f}}"
+      "format": "{{py:repairTimeTurret}}"
     },
-    "rt_tracks": {
+    "rt_complex": {
       "enabled": ${"@settings.xc":"settings.battleLabels.damage_panel.repair_timer"},
-      "updateEvent": "PY(ON_TRACKS_UPDATE)",
+      "updateEvent": "PY(ON_COMPLEX_UPDATE)",
       "x": 178,
       "y": -147,
       "width": 45,
@@ -85,11 +85,11 @@
       "screenVAlign": "bottom",
       "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0xFF0000", "alpha": 80, "blur": 3, "strength": 1 },
       "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFFDD99" },
-      "format": "{{py:repairTimeTracks%0.1f}}"
+      "format": "{{py:repairTimeComplex}}"
     },
     "rt_surveying": {
       "enabled": ${"@settings.xc":"settings.battleLabels.damage_panel.repair_timer"},
-      "updateEvent": "PY(ON_SURVEYING_UPDATE)",
+      "updateEvent": "PY(ON_SURVEYINGDEVICE_UPDATE)",
       "x": 178,
       "y": -109,
       "width": 45,
@@ -98,7 +98,7 @@
       "screenVAlign": "bottom",
       "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0xFF0000", "alpha": 80, "blur": 3, "strength": 1 },
       "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFFDD99" },
-      "format": "{{py:repairTimeSurveying%0.1f}}"
+      "format": "{{py:repairTimeSurveying}}"
     },
     "rt_radio": {
       "enabled": ${"@settings.xc":"settings.battleLabels.damage_panel.repair_timer"},
@@ -111,7 +111,7 @@
       "screenVAlign": "bottom",
       "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0xFF0000", "alpha": 80, "blur": 3, "strength": 1 },
       "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFFDD99" },
-      "format": "{{py:repairTimeSurveying%0.1f}}"
+      "format": "{{py:repairTimeSurveying}}"
     },
     "info_panel_bg": {
       "enabled": ${"@settings.xc":"settings.battleLabels.info_panel"},

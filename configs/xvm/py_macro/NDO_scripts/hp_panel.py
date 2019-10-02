@@ -26,8 +26,7 @@ def update_hp(vehicleID, hp):
 
 #@xvm.export('thp_show', deterministic=True)
 def thp_show(battletype):
-    type = str(battletype)
-    if type != 'tutorial' and type != 'event_battles' and type != 'bootcamp' and type != 'epic_random' and type != 'epic_random_training':
+    if battletype not in ['tutorial', 'event_battles', 'bootcamp', 'epic_random', 'epic_random_training']:
         return 'on'
     else:
         return 'off'

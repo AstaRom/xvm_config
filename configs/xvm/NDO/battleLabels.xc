@@ -7,7 +7,7 @@
       ${ "battleLabelsTemplates.xc":"def.rt_engine" },
       ${ "battleLabelsTemplates.xc":"def.rt_gun" },
       ${ "battleLabelsTemplates.xc":"def.rt_turret" },
-      ${ "battleLabelsTemplates.xc":"def.rt_tracks" }, 
+      ${ "battleLabelsTemplates.xc":"def.rt_complex" }, 
       ${ "battleLabelsTemplates.xc":"def.rt_surveying" },
       ${ "battleLabelsTemplates.xc":"def.rt_radio" },
       ${ "battleLabelsTemplates.xc":"def.info_panel_bg" },

@@ -52,18 +52,18 @@
         "not_shell": "#CCCCCC"
       },
       "vtype": {
-        "mediumTank": "<font face='NDO' size='19'>&#x0042;</font>",
-        "lightTank": "<font face='NDO' size='19'>&#x0041;</font>",
-        "heavyTank": "<font face='NDO' size='19'>&#x0043;</font>",
-        "AT-SPG": "<font face='NDO' size='19'>&#x0044;</font>",
+        "HT": "<font face='NDO' size='19'>&#x0043;</font>",
+        "MT": "<font face='NDO' size='19'>&#x0042;</font>",
+        "LT": "<font face='NDO' size='19'>&#x0041;</font>",
+        "TD": "<font face='NDO' size='19'>&#x0044;</font>",
         "SPG": "<font face='NDO' size='19'>&#x0045;</font>",
         "not_vehicle": ""
       },
       "c:vtype":{
-        "mediumTank": "#FFF198",
-        "lightTank": "#A2FF9A",
-        "heavyTank": "#FFACAC",
-        "AT-SPG": "#A0CFFF",
+        "HT": "#FFACAC",
+        "MT": "#FFF198",
+        "LT": "#A2FF9A",
+        "TD": "#A0CFFF",
         "SPG": "#EFAEFF",
         "not_vehicle": "#CCCCCC"
       },
