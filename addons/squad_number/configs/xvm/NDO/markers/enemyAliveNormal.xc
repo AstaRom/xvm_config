@@ -115,7 +115,7 @@
       "format": "{{hp}} / {{hp-max}}"
     },
     {
-      "name": "Маркер помощи",
+      "name": "Маркер атаки",
       "visible": true,
       "x": 0,
       "y": -95,
@@ -123,13 +123,13 @@
       "color": null,
       "font": { "name": "NDO", "size": 35, "align": "center", "bold": false, "italic": false },
       "shadow": { "alpha": 100, "color": "0x000000", "angle": 90, "distance": 0, "size": 1, "strength": 200 },
-      "format": "&#x004A;"
+      "format": "&#x004B;"
     },
     {
       "name": "Маркер эффективности",
       "visible": true,
       "x": -45,
-      "y": -35,
+      "y": -33,
       "alpha": "{{xvm-stat?100|0}}",
       "color": null,
       "font": { "name": "NDO", "size": 15, "align": "center", "bold": false, "italic": false },
@@ -140,7 +140,7 @@
       "name": "Маркер взвода (фон)",
       "visible": true,
       "x": 48,
-      "y": -42,
+      "y": -38,
       "alpha": "{{squad-num?100|0}}",
       "color": "0x000000",
       "font": { "name": "NDO", "size": 0, "align": "center", "bold": false, "italic": false },
@@ -151,7 +151,7 @@
       "name": "Маркер взвода (рамка)",
       "visible": true,
       "x": 48,
-      "y": -42,
+      "y": -38,
       "alpha": "{{squad-num?100|0}}",
       "color": null,
       "font": { "name": "NDO", "size": 0, "align": "center", "bold": false, "italic": false },

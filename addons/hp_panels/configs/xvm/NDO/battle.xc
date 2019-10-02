@@ -11,6 +11,6 @@
 		"sixthSenseIcon": "xvm://res/SixthSense.png",
     "elements": ${"elements.xc":"elements"},
 		"camera": ${"camera.xc":"camera"},
-		"minimapDeadSwitch": false
+		"minimapDeadSwitch": true
   }
 }

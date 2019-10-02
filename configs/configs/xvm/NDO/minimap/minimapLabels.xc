@@ -2,20 +2,21 @@
   "labels": {
     "enabled": true,
     "formats": [
+			${ "minimapLabelsTemplates.xc":"def.vtypeSpotted" },
       ${ "minimapLabelsTemplates.xc":"def.vehicleSpotted" },    
       ${ "minimapLabelsTemplates.xc":"def.vtypeLost" },
-      ${ "minimapLabelsTemplates.xc":"def.vehicleLost" },
-      ${ "minimapLabelsTemplates.xc":"def.vtypeDead" }
+      ${ "minimapLabelsTemplates.xc":"def.vehicleLost" }
     ]
   },
   "labelsAlt": {
     "enabled": true,
     "formats": [
-      ${ "minimapLabelsTemplatesAlt.xc":"def.nickSpotted" },
-      ${ "minimapLabelsTemplatesAlt.xc":"def.vtypeLost" },
-      ${ "minimapLabelsTemplatesAlt.xc":"def.nickLost" },
-      ${ "minimapLabelsTemplatesAlt.xc":"def.vtypeDead" },
-      ${ "minimapLabelsTemplatesAlt.xc":"def.nickDead" }
+			${ "minimapLabelsTemplates.xc":"def.vtypeSpotted" },
+      ${ "minimapLabelsTemplates.xc":"def.nickSpotted" },
+      ${ "minimapLabelsTemplates.xc":"def.vtypeLost" },
+      ${ "minimapLabelsTemplates.xc":"def.nickLost" },
+      ${ "minimapLabelsTemplates.xc":"def.vtypeDead" },
+      ${ "minimapLabelsTemplates.xc":"def.nickDead" }
     ]
   }
 }

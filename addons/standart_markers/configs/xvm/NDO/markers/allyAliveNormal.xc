@@ -118,12 +118,12 @@
       "name": "Маркер эффективности",
       "visible": true,
       "x": -40,
-      "y": -28,
+      "y": -27,
       "alpha": "{{xvm-stat?100|0}}",
       "color": null,
       "font": { "name": "NDO", "size": 15, "align": "center", "bold": false, "italic": false },
       "shadow": { "alpha": 100, "color": "0x000000", "angle": 90, "distance": 0, "size": 1, "strength": 200 },
-      "format": "<font color='{{c:eff}}' size='{{eff?15|0}}'>&#x0049;</font>"
+      "format": "<font color='{{c:r}}' size='{{r?15|0}}'>&#x0049;</font>"
     }
   ]
 }

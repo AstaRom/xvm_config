@@ -11,6 +11,6 @@
   },
   "switcher_mc": {
     "_x": "switcher_mc._x - 1",
-    "_y": "switcher_mc._y - 14"
+    "_y": "switcher_mc._y - 13"
   }
 }

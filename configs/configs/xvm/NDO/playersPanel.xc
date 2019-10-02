@@ -8,9 +8,9 @@
     "altMode": null,
     "clanIcon": {
       "show": true,
-      "x": 110,
+      "x": 105,
       "y": 4,
-      "xr": 110,
+      "xr": 105,
       "yr": 4,
       "w": 16,
       "h": 16,
@@ -23,7 +23,7 @@
     },
     "short": {
       "enabled": true,
-      "width": 10,
+      "width": 30,
 			"removeSquadIcon": true,
 			"vehicleLevelAlpha": 100,
       "fragsFormatLeft": "",
@@ -45,7 +45,7 @@
     },
     "medium2": {
       "enabled": true,
-      "width": 110,
+      "width": 105,
 			"removeSquadIcon": true,
 			"vehicleLevelAlpha": 100,
       "formatLeft": "",
@@ -57,7 +57,7 @@
     },
     "large": {
       "enabled": true,
-      "width": 145,
+      "width": 150,
 			"removeSquadIcon": true,
 			"vehicleLevelAlpha": 100,
       "nickFormatLeft": "",

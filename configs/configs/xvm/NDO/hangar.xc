@@ -32,6 +32,7 @@
       "showServerName": true,
       "minimalLength": 0,
       "errorString": "--",
+			"ignoredServers": [],
       "fontStyle": {
         "name": "$FieldFont",
         "size": 13,
@@ -77,6 +78,7 @@
       "showServerName": true,
       "minimalLength": 0,
       "errorString": "--k",
+			"ignoredServers": [],
       "fontStyle": {
         "name": "$FieldFont",
         "size": 13,
