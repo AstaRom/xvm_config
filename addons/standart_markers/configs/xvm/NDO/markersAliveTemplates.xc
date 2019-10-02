@@ -1,19 +1,19 @@
 ﻿{
   "def": {
+    // Иконка типа танка
     "vehicleIcon": {
-      "visible": true,
+      "enabled": true,
       "showSpeaker": false,
       "x": 0,
       "y": -16,
       "alpha": 100,
-      "color": null,
       "maxScale": 100,
-      "scaleX": 0,
-      "scaleY": 16,
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 6, "strength": 200 }
+      "offsetX": 0,
+      "offsetY": 0
     },
+    // Индикатор здоровья
     "healthBar": {
-      "visible": true,
+      "enabled": true,
       "x": -41,
       "y": -33,
       "alpha": 100,
@@ -25,107 +25,101 @@
       "fill": { "alpha": 30 },
       "damage": { "alpha": 100, "color": "{{c:dmg}}", "fade": 1 }
     },
+    // Всплывающий урон для союзника
     "damageText": {
-      "visible": true,
+      "enabled": true,
       "x": 0,
       "y": -67,
       "alpha": 100,
-      "color": null,
-      "font": { "name": "$FieldFont", "size": 18, "align": "center", "bold": false, "italic": false },
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 6, "strength": 200 },
+      "textFormat": { "font": "$FieldFont", "size": 18, "color": null, "align": "center", "bold": false, "italic": false },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 3, "strength": 1 },
       "speed": 2,
       "maxRange": 40,
       "damageMessage": "{{dmg}}",
       "blowupMessage": "{{l10n:blownUp}}\n{{dmg}}"
     },
+    // Всплывающий урон для игрока
     "damageTextPlayer": {
-      "visible": true,
+      "enabled": true,
       "x": 0,
       "y": -67,
       "alpha": 100,
-      "color": null,
-      "font": { "name": "$FieldFont", "size": 18, "align": "center", "bold": false, "italic": false },
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 6, "strength": 200 },
+      "textFormat": { "font": "$FieldFont", "size": 18, "color": null, "align": "center", "bold": false, "italic": false },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 3, "strength": 1 },
       "speed": 2,
       "maxRange": 40,
       "damageMessage": "{{dmg}}",
       "blowupMessage": "{{l10n:blownUp}}\n{{dmg}}"
     },
+    // Всплывающий урон для взводного
     "damageTextSquadman": {
-      "visible": true,
+      "enabled": true,
       "x": 0,
       "y": -67,
       "alpha": 100,
-      "color": null,
-      "font": { "name": "$FieldFont", "size": 18, "align": "center", "bold": false, "italic": false },
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 6, "strength": 200 },
+      "textFormat": { "font": "$FieldFont", "size": 18, "color": null, "align": "center", "bold": false, "italic": false },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 3, "strength": 1 },
       "speed": 2,
       "maxRange": 40,
       "damageMessage": "{{dmg}}",
       "blowupMessage": "{{l10n:blownUp}}\n{{dmg}}"
     },
+    // Маркеры команд из радиального меню
     "actionMarker": {
-      "visible": true,
+      "enabled": true,
       "x": 0,
       "y": -67,
       "alpha": 100
     },
-
-    // textFields
-
+    // Блок текстовых полей / textFields
     "tankName": {
-      "name": "Название техники",
-      "visible": true,
+      "font": "Название техники",
+      "enabled": true,
       "x": 0,
       "y": -36,
       "alpha": 100,
-      "color": null,
-      "font": { "name": "$FieldFont", "size": 13, "align": "center", "bold": false, "italic": false },
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 6, "strength": 200 },
+      "textFormat": { "font": "$FieldFont", "size": 13, "color": null, "align": "center", "bold": false, "italic": false },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 6, "strength": 2 },
       "format": "{{vehicle}}{{turret}}"
     },
     "playerName": {
-      "name": "Никнейм игрока",
-      "visible": true,
+      "font": "Никнейм игрока",
+      "enabled": true,
       "x": 0,
       "y": -36,
       "alpha": 100,
-      "color": null,
-      "font": { "name": "$FieldFont", "size": 13, "align": "center", "bold": false, "italic": false },
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 6, "strength": 200 },
+      "textFormat": { "font": "$FieldFont", "size": 13, "color": null, "align": "center", "bold": false, "italic": false },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 6, "strength": 2 },
       "format": "{{name%.16s~..}}{{clan}}"
     },
     "hp": {
-      "name": "Здоровье",
-      "visible": true,
+      "font": "Здоровье",
+      "enabled": true,
       "x": 0,
       "y": -20,
       "alpha": 100,
-      "color": "0xFCFCFC",
-      "font": { "name": "$FieldFont", "size": 11, "align": "center", "bold": true, "italic": false },
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 4, "strength": 100 },
+      "textFormat": { "font": "$FieldFont", "size": 11, "color": "0xFCFCFC", "align": "center", "bold": true, "italic": false },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 4, "strength": 1 },
       "format": "{{hp}} / {{hp-max}}"
     },
     "hp_ratio": {
-      "name": "Здоровье (Процент)",
-      "visible": true,
+      "font": "Здоровье (Процент)",
+      "enabled": true,
       "x": 0,
       "y": -20,
       "alpha": 100,
-      "color": "0xFCFCFC",
-      "font": { "name": "$FieldFont", "size": 11, "align": "center", "bold": true, "italic": false },
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 4, "strength": 100 },
+      "textFormat": { "font": "$FieldFont", "size": 11, "color": "0xFCFCFC", "align": "center", "bold": true, "italic": false },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 4, "strength": 1 },
       "format": "{{hp-ratio}}%"
     },
     "eff_marker": {
-      "name": "Маркер эффективности",
-      "visible": true,
+      "font": "Маркер эффективности",
+      "enabled": true,
       "x": -40,
       "y": -27,
       "alpha": "{{xvm-stat?100|0}}",
-      "color": null,
-      "font": { "name": "NDO", "size": 15, "align": "center", "bold": false, "italic": false },
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 1, "strength": 200 },
+      "textFormat": { "font": "NDO", "size": 15, "color": null, "align": "center", "bold": false, "italic": false },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 1, "strength": 2 },
       "format": "<font color='{{c:r}}' size='{{r?15|0}}'>&#x0049;</font>"
     }
   }

@@ -19,7 +19,12 @@
           "textFields": [
             ${ "markersAliveTemplates.xc": "def.tankName" },
             ${ "markersAliveTemplates.xc": "def.hp" },
-            ${ "markersAliveTemplates.xc": "def.eff_marker" }
+            ${ "markersAliveTemplates.xc": "def.eff_marker" },
+            ${ "markersAliveTemplates.xc": "def.squad_marker_fon" },
+            ${ "markersAliveTemplates.xc": "def.squad_marker_frame" },
+            ${ "markersAliveTemplates.xc": "def.squad_marker_number" },
+            ${ "markersAliveTemplates.xc": "def.lowHp_marker" },
+            ${ "markersAliveTemplates.xc": "def.xmqp_marker" }
           ]
         },
         "extended": {
@@ -30,16 +35,17 @@
           "damageTextSquadman": ${ "markersAliveTemplates.xc": "def.damageTextSquadman" },
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
-          "actionMarker": ${ "markersAliveTemplates.xc": "def.actionMarker" },
+          "actionMarker": { "enabled": false },
           "textFields": [
             ${ "markersAliveTemplates.xc": "def.playerName" },
-            ${ "markersAliveTemplates.xc": "def.hp_ratio" }
+            ${ "markersAliveTemplates.xc": "def.hp_ratio" },
+            ${ "markersAliveTemplates.xc": "def.stat_marker" }
           ]
         }
       },
       "dead": {
         "normal": {
-          "vehicleIcon": ${ "markersDeadTemplates.xc": "def.vehicleIcon" },
+          "vehicleIcon": { "enabled": false },
           "healthBar": { "enabled": false },
           "damageText": ${ "markersDeadTemplates.xc": "def.damageText" },
           "damageTextPlayer": ${ "markersDeadTemplates.xc": "def.damageTextPlayer" },
@@ -57,7 +63,7 @@
           "damageTextSquadman": ${ "markersDeadTemplates.xc": "def.damageTextSquadman" },
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
-          "actionMarker": ${ "markersDeadTemplates.xc": "def.actionMarker" },
+          "actionMarker": { "enabled": false },
           "textFields": [
             ${ "markersDeadTemplates.xc": "def.tankName" },
             ${ "markersDeadTemplates.xc": "def.playerName" }
@@ -79,7 +85,11 @@
           "textFields": [
             ${ "markersAliveTemplates.xc": "def.tankName" },
             ${ "markersAliveTemplates.xc": "def.hp" },
-            ${ "markersAliveTemplates.xc": "def.eff_marker" }
+            ${ "markersAliveTemplates.xc": "def.eff_marker" },
+            ${ "markersAliveTemplates.xc": "def.squad_marker_fon" },
+            ${ "markersAliveTemplates.xc": "def.squad_marker_frame" },
+            ${ "markersAliveTemplates.xc": "def.squad_marker_number" },
+            ${ "markersAliveTemplates.xc": "def.lowHp_marker" }
           ]
         },
         "extended": {
@@ -90,16 +100,17 @@
           "damageTextSquadman": ${ "markersAliveTemplates.xc": "def.damageTextSquadman" },
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
-          "actionMarker": ${ "markersAliveTemplates.xc": "def.actionMarker" },
+          "actionMarker": { "enabled": false },
           "textFields": [
             ${ "markersAliveTemplates.xc": "def.playerName" },
-            ${ "markersAliveTemplates.xc": "def.hp_ratio" }
+            ${ "markersAliveTemplates.xc": "def.hp_ratio" },
+            ${ "markersAliveTemplates.xc": "def.stat_marker" }
           ]
         }
       },
       "dead": {
         "normal": {
-          "vehicleIcon": ${ "markersDeadTemplates.xc": "def.vehicleIcon" },
+          "vehicleIcon": { "enabled": false },
           "healthBar": { "enabled": false },
           "damageText": ${ "markersDeadTemplates.xc": "def.damageText" },
           "damageTextPlayer": ${ "markersDeadTemplates.xc": "def.damageTextPlayer" },
@@ -117,7 +128,7 @@
           "damageTextSquadman": ${ "markersDeadTemplates.xc": "def.damageTextSquadman" },
           "contourIcon": { "enabled": false },
           "levelIcon": { "enabled": false },
-          "actionMarker": ${ "markersDeadTemplates.xc": "def.actionMarker" },
+          "actionMarker": { "enabled": false },
           "textFields": [
             ${ "markersDeadTemplates.xc": "def.tankName" },
             ${ "markersDeadTemplates.xc": "def.playerName" }

@@ -1,84 +1,80 @@
 ﻿{
   "def": {
+    // Иконка типа танка
     "vehicleIcon": {
-      "visible": true,
+      "enabled": true,
       "showSpeaker": false,
       "x": 0,
       "y": -16,
       "alpha": 100,
-      "color": null,
       "maxScale": 100,
-      "scaleX": 0,
-      "scaleY": 16,
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 6, "strength": 200 }
+      "offsetX": 0,
+      "offsetY": 0
     },
+    // Всплывающий урон для союзника
     "damageText": {
-      "visible": true,
+      "enabled": true,
       "x": 0,
       "y": -67,
       "alpha": 100,
-      "color": null,
-      "font": { "name": "$FieldFont", "size": 18, "align": "center", "bold": false, "italic": false },
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 6, "strength": 200 },
+      "textFormat": { "font": "$FieldFont", "size": 18, "color": null, "align": "center", "bold": false, "italic": false },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 3, "strength": 1 },
       "speed": 2,
       "maxRange": 40,
       "damageMessage": "{{dmg}}",
       "blowupMessage": "{{l10n:blownUp}}\n{{dmg}}"
     },
+    // Всплывающий урон для игрока
     "damageTextPlayer": {
-      "visible": true,
+      "enabled": true,
       "x": 0,
       "y": -67,
       "alpha": 100,
-      "color": null,
-      "font": { "name": "$FieldFont", "size": 18, "align": "center", "bold": false, "italic": false },
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 6, "strength": 200 },
+      "textFormat": { "font": "$FieldFont", "size": 18, "color": null, "align": "center", "bold": false, "italic": false },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 3, "strength": 1 },
       "speed": 2,
       "maxRange": 40,
       "damageMessage": "{{dmg}}",
       "blowupMessage": "{{l10n:blownUp}}\n{{dmg}}"
     },
+    // Всплывающий урон для взводного
     "damageTextSquadman": {
-      "visible": true,
+      "enabled": true,
       "x": 0,
       "y": -67,
       "alpha": 100,
-      "color": null,
-      "font": { "name": "$FieldFont", "size": 18, "align": "center", "bold": false, "italic": false },
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 6, "strength": 200 },
+      "textFormat": { "font": "$FieldFont", "size": 18, "color": null, "align": "center", "bold": false, "italic": false },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 3, "strength": 1 },
       "speed": 2,
       "maxRange": 40,
       "damageMessage": "{{dmg}}",
       "blowupMessage": "{{l10n:blownUp}}\n{{dmg}}"
     },
+    // Маркеры команд из радиального меню
     "actionMarker": {
-      "visible": true,
+      "enabled": true,
       "x": 0,
       "y": -67,
       "alpha": 100
     },
-
-    // textFields
-
+    // Блок текстовых полей / textFields
     "tankName": {
-      "visible": true,
+      "enabled": true,
       "x": 0,
       "y": -20,
       "alpha": 80,
-      "color": null,
-      "font": { "name": "$FieldFont", "size": 13, "align": "center", "bold": false, "italic": false },
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 6, "strength": 200 },
+      "textFormat": { "font": "$FieldFont", "size": 13, "color": null, "align": "center", "bold": false, "italic": false },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 6, "strength": 2 },
       "format": "{{vehicle}}"
     },
     "playerName": {
-      "name": "Никнейм игрока",
-      "visible": true,
+      "font": "Никнейм игрока",
+      "enabled": true,
       "x": 0,
       "y": -34,
       "alpha": 80,
-      "color": null,
-      "font": { "name": "$FieldFont", "size": 13, "align": "center", "bold": false, "italic": false },
-      "shadow": { "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 6, "strength": 200 },
+      "textFormat": { "font": "$FieldFont", "size": 13, "color": null, "align": "center", "bold": false, "italic": false },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 6, "strength": 2 },
       "format": "{{name%.16s~..}}{{clan}}"
     }
   }
