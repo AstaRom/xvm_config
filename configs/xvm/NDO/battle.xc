@@ -2,7 +2,6 @@
   "battle": {
     "mirroredVehicleIcons": false,
     "showPostmortemTips": false,
-    "showPostmortemDogtag": false,
     "highlightVehicleIcon": true,
     "clockFormat": "H:i",
     "clanIconsFolder": "clanicons/",

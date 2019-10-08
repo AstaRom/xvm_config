@@ -16,7 +16,6 @@
       "showButton": true,
       "showBattleCount": false
     },
-    "showDogtagWidget": true,
     "enableGoldLocker": true,
     "enableFreeXpLocker": true,
     "enableCrystalLocker": true,

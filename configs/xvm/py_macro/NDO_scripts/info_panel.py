@@ -381,22 +381,22 @@ def turret_speed_turn():
 #@xvm.export('invis_stand', deterministic=False)
 def invis_stand():
     td = _typeDescriptor()
-    return None if not td else "%.1f" % (td.type.invisibility[1] * 50)
+    return None if not td else "%.1f" % (td.type.invisibility[1] * 57)
 
 #@xvm.export('invis_stand_shot', deterministic=False)
 def invis_stand_shot():
     td = _typeDescriptor()
-    return None if not td else "%.2f" % (td.type.invisibility[1] * td.gun.invisibilityFactorAtShot * 50)
+    return None if not td else "%.2f" % (td.type.invisibility[1] * td.gun.invisibilityFactorAtShot * 57)
 
 #@xvm.export('invis_move', deterministic=False)
 def invis_move():
     td = _typeDescriptor()
-    return None if not td else "%.1f" % (td.type.invisibility[0] * 50)
+    return None if not td else "%.1f" % (td.type.invisibility[0] * 57)
 
 #@xvm.export('invis_move_shot', deterministic=False)
 def invis_move_shot():
     td = _typeDescriptor()
-    return None if not td else "%.2f" % (td.type.invisibility[0] * td.gun.invisibilityFactorAtShot * 50)
+    return None if not td else "%.2f" % (td.type.invisibility[0] * td.gun.invisibilityFactorAtShot * 57)
 
 #@xvm.export('vision_radius', deterministic=False)
 def vision_radius():
