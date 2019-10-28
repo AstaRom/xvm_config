@@ -78,7 +78,7 @@ def vehicle_nation():
 def vehicle_type():
     td = _typeDescriptor()
     vehType = None
-    if td is not None and 'lightTank' in td.type.tags: 
+    if td is not None and 'lightTank' in td.type.tags:
         vehType = 'LT'
     elif td is not None and 'mediumTank' in td.type.tags:
         vehType = 'MT'
@@ -94,7 +94,7 @@ def vehicle_type():
 def vehicle_name():
     td = _typeDescriptor()
     return None if not td else "%s" % td.type.userString
-    
+
 #@xvm.export('vehicle_system_name', deterministic=False)
 def vehicle_system_name():
     td = _typeDescriptor()
@@ -108,7 +108,7 @@ def icon_system_name():
 #@xvm.export('isPremium', deterministic=False)
 def isPremium():
     td = _typeDescriptor()
-    if not td: 
+    if not td:
         return None
     else:
         return 'premium' if 'premium' in td.type.tags else ''
@@ -136,7 +136,7 @@ def gun_reload():
 #@xvm.export('gun_dpm', deterministic=False)
 def gun_dpm():
     td = _typeDescriptor()
-    if not td: 
+    if not td:
         return None
     else:
         time = td.gun.reloadTime + (td.gun.clip[0] - 1) * td.gun.clip[1]
@@ -145,7 +145,7 @@ def gun_dpm():
 #@xvm.export('gun_reload_equip', deterministic=False)
 def gun_reload_equip(eq1, eq2, eq3, eq4):
     td = _typeDescriptor()
-    if not td: 
+    if not td:
         return None
     else:
         reload_orig = td.gun.reloadTime
@@ -171,7 +171,7 @@ def gun_reload_equip(eq1, eq2, eq3, eq4):
 #@xvm.export('gun_dpm_equip', deterministic=False)
 def gun_dpm_equip(eq1, eq2, eq3, eq4):
     td = _typeDescriptor()
-    if not td: 
+    if not td:
         return None
     else:
         reload_equip = float(gun_reload_equip(eq1, eq2, eq3, eq4))
@@ -351,7 +351,7 @@ def engine_power():
 #@xvm.export('engine_power_density', deterministic=False)
 def engine_power_density():
     td = _typeDescriptor()
-    if not td: 
+    if not td:
         return None
     else:
         power = td.engine.power / 735.49875

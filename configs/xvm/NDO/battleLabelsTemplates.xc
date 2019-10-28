@@ -158,7 +158,7 @@
       "screenHAlign": "center",
       "screenVAlign": "bottom",
       "antiAliasType": "advanced",
-      "shadow": { "enabled": true, "distance": 1, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 5, "strength": 2 }, 
+      "shadow": { "enabled": true, "distance": 1, "angle": 90, "color": "0x000000", "alpha": 80, "blur": 5, "strength": 2 },
       "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFCFCFC", "align": "left", "leading": -14 },
       "format": "{{py:ipHotKey}}"
     },

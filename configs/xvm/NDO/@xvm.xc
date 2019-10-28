@@ -3,10 +3,10 @@
   "autoReloadConfig": false,
   "language": "auto",
   "region": "auto",
-  
+
   "custom_texts":      ${ "@custom_texts.xc": "custom_texts" },
   "settings":          ${ "@settings.xc": "settings" },
-  
+
   "alpha":             ${ "alpha.xc": "alpha" },
   "battle":            ${ "battle.xc": "battle" },
   "battleLabels":      ${ "battleLabels.xc": "labels" },

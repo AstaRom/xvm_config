@@ -6,7 +6,7 @@
     "selfIconAlpha": 85,
     "selfIconScale": 1,
     "iconAlpha": 0,
-    "iconScale": 1,    
+    "iconScale": 1,
     "directionTriangleAlpha": 100,
     "directionLineAlpha": 100,
     "showDirectionLineAfterDeath": false,

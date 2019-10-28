@@ -76,7 +76,7 @@ def max_hp_symbols(symbol):
     return str(symbol) * section
 
 #@xvm.export('sign_hp', deterministic=False)
-def sign_hp(): 
+def sign_hp():
     if current_hp(0) > current_hp(1):
         return '&#x003E;'
     elif current_hp(0) < current_hp(1):

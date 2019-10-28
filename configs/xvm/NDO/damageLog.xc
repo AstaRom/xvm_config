@@ -23,7 +23,7 @@
         "art_attack": "<font face='NDO'>&#x005E;</font>",
         "air_strike": "<font face='NDO'>&#x005F;</font>"
       },
-      "c:dmg-kind": { 
+      "c:dmg-kind": {
         "shot": "#FCFCFC",
         "fire": "#FF6655",
         "ramming": "#998855",

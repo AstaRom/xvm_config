@@ -1,4 +1,4 @@
-﻿{ 
+﻿{
   "circles": {
     "view": [
       { "enabled": true, "distance": 50, "scale": 1, "thickness": 0.75, "alpha": 50, "color": "0xFFFFFF" },
@@ -8,6 +8,6 @@
     ],
     "artillery": { "enabled": true, "alpha": 50, "color": "0x3399CC", "thickness": 0.5 },
     "shell": { "enabled": true, "alpha": 50, "color": "0x3399CC", "thickness": 0.5 },
-    "special": [] 
+    "special": []
   }
 }
