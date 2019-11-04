@@ -2,19 +2,11 @@
 # imports
 
 import BigWorld
-from helpers import getClientLanguage
 
 import xvm_main.python.config as config
 
 #####################################################################
 # handlers
-
-#@xvm.export('l10n', deterministic=True)
-def l10n(l10n):
-    gameLng = getClientLanguage()
-    mode = 'ru' if gameLng == 'ru' else 'en'
-    ref = config.get('custom_texts/language/%s/%s' % (mode, l10n))
-    return '%s' % ref
 
 #@xvm.export('color_blind', deterministic=True)
 def color_blind():

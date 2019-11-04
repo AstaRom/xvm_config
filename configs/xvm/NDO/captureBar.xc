@@ -9,7 +9,7 @@
       "title": {
         "x": 0,
         "y": 0,
-        "format": "<font size='15' color='#FFCC66'><b>{{py:l10n('base')}}{{cap.points}}%</b></font>",
+        "format": "<font size='15' color='#FFCC66'><b>{{l10n:base}}{{cap.points}}%</b></font>",
         "done": "<font size='16' color='#FFCC66'><b>{{l10n:enemyBaseCaptured}}</b></font>",
         "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x000000", "alpha": 35, "blur": 3, "strength": 2 }
       },
@@ -40,7 +40,7 @@
       "title": {
         "x": 0,
         "y": 0,
-        "format": "<font size='15' color='#FFCC66'><b>{{py:l10n('base')}}{{cap.points}}%</b></font>",
+        "format": "<font size='15' color='#FFCC66'><b>{{l10n:base}}{{cap.points}}%</b></font>",
         "done": "<font size='16' color='#FFCC66'><b>{{l10n:allyBaseCaptured}}</b></font>",
         "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x000000", "alpha": 35, "blur": 3, "strength": 2 }
       },

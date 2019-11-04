@@ -2,6 +2,7 @@
   "configVersion": "6.1.0",
   "autoReloadConfig": false,
   "language": "auto",
+  "userLanguageFolder": "l10n",
   "region": "auto",
 
   "custom_texts":      ${ "@custom_texts.xc": "custom_texts" },

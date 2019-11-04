@@ -10,10 +10,6 @@ from NDO_scripts import total_efficiency
 #####################################################################
 # handlers > basic_macros
 
-@xvm.export('l10n', deterministic=True)
-def l10n(l10n):
-    return basic_macros.l10n(l10n)
-
 @xvm.export('color_blind', deterministic=True)
 def color_blind():
     return basic_macros.color_blind()

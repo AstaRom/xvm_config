@@ -8,6 +8,11 @@
     "showGeneralChatButton": false,
     "showPromoPremVehicle": false,
     "showRewardWindow": true,
+    "showRankedBattleResults": true,
+    "equipmentPanel": {
+      "showNumberEquipment": true,
+      "showNumberDirectives": true
+    },
     "combatIntelligence": {
       "showPopUpMessages": false,
       "showUnreadCounter": false

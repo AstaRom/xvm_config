@@ -52,7 +52,8 @@
       "epic_random_training": "epic_random_training",
       "event_battles_2": "event_battles_2",
       "epic_battle": "epic_battle",
-      "epic_battle_training": "epic_battle_training"
+      "epic_battle_training": "epic_battle_training",
+      "tournament_event": "tournament_event"
     },
     "topclan": {
       "top": "top",
