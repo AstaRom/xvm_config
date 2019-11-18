@@ -19,7 +19,9 @@
     "filters": {
       "params": { "enabled": true },
       "bonus": { "enabled": true },
-      "favorite": { "enabled": true }
+      "favorite": { "enabled": true },
+      "elite": { "enabled": true },
+      "premium": { "enabled": true }
     },
     "filtersPadding": {
       "horizontal": 11,

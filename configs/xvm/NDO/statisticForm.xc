@@ -11,7 +11,7 @@
     "vehicleFieldShowBorder": false,
     "fragsFieldShowBorder": false,
     "squadIconOffsetXLeft": -2,
-    "squadIconOffsetXRight": "{{xvm-stat?1|-1}}",
+    "squadIconOffsetXRight": -1,
     "nameFieldOffsetXLeft": "{{xvm-stat?1|-14}}",
     "nameFieldOffsetXRight": "{{xvm-stat?3|-12}}",
     "nameFieldWidthLeft": "{{xvm-stat?161|169}}",

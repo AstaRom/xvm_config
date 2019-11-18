@@ -10,8 +10,8 @@
     "showRewardWindow": true,
     "showRankedBattleResults": true,
     "equipmentPanel": {
-      "showNumberEquipment": true,
-      "showNumberDirectives": true
+      "showConsumablesCount": true,
+      "showDirectivesCount": true
     },
     "combatIntelligence": {
       "showPopUpMessages": false,
@@ -167,6 +167,11 @@
       "missions": true,
       "profile": true,
       "PersonalMissionOperationsPage": true
+    },
+    "barracks": {
+      "nations_order": [],
+      "roles_order": [],
+      "sorting_criteria": [ "nation", "inVehicle", "vehicle", "role" ]
     },
     "carousel": ${ "carousel.xc": "carousel" },
     "widgets": ${ "widgets.xc": "widgets.lobby" }
