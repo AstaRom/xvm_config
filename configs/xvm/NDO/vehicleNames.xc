@@ -528,6 +528,7 @@
     "usa-A126_PzVI_Tiger_II_capt":           { "name": null, "short": null },
     "usa-A127_TL_1_LPC":                     { "name": null, "short": null },
     "usa-A12_T32":                           { "name": null, "short": null },
+    "usa-A130_Super_Hellcat":                { "name": null, "short": null },
     "usa-A13_T34_hvy":                       { "name": null, "short": null },
     "usa-A13_T34_hvy_BF":                    { "name": null, "short": null },
     "usa-A13_T34_hvy_FL":                    { "name": null, "short": null },
