@@ -116,6 +116,7 @@
     "france-F36_AMX_AC_Mle1948_IGR":         { "name": null, "short": null },
     "france-F37_AMX50_Foch":                 { "name": null, "short": null },
     "france-F38_Bat_Chatillon155_58":        { "name": null, "short": null },
+    "france-F42_AMR_35":                     { "name": null, "short": null },
     "france-F44_Somua_S35":                  { "name": null, "short": null },
     "france-F49_RenaultR35":                 { "name": null, "short": null },
     "france-F50_FCM36_20t":                  { "name": null, "short": null },
