@@ -2,8 +2,16 @@
 # imports
 
 import BigWorld
+import BattleReplay
+from Vehicle import Vehicle
 
+from xfw.events import registerEvent
 import xvm_main.python.config as config
+
+#####################################################################
+# constants
+
+isAnonymMode = None
 
 #####################################################################
 # handlers
@@ -24,3 +32,19 @@ def screen_height():
 #@xvm.export('str_replace', deterministic=True)
 def str_replace(str, old, new, max=-1):
     return str.replace(old, new, max)
+
+#@xvm.export('isAnonym', deterministic=True)
+def isAnonym(stat):
+    return True if (not isAnonymMode) and (stat is not None) else None
+
+@registerEvent(Vehicle, 'onEnterWorld')
+def onEnterWorld(self, prereqs):
+    global isAnonymMode
+    if self.isPlayerVehicle:
+        vInfoVO = self.guiSessionProvider.getArenaDP().getVehicleInfo(self.id)
+        isAnonym = vInfoVO.player.name != vInfoVO.player.fakeName
+        if not BattleReplay.g_replayCtrl.isPlaying and isAnonym:
+            isAnonymMode = True
+        else:
+            isAnonymMode = False
+        return

@@ -7,7 +7,7 @@ from Vehicle import Vehicle
 import BigWorld
 from Avatar import PlayerAvatar
 
-from xfw import registerEvent
+from xfw.events import registerEvent
 from xfw_actionscript.python import as_event
 import xvm_battle.python.battle as battle
 

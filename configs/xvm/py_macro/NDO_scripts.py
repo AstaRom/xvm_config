@@ -26,6 +26,10 @@ def screen_height():
 def str_replace(str, old, new, max=-1):
     return basic_macros.str_replace(str, old, new, max=-1)
 
+@xvm.export('isAnonym', deterministic=True)
+def isAnonym(stat):
+    return basic_macros.isAnonym(stat)
+
 #####################################################################
 # handlers > dmg_count
 

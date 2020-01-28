@@ -3,7 +3,7 @@
 
 import BigWorld
 
-from xfw import registerEvent
+from xfw.events import registerEvent
 from xfw_actionscript.python import as_event
 import xvm_main.python.config as config
 import xvm_battle.python.fragCorrelationPanel as panel

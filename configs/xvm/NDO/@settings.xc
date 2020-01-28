@@ -10,8 +10,7 @@
     },
     "markers": {
       "squad_number": false,
-      "lowHp_marker": true,
-      "xmqp_marker": false
+      "lowHp_marker": true
     },
     "playersPanel": {
       "xmqp_marker": false,

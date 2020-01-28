@@ -25,8 +25,7 @@
             ${ "markersAliveTemplates.xc": "def.squad_marker_fon" },
             ${ "markersAliveTemplates.xc": "def.squad_marker_frame" },
             ${ "markersAliveTemplates.xc": "def.squad_marker_number" },
-            ${ "markersAliveTemplates.xc": "def.lowHp_marker" },
-            ${ "markersAliveTemplates.xc": "def.xmqp_marker" }
+            ${ "markersAliveTemplates.xc": "def.lowHp_marker" }
           ]
         },
         "extended": {
