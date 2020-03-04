@@ -7,8 +7,8 @@
     "showReferralButton": true,
     "showGeneralChatButton": false,
     "showPromoPremVehicle": false,
-    "showRewardWindow": true,
     "showRankedBattleResults": true,
+    "showDailyQuestWidget": true,
     "equipmentPanel": {
       "showConsumablesCount": true,
       "showDirectivesCount": true
