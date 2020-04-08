@@ -6,7 +6,7 @@
     "log": {
       "moveInBattle": false,
       "x": 235,
-      "y": -15,
+      "y": -12,
       "showHitNoDamage": false,
       "groupDamagesFromFire": true,
       "groupDamagesFromRamming_WorldCollision": true,
@@ -37,7 +37,7 @@
         "art_attack": "#CCCCCC",
         "air_strike": "#CCCCCC"
       },
-      "splash-hit":{
+      "splash-hit": {
         "splash": "<font face='NDO'>&#x0060;</font>",
         "no-splash": "<font color='{{c:costShell}}'>{{l10n:high_explosive}}</font>"
       },
@@ -58,14 +58,14 @@
         "not_shell": "#CCCCCC"
       },
       "vtype": {
-        "HT": "<font face='NDO' size='19'>&#x0043;</font>",
-        "MT": "<font face='NDO' size='19'>&#x0042;</font>",
-        "LT": "<font face='NDO' size='19'>&#x0041;</font>",
-        "TD": "<font face='NDO' size='19'>&#x0044;</font>",
-        "SPG": "<font face='NDO' size='18'>&#x0045;</font>",
-        "not_vehicle": ""
+        "HT": "<font face='NDO' size='16'>&#x0043;</font>",
+        "MT": "<font face='NDO' size='16'>&#x0042;</font>",
+        "LT": "<font face='NDO' size='16'>&#x0041;</font>",
+        "TD": "<font face='NDO' size='16'>&#x0044;</font>",
+        "SPG": "<font face='NDO' size='16'>&#x0045;</font>",
+        "not_vehicle": "<font face='NDO' size='16'> </font>"
       },
-      "c:vtype":{
+      "c:vtype": {
         "HT": "#FFACAC",
         "MT": "#FFF198",
         "LT": "#A2FF9A",
@@ -89,7 +89,7 @@
         "armor_pierced_no_damage": "#CCCCCC",
         "unknown": "#CCCCCC"
       },
-      "critical-hit":{
+      "critical-hit": {
         "critical": "*",
         "no-critical": ""
       },
@@ -119,7 +119,7 @@
         "loader": "{{l10n:loader}}",
         "no-critical": ""
       },
-      "comp-name":{
+      "comp-name": {
         "turret": "{{l10n:turret}}",
         "hull": "{{l10n:hull}}",
         "chassis": "{{l10n:chassis}}",
@@ -127,24 +127,24 @@
         "gun": "{{l10n:gun}}",
         "unknown": ""
       },
-      "team-dmg":{
+      "team-dmg": {
         "ally-dmg": "",
         "enemy-dmg": "",
         "player": "",
         "unknown": ""
       },
-      "c:team-dmg":{
+      "c:team-dmg": {
         "ally-dmg": "#00EAFF",
         "enemy-dmg": "#E2E2E2",
         "player": "#B9FFA1",
         "unknown": "#CCCCCC"
       },
-      "costShell":{
+      "costShell": {
         "gold-shell": "",
         "silver-shell": "",
         "unknown": ""
       },
-      "c:costShell":{
+      "c:costShell": {
         "gold-shell": "#FFCC66",
         "silver-shell": "#E2E2E2",
         "unknown": ""
@@ -161,19 +161,19 @@
         "knockout": false,
         "quality": 1
       },
-      "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{vtype}} {{vehicle}}</font></textformat>"
+      "formatHistory": "<textformat tabstops='[25,75,95]' leading='-2'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}<tab>{{dmg-kind}}</font><tab><font face='mono'> </font><font color='{{c:team-dmg}}'>{{vtype}} {{vehicle}}</font></textformat>"
     },
     "logBackground": {
       "$ref": { "path": "damageLog.log" },
-      "formatHistory": ""
+      "formatHistory": "<img src='cfg://NDO/img/damageLog/bgLog.png' width='220' height='15' vspace='0'>"
     },
     "logAlt": {
       "$ref": { "path": "damageLog.log" },
-      "formatHistory": "<textformat tabstops='[25,75,100]' leading='-5'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{dmg-ratio}}%<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{vtype}} {{name}}</font></textformat>"
+      "formatHistory": "<textformat tabstops='[25,75,95]' leading='-2'><font size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{dmg-ratio}}%<tab>{{dmg-kind}}</font><tab><font face='mono'> </font><font color='{{c:team-dmg}}'>{{vtype}} {{name}}</font></textformat>"
     },
     "logAltBackground": {
       "$ref": { "path": "damageLog.logBackground" },
-      "formatHistory": ""
+      "formatHistory": "<img src='cfg://NDO/img/damageLog/bgLog.png' width='220' height='15' vspace='0'>"
     },
     "lastHit": {
       "$ref": { "path": "damageLog.log" },

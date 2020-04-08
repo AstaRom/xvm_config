@@ -35,7 +35,8 @@ def str_replace(str, old, new, max=-1):
 
 #@xvm.export('isAnonym', deterministic=True)
 def isAnonym(stat):
-    return True if (not isAnonymMode) and (stat is not None) else None
+    isStatOn = stat == 'stat'
+    return True if isStatOn and (not isAnonymMode) else None
 
 @registerEvent(Vehicle, 'onEnterWorld')
 def onEnterWorld(self, prereqs):

@@ -22,6 +22,18 @@
       "textFormat": { "font": "$FieldFont", "size": 15, "color": "0xFCFCFC", "align": "left", "bold": true },
       "format": "{{py:total_threshold?<textformat tabstops='[59,121,178]'><font face='NDO' size='21'>&#x0053;</font> {{py:total_damage%5d}}<tab><font face='NDO' size='21'>&#x0054;</font> {{py:total_assist%5d}}<tab><font face='NDO' size='18'>&#x0055;</font> {{py:total_blocked%5d}}{{my-vtype-key=SPG?<tab><font face='NDO' size='16'>&#x0056;</font> {{py:total_stun%5d}}}}</textformat>|<textformat tabstops='[52,107,157]'><font face='NDO' size='21'>&#x0053;</font> {{py:total_damage%4d}}<tab><font face='NDO' size='21'>&#x0054;</font> {{py:total_assist%4d}}<tab><font face='NDO' size='18'>&#x0055;</font> {{py:total_blocked%4d}}{{my-vtype-key=SPG?<tab><font face='NDO' size='16'>&#x0056;</font> {{py:total_stun%4d}}}}</textformat>}}"
     },
+    "damage_log_bg": {
+      "enabled": ${ "@settings.xc": "settings.battleLabels.damage_log" },
+      "updateEvent": "PY(ON_HIT)",
+      "x": "{{py:math_sub({{py:xvm.damageLog.log.x}}, 8)}}",
+      "y": "{{py:math_sub({{py:xvm.damageLog.log.y}}, -1)}}",
+      "width": 220,
+      "height": 220,
+      "alpha": 45,
+      "screenVAlign": "bottom",
+      "shadow": { "enabled": false },
+      "format": "{{py:xvm.damageLog.log.bg}}"
+    },
     "damage_log": {
       "enabled": ${ "@settings.xc": "settings.battleLabels.damage_log" },
       "updateEvent": "PY(ON_HIT)",
