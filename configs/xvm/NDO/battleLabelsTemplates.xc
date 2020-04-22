@@ -13,7 +13,7 @@
     },
     "total_efficiency": {
       "enabled": ${ "@settings.xc": "settings.battleLabels.total_efficiency" },
-      "updateEvent": "PY(ON_TOTAL_EFFICIENCY)",
+      "updateEvent": "PY(ON_EFFICIENCY_UPDATE)",
       "x": "{{py:xvm.hitLog.log.x}}",
       "y": "{{py:math_sub({{py:xvm.hitLog.log.y}}, 20)}}",
       "width": 250,
@@ -176,7 +176,7 @@
     },
     "total_hp_teams": {
       "enabled": ${ "@settings.xc": "settings.battleLabels.total_hp_panel" },
-      "updateEvent": "PY(ON_UPDATE_HP)",
+      "updateEvent": "PY(ON_HP_UPDATE)",
       "x": 0,
       "y": 30,
       "width": 130,

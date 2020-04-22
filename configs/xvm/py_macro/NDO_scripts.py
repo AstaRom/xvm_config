@@ -34,19 +34,19 @@ def isAnonym(stat):
 # handlers > dmg_count
 
 @xvm.export('high_caliber', deterministic=False)
-def high_caliber(dmg_total):
-    return dmg_count.high_caliber(dmg_total)
+def high_caliber():
+    return dmg_count.high_caliber()
 
 @xvm.export('avg_damage', deterministic=False)
-def avg_damage(dmg_total):
-    return dmg_count.avg_damage(dmg_total)
+def avg_damage():
+    return dmg_count.avg_damage()
 
 #####################################################################
 # handlers > hp_panel
 
 @xvm.export('thp_show', deterministic=True)
-def thp_show(battletype):
-    return hp_panel.thp_show(battletype)
+def thp_show():
+    return hp_panel.thp_show()
 
 @xvm.export('score_team', deterministic=False)
 def score_team(current_team):
