@@ -109,11 +109,11 @@
         "hollow_charge": "#CCCCCC",
         "not_shell": "#CCCCCC"
       },
-      "formatHistory": "<textformat tabstops='[30,39,69,78]' leading='-5'>{{dmg-player%4d}}<tab>|<tab><font color='{{c:dmg-kind}}'>{{dmg%4d}}</font><tab>|<tab>{{vtype}} {{vehicle}}{{alive? |{{blownup?<font face='NDO' size='16'><font size='12'> </font> &#x0048;</font>|<font face='NDO' size='15'> &#x0047;</font>}}}}</textformat>"
+      "formatHistory": "<textformat tabstops='[30,39,69,78]' leading='-5'>{{dmg-player%4d}}<tab>|<tab><font color='{{c:dmg-kind}}'>{{dmg%4d}}</font><tab>|<tab>{{vtype}} {{vehicle}}{{alive?|<font size='12'>  </font>{{blownup?<font face='NDO' size='18'>&#x0048;</font>|<font face='NDO' size='15'>&#x0047;</font>}}}}</textformat>"
     },
     "logAlt": {
       "$ref": { "path": "hitLog.log" },
-      "formatHistory": "<textformat tabstops='[30,39,69,78]' leading='-5'>{{dmg-player%4d}}<tab>|<tab><font color='{{c:dmg-kind}}'>{{dmg%4d}}</font><tab>|<tab>{{vtype}} {{name%.15s~..}}{{alive? |{{blownup?<font face='NDO' size='16'><font size='12'> </font> &#x0048;</font>|<font face='NDO' size='15'> &#x0047;</font>}}}}</textformat>"
+      "formatHistory": "<textformat tabstops='[30,39,69,78]' leading='-5'>{{dmg-player%4d}}<tab>|<tab><font color='{{c:dmg-kind}}'>{{dmg%4d}}</font><tab>|<tab>{{vtype}} {{name%.15s~..}}{{alive?|<font size='12'>  </font>{{blownup?<font face='NDO' size='18'>&#x0048;</font>|<font face='NDO' size='15'>&#x0047;</font>}}}}</textformat>"
     },
     "logBackground": {
       "$ref": { "path": "hitLog.log" },

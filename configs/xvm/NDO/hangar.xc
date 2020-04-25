@@ -9,6 +9,7 @@
     "showPromoPremVehicle": false,
     "showRankedBattleResults": true,
     "showDailyQuestWidget": true,
+    "showTenYearsWidget": true,
     "equipmentPanel": {
       "showConsumablesCount": true,
       "showDirectivesCount": true
