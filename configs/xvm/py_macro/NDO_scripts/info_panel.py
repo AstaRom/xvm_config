@@ -89,6 +89,10 @@ def vehicle_name():
     td = _typeDescriptor()
     return None if not td else "%s" % td.type.userString
 
+def vehicle_short_name():
+    td = _typeDescriptor()
+    return None if not td else "%s" % td.type.shortUserString
+
 def vehicle_system_name():
     td = _typeDescriptor()
     return None if not td else "%s" % td.name

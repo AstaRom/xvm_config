@@ -8,6 +8,7 @@
 ║ {{py:vehicle_nation}}                    ║ Нация техники
 ║ {{py:vehicle_type}}                      ║ Тип техники (LT, MT, HT, TD, SPG)
 ║ {{py:vehicle_name}}                      ║ Название техники
+║ {{py:vehicle_short_name}}                ║ Название техники (укороченное)
 ║ {{py:vehicle_system_name}}               ║ Системное название техники
 ║ {{py:icon_system_name}}                  ║ Системное название иконки техники
 ║ {{py:isPremium}}                         ║ Возвращает 'premium', если танк является премиумным

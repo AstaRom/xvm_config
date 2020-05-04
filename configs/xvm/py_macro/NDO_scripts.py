@@ -91,9 +91,9 @@ def color_sign_hp():
 def ipHotKey():
     return info_panel.ipHotKey
 
-@xvm.export('vehicle_name', deterministic=False)
-def vehicle_name():
-    return info_panel.vehicle_name()
+@xvm.export('vehicle_short_name', deterministic=False)
+def vehicle_short_name():
+    return info_panel.vehicle_short_name()
 
 @xvm.export('gun_reload_equip', deterministic=False)
 def gun_reload_equip(eq1, eq2, eq3, eq4):

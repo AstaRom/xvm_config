@@ -20,7 +20,7 @@
       }
     },
     "battleLabels": {
-      "info_panel": "<textformat tabstops='[5,150,214]'><font size='0'>.</font><tab><font color='#FF9900'>{{py:vehicle_name}}</font><tab>{{l10n:reload}}:<tab>{{py:gun_reload_equip(1, 1, 0, 0)}} {{l10n:sec}}</textformat>
+      "info_panel": "<textformat tabstops='[5,150,214]'><font size='0'>.</font><tab><font color='#FF9900'>{{py:vehicle_short_name}}</font><tab>{{l10n:reload}}:<tab>{{py:gun_reload_equip(1, 1, 0, 0)}} {{l10n:sec}}</textformat>
         <br/><textformat tabstops='[5,54,150,214,246,279]'><font size='0'>.</font><tab>{{l10n:view}}:<tab>{{py:vision_radius}} {{l10n:m}}<tab>{{l10n:type}}:<tab>{{py:shell_type(1)}}<tab>{{py:shell_type(2)}}<tab>{{py:shell_type(3)}}</textformat>
         <br/><textformat tabstops='[5,54,80,105,150,214,246,279]'><font size='0'>.</font><tab>{{l10n:turret}}:<tab>{{py:armor_turret_front}}<tab>{{py:armor_turret_side}}<tab>{{py:armor_turret_back}}<tab>{{l10n:dmg}}:<tab>{{py:shell_damage(1)}}<tab>{{py:shell_damage(2)}}<tab>{{py:shell_damage(3)}}</textformat>
         <br/><textformat tabstops='[5,54,80,105,150,214,246,279]'><font size='0'>.</font><tab>{{l10n:hull}}:<tab>{{py:armor_hull_front}}<tab>{{py:armor_hull_side}}<tab>{{py:armor_hull_back}}<tab>{{l10n:penetr}}:<tab>{{py:shell_power(1)}}<tab>{{py:shell_power(2)}}<tab>{{py:shell_power(3)}}</textformat>"
