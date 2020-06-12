@@ -54,7 +54,7 @@
       "epic_battle": "epic_battle",
       "epic_battle_training": "epic_battle_training",
       "tournament_event": "tournament_event",
-      "bob": ""
+      "event_random": ""
     },
     "topclan": {
       "top": "top",

@@ -10,7 +10,6 @@
     "showRankedBattleResults": true,
     "showDailyQuestWidget": true,
     "showTenYearsBanner": true,
-    "showSE20Banner": true,
     "equipmentPanel": {
       "showConsumablesCount": true,
       "showDirectivesCount": true
