@@ -31,7 +31,7 @@ def _vehicle():
 
 def _typeDescriptor():
     vehicle = _vehicle()
-    return None if not vehicle else vehicle.typeDescriptor
+    return None if (not vehicle or not hasattr(vehicle, 'typeDescriptor')) else vehicle.typeDescriptor
 
 def _gunShots():
     td = _typeDescriptor()
