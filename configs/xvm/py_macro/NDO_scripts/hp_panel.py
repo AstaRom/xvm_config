@@ -1,6 +1,10 @@
 ﻿#####################################################################
 # imports
 
+from gui.Scaleform.daapi.view.battle.shared.prebattle_timers.timer_base import PreBattleTimerBase
+
+from xfw_actionscript.python import as_event
+from xfw.events import registerEvent
 import xvm_main.python.config as config
 import xvm_battle.python.fragCorrelationPanel as panel
 from data_macros import data
@@ -76,3 +80,8 @@ def color_sign_hp():
     else:
         color_sign_hp = panel.color_gradient(panel.hp_colors['neutral'], panel.hp_colors['neutral'], 1)
     return color_sign_hp
+
+@registerEvent(PreBattleTimerBase, 'setPeriod')
+def setPeriod(self, period):
+    if period == 1:
+        as_event('ON_PREBATTLE')
