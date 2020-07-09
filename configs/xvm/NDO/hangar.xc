@@ -169,6 +169,7 @@
       "profile": true,
       "PersonalMissionOperationsPage": true
     },
+    "showCustomizationCounter": false,
     "barracks": {
       "nations_order": [],
       "roles_order": [],

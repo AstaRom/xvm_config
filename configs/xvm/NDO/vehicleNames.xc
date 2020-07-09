@@ -273,6 +273,7 @@
     "germany-G58_VK4502P":                   { "name": null, "short": null },
     "germany-G58_VK4502P7":                  { "name": null, "short": null },
     "germany-G61_G_E":                       { "name": null, "short": null },
+    "germany-G62_Roket_Sturmtiger":          { "name": null, "short": null },
     "germany-G63_PzI_ausf_C":                { "name": null, "short": null },
     "germany-G64_Panther_II":                { "name": null, "short": null },
     "germany-G64_Panther_II_IGR":            { "name": null, "short": null },
