@@ -2,6 +2,7 @@
   "tooltips": {
     "combineIcons": true,
     "hideSimplifiedVehParams": true,
+    "hideCrystalBlock": true,
     "hideBottomText": true,
     "showXpToUnlockVeh": true,
     "tooltipsDelay": 0.4,

@@ -102,7 +102,8 @@ class GetData(object):
 
     def updateHangar(self):
         if not self.isInBootcamp or g_currentVehicle.isPresent():
-            self.avg_damage = self.itemsCache.items.getVehicleDossier(g_currentVehicle.item.intCD).getRandomStats().getAvgDamage()
+            data = self.itemsCache.items.getVehicleDossier(g_currentVehicle.item.intCD).getRandomStats().getAvgDamage()
+            self.avg_damage = data if data is not None else 0
 
 data = GetData()
 

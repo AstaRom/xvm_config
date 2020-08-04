@@ -18,6 +18,8 @@
       "price": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100 },
       "actionPrice": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100 },
       "favorite": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100 },
+      "crystalsBorder": { "enabled": false, "alpha": 100 },
+      "crystalsIcon": { "enabled": false, "dx": 0, "dy": 0, "alpha": 100 },
       "stats": { "enabled": false, "dx": 0, "dy": 0, "alpha": 100, "textFormat": {}, "shadow": {} }
     },
     "extraFields": [
@@ -59,6 +61,8 @@
       "price": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "actionPrice": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
       "favorite": { "enabled": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
+      "crystalsBorder": { "enabled": false, "alpha": 100 },
+      "crystalsIcon": { "enabled": false, "dx": 0, "dy": 0, "alpha": 100 },
       "stats": { "enabled": false, "dx": 0, "dy": 0, "alpha": 100, "scale": 1, "textFormat": {}, "shadow": {} }
     },
     "extraFields": [

@@ -8,6 +8,7 @@
     "showGeneralChatButton": false,
     "showPromoPremVehicle": false,
     "showRankedBattleResults": true,
+    "showProgressiveDecalsWindow": false,
     "showDailyQuestWidget": true,
     "showTenYearsBanner": true,
     "equipmentPanel": {
@@ -56,7 +57,6 @@
       "offsetX": 0,
       "offsetY": 0
     },
-    "enableEquipAutoReturn": true,
     "blockVehicleIfLowAmmo": true,
     "lowAmmoPercentage": 20,
     "notificationsButtonType": "blink",

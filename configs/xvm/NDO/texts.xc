@@ -53,8 +53,9 @@
       "event_battles_2": "event_battles_2",
       "epic_battle": "epic_battle",
       "epic_battle_training": "epic_battle_training",
+      "battle_royale_solo": "battle_royale_solo",
+      "battle_royale_squad": "battle_royale_squad",
       "tournament_event": "tournament_event",
-      "bob": "bob",
       "event_random": "event_random"
     },
     "topclan": {
