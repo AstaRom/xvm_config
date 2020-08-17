@@ -104,28 +104,6 @@
         }
       },
 
-      // questProgressTopView
-
-      "questProgressTopView": {
-        "$interval": 25000,
-        "y": "{{py:math_sub({{py:screen_height}}, 120)}}",
-        "flag": {
-          "visible": false,
-          "alpha": 0
-        },
-        "shadow": {
-          "width": 1000,
-          "height": 200
-        }
-      },
-
-      // questProgressTopAnimContainer
-
-      "questProgressTopAnimContainer": {
-        "visible": false,
-        "alpha": 0
-      },
-
       // superPlatoonPanel
 
       "superPlatoonPanel": {

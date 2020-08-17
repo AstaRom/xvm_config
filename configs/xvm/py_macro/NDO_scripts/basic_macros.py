@@ -1,7 +1,6 @@
 ﻿#####################################################################
 # imports
 
-import BigWorld
 import xvm_main.python.config as config
 from data_macros import data
 
@@ -14,9 +13,6 @@ def color_blind():
 
 def math_sub(a, b):
     return None if a is None or b is None else a - b
-
-def screen_height():
-    return BigWorld.screenHeight()
 
 def str_replace(str, old, new, max=-1):
     return str.replace(old, new, max)

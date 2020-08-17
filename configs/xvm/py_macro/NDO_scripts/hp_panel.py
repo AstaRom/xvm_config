@@ -83,5 +83,5 @@ def color_sign_hp():
 
 @registerEvent(PreBattleTimerBase, 'setPeriod')
 def setPeriod(self, period):
-    if period == 1:
+    if period == 2:
         as_event('ON_PREBATTLE')

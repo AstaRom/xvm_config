@@ -18,10 +18,6 @@ def color_blind():
 def math_sub(a, b):
     return basic_macros.math_sub(a, b)
 
-@xvm.export('screen_height', deterministic=False)
-def screen_height():
-    return basic_macros.screen_height()
-
 @xvm.export('str_replace', deterministic=True)
 def str_replace(str, old, new, max=-1):
     return basic_macros.str_replace(str, old, new, max=-1)
