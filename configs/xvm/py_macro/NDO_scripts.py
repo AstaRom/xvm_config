@@ -10,19 +10,19 @@ from NDO_scripts import total_efficiency
 #####################################################################
 # handlers > basic_macros
 
-@xvm.export('color_blind', deterministic=True)
+@xvm.export('color_blind')
 def color_blind():
     return basic_macros.color_blind()
 
-@xvm.export('math_sub', deterministic=True)
+@xvm.export('math_sub')
 def math_sub(a, b):
     return basic_macros.math_sub(a, b)
 
-@xvm.export('str_replace', deterministic=True)
+@xvm.export('str_replace')
 def str_replace(str, old, new, max=-1):
     return basic_macros.str_replace(str, old, new, max=-1)
 
-@xvm.export('isAnonym', deterministic=True)
+@xvm.export('isAnonym')
 def isAnonym(stat):
     return basic_macros.isAnonym(stat)
 
@@ -40,7 +40,7 @@ def avg_damage():
 #####################################################################
 # handlers > hp_panel
 
-@xvm.export('thp_show', deterministic=True)
+@xvm.export('thp_show', deterministic=False)
 def thp_show():
     return hp_panel.thp_show()
 
@@ -68,7 +68,7 @@ def percent_hp_section(current_team):
 def current_hp_symbols(current_team, symbol):
     return hp_panel.current_hp_symbols(current_team, symbol)
 
-@xvm.export('max_hp_symbols', deterministic=True)
+@xvm.export('max_hp_symbols')
 def max_hp_symbols(symbol):
     return hp_panel.max_hp_symbols(symbol)
 
