@@ -10,7 +10,7 @@
     "showRankedBattleResults": true,
     "showProgressiveDecalsWindow": false,
     "showDailyQuestWidget": true,
-    "showTenYearsBanner": true,
+    "showLastWtBanner": true,
     "equipmentPanel": {
       "showConsumablesCount": true,
       "showDirectivesCount": true
