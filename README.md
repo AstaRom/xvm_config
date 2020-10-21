@@ -2,8 +2,8 @@
 
 ### Official websites
 
-* [Homepage](https://wot-game.wixsite.com/mods)
+* [Homepage](https://astarom.github.io/)
 * [Forum](https://kr.cm/f/t/7378/)
-* [FAQ](https://wot-game.wixsite.com/mods/faq-xvm)
+* [FAQ](https://astarom.github.io/faq-xvm.html)
 
 ### [Donations](https://www.donationalerts.ru/r/astarom)
