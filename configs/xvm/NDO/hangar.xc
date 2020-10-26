@@ -11,10 +11,6 @@
     "showProgressiveDecalsWindow": false,
     "showDailyQuestWidget": true,
     "showEventBanner": true,
-    "equipmentPanel": {
-      "showConsumablesCount": true,
-      "showDirectivesCount": true
-    },
     "combatIntelligence": {
       "showPopUpMessages": false,
       "showUnreadCounter": false

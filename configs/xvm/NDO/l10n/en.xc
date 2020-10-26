@@ -9,6 +9,7 @@
     "turret": "Turret",
     "dmg": "Damage",
     "hull": "Hull",
-    "penetr": "Penetr."
+    "penetr": "Penetr.",
+    "dl_tab": "105"
   }
 }
