@@ -37,6 +37,10 @@ def high_caliber():
 def avg_damage():
     return dmg_count.avg_damage()
 
+@xvm.export('check_status', deterministic=False)
+def check_status(var):
+    return dmg_count.check_status(var)
+
 #####################################################################
 # handlers > hp_panel
 

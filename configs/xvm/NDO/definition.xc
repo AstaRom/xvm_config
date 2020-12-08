@@ -1,10 +1,10 @@
 ﻿{
   "definition": {
     "author": "night_dragon_on",
-    "date": "Конфиг от 25.11.20",
+    "date": "Конфиг от 08.12.20",
     "description": "Config for XVM",
-    "gameVersion": "1.10.1.4",
-    "modMinVersion": "8.6.8",
+    "gameVersion": "1.11.0.0",
+    "modMinVersion": "8.7.0",
     "url": "https://github.com/AstaRom/xvm_config"
   }
 }

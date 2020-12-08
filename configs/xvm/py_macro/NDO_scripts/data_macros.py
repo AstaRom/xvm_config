@@ -6,6 +6,7 @@ import BigWorld
 from Avatar import PlayerAvatar
 from CurrentVehicle import g_currentVehicle
 from gui.battle_control.battle_constants import PERSONAL_EFFICIENCY_TYPE as _ETYPE
+from gui.battle_control.controllers.msgs_ctrl import BattleMessagesController
 from gui.Scaleform.daapi.view.battle.shared.damage_log_panel import DamageLogPanel
 from gui.Scaleform.daapi.view.lobby.hangar.Hangar import Hangar
 from helpers import dependency
@@ -41,6 +42,7 @@ class GetData(object):
         self.assist = 0
         self.blocked = 0
         self.stun = 0
+        self.teamHits = False
 
     def reset(self):
         self.player = None
@@ -52,6 +54,7 @@ class GetData(object):
         self.assist = 0
         self.blocked = 0
         self.stun = 0
+        self.teamHits = False
 
     def update(self, vInfoVO):
         isAnonym = vInfoVO.player.name != vInfoVO.player.fakeName
@@ -105,6 +108,10 @@ class GetData(object):
             data = self.itemsCache.items.getVehicleDossier(g_currentVehicle.item.intCD).getRandomStats().getAvgDamage()
             self.avg_damage = data if data is not None else 0
 
+    def isTeamHits(self):
+        self.teamHits = True
+        as_event('ON_TEAM_HITS')
+
 data = GetData()
 
 @registerEvent(Vehicle, 'onEnterWorld')
@@ -131,3 +138,8 @@ def update_hp(vehicleID, hp):
 def _onTotalEfficiencyUpdated(self, diff):
     if isBattle() and data.isPlayerVehicle():
         data.totalEfficiency(diff)
+
+@registerEvent(BattleMessagesController, 'showAllyHitMessage')
+def showAllyHitMessage(self, vehicleID=None):
+    if isBattle():
+        data.isTeamHits()

@@ -56,7 +56,8 @@
       "battle_royale_solo": "battle_royale_solo",
       "battle_royale_squad": "battle_royale_squad",
       "tournament_event": "tournament_event",
-      "event_random": "event_random"
+      "event_random": "event_random",
+      "bob": "bob"
     },
     "topclan": {
       "top": "top",
