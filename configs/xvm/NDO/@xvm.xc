@@ -31,7 +31,6 @@
   "minimapAlt":        ${ "minimapAlt.xc": "minimap" },
   "playersPanel":      ${ "playersPanel.xc": "playersPanel" },
   "sounds":            ${ "sounds.xc": "sounds" },
-  "squad":             ${ "squad.xc": "squad" },
   "statisticForm":     ${ "statisticForm.xc": "statisticForm" },
   "texts":             ${ "texts.xc": "texts" },
   "tooltips":          ${ "tooltips.xc": "tooltips" },

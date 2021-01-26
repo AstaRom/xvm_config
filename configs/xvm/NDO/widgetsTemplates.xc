@@ -5,7 +5,7 @@
     "type": "extrafield",
     "formats": [
       {
-        "x": -300,
+        "x": "{{l10n:cl_bg}}",
         "y": 0,
         "width": 150,
         "height": 53,
@@ -15,7 +15,7 @@
       },
       {
         "updateEvent": "ON_EVERY_SECOND",
-        "x": -315,
+        "x": "{{l10n:cl_dig}}",
         "y": 0,
         "width": 150,
         "height": 53,

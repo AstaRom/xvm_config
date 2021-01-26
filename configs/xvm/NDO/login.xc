@@ -1,6 +1,5 @@
 ﻿{
   "login": {
-    "saveLastServer": true,
     "autologin": false,
     "confirmOldReplays": true,
     "disabledServers": [],

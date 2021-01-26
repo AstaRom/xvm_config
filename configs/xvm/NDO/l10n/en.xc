@@ -10,6 +10,8 @@
     "dmg": "Damage",
     "hull": "Hull",
     "penetr": "Penetr.",
-    "dl_tab": "105"
+    "dl_tab": "105",
+    "cl_dig": "-323",
+    "cl_bg": "-308"
   }
 }
