@@ -20,9 +20,9 @@ minRatio = 65
 support_type = [
     1,  # regular
     2,  # training
-    15, # sortie_2
-    16, # fort_battle_2
-    17  # ranked
+    20, # sortie_2
+    21, # fort_battle_2
+    22  # ranked
 ]
 
 #####################################################################

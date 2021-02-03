@@ -160,10 +160,13 @@
       }
     },
     "notificationCounter": {
+      "storage": true,
       "store": true,
       "missions": true,
+      "PersonalMissionOperationsPage": true,   
       "profile": true,
-      "PersonalMissionOperationsPage": true
+      "barracks": true,
+      "StrongholdView": true
     },
     "showCustomizationCounter": false,
     "barracks": {

@@ -58,7 +58,7 @@ class GetData(object):
 
     def update(self, vInfoVO):
         isAnonym = vInfoVO.player.name != vInfoVO.player.fakeName
-        self.battletype = BigWorld.player().arena.guiType
+        self.battletype = BigWorld.player().arenaBonusType
         if self.player is None:
             self.player = BigWorld.player()
         if not BattleReplay.g_replayCtrl.isPlaying and isAnonym:
