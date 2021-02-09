@@ -3,23 +3,23 @@
     "enabled": true,
     "noFlashBang": false,
     "arcade": {
-      "distRange": [2, 100],
+      "distRange": [ 2, 100 ],
       "startDist": null,
       "scrollSensitivity": 5,
       "shotRecoilEffect": true
     },
     "postmortem": {
-      "distRange": [2, 100],
+      "distRange": [ 2, 100 ],
       "startDist": null,
       "scrollSensitivity": 5,
       "shotRecoilEffect": true
     },
     "strategic": {
-      "distRange": [20, 150],
+      "distRange": [ 20, 150 ],
       "shotRecoilEffect": true
     },
     "sniper": {
-      "zooms": [2, 4, 8, 16, 25],
+      "zooms": [ 2, 4, 8, 16, 25 ],
       "startZoom": null,
       "zoomIndicator": {
         "enabled": false,

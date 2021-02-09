@@ -28,8 +28,8 @@
       "vertical": 13
     },
     "nations_order": [],
-    "types_order": ["lightTank", "mediumTank", "heavyTank", "AT-SPG", "SPG"],
-    "sorting_criteria": ["nation", "type", "level"],
+    "types_order": [ "lightTank", "mediumTank", "heavyTank", "AT-SPG", "SPG" ],
+    "sorting_criteria": [ "nation", "type", "level" ],
     "suppressCarouselTooltips": false
   }
 }
