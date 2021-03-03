@@ -8,6 +8,8 @@ from CurrentVehicle import g_currentVehicle
 from gui.battle_control.battle_constants import PERSONAL_EFFICIENCY_TYPE as _ETYPE
 from gui.battle_control.controllers.msgs_ctrl import BattleMessagesController
 from gui.Scaleform.daapi.view.battle.shared.damage_log_panel import DamageLogPanel
+from gui.Scaleform.daapi.view.battle.shared.frag_correlation_bar import FragCorrelationBar
+from gui.Scaleform.daapi.view.battle.shared.stats_exchange.broker import CollectableStats
 from gui.Scaleform.daapi.view.lobby.hangar.Hangar import Hangar
 from helpers import dependency
 from skeletons.gui.game_control import IBootcampController
@@ -17,7 +19,7 @@ from Vehicle import Vehicle
 from xfw_actionscript.python import as_event
 from xfw.events import registerEvent
 import xvm_battle.python.battle as battle
-import xvm_battle.python.fragCorrelationPanel as panel
+import xvm_main.python.config as config
 
 #####################################################################
 # private
@@ -33,11 +35,13 @@ class GetData(object):
     isInBootcamp = dependency.instance(IBootcampController).isInBootcamp()
 
     def __init__(self):
-        self.player = None
         self.battletype = 0
         self.isAnonymMode = False
         self.avg_damage = 0
+        self.hp_team = [0, 0]
         self.max_hp_team = [0, 0]
+        self.score_team = [0, 0]
+        self.vehicles_team = [0, 0]
         self.damage = 0
         self.assist = 0
         self.blocked = 0
@@ -45,11 +49,13 @@ class GetData(object):
         self.teamHits = False
 
     def reset(self):
-        self.player = None
         self.battletype = 0
         self.isAnonymMode = False
         self.avg_damage = 0
+        self.hp_team = [0, 0]
         self.max_hp_team = [0, 0]
+        self.score_team = [0, 0]
+        self.vehicles_team = [0, 0]
         self.damage = 0
         self.assist = 0
         self.blocked = 0
@@ -59,31 +65,10 @@ class GetData(object):
     def update(self, vInfoVO):
         isAnonym = vInfoVO.player.name != vInfoVO.player.fakeName
         self.battletype = BigWorld.player().arenaBonusType
-        if self.player is None:
-            self.player = BigWorld.player()
         if not BattleReplay.g_replayCtrl.isPlaying and isAnonym:
             self.isAnonymMode = True
         else:
             self.isAnonymMode = False
-
-    def updateHp(self):
-        if panel.teams_totalhp[0] > self.max_hp_team[0]:
-            self.max_hp_team[0] = panel.teams_totalhp[0]
-        elif panel.teams_totalhp[1] > self.max_hp_team[1]:
-            self.max_hp_team[1] = panel.teams_totalhp[1]
-        else:
-            return
-
-    def isPlayerVehicle(self):
-        if self.player is not None:
-            if hasattr(self.player.inputHandler.ctrl, 'curVehicleID'):
-                vId = self.player.inputHandler.ctrl.curVehicleID
-                v = vId.id if isinstance(vId, Vehicle) else vId
-                return self.player.playerVehicleID == v
-            else:
-                return True
-        else:
-            return False
 
     def totalEfficiency(self, diff):
         isUpdate = False
@@ -117,7 +102,9 @@ data = GetData()
 @registerEvent(Vehicle, 'onEnterWorld')
 def onEnterWorld(self, prereqs):
     if isBattle() and self.isPlayerVehicle:
-        vInfoVO = self.guiSessionProvider.getArenaDP().getVehicleInfo(self.id)
+        arenaDP = self.guiSessionProvider.getArenaDP()
+        vInfoVO = arenaDP.getVehicleInfo(self.id)
+        data.vehicles_team = [arenaDP.getAlliesVehiclesNumber(), arenaDP.getEnemiesVehiclesNumber()]
         data.update(vInfoVO)
 
 @registerEvent(PlayerAvatar, '_PlayerAvatar__destroyGUI')
@@ -128,15 +115,28 @@ def destroyGUI(self):
 def updateParams(self):
     data.updateHangar()
 
-@registerEvent(panel, 'update_hp')
-def update_hp(vehicleID, hp):
+@registerEvent(FragCorrelationBar, 'updateTeamHealth')
+def updateTeamHealth(self, alliesHP, enemiesHP, totalAlliesHP, totalEnemiesHP):
     if isBattle():
-        data.updateHp()
+        data.hp_team = [alliesHP, enemiesHP]
+        data.max_hp_team = [float(totalAlliesHP), float(totalEnemiesHP)]
         as_event('ON_HP_UPDATE')
+
+# @registerEvent(FragCorrelationBar, 'updateDeadVehicles')
+# def updateDeadVehicles(self, aliveAllies, deadAllies, aliveEnemies, deadEnemies):
+    # if isBattle():
+        # inversion = config.get('fragCorrelation/showAliveNotFrags')
+        # data.score_team = [len(deadEnemies), len(deadAllies)] if not inversion else [len(aliveAllies), len(aliveEnemies)]
+
+@registerEvent(CollectableStats, '_setTotalScore')
+def _setTotalScore(self, leftScope, rightScope):
+    if isBattle():
+        inversion = config.get('fragCorrelation/showAliveNotFrags')
+        data.score_team = [leftScope, rightScope] if inversion else [data.vehicles_team[0] - rightScope, data.vehicles_team[1] - leftScope]
 
 @registerEvent(DamageLogPanel, '_onTotalEfficiencyUpdated')
 def _onTotalEfficiencyUpdated(self, diff):
-    if isBattle() and data.isPlayerVehicle():
+    if isBattle() and self.isSwitchToVehicle:
         data.totalEfficiency(diff)
 
 @registerEvent(BattleMessagesController, 'showAllyHitMessage')

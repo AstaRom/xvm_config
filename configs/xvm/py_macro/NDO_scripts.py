@@ -76,14 +76,6 @@ def current_hp_symbols(current_team, symbol):
 def max_hp_symbols(symbol):
     return hp_panel.max_hp_symbols(symbol)
 
-@xvm.export('sign_hp', deterministic=False)
-def sign_hp():
-    return hp_panel.sign_hp()
-
-@xvm.export('color_sign_hp', deterministic=False)
-def color_sign_hp():
-    return hp_panel.color_sign_hp()
-
 #####################################################################
 # handlers > info_panel
 

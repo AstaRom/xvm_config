@@ -20,7 +20,6 @@
     },
     "sniper": {
       "zooms": [ 2, 4, 8, 16, 25 ],
-      "startZoom": null,
       "zoomIndicator": {
         "enabled": false,
         "x": 150,
