@@ -8,6 +8,7 @@
     "backgroundAlpha": 90,
     "slotBackgroundAlpha": 100,
     "slotBorderAlpha": 100,
+    "slotSelectedBorderAlpha": 100,
     "edgeFadeAlpha": 50,
     "scrollingSpeed": 1,
     "hideBuyTank": true,

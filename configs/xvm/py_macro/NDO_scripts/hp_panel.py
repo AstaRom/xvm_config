@@ -5,6 +5,7 @@ from gui.Scaleform.daapi.view.battle.shared.prebattle_timers.timer_base import P
 
 from xfw_actionscript.python import as_event
 from xfw.events import registerEvent
+import xvm_main.python.config as config
 from data_macros import data
 
 #####################################################################
@@ -27,7 +28,8 @@ support_type = [
 # handlers
 
 def thp_show():
-    return True if data.battletype in support_type else None
+    isPanel = config.get('settings/battleLabels/total_hp_panel', False)
+    return True if data.battletype in support_type and isPanel else None
 
 def score_team(current_team):
     return data.score_team[current_team]

@@ -19,7 +19,6 @@ from Vehicle import Vehicle
 from xfw_actionscript.python import as_event
 from xfw.events import registerEvent
 import xvm_battle.python.battle as battle
-import xvm_main.python.config as config
 
 #####################################################################
 # private
@@ -41,7 +40,6 @@ class GetData(object):
         self.hp_team = [0, 0]
         self.max_hp_team = [0, 0]
         self.score_team = [0, 0]
-        self.vehicles_team = [0, 0]
         self.damage = 0
         self.assist = 0
         self.blocked = 0
@@ -55,7 +53,6 @@ class GetData(object):
         self.hp_team = [0, 0]
         self.max_hp_team = [0, 0]
         self.score_team = [0, 0]
-        self.vehicles_team = [0, 0]
         self.damage = 0
         self.assist = 0
         self.blocked = 0
@@ -104,7 +101,6 @@ def onEnterWorld(self, prereqs):
     if isBattle() and self.isPlayerVehicle:
         arenaDP = self.guiSessionProvider.getArenaDP()
         vInfoVO = arenaDP.getVehicleInfo(self.id)
-        data.vehicles_team = [arenaDP.getAlliesVehiclesNumber(), arenaDP.getEnemiesVehiclesNumber()]
         data.update(vInfoVO)
 
 @registerEvent(PlayerAvatar, '_PlayerAvatar__destroyGUI')
@@ -122,17 +118,12 @@ def updateTeamHealth(self, alliesHP, enemiesHP, totalAlliesHP, totalEnemiesHP):
         data.max_hp_team = [float(totalAlliesHP), float(totalEnemiesHP)]
         as_event('ON_HP_UPDATE')
 
-# @registerEvent(FragCorrelationBar, 'updateDeadVehicles')
-# def updateDeadVehicles(self, aliveAllies, deadAllies, aliveEnemies, deadEnemies):
-    # if isBattle():
-        # inversion = config.get('fragCorrelation/showAliveNotFrags')
-        # data.score_team = [len(deadEnemies), len(deadAllies)] if not inversion else [len(aliveAllies), len(aliveEnemies)]
-
 @registerEvent(CollectableStats, '_setTotalScore')
 def _setTotalScore(self, leftScope, rightScope):
     if isBattle():
-        inversion = config.get('fragCorrelation/showAliveNotFrags')
-        data.score_team = [leftScope, rightScope] if inversion else [data.vehicles_team[0] - rightScope, data.vehicles_team[1] - leftScope]
+        if data.score_team != [leftScope, rightScope]:
+            data.score_team = [leftScope, rightScope]
+            as_event('ON_SCORE_UPDATE')
 
 @registerEvent(DamageLogPanel, '_onTotalEfficiencyUpdated')
 def _onTotalEfficiencyUpdated(self, diff):

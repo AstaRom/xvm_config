@@ -20,6 +20,7 @@
     },
     "sniper": {
       "zooms": [ 2, 4, 8, 16, 25 ],
+      "startZoom": null,
       "zoomIndicator": {
         "enabled": false,
         "x": 150,
@@ -38,11 +39,7 @@
         "shadow": { "enabled": true, "distance": 0, "angle": 0, "color": "0x192E0E", "alpha": 100, "blur": 3, "strength": 2 }
       },
       "shotRecoilEffect": true,
-      "noBinoculars": false,
-      "noCameraLimit": {
-        "enabled": false,
-        "mode": "hotkey"
-      }
+      "noBinoculars": false
     }
   }
 }
