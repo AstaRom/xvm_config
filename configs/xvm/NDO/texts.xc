@@ -57,7 +57,10 @@
       "battle_royale_squad": "battle_royale_squad",
       "tournament_event": "tournament_event",
       "event_random": "event_random",
-      "bob": "bob"
+      "bob": "bob",
+      "battle_royale_training_solo": "battle_royale_training_solo",
+      "battle_royale_training_squad": "battle_royale_training_squad",
+      "weekend_brawl": "weekend_brawl"
     },
     "topclan": {
       "top": "top",
