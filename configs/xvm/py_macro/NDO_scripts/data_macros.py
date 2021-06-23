@@ -96,8 +96,8 @@ class GetData(object):
 
 data = GetData()
 
-@registerEvent(Vehicle, 'onEnterWorld')
-def onEnterWorld(self, prereqs):
+@registerEvent(Vehicle, '_Vehicle__onAppearanceReady')
+def onAppearanceReady(self, appearance):
     if isBattle() and self.isPlayerVehicle:
         arenaDP = self.guiSessionProvider.getArenaDP()
         vInfoVO = arenaDP.getVehicleInfo(self.id)

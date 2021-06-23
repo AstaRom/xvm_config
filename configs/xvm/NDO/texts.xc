@@ -60,7 +60,8 @@
       "bob": "bob",
       "battle_royale_training_solo": "battle_royale_training_solo",
       "battle_royale_training_squad": "battle_royale_training_squad",
-      "weekend_brawl": "weekend_brawl"
+      "weekend_brawl": "weekend_brawl",
+      "mapbox": "mapbox"
     },
     "topclan": {
       "top": "top",

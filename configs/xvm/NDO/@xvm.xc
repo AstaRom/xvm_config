@@ -19,7 +19,6 @@
   "damageLog":         ${ "damageLog.xc": "damageLog" },
   "definition":        ${ "definition.xc": "definition" },
   "expertPanel":       ${ "expertPanel.xc": "expertPanel" },
-  "export":            ${ "export.xc": "export" },
   "fragCorrelation":   ${ "fragCorrelation.xc": "fragCorrelation" },
   "hangar":            ${ "hangar.xc": "hangar" },
   "hitLog":            ${ "hitLog.xc": "hitLog" },

@@ -5,6 +5,7 @@
     "iconAlpha": 100,
     "removeSelectedBackground": true,
     "removePanelsModeSwitcher": false,
+    "removeHealthPoints": true,
     "startMode": "large",
     "altMode": null,
     "none": {

@@ -21,6 +21,7 @@
     "circlesEnabled": true,
     "labelsEnabled": true,
     "linesEnabled": true,
+    "healthPointsEnabled": true,
     "labels": ${ "minimapLabels.xc": "labelsAlt" },
     "labelsData": ${ "minimapLabelsData.xc": "labelsData" },
     "circles": ${ "minimapCircles.xc": "circles" },
